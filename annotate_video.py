@@ -79,8 +79,10 @@ def main(video, transcript_json, frames_dir, frames_log, out_dir):
         text = item["text"]
         md.append(f"## {ts}")
         if item["frame"]:
-            rel = Path(item["frame"]["path"])
-            md.append(f"![{ts}]({rel})")
+            # Use relative path from annotated.md (in out/) to frames
+            frame_path = Path(item["frame"]["path"])
+            rel = frame_path.name if frame_path.parent.name == "frames" else frame_path
+            md.append(f"![{ts}](frames/{rel})")
             md.append(f"<sub>frame at ~{hhmmss(item['frame']['time'])}</sub>")
         md.append("")
         md.append(text)

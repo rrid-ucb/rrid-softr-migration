@@ -19,7 +19,7 @@ whisper design/softr.mp4 --model base --language en --output_format json --outpu
 
 ### 2. Extract key frames at scene changes
 ```bash
-ffmpeg -hide_banner -i design/softr.mp4 -vf "select='gt(scene,0.30)',showinfo" -vsync vfr frames/frame_%05d.jpg 2> frames/frames.log
+ffmpeg -hide_banner -i design/softr.mp4 -vf "select='gt(scene,0.30)',showinfo" -vsync vfr out/frames/frame_%05d.jpg 2> out/frames/frames.log
 ```
 
 **Tuning:**
@@ -29,14 +29,14 @@ ffmpeg -hide_banner -i design/softr.mp4 -vf "select='gt(scene,0.30)',showinfo" -
 
 ### 3. Generate annotated output
 ```bash
-python3 annotate_video.py design/softr.mp4 out/softr.json frames frames/frames.log out
+python3 annotate_video.py design/softr.mp4 out/softr.json out/frames out/frames/frames.log out
 ```
 
 ## Output
 
 - **`out/annotated.json`** — Machine-readable JSON with transcript segments, timestamps, and matched frames
-- **`out/annotated.md`** — Human-readable Markdown with screenshots and timestamps
-- **`frames/frame_*.jpg`** — Extracted key frames
+- **`out/annotated.md`** — Human-readable Markdown with screenshots and timestamps (images use relative path `frames/`)
+- **`out/frames/frame_*.jpg`** — Extracted key frames
 
 ## JSON Structure
 
@@ -66,9 +66,9 @@ python3 annotate_video.py design/softr.mp4 out/softr.json frames frames/frames.l
 
 ```bash
 # For design/softr.mp4
-mkdir -p out frames
+mkdir -p out/frames
 whisper design/softr.mp4 --model base --language en --output_format json --output_dir out
-ffmpeg -hide_banner -i design/softr.mp4 -vf "select='gt(scene,0.30)',showinfo" -vsync vfr frames/frame_%05d.jpg 2> frames/frames.log
-python3 annotate_video.py design/softr.mp4 out/softr.json frames frames/frames.log out
+ffmpeg -hide_banner -i design/softr.mp4 -vf "select='gt(scene,0.30)',showinfo" -vsync vfr out/frames/frame_%05d.jpg 2> out/frames/frames.log
+python3 annotate_video.py design/softr.mp4 out/softr.json out/frames out/frames/frames.log out
 open out/annotated.md
 ```

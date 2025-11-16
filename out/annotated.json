@@ -1,7 +1,7 @@
 {
   "video": "design/softr.mp4",
   "transcript": "out/softr.json",
-  "frames_dir": "frames",
+  "frames_dir": "out/frames",
   "items": [
     {
       "id": 0,
@@ -11,7 +11,7 @@
       "end_hms": "00:10",
       "text": "Awesome. Okay, so this is going to be a quick walkthrough tutorial of the software and",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -23,7 +23,7 @@
       "end_hms": "00:23",
       "text": "how that set of kind of works behind the scenes. I'm going to focus on these on the top.",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -35,7 +35,7 @@
       "end_hms": "00:28",
       "text": "The rest on the bottom are all for the badge system, which I'm not going to go through",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -47,7 +47,7 @@
       "end_hms": "00:35",
       "text": "every single one, but I'll explain the high level things like that. And then the far bottom",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -59,7 +59,7 @@
       "end_hms": "00:40",
       "text": "ones are the utility pages. So things that software actually manages and we don't really touch",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -71,7 +71,7 @@
       "end_hms": "00:47",
       "text": "such as you know, signing up their account settings, things like that. Okay, so at the top",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -83,7 +83,7 @@
       "end_hms": "00:52",
       "text": "of the list is the landing page. Let's see if clicking on every single one is too inefficient",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -95,7 +95,7 @@
       "end_hms": "01:06",
       "text": "or not. So there are two different views. As you can see, one is for students and one",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -107,7 +107,7 @@
       "end_hms": "01:15",
       "text": "is for assistant editors. So view the list of your proposed reviewers versus quality",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -119,7 +119,7 @@
       "end_hms": "01:23",
       "text": "check proposed reviewers. And this basically kind of fields people into all of the different",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -131,7 +131,7 @@
       "end_hms": "01:36",
       "text": "channels of contributing to RID. On this particular soft art site, there's three, I guess there's",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -143,7 +143,7 @@
       "end_hms": "01:43",
       "text": "two main channels. Now let's say three. So inputting peer reviews for a preprint quality",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -155,7 +155,7 @@
       "end_hms": "01:52",
       "text": "checking the peer reviewers and then looking at productivity for RID on a whole. This",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -167,7 +167,7 @@
       "end_hms": "01:59",
       "text": "find a preprint is an external link to the separate soft art site, which can be shown",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -179,7 +179,7 @@
       "end_hms": "02:05",
       "text": "in another video, but basically it's just going home. And there's another site that handles",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -191,7 +191,7 @@
       "end_hms": "02:14",
       "text": "the preprint pitching process. Okay, so if I were to click input peer reviewers, that would",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -203,7 +203,7 @@
       "end_hms": "02:19",
       "text": "take me to the preprint list. And you could kind of just if you want to put on like the investigative",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -215,7 +215,7 @@
       "end_hms": "02:28",
       "text": "how, like how would you figure out where this button goes, you know, go to the button to and see",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -227,7 +227,7 @@
       "end_hms": "02:36",
       "text": "what it links to. So it links to the page preprint list, which is right here. And there's definitely",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -239,7 +239,7 @@
       "end_hms": "02:42",
       "text": "learning curve to soft art, but it's I would not call it a steep one, probably like two, two weeks",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -251,7 +251,7 @@
       "end_hms": "02:50",
       "text": "or so to get rolling with it. So going on to the preprints list, there's a couple of different",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -263,7 +263,7 @@
       "end_hms": "02:59",
       "text": "features. You can see we have the active preprints list, which is visible to everybody, students,",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -275,7 +275,7 @@
       "end_hms": "03:05",
       "text": "assistant editors, the preprints that we want people to input peer reviewers for. Then there's",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -287,7 +287,7 @@
       "end_hms": "03:11",
       "text": "the preprints that are in queue. So you can see these have an ad reviewers button and these don't",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -299,7 +299,7 @@
       "end_hms": "03:17",
       "text": "because we're not allowing students access to that. However, down here, you can see the preprints",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -311,7 +311,7 @@
       "end_hms": "03:22",
       "text": "and view does have the ad reviewers. And that's because going to the visibility, this is specifically",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -323,7 +323,7 @@
       "end_hms": "03:31",
       "text": "for central or assistant editors to start proposing if they they so choose. And then above that,",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -335,7 +335,7 @@
       "end_hms": "03:41",
       "text": "you can kind of see there's a few others. This is the prioritized selected preprint. So people have",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -347,7 +347,7 @@
       "end_hms": "03:52",
       "text": "many teams. And you can see in the conditional filters on this one. So if their email is within",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -359,7 +359,7 @@
       "end_hms": "04:00",
       "text": "the many team emails for that preprint, this will show up in a couple of other requirements. So",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -371,7 +371,7 @@
       "end_hms": "04:09",
       "text": "does it actually need any invites? Is the preprint not active yet? Things like that. This is for",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -383,7 +383,7 @@
       "end_hms": "04:13",
       "text": "two pitch editorials. So we allow students, if they have our mini team for preprint, that's",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -395,7 +395,7 @@
       "end_hms": "04:20",
       "text": "two pitch editorial, then they can propose up to 10 reviewers. So that's another option. And then",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -407,7 +407,7 @@
       "end_hms": "04:28",
       "text": "finally, there's an assistant editor preprint spotlight. And that is when someone on the central",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -419,7 +419,7 @@
       "end_hms": "04:37",
       "text": "team or in in other future scenarios, basically a preprint got one review or it's very close to",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -431,7 +431,7 @@
       "end_hms": "04:43",
       "text": "getting the number of reviews required. And we just want some really high quality rapid reviewers",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -443,7 +443,7 @@
       "end_hms": "04:51",
       "text": "put in. So we can choose to flag this as a spotlight for assistant editors only to see and go in",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -455,7 +455,7 @@
       "end_hms": "04:56",
       "text": "and try to push us over to the finish line with some good peer reviewers for that preprint.",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -467,7 +467,7 @@
       "end_hms": "05:04",
       "text": "Okay. So following that line, when somebody clicks ad reviewers, that will take them to a",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -479,7 +479,7 @@
       "end_hms": "05:15",
       "text": "details page for that specific preprint. And what that details page is called is article details",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -491,7 +491,7 @@
       "end_hms": "05:23",
       "text": "and ad reviewers. So clicking into it, if you were to observe it on I'll do later on the site itself",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -503,7 +503,7 @@
       "end_hms": "05:32",
       "text": "in the URL, it's basically filtering it so that in the URL, we see the preprint ID.",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -515,7 +515,7 @@
       "end_hms": "05:38",
       "text": "So this is the details block for that specific record, getting to see the title,",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -527,7 +527,7 @@
       "end_hms": "05:46",
       "text": "DUI, authors, affiliations for the preprint, similar articles that people have put in, things",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -539,7 +539,7 @@
       "end_hms": "05:54",
       "text": "like that. We also have like the ideal reviewer profile and related works that they have, the",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -551,7 +551,7 @@
       "end_hms": "06:01",
       "text": "many team lists and the ability to maybe add or remove those members. This is very not true,",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -563,7 +563,7 @@
       "end_hms": "06:07",
       "text": "it's just because it's in the preview mode that would be insane. We have our list of AI-suggested",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -575,7 +575,7 @@
       "end_hms": "06:14",
       "text": "reviewers that have been claimed and then the list of all of them looks like this did not parse",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -587,7 +587,7 @@
       "end_hms": "06:25",
       "text": "correctly. So that's telling us that the parsing algorithm didn't work. So they must have changed",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -599,7 +599,7 @@
       "end_hms": "06:35",
       "text": "format. Okay, so there's those components. The ability to check for conflict of interest before",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -611,7 +611,7 @@
       "end_hms": "06:40",
       "text": "proposing a reviewer. So if somebody could put in just the first and last name and the email,",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -623,7 +623,7 @@
       "end_hms": "06:50",
       "text": "and you can see within this like specific, we're flagging it as basic and put only. So",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -635,7 +635,7 @@
       "end_hms": "06:59",
       "text": "it's not going to be actually inputted into the quality check portal because this is just kind of",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -647,7 +647,7 @@
       "end_hms": "07:07",
       "text": "a just a COI check. And when somebody does that, they can see if the COI just based off the name",
       "frame": {
-        "path": "frames/frame_00001.jpg",
+        "path": "out/frames/frame_00001.jpg",
         "time": 0.96
       }
     },
@@ -659,7 +659,7 @@
       "end_hms": "07:15",
       "text": "and email flags anything. And then finally, there is the proposed a reviewer form.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -671,7 +671,7 @@
       "end_hms": "07:24",
       "text": "So this is where the conflict of interest kind of takes place and definitely something that we",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -683,7 +683,7 @@
       "end_hms": "07:31",
       "text": "want to update and improve within our editorial process and just to use your experience",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -695,7 +695,7 @@
       "end_hms": "07:39",
       "text": "as a whole. And so something that I wanted to flag about this page is when somebody is",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -707,7 +707,7 @@
       "end_hms": "07:45",
       "text": "inputting a potential peer reviewer. How do we know that it's not an author or a reason",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -719,7 +719,7 @@
       "end_hms": "07:53",
       "text": "reviewer or a already proposed reviewer? And how do we let that student know? So if you go into",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -731,7 +731,7 @@
       "end_hms": "08:04",
       "text": "pages, settings, custom code, we have a script that is embedded in this page and runs when",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -743,7 +743,7 @@
       "end_hms": "08:11",
       "text": "the person opens this page. And it basically is pulling in relevant data such as the proposed",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -755,7 +755,7 @@
       "end_hms": "08:20",
       "text": "reviewers for the preprint, things like that, it's pulling from air table. And then it is fetching",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -767,7 +767,7 @@
       "end_hms": "08:31",
       "text": "information about just the recent reviewers. I already said that. Let's go to the part where it's",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -779,7 +779,7 @@
       "end_hms": "08:43",
       "text": "checking. Okay, so it's also picking up information about the form itself. So it's finding where",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -791,7 +791,7 @@
       "end_hms": "08:51",
       "text": "is the submit button. What do we do if we don't have a submit button, kind of track the field such as",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -803,7 +803,7 @@
       "end_hms": "08:58",
       "text": "the first name field, the last name field, the email field. It's very hacky and not reliable.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -815,7 +815,7 @@
       "end_hms": "09:06",
       "text": "So it requires definitely some fixing in the future. But this is what is existing now. So it'll",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -827,7 +827,7 @@
       "end_hms": "09:17",
       "text": "check on a various number of things if there's any. Let's look at the matching. Yeah, so checking",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -839,7 +839,7 @@
       "end_hms": "09:22",
       "text": "to see if there's the author match, reviewer match, anything like that. And finally, it will give",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -851,7 +851,7 @@
       "end_hms": "09:31",
       "text": "a feedback to the user live that there's they found a match and will stop the person from being",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -863,7 +863,7 @@
       "end_hms": "09:38",
       "text": "able to continue with this next button. There'll be more information on that, but just a high level.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -875,7 +875,7 @@
       "end_hms": "09:46",
       "text": "So that's on that page. And then this great outbox just means these are kind of old and outdated",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -887,7 +887,7 @@
       "end_hms": "09:52",
       "text": "things that we used to use. Okay, so when you're on this page and you choose to",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -899,7 +899,7 @@
       "end_hms": "10:02",
       "text": "claim a peer or a profy suggested reviewer and evaluate it, that'll pop up here and they will",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -911,7 +911,7 @@
       "end_hms": "10:13",
       "text": "click the evaluate button. And if we want to put on our investigative hat, you can see this is",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -923,7 +923,7 @@
       "end_hms": "10:18",
       "text": "pulled from our reviewer selection process in the table referees, which we know are the AI",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -935,7 +935,7 @@
       "end_hms": "10:26",
       "text": "suggested reviewers. And it has a view referees for web app. We should probably normalize the",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -947,7 +947,7 @@
       "end_hms": "10:32",
       "text": "naming standards. So it's something like embeds. So we know that we shouldn't change that. But",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -959,7 +959,7 @@
       "end_hms": "10:37",
       "text": "that's basically just to make our fetching more efficient. Okay, so going at actions, that's this",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -971,7 +971,7 @@
       "end_hms": "10:52",
       "text": "button here. It's going to open our URL. This pre-filled details page is actually a record",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -983,7 +983,7 @@
       "end_hms": "10:58",
       "text": "within our air table, which is kind of interesting. So if I don't know if it's going to",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -995,7 +995,7 @@
       "end_hms": "11:04",
       "text": "that's funny. Okay, I don't know if it's going to show. But there's this is a column. This is a field",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1007,7 +1007,7 @@
       "end_hms": "11:11",
       "text": "within our air table, specifically within the referees table. And it's",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1019,7 +1019,7 @@
       "end_hms": "11:22",
       "text": "completing what the details URL would be, but is prefilling some of the form information,",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1031,7 +1031,7 @@
       "end_hms": "11:30",
       "text": "such as the name and the email. That will make sense with more just investigation.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1043,7 +1043,7 @@
       "end_hms": "11:38",
       "text": "But if they were to click evaluate, they'll come here and see the reviewers details",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1055,7 +1055,7 @@
       "end_hms": "11:46",
       "text": "that's provided by Profi or whatever our future AI Suggester is, relevant affiliations,",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1067,7 +1067,7 @@
       "end_hms": "11:54",
       "text": "the person who claimed it, and or could ID things like that. And then they have three options.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1079,7 +1079,7 @@
       "end_hms": "11:59",
       "text": "They can choose that they actually just don't even know enough information. They didn't",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1091,7 +1091,7 @@
       "end_hms": "12:04",
       "text": "want to select this person and they can select unable to evaluate.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1103,7 +1103,7 @@
       "end_hms": "12:10",
       "text": "They can choose to reject the reviewers. So they looked at the information. They",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1115,7 +1115,7 @@
       "end_hms": "12:14",
       "text": "use their best judgment. They're like, this is not an appropriate person. For the pre-brand,",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1127,7 +1127,7 @@
       "end_hms": "12:21",
       "text": "they'll reject the reviewer. And that actually goes into our student reviewer inputs.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1139,7 +1139,7 @@
       "end_hms": "12:26",
       "text": "It'll leave the referee table good or student reviewer inputs, but already be flagged as student",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1151,7 +1151,7 @@
       "end_hms": "12:32",
       "text": "reject. So that's just kind of a way for assistant editors to be able to see who's getting rejected",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1163,7 +1163,7 @@
       "end_hms": "12:39",
       "text": "by Profi and who's not. And then we have the option for them to actually propose that reviewer",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1175,7 +1175,7 @@
       "end_hms": "12:50",
       "text": "as a referee. So once again, there's some custom code making sure that the student's not going to",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1187,7 +1187,7 @@
       "end_hms": "13:00",
       "text": "do somebody who's already proposed or a recent reviewer. And I believe also author, but because this",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1199,7 +1199,7 @@
       "end_hms": "13:05",
       "text": "already is coming from Profi, we kind of, we know it's not going to be an author of the pre-brand.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1211,7 +1211,7 @@
       "end_hms": "13:14",
       "text": "And we do have an automation running to make sure we can kind of cancel out or hide any",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1223,7 +1223,7 @@
       "end_hms": "13:20",
       "text": "AI suggested reviewers who have been recently invited. But there's just race conditions and",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1235,7 +1235,7 @@
       "end_hms": "13:26",
       "text": "things to take into account. So that's also some code that we have. Okay, so those are the",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1247,7 +1247,7 @@
       "end_hms": "13:32",
       "text": "proposing reviewers. The two, they're the three most important things for that. So where once",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1259,7 +1259,7 @@
       "end_hms": "13:38",
       "text": "proposed reviewers are proposed, where does that go within soft art? And the main one is the",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1271,7 +1271,7 @@
       "end_hms": "13:45",
       "text": "quality check portal. But you can see here, there's a lot of them. So these two are just testers",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1283,7 +1283,7 @@
       "end_hms": "13:50",
       "text": "right now, but their quality check portal quality check portal complete my quality checks.",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1295,7 +1295,7 @@
       "end_hms": "14:00",
       "text": "And that's it. So the quality check portal is where assistant editors and the central team go",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1307,7 +1307,7 @@
       "end_hms": "14:09",
       "text": "to view all of the proposed reviewers. I don't want to preview it, but I will just so we're on",
       "frame": {
-        "path": "frames/frame_00002.jpg",
+        "path": "out/frames/frame_00002.jpg",
         "time": 848.04
       }
     },
@@ -1319,7 +1319,7 @@
       "end_hms": "14:14",
       "text": "the same page. But you can see on the soft art end of things, this is a very simple page. It's",
       "frame": {
-        "path": "frames/frame_00003.jpg",
+        "path": "out/frames/frame_00003.jpg",
         "time": 849.24
       }
     },
@@ -1331,7 +1331,7 @@
       "end_hms": "14:20",
       "text": "some written text just so people kind of are on the same page about what they're seeing and then",
       "frame": {
-        "path": "frames/frame_00003.jpg",
+        "path": "out/frames/frame_00003.jpg",
         "time": 849.24
       }
     },
@@ -1343,7 +1343,7 @@
       "end_hms": "14:28",
       "text": "custom code. And I want to say if there is no nothing. Yeah, there's nothing in the upper head. It's",
       "frame": {
-        "path": "frames/frame_00003.jpg",
+        "path": "out/frames/frame_00003.jpg",
         "time": 849.24
       }
     },
@@ -1355,7 +1355,7 @@
       "end_hms": "14:37",
       "text": "just our quality check table is actually hard coded within this soft art field. And you can see",
       "frame": {
-        "path": "frames/frame_00004.jpg",
+        "path": "out/frames/frame_00004.jpg",
         "time": 874.96
       }
     },
@@ -1367,7 +1367,7 @@
       "end_hms": "14:46",
       "text": "here things that were not being rendered. Actually, the HTML here actually is being rendered.",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1379,7 +1379,7 @@
       "end_hms": "14:52",
       "text": "And it's pulling all the air table data through our own scripts and showing this user interface.",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1391,7 +1391,7 @@
       "end_hms": "15:01",
       "text": "It has a lot of room for improvement. So that's our quality check portal. This is only for",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1403,7 +1403,7 @@
       "end_hms": "15:11",
       "text": "in process preprints, so ones that are not yet complete. Then we also have the complete ones.",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1415,7 +1415,7 @@
       "end_hms": "15:16",
       "text": "And then finally, what we call my quality checks. And that's basically just for students",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1427,7 +1427,7 @@
       "end_hms": "15:24",
       "text": "being able to see it's it's the same idea. They have the in process and the complete. However,",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1439,7 +1439,7 @@
       "end_hms": "15:34",
       "text": "a student can't see other people's proposed reviewers specifically within this. It's for them",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1451,7 +1451,7 @@
       "end_hms": "15:40",
       "text": "to see the outcomes of their proposed reviewers. So it has very similar functionality, but just",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1463,7 +1463,7 @@
       "end_hms": "15:56",
       "text": "filtered for that. And that's I think that this preprint control panel is only visible to",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1475,7 +1475,7 @@
       "end_hms": "16:03",
       "text": "central team. And it's kind of a way for them to be able to manipulate some of the the preprints that",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1487,7 +1487,7 @@
       "end_hms": "16:09",
       "text": "and their information without actually having to log into the dev spa and",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1499,7 +1499,7 @@
       "end_hms": "16:16",
       "text": "change directly from air table. It also makes it a little bit safer just as the team grows.",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1511,7 +1511,7 @@
       "end_hms": "16:21",
       "text": "So they can go in and choose to make a preprint active, update what their",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1523,7 +1523,7 @@
       "end_hms": "16:27",
       "text": "ranking is. If there's preprint information that needs to be",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1535,7 +1535,7 @@
       "end_hms": "16:36",
       "text": "improved, they can do that. So you can control what item fields show up and then what actions.",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1547,7 +1547,7 @@
       "end_hms": "16:42",
       "text": "So you can go in and be like, what can they edit here? So here they can update the maintain",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1559,7 +1559,7 @@
       "end_hms": "16:46",
       "text": "email and information about the reviewer profile.",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1571,7 +1571,7 @@
       "end_hms": "17:01",
       "text": "This is a way, once again, for central to go and update information about our user database",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1583,7 +1583,7 @@
       "end_hms": "17:08",
       "text": "without having to log into air table directly. But yeah, they have options to set the person to active",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1595,7 +1595,7 @@
       "end_hms": "17:16",
       "text": "map to. Why wouldn't email work? Oh, because it's a text email.",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1607,7 +1607,7 @@
       "end_hms": "17:25",
       "text": "I'm just going to make sure that that's supposed to be. That's not working. Yeah, active,",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1619,7 +1619,7 @@
       "end_hms": "17:29",
       "text": "choose the number of units or team or domain or how they're participating. Just things that",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1631,7 +1631,7 @@
       "end_hms": "17:38",
       "text": "central might want to be able to do. Profi dashboard. Oh, this is just, that's embedded air table",
       "frame": {
-        "path": "frames/frame_00005.jpg",
+        "path": "out/frames/frame_00005.jpg",
         "time": 875.36
       }
     },
@@ -1643,7 +1643,7 @@
       "end_hms": "17:47",
       "text": "interfaces to see how profi is doing. Invited preprints. This isn't really in use and it should",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1655,7 +1655,7 @@
       "end_hms": "17:55",
       "text": "be something that it's kind of like we were ideating about what it would mean to improve the",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1667,7 +1667,7 @@
       "end_hms": "18:02",
       "text": "automations or the the after the facts of finding reviewers to actually receiving those reviews",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1679,7 +1679,7 @@
       "end_hms": "18:09",
       "text": "and for angel to be able to come in or angel or whoever is on the central team who's tracking",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1691,7 +1691,7 @@
       "end_hms": "18:14",
       "text": "through reviews that are sent out to come in and update those. And hopefully we'll have that",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1703,7 +1703,7 @@
       "end_hms": "18:23",
       "text": "integrated within our infrastructure infrastructure processes so that we can help alleviate manual",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1715,7 +1715,7 @@
       "end_hms": "18:34",
       "text": "lever. This help is just some intro things for people to have access to. They're quite outdated.",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1727,7 +1727,7 @@
       "end_hms": "18:38",
       "text": "And I think that articulate is kind of replacing that, but it's what we used to do.",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1739,7 +1739,7 @@
       "end_hms": "18:48",
       "text": "Productivity dashboard. This one's pretty important. You can see that there's a lot of different ideas",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1751,7 +1751,7 @@
       "end_hms": "18:54",
       "text": "on how to organize this information. But basically when central and assistant editors come in,",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1763,7 +1763,7 @@
       "end_hms": "19:01",
       "text": "they want to see a number of things. Student productivity, A productivity, the team performance,",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1775,7 +1775,7 @@
       "end_hms": "19:07",
       "text": "domain performance, just be able to search for students and team pitching. But if you go in here,",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1787,7 +1787,7 @@
       "end_hms": "19:16",
       "text": "all of it is custom code. So I wonder if, you know, because it's an embed link.",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1799,7 +1799,7 @@
       "end_hms": "19:25",
       "text": "But anyway, yeah, some of these are air table embeds. In fact, I think they're all air table embeds.",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1811,7 +1811,7 @@
       "end_hms": "19:34",
       "text": "Yeah, so it's either an interface or just an actual view that's being embedded here.",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1823,7 +1823,7 @@
       "end_hms": "19:44",
       "text": "For central to see any can preview to see what that is. And then central",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1835,7 +1835,7 @@
       "end_hms": "19:52",
       "text": "and performance. You might have to preview that. See, I think that this isn't also outdated. Okay,",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1847,7 +1847,7 @@
       "end_hms": "19:59",
       "text": "then finally, it's the achievement and training dashboard. So this is connected to its own base within",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1859,7 +1859,7 @@
       "end_hms": "20:10",
       "text": "air table called, I think, training dashboard, something like that. So when the person comes in,",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1871,7 +1871,7 @@
       "end_hms": "20:14",
       "text": "they're kind of being onboarded and they're learning along the way. We have information for",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1883,7 +1883,7 @@
       "end_hms": "20:21",
       "text": "their badges. So there's kind of things that are just like RID specific, reviewer proposal",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1895,7 +1895,7 @@
       "end_hms": "20:28",
       "text": "specific, and then preprint pitching specific. And as you can see, there's badges that people can",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1907,7 +1907,7 @@
       "end_hms": "20:37",
       "text": "earn at the top. You also have different tabs to see within one of those pillars. What is their",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1919,7 +1919,7 @@
       "end_hms": "20:46",
       "text": "progress? And how is that looking? I think the eduetech thing is a whole thing to discuss",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1931,7 +1931,7 @@
       "end_hms": "20:53",
       "text": "in its own separate thing. But yeah, people can track, you know, what they've been able to",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1943,7 +1943,7 @@
       "end_hms": "21:06",
       "text": "succeed in managing. And I think that's just about it. The one other thing I'll show is",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1955,7 +1955,7 @@
       "end_hms": "21:21",
       "text": "maybe not. For students to be able to get like the direct feedback of how many people have I,",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1967,7 +1967,7 @@
       "end_hms": "21:27",
       "text": "what's my total green light rate? Things like that. Just those important numbers that they know",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1979,7 +1979,7 @@
       "end_hms": "21:37",
       "text": "that they need to be tracking to be able to pass. Okay, thank you. And then I guess last but not",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -1991,7 +1991,7 @@
       "end_hms": "21:45",
       "text": "least is the header navigation. These are all the headers. And if you just want to see who can view",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -2003,7 +2003,7 @@
       "end_hms": "21:50",
       "text": "it, you can select that and see how it is organized.",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     },
@@ -2015,7 +2015,7 @@
       "end_hms": "21:57",
       "text": "Okay.",
       "frame": {
-        "path": "frames/frame_00006.jpg",
+        "path": "out/frames/frame_00006.jpg",
         "time": 1239.76
       }
     }
