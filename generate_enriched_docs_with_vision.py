@@ -137,30 +137,30 @@ class EnrichedDocGenerator:
                 print(f"    ✗ {error_msg}")
             return error_msg
     
-    def process_frames_in_batches(self, batch_size: int = 10) -> List[Dict]:
-        """Process frames in batches to avoid API limits."""
-        # Group frames by approximate time windows (every ~30 seconds)
-        frames_by_section = []
-        current_section = []
-        last_seconds = -1
+    def process_frames_in_batches(self, chapter_duration_minutes: float = 2.5) -> List[Dict]:
+        """Process frames in batches, breaking into chapters by time intervals."""
+        # Group frames into chapters based on time intervals (every ~2.5 minutes)
+        frames_by_chapter = []
+        current_chapter = []
+        chapter_start_seconds = 0
+        chapter_duration_seconds = chapter_duration_minutes * 60
         
         for frame_info in self.frames_data:
-            timestamp = frame_info['timestamp']
             seconds = frame_info['timestamp_seconds']
             
-            # Start new section if gap > 30 seconds
-            if last_seconds >= 0 and seconds - last_seconds > 30:
-                if current_section:
-                    frames_by_section.append(current_section)
-                current_section = []
+            # Start new chapter if we've exceeded the chapter duration
+            if seconds >= chapter_start_seconds + chapter_duration_seconds:
+                if current_chapter:
+                    frames_by_chapter.append(current_chapter)
+                current_chapter = []
+                chapter_start_seconds = seconds
             
-            current_section.append(frame_info)
-            last_seconds = seconds
+            current_chapter.append(frame_info)
         
-        if current_section:
-            frames_by_section.append(current_section)
+        if current_chapter:
+            frames_by_chapter.append(current_chapter)
         
-        return frames_by_section
+        return frames_by_chapter
     
     def generate_enriched_linear_walkthrough(self) -> str:
         """Generate enriched linear walkthrough using vision analysis."""
@@ -168,46 +168,46 @@ class EnrichedDocGenerator:
         print("Generating Enriched Linear Walkthrough with Gemini Vision")
         print("=" * 60)
         
-        # Process frames in sections
-        sections = self.process_frames_in_batches()
-        total_sections = len(sections)
-        print(f"Processing {total_sections} sections with {len(self.frames_data)} total frames\n")
+        # Process frames in chapters (break into ~2.5 minute intervals)
+        chapters = self.process_frames_in_batches(chapter_duration_minutes=2.5)
+        total_chapters = len(chapters)
+        print(f"Processing {total_chapters} chapters with {len(self.frames_data)} total frames\n")
         
         enriched_content = []
         enriched_content.append("# Enriched Linear Walkthrough - Comprehensive Analysis\n")
         enriched_content.append("This document provides a comprehensive walkthrough enriched with visual analysis of all screenshots.\n")
         enriched_content.append("It goes beyond the speaker's narration to identify Softr interface components, Airtable integrations, and UI details.\n\n")
         
-        section_num = 1
+        chapter_num = 1
         
         # Use tqdm for progress bar
-        with tqdm(total=total_sections, desc="Processing sections", unit="section") as pbar:
-            for section_frames in sections:
-                if not section_frames:
+        with tqdm(total=total_chapters, desc="Processing chapters", unit="chapter") as pbar:
+            for chapter_frames in chapters:
+                if not chapter_frames:
                     continue
                 
-                # Get time range for this section
-                first_frame = section_frames[0]
-                last_frame = section_frames[-1]
+                # Get time range for this chapter
+                first_frame = chapter_frames[0]
+                last_frame = chapter_frames[-1]
                 start_time = first_frame['timestamp']
                 end_time = last_frame['timestamp']
                 
-                pbar.set_description(f"Section {section_num}/{total_sections} ({start_time}-{end_time})")
-                print(f"\n[{section_num}/{total_sections}] Processing Section: {start_time} - {end_time}")
-                print(f"  Frames in section: {len(section_frames)}")
+                pbar.set_description(f"Chapter {chapter_num}/{total_chapters} ({start_time}-{end_time})")
+                print(f"\n[Chapter {chapter_num}/{total_chapters}] Processing: {start_time} - {end_time}")
+                print(f"  Frames in chapter: {len(chapter_frames)}")
                 
-                # Prepare transcript for this section
-                section_transcript = []
-                for frame_info in section_frames:
+                # Prepare transcript for this chapter (more comprehensive)
+                chapter_transcript = []
+                for frame_info in chapter_frames:
                     timestamp = frame_info['timestamp']
                     if timestamp in self.timestamp_to_item:
                         item = self.timestamp_to_item[timestamp]
-                        section_transcript.append(f"**[{timestamp}]** {item.get('text', '')}")
+                        chapter_transcript.append(f"**[{timestamp}]** {item.get('text', '')}")
                 
-                # Prepare images for this section
+                # Prepare images for this chapter
                 image_paths = []
                 frame_info_list = []
-                for frame_info in section_frames:
+                for frame_info in chapter_frames:
                     filename = frame_info['filename']
                     img_path = self.get_frame_path(filename)
                     if img_path.exists():
@@ -215,70 +215,87 @@ class EnrichedDocGenerator:
                         frame_info_list.append(frame_info)
                 
                 if not image_paths:
-                    section_num += 1
+                    chapter_num += 1
                     pbar.update(1)
                     continue
                 
-                # Limit images per API call (Gemini has limits)
+                # Limit images per API call (Gemini has limits) but try to get more frames per chapter
                 max_images_per_call = 16
                 if len(image_paths) > max_images_per_call:
-                    # Sample frames evenly
-                    step = len(image_paths) // max_images_per_call
-                    image_paths = image_paths[::max(step, 1)][:max_images_per_call]
-                    frame_info_list = frame_info_list[::max(step, 1)][:max_images_per_call]
+                    # Sample frames evenly to get representative coverage
+                    step = max(1, len(image_paths) // max_images_per_call)
+                    image_paths = image_paths[::step][:max_images_per_call]
+                    frame_info_list = frame_info_list[::step][:max_images_per_call]
                 
-                # Create prompt for this section
-                transcript_sample = "\n".join(section_transcript[:10])  # Limit transcript to avoid token limits
+                # Create comprehensive prompt for this chapter
+                transcript_sample = "\n".join(chapter_transcript[:20])  # More transcript context
                 
-                prompt = f"""You are analyzing screenshots from a Softr application walkthrough video. 
+                prompt = f"""You are analyzing screenshots from a Softr application walkthrough video to create a comprehensive chapter for a linear walkthrough document.
 
-**IMPORTANT**: Be verbose and detailed in your analysis. Describe everything you see in the screenshots, not just what the speaker mentions.
+**IMPORTANT**: Be extremely verbose and detailed. This is Chapter {chapter_num} of {total_chapters}. Create a complete, standalone chapter that matches the quality and depth of the other chapters in the document.
 
-The speaker's transcript for this section ({start_time} - {end_time}) is:
+The speaker's transcript for this chapter ({start_time} - {end_time}) is:
 {transcript_sample}
 
-Please analyze the {len(image_paths)} screenshots provided and create a comprehensive section that includes:
+Please analyze the {len(image_paths)} screenshots provided and create a comprehensive chapter that includes:
 
-1. **Chapter Title** - Based on the main topic/content
-2. **Key Takeaways** - What the speaker is explaining AND what you observe in the UI
-3. **Detailed Description** - Go beyond the narration to describe:
-   - Softr interface components visible (buttons, forms, lists, filters, etc.)
-   - Airtable integration points (if visible in the UI)
-   - UI/UX patterns and design elements
-   - Navigation elements and structure
-   - Data relationships and workflows visible in the interface
-   - Any technical details you can infer from the screenshots
-4. **Important UI Elements and Interactions** - Detailed breakdown of what's visible
-5. **Notable Timestamps** - Key moments with screenshot references
+## Chapter {chapter_num}: [Descriptive Title Based on Content]
 
-Focus on enriching the content beyond what the speaker says - identify what's actually visible in the screenshots that might not be mentioned.
+### Key Takeaways
+- 3-5 bullet points summarizing what the speaker explains AND what you observe in the UI
+- Focus on both narration and visual details
 
-Format as markdown with clear sections. For each screenshot, reference it using: ![Screenshot at TIMESTAMP](../frames/frame_XXXXX_TIMESTAMP.jpg) where TIMESTAMP matches the frame filename."""
+### Detailed Description
+Provide a rich, detailed description that goes beyond the narration to describe:
+- Softr interface components visible (buttons, forms, lists, filters, tables, etc.)
+- Airtable integration points (data sources, field types, relationships visible in the UI)
+- UI/UX patterns and design elements
+- Navigation elements and structure
+- Data relationships and workflows visible in the interface
+- Technical details you can infer from the screenshots
+- Any Softr-specific features or configurations visible
+
+### Important UI Elements and Interactions
+- Detailed breakdown of all visible UI elements
+- How users interact with the interface
+- Role-based differences if visible
+- Form fields, buttons, filters, and their purposes
+
+### Notable Timestamps
+- Key moments with screenshot references using format: ![Screenshot at TIMESTAMP](../frames/frame_XXXXX_TIMESTAMP.jpg)
+- Include multiple timestamps throughout the chapter
+- Reference specific frames that illustrate important points
+
+**Format Requirements:**
+- Use proper markdown formatting (## for chapter title, ### for subsections)
+- Include horizontal rule (---) at the end of the chapter
+- Reference screenshots using the exact format: ![Screenshot at TIMESTAMP](../frames/frame_XXXXX_TIMESTAMP.jpg)
+- Be as detailed and comprehensive as possible - this should be a rich, informative chapter"""
                 
                 # Call Gemini Vision
                 try:
-                    print(f"  Calling Gemini Vision API...")
+                    print(f"  Calling Gemini Vision API for Chapter {chapter_num}...")
                     vision_response = self.call_gemini_vision(prompt, image_paths, frame_info_list, verbose=True)
                     
                     if vision_response.startswith("Error"):
                         print(f"  ✗ {vision_response}")
-                        enriched_content.append(f"\n## Section {section_num}: {start_time} - {end_time}\n\n")
-                        enriched_content.append(f"*[Error processing this section: {vision_response}]*\n")
+                        enriched_content.append(f"\n## Chapter {chapter_num}: {start_time} - {end_time}\n\n")
+                        enriched_content.append(f"*[Error processing this chapter: {vision_response}]*\n")
                     else:
-                        enriched_content.append(f"\n## Section {section_num}: {start_time} - {end_time}\n\n")
+                        # Add the chapter content (Gemini should include the chapter header)
                         enriched_content.append(vision_response)
                         enriched_content.append("\n")
-                        print(f"  ✓ Successfully generated content for section {section_num}")
+                        print(f"  ✓ Successfully generated content for Chapter {chapter_num}")
                     
                 except Exception as e:
-                    print(f"  ✗ Exception processing section {section_num}: {e}")
+                    print(f"  ✗ Exception processing chapter {chapter_num}: {e}")
                     import traceback
                     print(f"  Traceback: {traceback.format_exc()}")
-                    # Fallback: add basic section
-                    enriched_content.append(f"\n## Section {section_num}: {start_time} - {end_time}\n\n")
-                    enriched_content.append(f"*[Error processing this section: {str(e)}]*\n")
+                    # Fallback: add basic chapter
+                    enriched_content.append(f"\n## Chapter {chapter_num}: {start_time} - {end_time}\n\n")
+                    enriched_content.append(f"*[Error processing this chapter: {str(e)}]*\n")
                 
-                section_num += 1
+                chapter_num += 1
                 pbar.update(1)
         
         return "\n".join(enriched_content)
