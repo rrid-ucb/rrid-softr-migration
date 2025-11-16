@@ -1,8 +1,7 @@
 # Videos (large files)
-design/softr.mp4
-design/*.mp4
-design/*.mov
-design/*.avi
+*.mp4
+*.mov
+*.avi
 
 # Virtual environment
 venv/
@@ -30,4 +29,3 @@ Thumbs.db
 # Project specific - optional (uncomment if you don't want to track output)
 # out/llm_docs/
 # out/frames/*.jpg
-*.mp4
