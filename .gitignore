@@ -1,1 +1,32 @@
+# Videos (large files)
 design/softr.mp4
+design/*.mp4
+design/*.mov
+design/*.avi
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific - optional (uncomment if you don't want to track output)
+# out/llm_docs/
+# out/frames/*.jpg

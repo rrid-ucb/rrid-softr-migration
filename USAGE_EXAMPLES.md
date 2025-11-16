@@ -5,6 +5,9 @@
 You already have `design/softr.mp4` processed. Generate LLM documentation:
 
 ```bash
+# Activate virtual environment
+source venv/bin/activate
+
 # With Gemini only (recommended to start)
 python3 llm_annotate.py out/annotated.json --models gemini
 
@@ -15,6 +18,7 @@ python3 llm_annotate.py out/annotated.json --models gemini openai
 ## Example 2: Full Pipeline on New Video
 
 ```bash
+source venv/bin/activate
 ./process_video.sh design/new-video.mp4
 ```
 
@@ -42,13 +46,13 @@ python3 llm_annotate.py out/annotated.json --models gemini openai --output-dir o
 Since you already have `out/annotated.json`, you can test the LLM generation right now:
 
 ```bash
+# Activate virtual environment
+source venv/bin/activate
+
 # Make sure API keys are set
 echo "Checking API keys..."
 echo "GEMINI_API_KEY: ${GEMINI_API_KEY:0:10}..."
 echo "OPENAI_API_KEY: ${OPENAI_API_KEY:0:10}..."
-
-# Install Python packages if needed
-pip install google-generativeai openai
 
 # Generate docs with Gemini (faster)
 python3 llm_annotate.py out/annotated.json --models gemini --output-dir out/test_gemini
@@ -147,6 +151,9 @@ diff out/llm_docs/prd_document_gemini.md out/llm_docs/prd_document_openai.md
 Ready to try it? Run:
 
 ```bash
+# Activate virtual environment
+source venv/bin/activate
+
 # Check your setup
 ./setup_and_test.sh
 

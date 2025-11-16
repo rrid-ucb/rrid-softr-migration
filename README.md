@@ -15,11 +15,22 @@ All with screenshots, timestamps, and detailed UI descriptions.
 ## Quick Start
 
 ```bash
-# 1. Setup (first time only)
-./setup_and_test.sh
+# 1. Setup virtual environment (first time only)
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
-# 2. Process a video
+# 2. Set API keys
+export GEMINI_API_KEY="your_key"
+export OPENAI_API_KEY="your_key"
+
+# 3. Process a video
 ./process_video.sh design/your-video.mp4
+```
+
+**For subsequent sessions:**
+```bash
+source venv/bin/activate
 ```
 
 That's it! You'll get comprehensive documentation in `out/llm_docs/`.
@@ -48,8 +59,13 @@ This project was created to document an existing Softr application for migration
 
 ### Dependencies
 ```bash
+# System dependencies
 brew install openai-whisper ffmpeg
-pip install google-generativeai openai
+
+# Python dependencies (in virtual environment)
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ### API Keys (for LLM processing)
@@ -69,12 +85,14 @@ export OPENAI_API_KEY="your_key"
 ├── QUICKSTART.md                # Quick reference
 ├── LLM_ANNOTATION_README.md     # Full documentation
 ├── VIDEO_ANNOTATION_README.md   # Basic workflow docs
+├── requirements.txt             # Python dependencies
 │
 ├── annotate_video.py            # Step 1: Basic annotation
 ├── llm_annotate.py              # Step 2: LLM processing
 ├── process_video.sh             # All-in-one pipeline
 ├── setup_and_test.sh            # Setup & testing
 │
+├── venv/                        # Virtual environment (created by setup)
 ├── design/                      # Input videos
 │   └── softr.mp4
 │
@@ -89,6 +107,11 @@ export OPENAI_API_KEY="your_key"
 ```
 
 ## Usage Examples
+
+**Always activate venv first:**
+```bash
+source venv/bin/activate
+```
 
 ### Process with default settings
 ```bash
@@ -172,7 +195,8 @@ Run the setup script to check your environment:
 
 Common issues:
 - **"GEMINI_API_KEY not set"** → `export GEMINI_API_KEY="your_key"`
-- **Missing packages** → `pip install google-generativeai openai`
+- **"No module named 'google'"** → Activate venv: `source venv/bin/activate`
+- **Missing packages** → `source venv/bin/activate && pip install -r requirements.txt`
 - **Poor transcription** → Use larger Whisper model or record in quieter environment
 - **Frames not matching** → Try lower scene threshold or fixed interval extraction
 

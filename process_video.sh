@@ -4,6 +4,11 @@
 
 set -e
 
+# Activate virtual environment if it exists
+if [ -d "venv" ]; then
+    source venv/bin/activate
+fi
+
 VIDEO_FILE="${1}"
 WHISPER_MODEL="${2:-base}"
 LLM_MODELS="${3:-gemini openai}"

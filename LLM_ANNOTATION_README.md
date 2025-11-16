@@ -18,8 +18,12 @@ This system takes a video walkthrough (e.g., a product demo or UI tour) and auto
 # Install system dependencies
 brew install openai-whisper ffmpeg
 
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
 # Install Python packages
-pip install google-generativeai openai
+pip install -r requirements.txt
 ```
 
 ### 2. Set API Keys
@@ -40,6 +44,9 @@ source ~/.zshrc
 ### 3. Process Your Video
 
 ```bash
+# Activate virtual environment
+source venv/bin/activate
+
 # Step 1: Transcribe video with timestamps
 whisper design/your-video.mp4 --model base --language en --output_format json --output_dir out
 
@@ -226,13 +233,22 @@ export GEMINI_API_KEY="your_actual_key_here"
 ### "Warning: google-generativeai not installed"
 
 ```bash
-pip install google-generativeai
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ### "Warning: openai not installed"
 
 ```bash
-pip install openai
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### "No module named 'google'" or "No module named 'openai'"
+
+Make sure virtual environment is activated:
+```bash
+source venv/bin/activate
 ```
 
 ### Frames not matching transcript timing

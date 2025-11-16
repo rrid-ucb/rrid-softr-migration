@@ -28,6 +28,21 @@ fi
 
 echo ""
 
+# Check for virtual environment
+echo "Checking virtual environment..."
+echo ""
+
+if [ -d "venv" ]; then
+    echo "✓ Virtual environment exists"
+    source venv/bin/activate
+    VENV_ACTIVE=1
+else
+    echo "✗ Virtual environment not found"
+    echo "  Will create during setup if needed"
+fi
+
+echo ""
+
 # Check Python packages
 echo "Checking Python packages..."
 echo ""
@@ -36,7 +51,7 @@ if python3 -c "import google.generativeai" 2>/dev/null; then
     echo "✓ google-generativeai installed"
 else
     echo "✗ google-generativeai not installed"
-    echo "  Install with: pip install google-generativeai"
+    echo "  Install with: pip install -r requirements.txt"
     MISSING_PY=1
 fi
 
@@ -44,7 +59,7 @@ if python3 -c "import openai" 2>/dev/null; then
     echo "✓ openai installed"
 else
     echo "✗ openai not installed"
-    echo "  Install with: pip install openai"
+    echo "  Install with: pip install -r requirements.txt"
     MISSING_PY=1
 fi
 
@@ -84,15 +99,25 @@ fi
 
 if [ -n "$MISSING_PY" ]; then
     echo ""
-    echo "⚠ Missing Python packages. Install with:"
-    echo "  pip install google-generativeai openai"
+    echo "⚠ Missing Python packages."
     echo ""
     echo "Install now? (y/n)"
     read -r response
     if [[ "$response" =~ ^[Yy]$ ]]; then
-        pip install google-generativeai openai
+        # Create venv if it doesn't exist
+        if [ ! -d "venv" ]; then
+            echo "Creating virtual environment..."
+            python3 -m venv venv
+        fi
+        
+        echo "Activating virtual environment..."
+        source venv/bin/activate
+        
+        echo "Installing packages from requirements.txt..."
+        pip install -r requirements.txt
         echo ""
-        echo "✓ Python packages installed"
+        echo "✓ Python packages installed in virtual environment"
+        echo "✓ To use later, run: source venv/bin/activate"
         echo ""
     fi
 fi

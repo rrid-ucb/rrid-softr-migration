@@ -3,13 +3,24 @@
 ## Prerequisites
 
 ```bash
-# Install dependencies
+# Install system dependencies
 brew install openai-whisper ffmpeg
-pip install google-generativeai openai
+
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install Python packages
+pip install -r requirements.txt
 
 # Set API keys (required for LLM step)
 export GEMINI_API_KEY="your_gemini_key"
 export OPENAI_API_KEY="your_openai_key"
+```
+
+**For subsequent sessions, just activate venv:**
+```bash
+source venv/bin/activate
 ```
 
 ## One-Line Command
@@ -99,7 +110,13 @@ export GEMINI_API_KEY="your_key_here"
 
 **Missing packages?**
 ```bash
-pip install google-generativeai openai
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**Virtual environment not activated?**
+```bash
+source venv/bin/activate
 ```
 
 ## Full Documentation
