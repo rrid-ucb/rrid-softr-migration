@@ -77,7 +77,10 @@
 ## Screenshots and Context
 
 1. **[00:47] Landing Page:** Allows students and assistant editors access to proposing peer reviewers by listing all available functions.
+![Screenshot at 00:47](../frames/frame_00007_00-47.jpg)
 2. **[04:57] Details Page for Preprint:** Emily and John use this page to input or review proposed peer reviewers on specific preprints.
+![Screenshot at 04:57](../frames/frame_00039_04-57.jpg)
 3. **[14:52] Quality Check Portal:** Dr. Sarah’s primary tool for overseeing the quality of proposed reviewers.
+![Screenshot at 14:52](../frames/frame_00116_14-52.jpg)
 
 This document captures essential personas, user stories, and workflows relevant to the RID software application, aiming to improve task efficiency for academic peer review processes.

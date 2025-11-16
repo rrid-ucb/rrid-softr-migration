@@ -16,12 +16,10 @@ The speaker begins by introducing the software application and setting the expec
 
 ### Notable Timestamps
 - **[00:00]** - Introduction to the walkthrough.
-
-![Screenshot at 00:00](../frames/frame_00001.jpg)
+![Screenshot at 00:00](../frames/frame_00001_00-00.jpg)
 
 - **[00:40]** - Brief mention of utility features.
-
-![Screenshot at 00:40](../frames/frame_00001.jpg)
+![Screenshot at 00:40](../frames/frame_00006_00-40.jpg)
 
 
 ---
@@ -44,12 +42,10 @@ The speaker explains the presence of dual views in the application. Students and
 
 ### Notable Timestamps
 - **[00:47]** - Explanation of landing page efficiency.
-
-![Screenshot at 00:47](../frames/frame_00001.jpg)
+![Screenshot at 00:47](../frames/frame_00007_00-47.jpg)
 
 - **[01:06]** - Introduction of user roles and views.
-
-![Screenshot at 01:06](../frames/frame_00001.jpg)
+![Screenshot at 01:06](../frames/frame_00009_01-06.jpg)
 
 
 ---
@@ -72,16 +68,13 @@ Discussion moves into the specific workflows related to preprint handling. The s
 
 ### Notable Timestamps
 - **[01:36]** - Introduction of three main preprint channels.
-
-![Screenshot at 01:36](../frames/frame_00001.jpg)
+![Screenshot at 01:36](../frames/frame_00012_01-36.jpg)
 
 - **[02:14]** - Navigation through preprint list features.
-
-![Screenshot at 02:14](../frames/frame_00001.jpg)
+![Screenshot at 02:14](../frames/frame_00017_02-14.jpg)
 
 - **[03:11]** - Explanation of visibility settings for preprints.
-
-![Screenshot at 03:11](../frames/frame_00001.jpg)
+![Screenshot at 03:11](../frames/frame_00025_03-11.jpg)
 
 
 ---
@@ -104,12 +97,10 @@ The article details page is explored, detailing the metadata available such as t
 
 ### Notable Timestamps
 - **[05:04]** - Description of article details and add reviewers interface.
-
-![Screenshot at 05:04](../frames/frame_00001.jpg)
+![Screenshot at 05:04](../frames/frame_00040_05-04.jpg)
 
 - **[05:39]** - Review of metadata components and conflict management.
-
-![Screenshot at 05:39](../frames/frame_00001.jpg)
+![Screenshot at 05:39](../frames/frame_00044_05-39.jpg)
 
 
 ---
@@ -132,12 +123,10 @@ The workflow for proposing reviewers includes checking conflicts of interest and
 
 ### Notable Timestamps
 - **[07:08]** - Start of proposed reviewer form discussion.
-
-![Screenshot at 07:08](../frames/frame_00002.jpg)
+![Screenshot at 07:08](../frames/frame_00055_07-08.jpg)
 
 - **[08:04]** - Explanation of embedded scripts within the page.
-
-![Screenshot at 08:04](../frames/frame_00002.jpg)
+![Screenshot at 08:04](../frames/frame_00062_08-04.jpg)
 
 
 ---
@@ -160,12 +149,10 @@ The speaker delves into the portal where quality checks are performed. The role-
 
 ### Notable Timestamps
 - **[13:32]** - Introduction of quality check portal.
-
-![Screenshot at 13:32](../frames/frame_00002.jpg)
+![Screenshot at 13:32](../frames/frame_00105_13-32.jpg)
 
 - **[14:09]** - Discussion on role-based access for students and editors.
-
-![Screenshot at 14:09](../frames/frame_00003.jpg)
+![Screenshot at 14:09](../frames/frame_00110_14-09.jpg)
 
 
 ---
@@ -188,12 +175,10 @@ This chapter discusses multiple dashboards used to monitor productivity and trai
 
 ### Notable Timestamps
 - **[18:34]** - Description of dashboard functionalities.
-
-![Screenshot at 18:34](../frames/frame_00006.jpg)
+![Screenshot at 18:34](../frames/frame_00144_18-34.jpg)
 
 - **[20:21]** - Explanation of badge system and student feedback mechanisms.
-
-![Screenshot at 20:21](../frames/frame_00006.jpg)
+![Screenshot at 20:21](../frames/frame_00158_20-21.jpg)
 
 
 ## Chapter 8: Navigation and Interface
@@ -211,8 +196,7 @@ The speaker covers the layout of navigation menus and how it directs users effic
 
 ### Notable Timestamps
 - **[21:37]** - Overview of header navigation and role-based access.
-
-![Screenshot at 21:37](../frames/frame_00006.jpg)
+![Screenshot at 21:37](../frames/frame_00166_21-37.jpg)
 
 
 ---
