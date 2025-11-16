@@ -32,7 +32,8 @@ Thumbs.db
 
 # New structure
 output/
-config/
+# Runtime config (not source code)
+~/.video_annotation/
 *.pyc
 __pycache__/
 .pytest_cache/
