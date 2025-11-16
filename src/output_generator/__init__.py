@@ -1,0 +1,2 @@
+"""Output HTML browser generator."""
+

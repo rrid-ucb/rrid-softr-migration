@@ -150,6 +150,18 @@ class VideoProcessor:
             import traceback
             traceback.print_exc()
         
+        # Step 6: Generate HTML browser
+        print("\n[6/6] Generating HTML browser...")
+        try:
+            from ..output_generator.html_browser import HTMLBrowserGenerator
+            browser_gen = HTMLBrowserGenerator(self.output_base)
+            index_path = browser_gen.generate_html_browser()
+            print(f"  ✓ HTML browser: {index_path}")
+        except Exception as e:
+            print(f"  ⚠ HTML browser generation failed: {e}")
+            import traceback
+            traceback.print_exc()
+        
         print(f"\n✓ Complete! Output: {output_dir}")
         return output_dir
     
