@@ -1,409 +1,271 @@
-# Product Requirements Document (PRD)
+# Product Requirements Document (PRD) for the Software Application
 
 ## Executive Summary
 
-This document outlines the requirements for rebuilding the reviewed software application, as illustrated in a video walkthrough. The software is designed to facilitate a peer review process for scientific preprints, providing distinct user roles with tailored interfaces and functionalities. The following documentation details each screen, its components, functionalities, and interactions necessary for developers to recreate the application's UI and logic.
+This document provides a detailed product requirements specification for rebuilding the software application demonstrated in a video walkthrough. The goal is to capture the essential pages, functionalities, and design elements of the application to guide the development of a new version from scratch. This document outlines the distinct pages, user interactions, business logic, and data models implied by the UI, ensuring a comprehensive understanding of the existing application structure.
 
 ## Table of Contents
 
 1. [Landing Page](#landing-page)
-2. [Preprints List Page](#preprints-list-page)
-3. [Article Details and Add Reviewers Page](#article-details-and-add-reviewers-page)
+2. [Preprints List](#preprints-list)
+3. [Article Details and Add Reviewers](#article-details-and-add-reviewers)
 4. [Propose a Reviewer Form](#propose-a-reviewer-form)
-5. [Evaluate Suggested Reviewer Page](#evaluate-suggested-reviewer-page)
-6. [Quality Check Portal](#quality-check-portal)
-7. [Preprint Control Panel](#preprint-control-panel)
-8. [Productivity Dashboard](#productivity-dashboard)
-9. [Achievement and Training Dashboard](#achievement-and-training-dashboard)
-
----
+5. [Quality Check Portal](#quality-check-portal)
+6. [Preprint Control Panel](#preprint-control-panel)
+7. [Productivity Dashboard](#productivity-dashboard)
+8. [Achievement and Training Dashboard](#achievement-and-training-dashboard)
+9. [Technical Requirements](#technical-requirements)
+10. [User Interactions and Workflows](#user-interactions-and-workflows)
+11. [Data Models Implied by the UI](#data-models-implied-by-the-ui)
 
 ## 1. Landing Page
 
-### Purpose
+**Purpose:**  
+The landing page serves as the entry point for the software, providing navigation to different user roles and functionalities.
 
-To provide the users with an entry point, displaying options based on their roles—students and assistant editors.
+**URL/Navigation Path:** Not explicitly mentioned.
 
-### URL/Navigation Path
+**Visual Layout:**
+- Two main views: one for students and another for assistant editors.
 
-- Not explicitly mentioned in the video.
+**UI Components:**
+- Navigation menus
+- Links to student and assistant editor views
 
-### Visual Layout Description
+**Features and Functionality:**
+- Differentiated views based on user role
+- Access to different functionalities: proposed reviewers list, quality checks, etc.
 
-- Header with navigation options
-- Two main views toggle: Students View and Assistant Editors View
+**Data Displayed:**
+- User role-specific options
 
-### UI Components
+**User Interactions:**
+- Navigation to other pages based on user role
 
-- Two views selector (Students, Assistant Editors)
+**Business Logic:**
+- Role-based content filtering
 
-### Features and Functionality
+## 2. Preprints List
 
-- Display of available options based on user role
-- Redirection to specific functionalities like proposing reviewers or quality checking
+**Purpose:**  
+Displays a list of preprints with options to add peer reviewers and manage entries.
 
-### Data Displayed
+**URL/Navigation Path:** Preprint List Page
 
-- User role-driven content
+**Visual Layout:**
+- List of preprints with buttons for managing peer reviewers
+- Conditional filters
 
-### User Interactions Available
+**UI Components:**
+- Preprint listings
+- "Add Reviewers" buttons
+- Filters for visibility and selection
 
-- Selecting user role
-- Navigating to specific functions through view toggles
+**Features and Functionality:**
+- Separate active preprints, preprints in queue, and prioritized preprints
+- Visibility options for students and assistant editors
 
-### Business Logic and Rules
+**Data Displayed:**
+- Preprint details including title, status, and review buttons
 
-- Various functionalities are role-dependent
+**User Interactions:**
+- Filter and view preprints
+- Add reviewers for assistant editors
 
-### Edge Cases or Validation Mentioned
-
-- Not discussed
-
-## 2. Preprints List Page
-
-### Purpose
-
-Displays the list of preprints and allows users to add reviewers or view preprints.
-
-### URL/Navigation Path
-
-- Links to different sections like "Preprints List"
-  
-### Visual Layout Description
-
-- List of preprints, categorized into "Active Preprints" and "Preprints in Queue"
-
-### UI Components
-
-- Preprints listing
-- "Add Reviewers" button
-- Filters and conditional displays
-
-### Features and Functionality
-
-- Display of all preprints accessible to users
+**Business Logic:**
 - Role-based permissions for adding reviewers
 
-### Data Displayed
+**Edge Cases/Validation:**
+- Restrict button access based on user role
 
-- List of preprints and their current status
+## 3. Article Details and Add Reviewers
 
-### User Interactions Available
+**Purpose:**  
+Display detailed information about a specific preprint and allow the addition of reviewers.
 
-- Adding reviewers
-- Viewing specific preprints
+**URL/Navigation Path:** /article-details/{preprint-ID}
 
-### Business Logic and Rules
+**Visual Layout:**
+- Preprint information details
+- Add reviewers functionality
 
-- Role restrictions on adding reviewers
-- Priority and visibility determined by the user role
+**UI Components:**
+- Title, DUI, authors, affiliation details
+- AI-suggested reviewers list
 
-### Edge Cases or Validation Mentioned
+**Features and Functionality:**
+- Show preprint details and related articles
+- Display ideal reviewer profile
+- Manage reviewer suggestions
 
-- Not all preprints have "Add Reviewers" buttons for students
+**Data Displayed:**
+- Preprint ID, related articles, reviewer list
 
-## 3. Article Details and Add Reviewers Page
+**User Interactions:**
+- Add or remove reviewers
 
-### Purpose
+**Business Logic:**
+- Preprint-specific data fetching
+- Validation for reviewer additions
 
-To display specific details of a selected preprint and facilitate adding reviewers.
-
-### URL/Navigation Path
-
-- Preprint details are accessed via preprint ID in URL
-
-### Visual Layout Description
-
-- Detailed view of a preprint including metadata and AI-suggested reviewers.
-
-### UI Components
-
-- Fields like title, authors, affiliations
-- Reviewers list
-- "Add Reviewer" interface
-
-### Features and Functionality
-
-- Display of preprint details
-- Options to manage reviewer lists
-- Integration with external data sources for metadata
-
-### Data Displayed
-
-- Preprint metadata
-- AI-suggested reviewers
-
-### User Interactions Available
-
-- Reviewing preprint details
-- Adding or managing reviewers
-
-### Business Logic and Rules
-
-- Reviewer additions are validated against conflicts of interest
-
-### Edge Cases or Validation Mentioned
-
-- Preformat changes impact parsing
+**Edge Cases/Validation:**
+- Check for conflicts of interest
 
 ## 4. Propose a Reviewer Form
 
-### Purpose
+**Purpose:**  
+Facilitates proposing a peer reviewer for a preprint.
 
-For adding new reviewers while checking for conflicts of interest.
+**URL/Navigation Path:** /propose-reviewer
 
-### URL/Navigation Path
+**Visual Layout:**
+- Form to propose reviewers
 
-- Accessed via the "Add Reviewers" action
+**UI Components:**
+- Input fields for reviewer details (name, email, etc.)
+- Submit button
 
-### Visual Layout Description
+**Features and Functionality:**
+- Conflict of interest check
+- Validation for existing reviewers
 
-- Form fields for inputting reviewer information
-- Conflict of interest checks
+**Data Displayed:**
+- Input fields pre-populated based on existing data
 
-### UI Components
-
-- Input fields: First Name, Last Name, Email
-- Conflict of Interest (COI) checker
-
-### Features and Functionality
-
-- Checking for COI
+**User Interactions:**
 - Form submission
+- Real-time feedback on conflict matches
 
-### Data Displayed
+**Business Logic:**
+- Validation against existing records
+- Conflict of interest detection
 
-- Input data and COI feedback
+**Edge Cases/Validation:**
+- Prevent duplicate entries
 
-### User Interactions Available
+## 5. Quality Check Portal
 
-- Entering reviewer details
-- COI validation
+**Purpose:**  
+Centralized portal for managing proposed reviewers' quality checks.
 
-### Business Logic and Rules
+**URL/Navigation Path:** /quality-check
 
-- Validation to prevent adding authors as reviewers
-- Scripts embedded for COI checking
+**Visual Layout:**
+- List of proposed reviewers for quality checks
+- Simple text instructions
 
-### Edge Cases or Validation Mentioned
+**UI Components:**
+- Table of proposed reviewers
+- Filter options
 
-- Validation feedback before proceeding
+**Features and Functionality:**
+- Display in-progress and completed quality checks
+- Manage reviewer evaluations
 
-## 5. Evaluate Suggested Reviewer Page
+**Data Displayed:**
+- List and status of reviews
 
-### Purpose
+**User Interactions:**
+- Filter and manage reviewers
 
-To evaluate the suitability of AI-suggested reviewers.
+**Business Logic:**
+- Quality check based on user role
 
-### URL/Navigation Path
+## 6. Preprint Control Panel
 
-- Reached via "Evaluate" action on suggested reviewers
+**Purpose:**  
+Allows central team to manage preprint information and statuses.
 
-### Visual Layout Description
+**URL/Navigation Path:** Not explicitly mentioned.
 
-- Reviewer details displayed with evaluation options
+**Visual Layout:**
+- Controls for preprint status and information
 
-### UI Components
+**UI Components:**
+- Buttons and fields for status updates
 
-- Reviewer information
-- Evaluation options: Unable to Evaluate, Reject, Propose
+**Features and Functionality:**
+- Activate preprints
+- Update ranking and email information
 
-### Features and Functionality
+**Data Displayed:**
+- Preprint fields and status
 
-- Evaluate AI-suggested reviewers
-- Display pertinent reviewer information
+**User Interactions:**
+- Update preprint information
 
-### Data Displayed
+**Business Logic:**
+- Restricted access for central team only
 
-- Reviewer profile and associated metadata
+## 7. Productivity Dashboard
 
-### User Interactions Available
+**Purpose:**  
+Displays productivity metrics related to student and team activities.
 
-- Reviewing and evaluating AI suggestions
+**URL/Navigation Path:** Not explicitly mentioned.
 
-### Business Logic and Rules
+**Visual Layout:**
+- Embedded Airtable views and metrics
 
-- Coding fixes for proposing verified suggestions
+**UI Components:**
+- Visual charts and tables
 
-### Edge Cases or Validation Mentioned
+**Features and Functionality:**
+- Show individual and team productivity
+- Drill down into specific areas
 
-- Automation checks overlapping with existing reviewers
+**Data Displayed:**
+- Productivity metrics and statistics
 
-## 6. Quality Check Portal
+**User Interactions:**
+- Navigate through productivity insights
 
-### Purpose
+**Business Logic:**
+- Metric calculations and thresholds
 
-To allow review and quality checking by assistant editors and central team.
+## 8. Achievement and Training Dashboard
 
-### URL/Navigation Path
+**Purpose:**  
+Tracks achievements and training progress for users.
 
-- Internal URL for assistant editors and central team
+**URL/Navigation Path:** Not explicitly mentioned.
 
-### Visual Layout Description
+**Visual Layout:**
+- Training status and badges display
 
-- List view with proposed reviewers for quality checks
+**UI Components:**
+- Progress bars, badges, tabs
 
-### UI Components
+**Features and Functionality:**
+- Track badges earned and training progression
 
-- Reviewer list with statuses
-- Filters for in-process and complete preprints
+**Data Displayed:**
+- Badge and training status
 
-### Features and Functionality
+**User Interactions:**
+- View and track progress
 
-- Reviewer quality checks
-- Status updates on reviews
+**Business Logic:**
+- Progression logic for learning tracks
 
-### Data Displayed
+## 9. Technical Requirements
 
-- Review details with progress features
+- Integration with Airtable for data management
+- Custom scripts for data fetching and validation
+- Responsive design for multiple user roles
 
-### User Interactions Available
+## 10. User Interactions and Workflows
 
-- Quality checking workflows
+- Role-based navigation and page views
+- Form submissions with real-time validation
+- Access control for specific functionalities
 
-### Business Logic and Rules
+## 11. Data Models Implied by the UI
 
-- Access restricted to central team
-
-### Edge Cases or Validation Mentioned
-
-- Rendering issues noted in certain conditions
-
-## 7. Preprint Control Panel
-
-### Purpose
-
-To manage preprint visibility and status by the central team.
-
-### URL/Navigation Path
-
-- Admin-specific access, not public
-
-### Visual Layout Description
-
-- Control options for preprint information management
-
-### UI Components
-
-- Management controls for preprint activation and ranking
-
-### Features and Functionality
-
-- Edit preprint status and details
-
-### Data Displayed
-
-- Summary information and actions on preprints
-
-### User Interactions Available
-
-- Editing and managing preprint visibility
-
-### Business Logic and Rules
-
-- Central team exclusive controls
-
-### Edge Cases or Validation Mentioned
-
-- Update functions sometimes non-functional
-
-## 8. Productivity Dashboard
-
-### Purpose
-
-To track productivity metrics of students and editorial teams.
-
-### URL/Navigation Path
-
-- Specific path for productivity tracking
-
-### Visual Layout Description
-
-- Dashboard view with multiple metrics
-
-### UI Components
-
-- Productivity metrics and domain performance indicators
-- Custom code embeds
-
-### Features and Functionality
-
-- Visualization of productivity metrics
-- Performance tracking for central and assistant editors
-
-### Data Displayed
-
-- Metrics of various users and domains
-
-### User Interactions Available
-
-- Interact with embedded productivity metrics
-
-### Business Logic and Rules
-
-- Embeds for data visualization
-
-### Edge Cases or Validation Mentioned
-
-- Outdated information indicated in demos
-
-## 9. Achievement and Training Dashboard
-
-### Purpose
-
-Tracks user achievements and provides ongoing training feedback.
-
-### URL/Navigation Path
-
-- Base linked to air table
-
-### Visual Layout Description
-
-- Badge and progress tracking interface
-
-### UI Components
-
-- Badges for milestones, progress indicators
-
-### Features and Functionality
-
-- Badge award system
-- Progress monitoring for user training
-
-### Data Displayed
-
-- Badge acquisition and user training progress
-
-### User Interactions Available
-
-- Monitoring and inspiring user engagement
-
-### Business Logic and Rules
-
-- Encouragement through gamification elements
-
-### Edge Cases or Validation Mentioned
-
-- Missing progress notations
+- User roles and permissions data
+- Preprint metadata and status tracking
+- Reviewer suggestions and evaluation data
 
 ---
 
-## Technical Requirements
-
-- The application must interface with Airtable for data management.
-- Custom scripts are embedded for dynamic interactions.
-- User role-specific access control to dictate UI/functional accessibility.
-
-## User Interactions and Workflows
-
-- The focus is on intuitive user flows based on user roles.
-- Real-time data rendering and validation to ensure input integrity.
-- Seamlessly toggle across various views and paths, fitting the predefined user role paths.
-
-## Data Models Implied by the UI
-
-- User profiles with roles (students, assistant editors, central team)
-- Preprints with associated metadata and status fields
-- Reviewer profiles and evaluator records
-
-Please refer to the screenshots at given timestamps in the video transcript for visual layout guidance.
+This PRD, based on the video walkthrough, provides a comprehensive guide to the existing application structure. It is intended for developers to rebuild the application with all essential features and functionalities accurately.

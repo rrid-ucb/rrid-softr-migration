@@ -35,8 +35,8 @@ class VideoAnnotationProcessor:
     """Process annotated video transcripts with LLMs to generate comprehensive documentation."""
     
     def __init__(self, annotated_json_path: str, output_dir: str):
-        self.annotated_json_path = Path(annotated_json_path)
-        self.output_dir = Path(output_dir)
+        self.annotated_json_path = Path(annotated_json_path).resolve()
+        self.output_dir = Path(output_dir).resolve()
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         # Load annotated data
@@ -294,6 +294,97 @@ Output a complete Markdown document with personas, user stories, and journeys.
         
         return result
     
+    def embed_screenshots_in_markdown(self, markdown_content: str) -> str:
+        """Post-process markdown to embed screenshot image references at relevant timestamps."""
+        # Remove markdown code fence if LLM wrapped output in it
+        content = markdown_content.strip()
+        if content.startswith('```markdown'):
+            content = content[11:]  # Remove opening fence
+        if content.startswith('```'):
+            content = content[3:]   # Remove opening fence
+        if content.endswith('```'):
+            content = content[:-3]  # Remove closing fence
+        content = content.strip()
+        
+        lines = content.split('\n')
+        result = []
+        
+        # Pattern to find timestamp references like [00:00], **[01:23]**, etc.
+        import re
+        # Matches: [00:00], **[00:00]**, [00:00:00]
+        timestamp_pattern = re.compile(r'\[(\d{1,2}:\d{2}(?::\d{2})?)\]')
+        
+        for i, line in enumerate(lines):
+            result.append(line)
+            
+            # Look for timestamp references in bullet points or headings
+            matches = timestamp_pattern.findall(line)
+            if matches and (line.strip().startswith('-') or line.strip().startswith('*') or '###' in line):
+                # Get the first timestamp in the line
+                ts = matches[0]
+                
+                # Find a frame close to this timestamp
+                frame = self.find_frame_for_timestamp(ts)
+                if frame:
+                    # Don't add image if next line already has one
+                    next_line = lines[i + 1] if i + 1 < len(lines) else ""
+                    if not next_line.strip().startswith('!['):
+                        # Make path relative to output markdown file (out/llm_docs/*.md -> out/frames/*.jpg = ../frames/*.jpg)
+                        frame_path = Path(frame['path'])
+                        # Get just the filename from the frame path
+                        frame_filename = frame_path.name
+                        rel_path = f"../frames/{frame_filename}"
+                        result.append(f"\n![Screenshot at {ts}]({rel_path})\n")
+        
+        return '\n'.join(result)
+    
+    def find_frame_for_timestamp(self, timestamp_str: str) -> Optional[Dict]:
+        """Find the frame closest to a given timestamp string (HH:MM or HH:MM:SS)."""
+        # Parse timestamp to seconds
+        parts = timestamp_str.split(':')
+        if len(parts) == 2:
+            minutes, seconds = int(parts[0]), int(parts[1])
+            target_time = minutes * 60 + seconds
+        elif len(parts) == 3:
+            hours, minutes, seconds = int(parts[0]), int(parts[1]), int(parts[2])
+            target_time = hours * 3600 + minutes * 60 + seconds
+        else:
+            return None
+        
+        # Find closest frame
+        best_frame = None
+        min_diff = float('inf')
+        
+        for item in self.items:
+            if item.get('frame'):
+                frame_time = item['start']
+                diff = abs(frame_time - target_time)
+                if diff < min_diff:
+                    min_diff = diff
+                    frame_path = item['frame']['path']
+                    
+                    # Handle path resolution
+                    if not Path(frame_path).is_absolute():
+                        # If path already starts with 'out/', use from project root
+                        if frame_path.startswith('out/'):
+                            # Get project root (parent of annotated.json's parent)
+                            project_root = self.annotated_json_path.parent.parent
+                            frame_path = project_root / frame_path
+                        else:
+                            # Otherwise relative to annotated.json
+                            frame_path = self.annotated_json_path.parent / frame_path
+                    
+                    if Path(frame_path).exists():
+                        best_frame = {
+                            'path': str(frame_path),
+                            'timestamp': item['start_hms']
+                        }
+        
+        # Only return if within 30 seconds
+        if min_diff <= 30:
+            return best_frame
+        return None
+    
     def generate_all_documents(self, providers: List[str] = ["gemini"]):
         """Generate all three documents with specified LLM providers."""
         documents = {
@@ -310,9 +401,16 @@ Output a complete Markdown document with personas, user stories, and journeys.
                 
                 result = generator_func(provider=provider)
                 
+                # Embed screenshots at timestamp references
+                print(f"Embedding screenshots...")
+                result_with_screenshots = self.embed_screenshots_in_markdown(result)
+                screenshots_added = result_with_screenshots.count('![Screenshot')
+                if screenshots_added > 0:
+                    print(f"  ✓ Added {screenshots_added} screenshots")
+                
                 # Save output
                 output_file = self.output_dir / f"{doc_type}_{provider}.md"
-                output_file.write_text(result)
+                output_file.write_text(result_with_screenshots)
                 print(f"✓ Saved to {output_file}\n")
         
         # Generate comparison summary

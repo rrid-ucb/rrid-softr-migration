@@ -1,178 +1,220 @@
-```markdown
-# Software Walkthrough Documentation
+# Comprehensive Linear Walkthrough of Software Application
 
-## Chapter 1: Introduction to the Software
+## Chapter 1: Introduction and Overview
 
-### Overview of the Tutorial
-- **Key Takeaways:**
-  - Introduction to the software walkthrough
-  - Focus on specific areas: top for settings, bottom for utility and badge systems
-  - Mention of integral pages like landing and utility pages
+### Key Takeaways
+- The walkthrough provides a high-level overview of the software's functionalities.
+- Main focus is on the top section features.
+- Badge system and utility pages are briefly mentioned but not detailed.
+- Software manages account settings and sign-ups autonomously.
 
-- **Description:**
-  The speaker introduces the walkthrough and sets the agenda to focus on understanding the top part of the software for essential functionalities and the bottom for utility and badge systems.
+### Detailed Description
+The speaker begins by introducing the software application and setting the expectation of a tutorial walkthrough. The primary focus will be on functionalities at the top section of the application. The utility sections, such as the badge system and account settings, are briefly mentioned as areas not covered in detail.
 
-- **UI Elements:**
-  - Landing page at the top of the list
-  - Various views for users (students and assistant editors)
-  
-- **Timestamps:**
-  - **[00:00]**: Introduction to the walkthrough
-  - **[00:40]**: Explanation of top elements like the landing page
+### Important UI Elements and Interactions
+- No specific UI elements are detailed at this stage, as the introduction is more general.
 
-## Chapter 2: User Roles and Interfaces
+### Notable Timestamps
+- **[00:00]** - Introduction to the walkthrough.
 
-### Views for Different User Roles
-- **Key Takeaways:**
-  - Distinction between two primary user roles: students and assistant editors
-  - Separate interfaces for viewing and proposing reviewers
-  - Channels for contributing are semi-structured with input and quality check tasks
+![Screenshot at 00:00](../frames/frame_00001.jpg)
 
-- **Description:**
-  The software provides different interfaces for students and assistant editors, each with its own set of permissions and views. Crucial tasks include inputting peer reviews and performing quality checks.
+- **[00:40]** - Brief mention of utility features.
 
-- **UI Elements:**
-  - Tabs for student vs. editor view
-  - Buttons like "propose reviewers" and "quality check reviewers"
+![Screenshot at 00:40](../frames/frame_00001.jpg)
 
-- **Timestamps:**
-  - **[00:52]**: Introduction to split views
-  - **[01:15]**: Description of channels for contributing to RID
-
-## Chapter 3: Preprint Management
-
-### Handling Preprints
-- **Key Takeaways:**
-  - Overview of preprint processing workflow
-  - Navigation from "input peer reviewers" to preprint list
-  - Importance of preprint status (active, in queue)
-
-- **Description:**
-  Handling preprints involves an intuitive workflow where "input peer reviewers" directs users to the preprint list, categorizing them into active or queued states. The user experience is designed to facilitate high-quality and rapid review processes.
-
-- **UI Elements:**
-  - Preprint list with filters
-  - Buttons for "add reviewers"
-
-- **Timestamps:**
-  - **[01:43]**: Channels for contributing 
-  - **[02:14]**: Navigation to the preprint list
-
-## Chapter 4: Reviewer Details and Proposal
-
-### Exploring the Reviewer Details Page
-- **Key Takeaways:**
-  - Availability of detailed reviewer profiles and affiliations
-  - Handling potential conflicts of interest
-  - Embedding scripts to aid user decisions
-
-- **Description:**
-  The 'article details and add reviewers' page shows detailed information about preprint reviewers, aiming to support informed decision-making. COI checks are embedded, providing feedback to users live.
-
-- **UI Elements:**
-  - Fields for conflict of interest checks
-  - Form for proposing reviewers
-
-- **Timestamps:**
-  - **[05:04]**: Navigation to the details page
-  - **[06:35]**: COI section functionality
-
-## Chapter 5: Evaluation and Quality Check
-
-### Reviewer Evaluation Process
-- **Key Takeaways:**
-  - Evaluation steps for AI-suggested reviewers
-  - Options to accept, reject, or evaluate reviewers
-  - Importance of monitoring rejected proposals
-
-- **Description:**
-  The process for proposing or rejecting reviewers includes comprehensive evaluations and an interface where decisions are recorded. Students and editors have oversight of reviewer acceptance and rejection logic.
-
-- **UI Elements:**
-  - Evaluate, reject, and propose buttons
-  - Display of AI-suggested reviewers
-  
-- **Timestamps:**
-  - **[10:53]**: Evaluation decision-making
-  - **[11:54]**: Reviewer-related options
-
-## Chapter 6: Quality Check Portal
-
-### Understanding the Quality Check Interface
-- **Key Takeaways:**
-  - Usage of quality check portal by assistant editors
-  - Live data rendering via embedded scripts
-  - Distinction between in-process and complete preprints
-
-- **Description:**
-  The portal allows editors to thoroughly vet proposed reviewers, structured with an embedded AirTable interface for real-time data validation and efficiency.
-
-- **UI Elements:**
-  - Quality check table
-  - Status indicators for preprints
-  
-- **Timestamps:**
-  - **[13:38]**: Process flow in the quality check portal
-  - **[14:28]**: Data rendering details
-
-## Chapter 7: Advanced Tools and Configurations
-
-### Central Team's Control Panel
-- **Key Takeaways:**
-  - Features for directly managing preprint status
-  - Improvement suggestions for navigation
-  - Central team's exclusivity in certain operations
-
-- **Description:**
-  The central control panel offers tools for managing preprints and reviewer profiles. It’s exclusive to the central team, allowing direct interaction with the preprints without delving into developmental environments.
-
-- **UI Elements:**
-  - Control panel interface
-  - Editable fields for team usage
-  
-- **Timestamps:**
-  - **[15:56]**: Introduction to the control panel
-  - **[16:11]**: Preprint management details
-
-## Chapter 8: Productivity and Training
-
-### Dashboards and Progress Tracking
-- **Key Takeaways:**
-  - Integration of productivity and training dashboards
-  - Visual representation of student and team performance metrics
-  - Badge system for tracking progress
-  
-- **Description:**
-  Dashboards present metrics for productivity and training, providing insights into individual and team contributions through a badge and achievement system. This helps in motivation and tracking educational progress.
-
-- **UI Elements:**
-  - Productivity dashboard layout
-  - Tabs for individual achievement tracking
-
-- **Timestamps:**
-  - **[19:44]**: Overview of productivity tools
-  - **[20:10]**: Badge system introduction
-
-## Chapter 9: Navigation and Settings
-
-### Final Overview and Navigation Best Practices
-- **Key Takeaways:**
-  - Clarification of the navigation menu
-  - Access control for different user types
-  - Conventional header organization
-  
-- **Description:**
-  The navigation and settings conclude the walkthrough by specifying the headers visible to different users, ensuring organized access to distinct functionalities.
-
-- **UI Elements:**
-  - Navigation header
-  - Role-based access control
-  
-- **Timestamps:**
-  - **[21:37]**: Explanation of header navigation
-  - **[21:45]**: Access settings per user
 
 ---
 
-Ensure to refer to specific timestamps for precise points made by the speaker and navigate through the software interface as demonstrated for effective understanding and application. This documentation is designed to serve as an operational guide for various user roles in efficiently navigating and utilizing the software.
-```
+## Chapter 2: Views and User Roles
+
+### Key Takeaways
+- The software presents different views for students and assistant editors.
+- Landing page features are discussed concerning efficiency of navigation.
+- Channels of contribution to RID are introduced.
+
+### Detailed Description
+The speaker explains the presence of dual views in the application. Students and assistant editors access the software differently, and roles dictate the functionalities each can access. The general user flow from landing pages and contribution channels is discussed.
+
+### Important UI Elements and Interactions
+- **Landing Page:**
+  - Includes buttons for navigation.
+- **Views:**
+  - Differentiation between student and editor views.
+
+### Notable Timestamps
+- **[00:47]** - Explanation of landing page efficiency.
+
+![Screenshot at 00:47](../frames/frame_00001.jpg)
+
+- **[01:06]** - Introduction of user roles and views.
+
+![Screenshot at 01:06](../frames/frame_00001.jpg)
+
+
+---
+
+## Chapter 3: Preprint Management
+
+### Key Takeaways
+- Three primary channels for preprint management: inputting peer reviews, quality checking, and assessing productivity.
+- There exists a separate site for certain processes.
+- Preprints can be listed as active, in queue, or prioritized.
+
+### Detailed Description
+Discussion moves into the specific workflows related to preprint handling. The speaker elaborates on peer reviews, quality checks, and linking to external management sites. Various categorizations of preprints allow for effective management and prioritization.
+
+### Important UI Elements and Interactions
+- **Preprint List:**
+  - Contains buttons to add reviewers for different preprints.
+- **Visibility Settings:**
+  - Options to propose or view reviewers based on roles.
+
+### Notable Timestamps
+- **[01:36]** - Introduction of three main preprint channels.
+
+![Screenshot at 01:36](../frames/frame_00001.jpg)
+
+- **[02:14]** - Navigation through preprint list features.
+
+![Screenshot at 02:14](../frames/frame_00001.jpg)
+
+- **[03:11]** - Explanation of visibility settings for preprints.
+
+![Screenshot at 03:11](../frames/frame_00001.jpg)
+
+
+---
+
+## Chapter 4: Article Details and Reviewer Management
+
+### Key Takeaways
+- The details page includes metadata and reviewer tools.
+- AI-suggested reviewers are incorporated into workflow.
+- Conflict of interest functionalities are highlighted.
+
+### Detailed Description
+The article details page is explored, detailing the metadata available such as title, DOI, authors, etc. The speaker highlights the use of AI to suggest reviewers and mechanisms to check conflicts of interest.
+
+### Important UI Elements and Interactions
+- **Article Details Page:**
+  - Displays comprehensive information about each preprint.
+- **Conflict of Interest Check:**
+  - Includes inputs for names and emails.
+
+### Notable Timestamps
+- **[05:04]** - Description of article details and add reviewers interface.
+
+![Screenshot at 05:04](../frames/frame_00001.jpg)
+
+- **[05:39]** - Review of metadata components and conflict management.
+
+![Screenshot at 05:39](../frames/frame_00001.jpg)
+
+
+---
+
+## Chapter 5: Reviewer Proposal Process
+
+### Key Takeaways
+- Custom scripts are used to manage the proposal process.
+- UI provides feedback on potential conflicts or duplications.
+- Workflows incorporate error management for data parsing issues.
+
+### Detailed Description
+The workflow for proposing reviewers includes checking conflicts of interest and handling duplicate proposals. The speaker explains the use of scripts for managing input fields and ensuring data integrity.
+
+### Important UI Elements and Interactions
+- **Proposal Form:**
+  - Scripts run to highlight potential conflicts before submission.
+- **Error Handling:**
+  - Visual cues for data parsing issues.
+
+### Notable Timestamps
+- **[07:08]** - Start of proposed reviewer form discussion.
+
+![Screenshot at 07:08](../frames/frame_00002.jpg)
+
+- **[08:04]** - Explanation of embedded scripts within the page.
+
+![Screenshot at 08:04](../frames/frame_00002.jpg)
+
+
+---
+
+## Chapter 6: Quality Check Portal
+
+### Key Takeaways
+- Quality checks are separated for in-process and completed preprints.
+- Students and editors have different access levels.
+- UI incorporates tools for visualization of preprint status.
+
+### Detailed Description
+The speaker delves into the portal where quality checks are performed. The role-based access ensures that students and editors can only interact with appropriate sections. There is mention of improvements in user interface designs to enhance usability.
+
+### Important UI Elements and Interactions
+- **Quality Check Portal:**
+  - Displays preprint status and quality check outcomes.
+- **Role-Based Access:**
+  - Differentiates content visibility and edit capabilities.
+
+### Notable Timestamps
+- **[13:32]** - Introduction of quality check portal.
+
+![Screenshot at 13:32](../frames/frame_00002.jpg)
+
+- **[14:09]** - Discussion on role-based access for students and editors.
+
+![Screenshot at 14:09](../frames/frame_00003.jpg)
+
+
+---
+
+## Chapter 7: Dashboard and Miscellaneous Features
+
+### Key Takeaways
+- Various dashboards track productivity and achievements.
+- Training and achievements are linked to a badge system.
+- Custom code is employed for enhanced data management and interactions.
+
+### Detailed Description
+This chapter discusses multiple dashboards used to monitor productivity and training achievements. The speaker points out the use of badges and custom code integration for improved data handling and interface responsiveness.
+
+### Important UI Elements and Interactions
+- **Productivity Dashboard:**
+  - Tracks student and team performance with embedded data views.
+- **Badge System:**
+  - Awards based on user achievements and milestones.
+
+### Notable Timestamps
+- **[18:34]** - Description of dashboard functionalities.
+
+![Screenshot at 18:34](../frames/frame_00006.jpg)
+
+- **[20:21]** - Explanation of badge system and student feedback mechanisms.
+
+![Screenshot at 20:21](../frames/frame_00006.jpg)
+
+
+## Chapter 8: Navigation and Interface
+
+### Key Takeaways
+- Header navigation organizes access to key software sections.
+- Role permissions dictate visibility and organization of navigation.
+
+### Detailed Description
+The speaker covers the layout of navigation menus and how it directs users efficiently throughout the software. Role permissions ensure only authorized users can access certain functionalities.
+
+### Important UI Elements and Interactions
+- **Header Navigation:**
+  - Includes dropdowns and tabs for categorized access.
+
+### Notable Timestamps
+- **[21:37]** - Overview of header navigation and role-based access.
+
+![Screenshot at 21:37](../frames/frame_00006.jpg)
+
+
+---
+
+This document aims to provide a structured and comprehensive walkthrough of the software application as demonstrated in the video, both descriptive and technical, suitable for onboarding and training purposes.
