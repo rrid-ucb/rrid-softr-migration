@@ -99,7 +99,7 @@ The old scripts still work if you prefer the original workflow:
 
 ```bash
 # One-line command
-./process_video.sh design/your-video.mp4
+./scripts/process_video.sh input/your-video.mp4
 
 # This will:
 # 1. Transcribe the video with Whisper
@@ -119,10 +119,10 @@ mkdir -p out/frames
 ffmpeg -hide_banner -i design/video.mp4 -vf "select='gt(scene,0.30)',showinfo" -vsync vfr out/frames/frame_%05d.jpg 2> out/frames/frames.log
 
 # Step 3: Basic annotation
-python3 annotate_video.py design/video.mp4 out/video.json out/frames out/frames/frames.log out
+python3 archive/legacy_scripts/annotate_video.py input/video.mp4 out/video.json out/frames out/frames/frames.log out
 
 # Step 4: LLM-powered docs
-python3 llm_annotate.py out/annotated.json --models gemini openai
+python3 archive/legacy_scripts/llm_annotate.py out/annotated.json --models gemini openai
 ```
 
 ### Legacy Output Structure
@@ -163,13 +163,13 @@ python main.py --process-all input/
 
 ```bash
 # Better transcription quality
-./process_video.sh design/video.mp4 medium
+./scripts/process_video.sh input/video.mp4 medium
 
 # Use only Gemini (faster/cheaper)
-./process_video.sh design/video.mp4 base gemini
+./scripts/process_video.sh input/video.mp4 base gemini
 
 # Best quality
-./process_video.sh design/video.mp4 large "gemini openai"
+./scripts/process_video.sh input/video.mp4 large "gemini openai"
 ```
 
 ## Troubleshooting
