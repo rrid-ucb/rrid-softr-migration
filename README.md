@@ -1,0 +1,208 @@
+# RRID Softr Migration - Video Annotation System
+
+Transform video walkthroughs into comprehensive product documentation using AI-powered analysis.
+
+## What This Does
+
+Takes a video walkthrough (like a product demo or UI tour) and automatically generates:
+
+1. **Linear Walkthrough** - Organized chapters with key takeaways and timestamps
+2. **PRD Document** - Page-by-page specs for rebuilding the application  
+3. **Personas & User Stories** - User-centric documentation with acceptance criteria
+
+All with screenshots, timestamps, and detailed UI descriptions.
+
+## Quick Start
+
+```bash
+# 1. Setup (first time only)
+./setup_and_test.sh
+
+# 2. Process a video
+./process_video.sh design/your-video.mp4
+```
+
+That's it! You'll get comprehensive documentation in `out/llm_docs/`.
+
+## Documentation
+
+- **[QUICKSTART.md](QUICKSTART.md)** - One-page reference with common commands
+- **[LLM_ANNOTATION_README.md](LLM_ANNOTATION_README.md)** - Complete documentation with examples
+- **[VIDEO_ANNOTATION_README.md](VIDEO_ANNOTATION_README.md)** - Basic transcription workflow
+
+## Example Use Case: Softr Migration
+
+This project was created to document an existing Softr application for migration. The workflow:
+
+1. Record a comprehensive walkthrough of the Softr app
+2. Run the annotation pipeline to generate documentation
+3. Use the generated PRD for rebuilding in a new platform
+4. Reference personas/user stories for product planning
+
+## What You Need
+
+### System Requirements
+- macOS (tested) or Linux
+- Python 3.8+
+- ~5GB disk space for models
+
+### Dependencies
+```bash
+brew install openai-whisper ffmpeg
+pip install google-generativeai openai
+```
+
+### API Keys (for LLM processing)
+- **Gemini**: https://aistudio.google.com/app/apikey
+- **OpenAI**: https://platform.openai.com/api-keys
+
+```bash
+export GEMINI_API_KEY="your_key"
+export OPENAI_API_KEY="your_key"
+```
+
+## File Structure
+
+```
+.
+├── README.md                    # This file
+├── QUICKSTART.md                # Quick reference
+├── LLM_ANNOTATION_README.md     # Full documentation
+├── VIDEO_ANNOTATION_README.md   # Basic workflow docs
+│
+├── annotate_video.py            # Step 1: Basic annotation
+├── llm_annotate.py              # Step 2: LLM processing
+├── process_video.sh             # All-in-one pipeline
+├── setup_and_test.sh            # Setup & testing
+│
+├── design/                      # Input videos
+│   └── softr.mp4
+│
+└── out/                         # Generated output
+    ├── annotated.json           # Timestamped transcript data
+    ├── annotated.md             # Basic markdown
+    ├── frames/                  # Extracted screenshots
+    └── llm_docs/                # AI-generated docs
+        ├── linear_walkthrough_*.md
+        ├── prd_document_*.md
+        └── personas_stories_*.md
+```
+
+## Usage Examples
+
+### Process with default settings
+```bash
+./process_video.sh design/video.mp4
+```
+
+### Better quality transcription
+```bash
+./process_video.sh design/video.mp4 medium
+```
+
+### Use only Gemini (faster/cheaper)
+```bash
+./process_video.sh design/video.mp4 base gemini
+```
+
+### Best quality with both LLMs
+```bash
+./process_video.sh design/video.mp4 large "gemini openai"
+```
+
+### Process existing transcript with LLMs
+```bash
+python3 llm_annotate.py out/annotated.json --models gemini openai
+```
+
+## Output Documents Explained
+
+### 1. Linear Walkthrough
+Follows the video chronologically with chapters, topics, and key takeaways. Great for:
+- Understanding the application flow
+- Training new team members  
+- Creating user documentation
+- Feature overviews
+
+### 2. PRD Document
+Page-by-page breakdown with UI components, features, and business logic. Use for:
+- Development planning
+- Technical specifications
+- Migration projects
+- Competitive analysis
+
+### 3. Personas & User Stories
+User-centric view with personas, stories, and acceptance criteria. Ideal for:
+- Product planning
+- UX design decisions
+- Feature prioritization
+- Stakeholder communication
+
+## Cost
+
+- **Whisper** (local): Free
+- **FFmpeg** (local): Free
+- **Gemini API**: ~$0.50-2.00 per 30-min video
+- **OpenAI API**: ~$1.00-3.00 per 30-min video
+
+Typical 30-minute walkthrough costs $1-5 total to process with both models.
+
+## Tips for Best Results
+
+### Recording Your Video
+1. Speak clearly and describe what you're doing
+2. Go slowly and pause at important screens
+3. Navigate through all pages and features
+4. Explain user roles, workflows, and business logic
+5. Show validation, errors, and edge cases
+
+### Optimizing Output
+1. Use `medium` or `large` Whisper model for better transcription
+2. Lower scene threshold (0.20) for more screenshots
+3. Record in a quiet environment
+4. Compare Gemini vs OpenAI outputs
+5. Edit the generated markdown for final polish
+
+## Troubleshooting
+
+Run the setup script to check your environment:
+```bash
+./setup_and_test.sh
+```
+
+Common issues:
+- **"GEMINI_API_KEY not set"** → `export GEMINI_API_KEY="your_key"`
+- **Missing packages** → `pip install google-generativeai openai`
+- **Poor transcription** → Use larger Whisper model or record in quieter environment
+- **Frames not matching** → Try lower scene threshold or fixed interval extraction
+
+See [LLM_ANNOTATION_README.md](LLM_ANNOTATION_README.md) for detailed troubleshooting.
+
+## Project Status
+
+✅ Basic transcription with Whisper  
+✅ Frame extraction with ffmpeg  
+✅ Timestamp annotation  
+✅ LLM-powered documentation generation  
+✅ Multiple LLM provider support (Gemini, OpenAI)  
+✅ Three document types (walkthrough, PRD, personas)  
+✅ Comparison mode for LLM outputs  
+
+## Contributing
+
+This is a migration project tool, but feel free to adapt it for your own use cases:
+- Product demos
+- UI/UX documentation
+- Competitive analysis
+- Feature documentation
+- Training materials
+
+## License
+
+Scripts and documentation: MIT License
+
+Dependencies have their own licenses:
+- OpenAI Whisper: MIT
+- FFmpeg: GPL/LGPL
+- Google Generative AI SDK: Apache 2.0
+- OpenAI Python SDK: MIT
