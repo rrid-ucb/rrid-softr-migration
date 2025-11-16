@@ -515,7 +515,7 @@ class HTMLBrowserGenerator:
             const day = timestamp.substring(6, 8);
             const hour = timestamp.substring(9, 11);
             const minute = timestamp.substring(11, 13);
-            return `${{year}}-${{month}}-${{day}} ${{hour}}:${{minute}}`;
+            return `${year}-${month}-${day} ${hour}:${minute}`;
         }}
         
         async function loadRun(videoName, runTimestamp) {{
@@ -528,11 +528,11 @@ class HTMLBrowserGenerator:
             const content = document.getElementById('content');
             content.innerHTML = `
                 <div class="run-header">
-                    <h2>${{videoName}} - Run ${{formatTimestamp(runTimestamp)}}</h2>
+                    <h2>${videoName} - Run ${formatTimestamp(runTimestamp)}</h2>
                     <div class="run-meta">
-                        ${{runInfo.frames.count}} frames • 
-                        ${{runInfo.transcripts.files.length}} transcripts • 
-                        ${{Object.keys(runInfo.docs).length}} model variants
+                        ${runInfo.frames.count} frames • 
+                        ${runInfo.transcripts.files.length} transcripts • 
+                        ${Object.keys(runInfo.docs).length} model variants
                     </div>
                 </div>
                 
@@ -543,12 +543,12 @@ class HTMLBrowserGenerator:
                 
                 <div class="section">
                     <h3>🎬 Frames</h3>
-                    <p>Frames: ${{runInfo.frames.count}}</p>
+                    <p>Frames: ${runInfo.frames.count}</p>
                 </div>
                 
                 <div class="section">
                     <h3>📝 Transcripts</h3>
-                    <p>Transcript files: ${{runInfo.transcripts.files.length}}</p>
+                    <p>Transcript files: ${runInfo.transcripts.files.length}</p>
                 </div>
                 
                 <div id="docViewer"></div>
@@ -569,8 +569,8 @@ class HTMLBrowserGenerator:
                     docCard.onclick = () => loadDoc(doc.path, doc.name, modelName);
                     
                     docCard.innerHTML = `
-                        <h4>${{doc.name}}</h4>
-                        <span class="model-badge">${{modelName}}</span>
+                        <h4>${doc.name}</h4>
+                        <span class="model-badge">${modelName}</span>
                     `;
                     
                     docGrid.appendChild(docCard);
@@ -596,15 +596,15 @@ class HTMLBrowserGenerator:
                 
                 docViewer.innerHTML = `
                     <div class="doc-viewer">
-                        <h4>${{docName}} <span class="model-badge">${{modelName}}</span></h4>
-                        <div class="markdown-content">${{html}}</div>
+                        <h4>${docName} <span class="model-badge">${modelName}</span></h4>
+                        <div class="markdown-content">${html}</div>
                     </div>
                 `;
             }} catch (error) {{
                 docViewer.innerHTML = `
                     <div class="doc-viewer">
-                        <p style="color: red;">Error loading document: ${{error.message}}</p>
-                        <p>Path: ${{docPath}}</p>
+                        <p style="color: red;">Error loading document: ${error.message}</p>
+                        <p>Path: ${docPath}</p>
                     </div>
                 `;
             }}
@@ -637,9 +637,9 @@ class HTMLBrowserGenerator:
                     const depth = (src.match(/\\.\\.\\//g) || []).length;
                     const parts = basePath.split('/');
                     const newPath = parts.slice(0, -depth - 1).join('/') + '/' + src.replace(/\\.\\.\\//g, '');
-                    return `<img src="${{newPath}}" alt="${{alt}}" />`;
+                    return `<img src="${newPath}" alt="${alt}" />`;
                 }}
-                return `<img src="${{src}}" alt="${{alt}}" />`;
+                return `<img src="${src}" alt="${alt}" />`;
             }});
             
             // Links
@@ -652,10 +652,10 @@ class HTMLBrowserGenerator:
             // Paragraphs
             html = html.split('\\\\n\\\\n').map(p => {{
                 if (p.trim() && !p.match(/^<[h|u|o|l|d]/)) {{
-                    return `<p>${{p.trim()}}</p>`;
+                    return `<p>${p.trim()}</p>`;
                 }}
                 return p;
-            }}).join('\\\\n');
+            }).join('\\n');
             
             return html;
         }}
