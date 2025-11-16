@@ -2,6 +2,46 @@
 
 Transform video walkthroughs into comprehensive product documentation using AI-powered analysis.
 
+## Generated Documentation
+
+This project has generated comprehensive documentation from a Softr application walkthrough. The following enriched documents provide detailed analysis of the RRID Reviewer Selection system:
+
+### 📖 [Linear Walkthrough](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md)
+
+A comprehensive, chapter-by-chapter walkthrough of the Softr application that goes beyond the speaker's narration to identify interface components, Airtable integrations, and UI details. Perfect for understanding the complete application flow and training new team members.
+
+**Table of Contents:**
+- [Chapter 1: Overview of the RID Reviewer Selection Softr Application Structure and Landing Page](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-1-overview-of-the-rid-reviewer-selection-softr-application-structure-and-landing-page) - Application structure, landing page, and role-based views
+- [Chapter 2: Exploring Preprint Lists and Role-Based Visibility](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-2-exploring-preprint-lists-and-role-based-visibility) - Preprint management with conditional filters and role-based access
+- [Chapter 3: Examining Preprint Details and Reviewer Proposal Workflow](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-3-examining-preprint-details-and-reviewer-proposal-workflow) - Detailed preprint views, AI-suggested reviewers, and COI checks
+- [Chapter 4: Dynamic Form Validation and Reviewer Matching using Custom Code](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-4-dynamic-form-validation-and-reviewer-matching-using-custom-code) - Custom JavaScript validation and reviewer matching logic
+- [Chapter 5: Evaluating and Managing AI-Suggested Reviewers](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-5-evaluating-and-managing-ai-suggested-reviewers) - AI reviewer evaluation workflow and status management
+- [Chapter 6: Reviewer Proposal and Quality Check Workflow](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-6-reviewer-proposal-and-quality-check-workflow) - Quality check portals and reviewer proposal management
+- [Chapter 7: Central Team Management and Data Control](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-7-central-team-management-and-data-control) - Administrative dashboards and data management interfaces
+- [Chapter 8: Central Team Dashboards: Productivity and Training](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-8-central-team-dashboards-productivity-and-training) - Productivity tracking and achievement/training dashboards
+- [Chapter 9: Tracking Progress and Configuring Header Navigation](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-9-tracking-progress-and-configuring-header-navigation) - Student progress tracking and navigation configuration
+
+### 👥 [Personas, User Stories, and User Journeys](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md)
+
+User-centric documentation identifying three distinct personas (Administrator, AE Assignee, Reviewer), their goals, pain points, and how they interact with the system. Includes detailed user stories with acceptance criteria and complete user journeys.
+
+**Table of Contents:**
+- [User Personas](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#1-user-personas) - Three personas: Administrator, AE Assignee, and Reviewer with detailed backgrounds, goals, and technical skill levels
+- [User Stories](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#2-user-stories) - Feature-specific user stories with acceptance criteria and priority levels
+- [Feature Mapping](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#3-feature-mapping) - Mapping of features to personas and their access levels
+- [User Journeys](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#4-user-journeys) - Complete workflows for Administrator customization, AE reviewer assignment, and Reviewer preprint claiming
+
+### 📋 [Product Requirements Document (PRD)](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md)
+
+A comprehensive PRD with page-by-page specifications, technical requirements, data models, and user workflows. Essential for development planning, technical specifications, and migration projects.
+
+**Table of Contents:**
+- [Executive Summary](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#1-executive-summary) - System overview and key features
+- [Page-by-Page Specifications](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#2-page-by-page-specifications) - Detailed specs for Landing Page, Preprints List, Reviewer Proposal, AI Suggestions, Quality Checks, and more
+- [Technical Requirements](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#3-technical-requirements) - Platform, database, authentication, APIs, and security requirements
+- [Data Models](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#4-data-models-inferred) - Inferred data structures for Preprints, Reviewers, Users, and Review Assignments
+- [User Workflows](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#5-user-workflows) - Step-by-step workflows for adding reviewers, evaluating reviewers, and claiming preprints
+
 ## What This Does
 
 Takes a video walkthrough (like a product demo or UI tour) and automatically generates:
