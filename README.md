@@ -102,13 +102,20 @@ export OPENAI_API_KEY="your_key"
 │   └── softr.mp4
 │
 └── output/                      # Generated output (run-based structure)
-    ├── annotated.json           # Timestamped transcript data
-    ├── annotated.md             # Basic markdown
-    ├── frames/                  # Extracted screenshots
-    └── llm_docs/                # AI-generated docs
-        ├── linear_walkthrough_*.md
-        ├── prd_document_*.md
-        └── personas_stories_*.md
+    └── {video_name}/            # Per-video outputs
+        └── {run_timestamp}/     # Timestamped runs
+            ├── frames/          # Extracted screenshots
+            ├── transcripts/     # Transcripts and annotations
+            └── docs/            # AI-generated docs by model
+                ├── openai/
+                │   ├── linear_walkthrough.md
+                │   ├── prd_document.md
+                │   └── personas_stories.md
+                ├── gemini_vision/
+                │   ├── linear_walkthrough.md
+                │   ├── prd_document.md
+                │   └── personas_stories.md
+                └── ...
 ```
 
 ## Usage Examples
