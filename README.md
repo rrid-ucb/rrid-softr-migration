@@ -37,9 +37,14 @@ That's it! You'll get comprehensive documentation in `out/llm_docs/`.
 
 ## Documentation
 
-- **[QUICKSTART.md](QUICKSTART.md)** - One-page reference with common commands
-- **[LLM_ANNOTATION_README.md](LLM_ANNOTATION_README.md)** - Complete documentation with examples
-- **[VIDEO_ANNOTATION_README.md](VIDEO_ANNOTATION_README.md)** - Basic transcription workflow
+- **[QUICKSTART.md](QUICKSTART.md)** - Quick start guide (start here!)
+- **[docs/](docs/)** - Comprehensive documentation
+  - `LLM_ANNOTATION_README.md` - Complete LLM documentation guide
+  - `VIDEO_ANNOTATION_README.md` - Basic transcription workflow
+  - `FRAME_EXTRACTION_README.md` - Frame extraction guide
+  - `REFACTORING_GUIDE.md` - New system structure
+  - And more...
+- **[design/](design/)** - Design and planning documents
 
 ## Example Use Case: Softr Migration
 
