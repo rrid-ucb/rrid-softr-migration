@@ -31,6 +31,7 @@ Thumbs.db
 # out/frames/*.jpg
 
 # New structure
+# Note: output/ is gitignored, but you can track specific runs if needed
 output/
 # Runtime config (not source code)
 ~/.video_annotation/

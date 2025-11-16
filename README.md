@@ -33,7 +33,7 @@ export OPENAI_API_KEY="your_key"
 source venv/bin/activate
 ```
 
-That's it! You'll get comprehensive documentation in `out/llm_docs/`.
+That's it! You'll get comprehensive documentation in `output/{video_name}/{run_timestamp}/docs/`.
 
 ## Documentation
 
@@ -101,7 +101,7 @@ export OPENAI_API_KEY="your_key"
 ├── design/                      # Input videos
 │   └── softr.mp4
 │
-└── out/                         # Generated output
+└── output/                      # Generated output (run-based structure)
     ├── annotated.json           # Timestamped transcript data
     ├── annotated.md             # Basic markdown
     ├── frames/                  # Extracted screenshots
