@@ -17,10 +17,10 @@ if [ -z "$VIDEO_FILE" ]; then
     echo "Usage: $0 <video_file> [whisper_model] [llm_models]"
     echo ""
     echo "Examples:"
-    echo "  $0 design/softr.mp4"
-    echo "  $0 design/softr.mp4 medium"
-    echo "  $0 design/softr.mp4 medium 'gemini'"
-    echo "  $0 design/softr.mp4 small 'gemini openai'"
+    echo "  $0 input/softr.mp4"
+    echo "  $0 input/softr.mp4 medium"
+    echo "  $0 input/softr.mp4 medium 'gemini'"
+    echo "  $0 input/softr.mp4 small 'gemini openai'"
     echo ""
     echo "Whisper models: tiny, base, small, medium, large"
     echo "LLM models: gemini, openai (space-separated)"
@@ -67,7 +67,7 @@ ffmpeg -hide_banner -i "$VIDEO_FILE" \
 # Step 3: Annotate
 echo ""
 echo "[3/4] Creating basic annotated transcript..."
-python3 annotate_video.py \
+python3 archive/legacy_scripts/annotate_video.py \
     "$VIDEO_FILE" \
     "out/${BASENAME}.json" \
     out/frames \
@@ -77,7 +77,7 @@ python3 annotate_video.py \
 # Step 4: LLM processing
 echo ""
 echo "[4/4] Generating comprehensive documentation with LLMs..."
-python3 llm_annotate.py out/annotated.json \
+python3 archive/legacy_scripts/llm_annotate.py out/annotated.json \
     --output-dir out/llm_docs \
     --models $LLM_MODELS
 
