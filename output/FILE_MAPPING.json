@@ -1,0 +1,1284 @@
+{
+  "summary": {
+    "total_files": 182,
+    "mapped": 182,
+    "unmapped": 0,
+    "mapped_percentage": 100.0
+  },
+  "files": [
+    {
+      "out_path": "annotated.json",
+      "output_path": "softr/20251115_225000/transcripts/annotated.json",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "annotated.md",
+      "output_path": "softr/20251115_225000/docs/unknown/annotated.md",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00001_00-00.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00001_00-00.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00002_00-10.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00002_00-10.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00003_00-23.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00003_00-23.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00004_00-28.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00004_00-28.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00005_00-35.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00005_00-35.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00006_00-40.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00006_00-40.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00007_00-47.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00007_00-47.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00008_00-52.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00008_00-52.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00009_01-06.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00009_01-06.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00010_01-15.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00010_01-15.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00011_01-23.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00011_01-23.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00012_01-36.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00012_01-36.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00013_01-43.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00013_01-43.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00014_01-52.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00014_01-52.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00015_01-59.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00015_01-59.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00016_02-06.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00016_02-06.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00017_02-14.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00017_02-14.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00018_02-19.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00018_02-19.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00019_02-28.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00019_02-28.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00020_02-36.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00020_02-36.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00021_02-42.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00021_02-42.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00022_02-50.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00022_02-50.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00023_02-59.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00023_02-59.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00024_03-05.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00024_03-05.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00025_03-11.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00025_03-11.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00026_03-17.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00026_03-17.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00027_03-22.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00027_03-22.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00028_03-31.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00028_03-31.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00029_03-42.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00029_03-42.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00030_03-52.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00030_03-52.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00031_04-00.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00031_04-00.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00032_04-09.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00032_04-09.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00033_04-13.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00033_04-13.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00034_04-20.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00034_04-20.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00035_04-28.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00035_04-28.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00036_04-37.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00036_04-37.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00037_04-43.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00037_04-43.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00038_04-51.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00038_04-51.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00039_04-57.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00039_04-57.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00040_05-04.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00040_05-04.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00041_05-15.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00041_05-15.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00042_05-25.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00042_05-25.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00043_05-33.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00043_05-33.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00044_05-39.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00044_05-39.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00045_05-46.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00045_05-46.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00046_05-54.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00046_05-54.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00047_06-01.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00047_06-01.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00048_06-07.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00048_06-07.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00049_06-14.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00049_06-14.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00050_06-26.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00050_06-26.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00051_06-35.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00051_06-35.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00052_06-41.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00052_06-41.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00053_06-51.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00053_06-51.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00054_06-59.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00054_06-59.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00055_07-08.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00055_07-08.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00056_07-16.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00056_07-16.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00057_07-24.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00057_07-24.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00058_07-32.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00058_07-32.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00059_07-39.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00059_07-39.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00060_07-45.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00060_07-45.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00061_07-53.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00061_07-53.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00062_08-04.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00062_08-04.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00063_08-11.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00063_08-11.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00064_08-20.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00064_08-20.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00065_08-31.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00065_08-31.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00066_08-43.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00066_08-43.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00067_08-51.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00067_08-51.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00068_08-59.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00068_08-59.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00069_09-06.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00069_09-06.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00070_09-17.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00070_09-17.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00071_09-22.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00071_09-22.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00072_09-31.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00072_09-31.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00073_09-40.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00073_09-40.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00074_09-47.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00074_09-47.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00075_09-54.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00075_09-54.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00076_10-02.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00076_10-02.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00077_10-13.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00077_10-13.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00078_10-18.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00078_10-18.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00079_10-26.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00079_10-26.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00080_10-32.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00080_10-32.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00081_10-37.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00081_10-37.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00082_10-53.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00082_10-53.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00083_10-58.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00083_10-58.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00084_11-05.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00084_11-05.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00085_11-13.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00085_11-13.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00086_11-22.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00086_11-22.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00087_11-31.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00087_11-31.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00088_11-39.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00088_11-39.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00089_11-47.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00089_11-47.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00090_11-54.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00090_11-54.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00091_12-00.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00091_12-00.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00092_12-05.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00092_12-05.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00093_12-11.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00093_12-11.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00094_12-14.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00094_12-14.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00095_12-21.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00095_12-21.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00096_12-26.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00096_12-26.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00097_12-32.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00097_12-32.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00098_12-41.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00098_12-41.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00099_12-51.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00099_12-51.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00100_13-00.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00100_13-00.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00101_13-05.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00101_13-05.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00102_13-14.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00102_13-14.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00103_13-20.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00103_13-20.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00104_13-26.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00104_13-26.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00105_13-32.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00105_13-32.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00106_13-38.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00106_13-38.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00107_13-45.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00107_13-45.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00108_13-52.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00108_13-52.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00109_14-00.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00109_14-00.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00110_14-09.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00110_14-09.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00111_14-14.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00111_14-14.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00112_14-20.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00112_14-20.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00113_14-28.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00113_14-28.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00114_14-37.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00114_14-37.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00115_14-46.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00115_14-46.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00116_14-52.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00116_14-52.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00117_15-01.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00117_15-01.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00118_15-11.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00118_15-11.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00119_15-16.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00119_15-16.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00120_15-26.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00120_15-26.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00121_15-34.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00121_15-34.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00122_15-41.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00122_15-41.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00123_15-56.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00123_15-56.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00124_16-03.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00124_16-03.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00125_16-11.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00125_16-11.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00126_16-16.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00126_16-16.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00127_16-23.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00127_16-23.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00128_16-28.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00128_16-28.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00129_16-36.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00129_16-36.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00130_16-42.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00130_16-42.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00131_16-47.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00131_16-47.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00132_17-01.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00132_17-01.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00133_17-08.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00133_17-08.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00134_17-20.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00134_17-20.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00135_17-25.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00135_17-25.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00136_17-29.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00136_17-29.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00137_17-38.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00137_17-38.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00138_17-47.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00138_17-47.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00139_17-55.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00139_17-55.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00140_18-02.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00140_18-02.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00141_18-09.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00141_18-09.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00142_18-14.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00142_18-14.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00143_18-24.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00143_18-24.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00144_18-34.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00144_18-34.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00145_18-40.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00145_18-40.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00146_18-48.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00146_18-48.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00147_18-54.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00147_18-54.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00148_19-01.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00148_19-01.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00149_19-07.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00149_19-07.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00150_19-19.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00150_19-19.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00151_19-27.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00151_19-27.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00152_19-34.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00152_19-34.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00153_19-44.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00153_19-44.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00154_19-52.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00154_19-52.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00155_19-59.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00155_19-59.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00156_20-10.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00156_20-10.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00157_20-14.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00157_20-14.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00158_20-21.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00158_20-21.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00159_20-28.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00159_20-28.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00160_20-37.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00160_20-37.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00161_20-48.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00161_20-48.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00162_20-54.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00162_20-54.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00163_21-10.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00163_21-10.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00164_21-21.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00164_21-21.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00165_21-27.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00165_21-27.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00166_21-37.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00166_21-37.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00167_21-45.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00167_21-45.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frame_00168_21-55.jpg",
+      "output_path": "softr/20251116_002000/frames/frame_00168_21-55.jpg",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frames.log",
+      "output_path": "softr/20251115_224000/frames/frames.log",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frames_timestamps.csv",
+      "output_path": "softr/20251116_002000/frames/frames_timestamps.csv",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "frames/frames_timestamps.json",
+      "output_path": "softr/20251116_002000/frames/frames_timestamps.json",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "llm_docs/README.md",
+      "output_path": "softr/20251116_001000/docs/unknown/README.md",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "llm_docs/linear_walkthrough_complete.md",
+      "output_path": "softr/20251116_003000/docs/unknown/linear_walkthrough.md",
+      "status": "mapped_renamed",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "llm_docs/linear_walkthrough_openai.md",
+      "output_path": "softr/20251116_003000/docs/openai/linear_walkthrough.md",
+      "status": "mapped_renamed",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "llm_docs/personas_stories_openai.md",
+      "output_path": "softr/20251116_003000/docs/openai/personas_stories.md",
+      "status": "mapped_renamed",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "llm_docs/prd_document_openai.md",
+      "output_path": "softr/20251116_003000/docs/openai/prd_document.md",
+      "status": "mapped_renamed",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "llm_docs_enriched/linear_walkthrough_enriched.md",
+      "output_path": "softr/20251116_010000/docs/gemini_vision/linear_walkthrough.md",
+      "status": "mapped_renamed",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "llm_docs_enriched/personas_stories_enriched.md",
+      "output_path": "softr/20251116_010000/docs/gemini_vision/personas_stories.md",
+      "status": "mapped_renamed",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "llm_docs_enriched/prd_document_enriched.md",
+      "output_path": "softr/20251116_010000/docs/gemini_vision/prd_document.md",
+      "status": "mapped_renamed",
+      "size_match": true,
+      "hash_match": true
+    },
+    {
+      "out_path": "softr.json",
+      "output_path": "softr/20251115_224000/transcripts/softr.json",
+      "status": "mapped_exact",
+      "size_match": true,
+      "hash_match": true
+    }
+  ]
+}
