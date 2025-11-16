@@ -1,0 +1,52 @@
+-vsync is deprecated. Use -fps_mode
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'design/softr.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2025-10-09T04:30:00.000000Z
+  Duration: 00:21:58.10, start: 0.000000, bitrate: 238 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 79 kb/s (default)
+    Metadata:
+      creation_time   : 2025-10-09T04:30:00.000000Z
+      handler_name    : AAC audio
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg/bt470bg/bt709, progressive), 1440x900, 156 kb/s, 25 fps, 25 tbr, 30k tbn (default)
+    Metadata:
+      creation_time   : 2025-10-09T04:30:00.000000Z
+      handler_name    : H.264/AVC video
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+[Parsed_showinfo_1 @ 0x600002b1c0c0] config in time_base: 1/30000, frame_rate: 25/1
+[Parsed_showinfo_1 @ 0x600002b1c0c0] config out time_base: 0/0, frame_rate: 0/0
+[Parsed_showinfo_1 @ 0x600002b1c0c0] n:   0 pts:  28800 pts_time:0.96    duration:   1200 duration_time:0.04    fmt:yuv420p cl:left sar:0/1 s:1440x900 i:P iskey:1 type:I checksum:68D1B27F plane_checksum:[8BB5ACF0 977F25B0 D8E4DFD0] mean:[202 128 128] stdev:[65.8 4.0 3.8]
+[Parsed_showinfo_1 @ 0x600002b1c0c0] color_range:tv color_space:bt470bg color_primaries:bt470bg color_trc:bt709
+Output #0, image2, to 'frames/frame_%05d.jpg':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    encoder         : Lavf62.3.100
+  Stream #0:0(und): Video: mjpeg, yuv420p(pc, bt470bg/bt470bg/bt709, progressive), 1440x900, q=2-31, 200 kb/s, 25 fps, 25 tbn (default)
+    Metadata:
+      encoder         : Lavc62.11.100 mjpeg
+      creation_time   : 2025-10-09T04:30:00.000000Z
+      handler_name    : H.264/AVC video
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=1.99x elapsed=0:00:00.50    frame=    1 fps=1.0 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.991x elapsed=0:00:01.00    frame=    1 fps=0.7 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.661x elapsed=0:00:01.51    frame=    1 fps=0.5 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.496x elapsed=0:00:02.01    frame=    1 fps=0.4 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.397x elapsed=0:00:02.52    frame=    1 fps=0.3 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.331x elapsed=0:00:03.02    frame=    1 fps=0.3 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.284x elapsed=0:00:03.52    frame=    1 fps=0.2 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.248x elapsed=0:00:04.03    frame=    1 fps=0.2 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.221x elapsed=0:00:04.53    frame=    1 fps=0.2 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.198x elapsed=0:00:05.03    frame=    1 fps=0.2 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.18x elapsed=0:00:05.54    frame=    1 fps=0.2 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.165x elapsed=0:00:06.04    frame=    1 fps=0.2 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.153x elapsed=0:00:06.55    frame=    1 fps=0.1 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.142x elapsed=0:00:07.05    frame=    1 fps=0.1 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.132x elapsed=0:00:07.56    frame=    1 fps=0.1 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.124x elapsed=0:00:08.06    frame=    1 fps=0.1 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.117x elapsed=0:00:08.56    frame=    1 fps=0.1 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.11x elapsed=0:00:09.06    frame=    1 fps=0.1 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.105x elapsed=0:00:09.56    frame=    1 fps=0.1 q=7.8 size=N/A time=00:00:01.00 bitrate=N/A speed=0.0993x elapsed=0:00:10.07    [Parsed_showinfo_1 @ 0x600002b1c0c0] n:   1 pts:25441200 pts_time:848.04  duration:   1200 duration_time:0.04    fmt:yuv420p cl:left sar:0/1 s:1440x900 i:P iskey:0 type:I checksum:51C2606D plane_checksum:[B8401546 E3156742 688FE3D6] mean:[64 122 124] stdev:[10.4 1.7 1.6]
+[Parsed_showinfo_1 @ 0x600002b1c0c0] color_range:tv color_space:bt470bg color_primaries:bt470bg color_trc:bt709
+[Parsed_showinfo_1 @ 0x600002b1c0c0] n:   2 pts:25477200 pts_time:849.24  duration:   1200 duration_time:0.04    fmt:yuv420p cl:left sar:0/1 s:1440x900 i:P iskey:0 type:P checksum:84FEFDA5 plane_checksum:[34384AD7 9D5AACFC 819E05D2] mean:[199 127 128] stdev:[65.9 3.4 4.2]
+[Parsed_showinfo_1 @ 0x600002b1c0c0] color_range:tv color_space:bt470bg color_primaries:bt470bg color_trc:bt709
+[Parsed_showinfo_1 @ 0x600002b1c0c0] n:   3 pts:26248800 pts_time:874.96  duration:   1200 duration_time:0.04    fmt:yuv420p cl:left sar:0/1 s:1440x900 i:P iskey:0 type:I checksum:64BCA036 plane_checksum:[820169CC 73F74D17 9D4EE944] mean:[64 122 124] stdev:[10.0 1.7 1.6]
+[Parsed_showinfo_1 @ 0x600002b1c0c0] color_range:tv color_space:bt470bg color_primaries:bt470bg color_trc:bt709
+[Parsed_showinfo_1 @ 0x600002b1c0c0] n:   4 pts:26260800 pts_time:875.36  duration:   1200 duration_time:0.04    fmt:yuv420p cl:left sar:0/1 s:1440x900 i:P iskey:0 type:P checksum:A8F1277D plane_checksum:[7E7E9259 BBA860BF D0643456] mean:[201 127 127] stdev:[66.6 3.8 4.7]
+[Parsed_showinfo_1 @ 0x600002b1c0c0] color_range:tv color_space:bt470bg color_primaries:bt470bg color_trc:bt709
+frame=    5 fps=0.5 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=82.8x elapsed=0:00:10.57    frame=    5 fps=0.5 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=  79x elapsed=0:00:11.07    frame=    5 fps=0.4 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=75.6x elapsed=0:00:11.57    frame=    5 fps=0.4 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=72.5x elapsed=0:00:12.08    frame=    5 fps=0.4 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=69.6x elapsed=0:00:12.58    frame=    5 fps=0.4 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=66.9x elapsed=0:00:13.08    frame=    5 fps=0.4 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=64.4x elapsed=0:00:13.58    frame=    5 fps=0.4 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=62.1x elapsed=0:00:14.09    frame=    5 fps=0.3 q=1.6 size=N/A time=00:14:35.40 bitrate=N/A speed=  60x elapsed=0:00:14.59    [Parsed_showinfo_1 @ 0x600002b1c0c0] n:   5 pts:37192800 pts_time:1239.76 duration:   1200 duration_time:0.04    fmt:yuv420p cl:left sar:0/1 s:1440x900 i:P iskey:0 type:P checksum:CE36CE1B plane_checksum:[B3364A3A DCEE9B6A 4A01E868] mean:[178 131 123] stdev:[78.1 9.1 11.0]
+[Parsed_showinfo_1 @ 0x600002b1c0c0] color_range:tv color_space:bt470bg color_primaries:bt470bg color_trc:bt709
+frame=    6 fps=0.4 q=1.6 size=N/A time=00:20:39.80 bitrate=N/A speed=82.1x elapsed=0:00:15.10    frame=    6 fps=0.4 q=1.6 size=N/A time=00:20:39.80 bitrate=N/A speed=79.4x elapsed=0:00:15.60    [out#0/image2 @ 0x600002b10000] video:567KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    6 fps=0.4 q=1.6 Lsize=N/A time=00:20:39.80 bitrate=N/A speed=78.9x elapsed=0:00:15.72    
