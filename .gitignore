@@ -30,3 +30,4 @@ Thumbs.db
 # Project specific - optional (uncomment if you don't want to track output)
 # out/llm_docs/
 # out/frames/*.jpg
+*.mp4
