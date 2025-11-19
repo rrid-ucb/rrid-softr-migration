@@ -1,0 +1,18 @@
+{
+  "filename": "softr.mp4",
+  "file_path": "/Users/me/projects/rrid/rrid-softr-migration/input/softr.mp4",
+  "file_size_bytes": 39356281,
+  "duration_seconds": 1318.101333,
+  "duration_formatted": "00:21:58",
+  "width": 1440,
+  "height": 900,
+  "fps": 25.0,
+  "codec": "h264",
+  "bitrate": 238866,
+  "creation_time": "2025-10-09T04:30:00.000000Z",
+  "modification_time": "2024-10-08T00:00:00",
+  "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+  "audio_codec": "aac",
+  "audio_sample_rate": 48000,
+  "audio_channels": 2
+}

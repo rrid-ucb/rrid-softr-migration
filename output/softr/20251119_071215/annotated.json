@@ -1,0 +1,1855 @@
+{
+  "video": "input/softr.mp4",
+  "transcript": "output/softr/20251119_071215/softr.json",
+  "frames_dir": "output/softr/20251119_071215/frames",
+  "items": [
+    {
+      "start": 0.0,
+      "end": 10.24,
+      "start_hms": "00:00",
+      "end_hms": "00:10",
+      "text": " Awesome. Okay, so this is going to be a quick walkthrough tutorial of the software and",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00001_00-00.jpg",
+        "time": 0.0
+      }
+    },
+    {
+      "start": 10.24,
+      "end": 22.68,
+      "start_hms": "00:10",
+      "end_hms": "00:22",
+      "text": " how that set of kind of works behind the scenes. I'm going to focus on these on the top.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00002_00-10.jpg",
+        "time": 10.24
+      }
+    },
+    {
+      "start": 22.68,
+      "end": 28.12,
+      "start_hms": "00:22",
+      "end_hms": "00:28",
+      "text": " The rest on the bottom are all for the badge system, which I'm not going to go through",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00003_00-22.jpg",
+        "time": 22.68
+      }
+    },
+    {
+      "start": 28.12,
+      "end": 35.2,
+      "start_hms": "00:28",
+      "end_hms": "00:35",
+      "text": " every single one, but I'll explain the high level things like that. And then the far bottom",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00004_00-28.jpg",
+        "time": 28.12
+      }
+    },
+    {
+      "start": 35.2,
+      "end": 40.36,
+      "start_hms": "00:35",
+      "end_hms": "00:40",
+      "text": " ones are the utility pages. So things that software actually manages and we don't really touch",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00005_00-35.jpg",
+        "time": 35.2
+      }
+    },
+    {
+      "start": 40.36,
+      "end": 46.56,
+      "start_hms": "00:40",
+      "end_hms": "00:46",
+      "text": " such as you know, signing up their account settings, things like that. Okay, so at the top",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00006_00-40.jpg",
+        "time": 40.36
+      }
+    },
+    {
+      "start": 46.56,
+      "end": 52.28,
+      "start_hms": "00:46",
+      "end_hms": "00:52",
+      "text": " of the list is the landing page. Let's see if clicking on every single one is too inefficient",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00007_00-46.jpg",
+        "time": 46.56
+      }
+    },
+    {
+      "start": 52.28,
+      "end": 66.12,
+      "start_hms": "00:52",
+      "end_hms": "01:06",
+      "text": " or not. So there are two different views. As you can see, one is for students and one",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00008_00-52.jpg",
+        "time": 52.28
+      }
+    },
+    {
+      "start": 66.12,
+      "end": 75.0,
+      "start_hms": "01:06",
+      "end_hms": "01:15",
+      "text": " is for assistant editors. So view the list of your proposed reviewers versus quality",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00009_01-06.jpg",
+        "time": 66.12
+      }
+    },
+    {
+      "start": 75.0,
+      "end": 82.72,
+      "start_hms": "01:15",
+      "end_hms": "01:22",
+      "text": " check proposed reviewers. And this basically kind of fields people into all of the different",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00010_01-15.jpg",
+        "time": 75.0
+      }
+    },
+    {
+      "start": 82.72,
+      "end": 95.76,
+      "start_hms": "01:22",
+      "end_hms": "01:35",
+      "text": " channels of contributing to RID. On this particular soft art site, there's three, I guess there's",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00011_01-22.jpg",
+        "time": 82.72
+      }
+    },
+    {
+      "start": 95.76,
+      "end": 102.84,
+      "start_hms": "01:35",
+      "end_hms": "01:42",
+      "text": " two main channels. Now let's say three. So inputting peer reviews for a preprint quality",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00012_01-35.jpg",
+        "time": 95.76
+      }
+    },
+    {
+      "start": 102.84,
+      "end": 111.96000000000001,
+      "start_hms": "01:42",
+      "end_hms": "01:51",
+      "text": " checking the peer reviewers and then looking at productivity for RID on a whole. This",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00013_01-42.jpg",
+        "time": 102.84
+      }
+    },
+    {
+      "start": 111.96000000000001,
+      "end": 119.16,
+      "start_hms": "01:51",
+      "end_hms": "01:59",
+      "text": " find a preprint is an external link to the separate soft art site, which can be shown",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00014_01-51.jpg",
+        "time": 111.96000000000001
+      }
+    },
+    {
+      "start": 119.16,
+      "end": 125.48,
+      "start_hms": "01:59",
+      "end_hms": "02:05",
+      "text": " in another video, but basically it's just going home. And there's another site that handles",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00015_01-59.jpg",
+        "time": 119.16
+      }
+    },
+    {
+      "start": 125.56,
+      "end": 133.72,
+      "start_hms": "02:05",
+      "end_hms": "02:13",
+      "text": " the preprint pitching process. Okay, so if I were to click input peer reviewers, that would",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00016_02-05.jpg",
+        "time": 125.56
+      }
+    },
+    {
+      "start": 133.72,
+      "end": 139.44,
+      "start_hms": "02:13",
+      "end_hms": "02:19",
+      "text": " take me to the preprint list. And you could kind of just if you want to put on like the investigative",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00017_02-13.jpg",
+        "time": 133.72
+      }
+    },
+    {
+      "start": 139.44,
+      "end": 147.6,
+      "start_hms": "02:19",
+      "end_hms": "02:27",
+      "text": " how, like how would you figure out where this button goes, you know, go to the button to and see",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00018_02-19.jpg",
+        "time": 139.44
+      }
+    },
+    {
+      "start": 147.68,
+      "end": 156.32,
+      "start_hms": "02:27",
+      "end_hms": "02:36",
+      "text": " what it links to. So it links to the page preprint list, which is right here. And there's definitely",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00019_02-27.jpg",
+        "time": 147.68
+      }
+    },
+    {
+      "start": 156.32,
+      "end": 162.0,
+      "start_hms": "02:36",
+      "end_hms": "02:42",
+      "text": " learning curve to soft art, but it's I would not call it a steep one, probably like two, two weeks",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00020_02-36.jpg",
+        "time": 156.32
+      }
+    },
+    {
+      "start": 162.0,
+      "end": 170.32,
+      "start_hms": "02:42",
+      "end_hms": "02:50",
+      "text": " or so to get rolling with it. So going on to the preprints list, there's a couple of different",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00021_02-42.jpg",
+        "time": 162.0
+      }
+    },
+    {
+      "start": 170.4,
+      "end": 179.04,
+      "start_hms": "02:50",
+      "end_hms": "02:59",
+      "text": " features. You can see we have the active preprints list, which is visible to everybody, students,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00022_02-50.jpg",
+        "time": 170.4
+      }
+    },
+    {
+      "start": 179.04,
+      "end": 184.95999999999998,
+      "start_hms": "02:59",
+      "end_hms": "03:04",
+      "text": " assistant editors, the preprints that we want people to input peer reviewers for. Then there's",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00023_02-59.jpg",
+        "time": 179.04
+      }
+    },
+    {
+      "start": 184.95999999999998,
+      "end": 190.56,
+      "start_hms": "03:04",
+      "end_hms": "03:10",
+      "text": " the preprints that are in queue. So you can see these have an ad reviewers button and these don't",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00024_03-04.jpg",
+        "time": 184.95999999999998
+      }
+    },
+    {
+      "start": 190.56,
+      "end": 196.64,
+      "start_hms": "03:10",
+      "end_hms": "03:16",
+      "text": " because we're not allowing students access to that. However, down here, you can see the preprints",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00025_03-10.jpg",
+        "time": 190.56
+      }
+    },
+    {
+      "start": 196.64,
+      "end": 202.07999999999998,
+      "start_hms": "03:16",
+      "end_hms": "03:22",
+      "text": " and view does have the ad reviewers. And that's because going to the visibility, this is specifically",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00026_03-16.jpg",
+        "time": 196.64
+      }
+    },
+    {
+      "start": 202.07999999999998,
+      "end": 211.2,
+      "start_hms": "03:22",
+      "end_hms": "03:31",
+      "text": " for central or assistant editors to start proposing if they they so choose. And then above that,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00027_03-22.jpg",
+        "time": 202.07999999999998
+      }
+    },
+    {
+      "start": 211.2,
+      "end": 221.11999999999998,
+      "start_hms": "03:31",
+      "end_hms": "03:41",
+      "text": " you can kind of see there's a few others. This is the prioritized selected preprint. So people have",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00028_03-31.jpg",
+        "time": 211.2
+      }
+    },
+    {
+      "start": 222.08,
+      "end": 231.52,
+      "start_hms": "03:42",
+      "end_hms": "03:51",
+      "text": " many teams. And you can see in the conditional filters on this one. So if their email is within",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00029_03-42.jpg",
+        "time": 222.08
+      }
+    },
+    {
+      "start": 231.52,
+      "end": 240.08,
+      "start_hms": "03:51",
+      "end_hms": "04:00",
+      "text": " the many team emails for that preprint, this will show up in a couple of other requirements. So",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00030_03-51.jpg",
+        "time": 231.52
+      }
+    },
+    {
+      "start": 240.08,
+      "end": 248.64000000000001,
+      "start_hms": "04:00",
+      "end_hms": "04:08",
+      "text": " does it actually need any invites? Is the preprint not active yet? Things like that. This is for",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00031_04-00.jpg",
+        "time": 240.08
+      }
+    },
+    {
+      "start": 248.64,
+      "end": 253.35999999999999,
+      "start_hms": "04:08",
+      "end_hms": "04:13",
+      "text": " two pitch editorials. So we allow students, if they have our mini team for preprint, that's",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00032_04-08.jpg",
+        "time": 248.64
+      }
+    },
+    {
+      "start": 253.35999999999999,
+      "end": 259.91999999999996,
+      "start_hms": "04:13",
+      "end_hms": "04:19",
+      "text": " two pitch editorial, then they can propose up to 10 reviewers. So that's another option. And then",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00033_04-13.jpg",
+        "time": 253.35999999999999
+      }
+    },
+    {
+      "start": 259.91999999999996,
+      "end": 268.0,
+      "start_hms": "04:19",
+      "end_hms": "04:28",
+      "text": " finally, there's an assistant editor preprint spotlight. And that is when someone on the central",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00034_04-19.jpg",
+        "time": 259.91999999999996
+      }
+    },
+    {
+      "start": 268.0,
+      "end": 276.71999999999997,
+      "start_hms": "04:28",
+      "end_hms": "04:36",
+      "text": " team or in in other future scenarios, basically a preprint got one review or it's very close to",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00035_04-28.jpg",
+        "time": 268.0
+      }
+    },
+    {
+      "start": 276.72,
+      "end": 282.96000000000004,
+      "start_hms": "04:36",
+      "end_hms": "04:42",
+      "text": " getting the number of reviews required. And we just want some really high quality rapid reviewers",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00036_04-36.jpg",
+        "time": 276.72
+      }
+    },
+    {
+      "start": 282.96000000000004,
+      "end": 290.88000000000005,
+      "start_hms": "04:42",
+      "end_hms": "04:50",
+      "text": " put in. So we can choose to flag this as a spotlight for assistant editors only to see and go in",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00037_04-42.jpg",
+        "time": 282.96000000000004
+      }
+    },
+    {
+      "start": 290.88000000000005,
+      "end": 295.76000000000005,
+      "start_hms": "04:50",
+      "end_hms": "04:55",
+      "text": " and try to push us over to the finish line with some good peer reviewers for that preprint.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00038_04-50.jpg",
+        "time": 290.88000000000005
+      }
+    },
+    {
+      "start": 297.12,
+      "end": 303.68,
+      "start_hms": "04:57",
+      "end_hms": "05:03",
+      "text": " Okay. So following that line, when somebody clicks ad reviewers, that will take them to a",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00039_04-57.jpg",
+        "time": 297.12
+      }
+    },
+    {
+      "start": 303.68,
+      "end": 314.64,
+      "start_hms": "05:03",
+      "end_hms": "05:14",
+      "text": " details page for that specific preprint. And what that details page is called is article details",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00040_05-03.jpg",
+        "time": 303.68
+      }
+    },
+    {
+      "start": 314.64,
+      "end": 322.88,
+      "start_hms": "05:14",
+      "end_hms": "05:22",
+      "text": " and ad reviewers. So clicking into it, if you were to observe it on I'll do later on the site itself",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00041_05-14.jpg",
+        "time": 314.64
+      }
+    },
+    {
+      "start": 324.56,
+      "end": 332.0,
+      "start_hms": "05:24",
+      "end_hms": "05:32",
+      "text": " in the URL, it's basically filtering it so that in the URL, we see the preprint ID.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00042_05-24.jpg",
+        "time": 324.56
+      }
+    },
+    {
+      "start": 332.56,
+      "end": 338.48,
+      "start_hms": "05:32",
+      "end_hms": "05:38",
+      "text": " So this is the details block for that specific record, getting to see the title,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00043_05-32.jpg",
+        "time": 332.56
+      }
+    },
+    {
+      "start": 339.44,
+      "end": 346.48,
+      "start_hms": "05:39",
+      "end_hms": "05:46",
+      "text": " DUI, authors, affiliations for the preprint, similar articles that people have put in, things",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00044_05-39.jpg",
+        "time": 339.44
+      }
+    },
+    {
+      "start": 346.48,
+      "end": 354.16,
+      "start_hms": "05:46",
+      "end_hms": "05:54",
+      "text": " like that. We also have like the ideal reviewer profile and related works that they have, the",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00045_05-46.jpg",
+        "time": 346.48
+      }
+    },
+    {
+      "start": 354.16,
+      "end": 361.28,
+      "start_hms": "05:54",
+      "end_hms": "06:01",
+      "text": " many team lists and the ability to maybe add or remove those members. This is very not true,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00046_05-54.jpg",
+        "time": 354.16
+      }
+    },
+    {
+      "start": 361.28,
+      "end": 367.03999999999996,
+      "start_hms": "06:01",
+      "end_hms": "06:07",
+      "text": " it's just because it's in the preview mode that would be insane. We have our list of AI-suggested",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00047_06-01.jpg",
+        "time": 361.28
+      }
+    },
+    {
+      "start": 367.03999999999996,
+      "end": 374.32,
+      "start_hms": "06:07",
+      "end_hms": "06:14",
+      "text": " reviewers that have been claimed and then the list of all of them looks like this did not parse",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00048_06-07.jpg",
+        "time": 367.03999999999996
+      }
+    },
+    {
+      "start": 374.32,
+      "end": 385.03999999999996,
+      "start_hms": "06:14",
+      "end_hms": "06:25",
+      "text": " correctly. So that's telling us that the parsing algorithm didn't work. So they must have changed",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00049_06-14.jpg",
+        "time": 374.32
+      }
+    },
+    {
+      "start": 385.52000000000004,
+      "end": 394.88,
+      "start_hms": "06:25",
+      "end_hms": "06:34",
+      "text": " format. Okay, so there's those components. The ability to check for conflict of interest before",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00050_06-25.jpg",
+        "time": 385.52000000000004
+      }
+    },
+    {
+      "start": 394.88,
+      "end": 400.24,
+      "start_hms": "06:34",
+      "end_hms": "06:40",
+      "text": " proposing a reviewer. So if somebody could put in just the first and last name and the email,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00051_06-34.jpg",
+        "time": 394.88
+      }
+    },
+    {
+      "start": 401.12,
+      "end": 410.48,
+      "start_hms": "06:41",
+      "end_hms": "06:50",
+      "text": " and you can see within this like specific, we're flagging it as basic and put only. So",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00052_06-41.jpg",
+        "time": 401.12
+      }
+    },
+    {
+      "start": 411.28000000000003,
+      "end": 419.36,
+      "start_hms": "06:51",
+      "end_hms": "06:59",
+      "text": " it's not going to be actually inputted into the quality check portal because this is just kind of",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00053_06-51.jpg",
+        "time": 411.28000000000003
+      }
+    },
+    {
+      "start": 419.36,
+      "end": 427.20000000000005,
+      "start_hms": "06:59",
+      "end_hms": "07:07",
+      "text": " a just a COI check. And when somebody does that, they can see if the COI just based off the name",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00054_06-59.jpg",
+        "time": 419.36
+      }
+    },
+    {
+      "start": 427.76,
+      "end": 435.04,
+      "start_hms": "07:07",
+      "end_hms": "07:15",
+      "text": " and email flags anything. And then finally, there is the proposed a reviewer form.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00055_07-07.jpg",
+        "time": 427.76
+      }
+    },
+    {
+      "start": 435.92,
+      "end": 444.40000000000003,
+      "start_hms": "07:15",
+      "end_hms": "07:24",
+      "text": " So this is where the conflict of interest kind of takes place and definitely something that we",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00056_07-15.jpg",
+        "time": 435.92
+      }
+    },
+    {
+      "start": 444.40000000000003,
+      "end": 451.12,
+      "start_hms": "07:24",
+      "end_hms": "07:31",
+      "text": " want to update and improve within our editorial process and just to use your experience",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00057_07-24.jpg",
+        "time": 444.40000000000003
+      }
+    },
+    {
+      "start": 452.16,
+      "end": 459.12,
+      "start_hms": "07:32",
+      "end_hms": "07:39",
+      "text": " as a whole. And so something that I wanted to flag about this page is when somebody is",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00058_07-32.jpg",
+        "time": 452.16
+      }
+    },
+    {
+      "start": 459.12,
+      "end": 465.2,
+      "start_hms": "07:39",
+      "end_hms": "07:45",
+      "text": " inputting a potential peer reviewer. How do we know that it's not an author or a reason",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00059_07-39.jpg",
+        "time": 459.12
+      }
+    },
+    {
+      "start": 465.2,
+      "end": 472.56,
+      "start_hms": "07:45",
+      "end_hms": "07:52",
+      "text": " reviewer or a already proposed reviewer? And how do we let that student know? So if you go into",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00060_07-45.jpg",
+        "time": 465.2
+      }
+    },
+    {
+      "start": 472.56,
+      "end": 483.84000000000003,
+      "start_hms": "07:52",
+      "end_hms": "08:03",
+      "text": " pages, settings, custom code, we have a script that is embedded in this page and runs when",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00061_07-52.jpg",
+        "time": 472.56
+      }
+    },
+    {
+      "start": 483.84,
+      "end": 491.44,
+      "start_hms": "08:03",
+      "end_hms": "08:11",
+      "text": " the person opens this page. And it basically is pulling in relevant data such as the proposed",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00062_08-03.jpg",
+        "time": 483.84
+      }
+    },
+    {
+      "start": 491.44,
+      "end": 499.91999999999996,
+      "start_hms": "08:11",
+      "end_hms": "08:19",
+      "text": " reviewers for the preprint, things like that, it's pulling from air table. And then it is fetching",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00063_08-11.jpg",
+        "time": 491.44
+      }
+    },
+    {
+      "start": 499.91999999999996,
+      "end": 511.12,
+      "start_hms": "08:19",
+      "end_hms": "08:31",
+      "text": " information about just the recent reviewers. I already said that. Let's go to the part where it's",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00064_08-19.jpg",
+        "time": 499.91999999999996
+      }
+    },
+    {
+      "start": 511.12,
+      "end": 522.5600000000001,
+      "start_hms": "08:31",
+      "end_hms": "08:42",
+      "text": " checking. Okay, so it's also picking up information about the form itself. So it's finding where",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00065_08-31.jpg",
+        "time": 511.12
+      }
+    },
+    {
+      "start": 522.5600000000001,
+      "end": 530.5600000000001,
+      "start_hms": "08:42",
+      "end_hms": "08:50",
+      "text": " is the submit button. What do we do if we don't have a submit button, kind of track the field such as",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00066_08-42.jpg",
+        "time": 522.5600000000001
+      }
+    },
+    {
+      "start": 530.5600000000001,
+      "end": 538.0,
+      "start_hms": "08:50",
+      "end_hms": "08:58",
+      "text": " the first name field, the last name field, the email field. It's very hacky and not reliable.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00067_08-50.jpg",
+        "time": 530.5600000000001
+      }
+    },
+    {
+      "start": 538.8,
+      "end": 546.08,
+      "start_hms": "08:58",
+      "end_hms": "09:06",
+      "text": " So it requires definitely some fixing in the future. But this is what is existing now. So it'll",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00068_08-58.jpg",
+        "time": 538.8
+      }
+    },
+    {
+      "start": 546.08,
+      "end": 556.56,
+      "start_hms": "09:06",
+      "end_hms": "09:16",
+      "text": " check on a various number of things if there's any. Let's look at the matching. Yeah, so checking",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00069_09-06.jpg",
+        "time": 546.08
+      }
+    },
+    {
+      "start": 556.56,
+      "end": 562.08,
+      "start_hms": "09:16",
+      "end_hms": "09:22",
+      "text": " to see if there's the author match, reviewer match, anything like that. And finally, it will give",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00070_09-16.jpg",
+        "time": 556.56
+      }
+    },
+    {
+      "start": 562.08,
+      "end": 571.44,
+      "start_hms": "09:22",
+      "end_hms": "09:31",
+      "text": " a feedback to the user live that there's they found a match and will stop the person from being",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00071_09-22.jpg",
+        "time": 562.08
+      }
+    },
+    {
+      "start": 571.44,
+      "end": 578.24,
+      "start_hms": "09:31",
+      "end_hms": "09:38",
+      "text": " able to continue with this next button. There'll be more information on that, but just a high level.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00072_09-31.jpg",
+        "time": 571.44
+      }
+    },
+    {
+      "start": 579.9200000000001,
+      "end": 586.4000000000001,
+      "start_hms": "09:39",
+      "end_hms": "09:46",
+      "text": " So that's on that page. And then this great outbox just means these are kind of old and outdated",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00073_09-39.jpg",
+        "time": 579.9200000000001
+      }
+    },
+    {
+      "start": 587.1999999999999,
+      "end": 592.4,
+      "start_hms": "09:47",
+      "end_hms": "09:52",
+      "text": " things that we used to use. Okay, so when you're on this page and you choose to",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00074_09-47.jpg",
+        "time": 587.1999999999999
+      }
+    },
+    {
+      "start": 594.16,
+      "end": 602.3199999999999,
+      "start_hms": "09:54",
+      "end_hms": "10:02",
+      "text": " claim a peer or a profy suggested reviewer and evaluate it, that'll pop up here and they will",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00075_09-54.jpg",
+        "time": 594.16
+      }
+    },
+    {
+      "start": 602.3199999999999,
+      "end": 613.04,
+      "start_hms": "10:02",
+      "end_hms": "10:13",
+      "text": " click the evaluate button. And if we want to put on our investigative hat, you can see this is",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00076_10-02.jpg",
+        "time": 602.3199999999999
+      }
+    },
+    {
+      "start": 613.04,
+      "end": 618.16,
+      "start_hms": "10:13",
+      "end_hms": "10:18",
+      "text": " pulled from our reviewer selection process in the table referees, which we know are the AI",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00077_10-13.jpg",
+        "time": 613.04
+      }
+    },
+    {
+      "start": 618.16,
+      "end": 626.0799999999999,
+      "start_hms": "10:18",
+      "end_hms": "10:26",
+      "text": " suggested reviewers. And it has a view referees for web app. We should probably normalize the",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00078_10-18.jpg",
+        "time": 618.16
+      }
+    },
+    {
+      "start": 626.0799999999999,
+      "end": 631.52,
+      "start_hms": "10:26",
+      "end_hms": "10:31",
+      "text": " naming standards. So it's something like embeds. So we know that we shouldn't change that. But",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00079_10-26.jpg",
+        "time": 626.0799999999999
+      }
+    },
+    {
+      "start": 631.52,
+      "end": 637.12,
+      "start_hms": "10:31",
+      "end_hms": "10:37",
+      "text": " that's basically just to make our fetching more efficient. Okay, so going at actions, that's this",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00080_10-31.jpg",
+        "time": 631.52
+      }
+    },
+    {
+      "start": 637.2,
+      "end": 651.76,
+      "start_hms": "10:37",
+      "end_hms": "10:51",
+      "text": " button here. It's going to open our URL. This pre-filled details page is actually a record",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00081_10-37.jpg",
+        "time": 637.2
+      }
+    },
+    {
+      "start": 652.64,
+      "end": 657.68,
+      "start_hms": "10:52",
+      "end_hms": "10:57",
+      "text": " within our air table, which is kind of interesting. So if I don't know if it's going to",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00082_10-52.jpg",
+        "time": 652.64
+      }
+    },
+    {
+      "start": 658.48,
+      "end": 664.4,
+      "start_hms": "10:58",
+      "end_hms": "11:04",
+      "text": " that's funny. Okay, I don't know if it's going to show. But there's this is a column. This is a field",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00083_10-58.jpg",
+        "time": 658.48
+      }
+    },
+    {
+      "start": 664.88,
+      "end": 671.4399999999999,
+      "start_hms": "11:04",
+      "end_hms": "11:11",
+      "text": " within our air table, specifically within the referees table. And it's",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00084_11-04.jpg",
+        "time": 664.88
+      }
+    },
+    {
+      "start": 672.9599999999999,
+      "end": 681.52,
+      "start_hms": "11:12",
+      "end_hms": "11:21",
+      "text": " completing what the details URL would be, but is prefilling some of the form information,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00085_11-12.jpg",
+        "time": 672.9599999999999
+      }
+    },
+    {
+      "start": 681.52,
+      "end": 690.24,
+      "start_hms": "11:21",
+      "end_hms": "11:30",
+      "text": " such as the name and the email. That will make sense with more just investigation.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00086_11-21.jpg",
+        "time": 681.52
+      }
+    },
+    {
+      "start": 690.8,
+      "end": 698.24,
+      "start_hms": "11:30",
+      "end_hms": "11:38",
+      "text": " But if they were to click evaluate, they'll come here and see the reviewers details",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00087_11-30.jpg",
+        "time": 690.8
+      }
+    },
+    {
+      "start": 698.96,
+      "end": 705.52,
+      "start_hms": "11:38",
+      "end_hms": "11:45",
+      "text": " that's provided by Profi or whatever our future AI Suggester is, relevant affiliations,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00088_11-38.jpg",
+        "time": 698.96
+      }
+    },
+    {
+      "start": 706.64,
+      "end": 713.6800000000001,
+      "start_hms": "11:46",
+      "end_hms": "11:53",
+      "text": " the person who claimed it, and or could ID things like that. And then they have three options.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00089_11-46.jpg",
+        "time": 706.64
+      }
+    },
+    {
+      "start": 713.6800000000001,
+      "end": 718.72,
+      "start_hms": "11:53",
+      "end_hms": "11:58",
+      "text": " They can choose that they actually just don't even know enough information. They didn't",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00090_11-53.jpg",
+        "time": 713.6800000000001
+      }
+    },
+    {
+      "start": 720.32,
+      "end": 723.84,
+      "start_hms": "12:00",
+      "end_hms": "12:03",
+      "text": " want to select this person and they can select unable to evaluate.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00091_12-00.jpg",
+        "time": 720.32
+      }
+    },
+    {
+      "start": 725.12,
+      "end": 730.16,
+      "start_hms": "12:05",
+      "end_hms": "12:10",
+      "text": " They can choose to reject the reviewers. So they looked at the information. They",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00092_12-05.jpg",
+        "time": 725.12
+      }
+    },
+    {
+      "start": 730.8,
+      "end": 734.4,
+      "start_hms": "12:10",
+      "end_hms": "12:14",
+      "text": " use their best judgment. They're like, this is not an appropriate person. For the pre-brand,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00093_12-10.jpg",
+        "time": 730.8
+      }
+    },
+    {
+      "start": 734.4,
+      "end": 741.2,
+      "start_hms": "12:14",
+      "end_hms": "12:21",
+      "text": " they'll reject the reviewer. And that actually goes into our student reviewer inputs.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00094_12-14.jpg",
+        "time": 734.4
+      }
+    },
+    {
+      "start": 741.2,
+      "end": 745.6,
+      "start_hms": "12:21",
+      "end_hms": "12:25",
+      "text": " It'll leave the referee table good or student reviewer inputs, but already be flagged as student",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00095_12-21.jpg",
+        "time": 741.2
+      }
+    },
+    {
+      "start": 745.6,
+      "end": 751.52,
+      "start_hms": "12:25",
+      "end_hms": "12:31",
+      "text": " reject. So that's just kind of a way for assistant editors to be able to see who's getting rejected",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00096_12-25.jpg",
+        "time": 745.6
+      }
+    },
+    {
+      "start": 751.52,
+      "end": 759.0400000000001,
+      "start_hms": "12:31",
+      "end_hms": "12:39",
+      "text": " by Profi and who's not. And then we have the option for them to actually propose that reviewer",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00097_12-31.jpg",
+        "time": 751.52
+      }
+    },
+    {
+      "start": 760.96,
+      "end": 770.48,
+      "start_hms": "12:40",
+      "end_hms": "12:50",
+      "text": " as a referee. So once again, there's some custom code making sure that the student's not going to",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00098_12-40.jpg",
+        "time": 760.96
+      }
+    },
+    {
+      "start": 770.72,
+      "end": 779.9200000000001,
+      "start_hms": "12:50",
+      "end_hms": "12:59",
+      "text": " do somebody who's already proposed or a recent reviewer. And I believe also author, but because this",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00099_12-50.jpg",
+        "time": 770.72
+      }
+    },
+    {
+      "start": 779.9200000000001,
+      "end": 784.64,
+      "start_hms": "12:59",
+      "end_hms": "13:04",
+      "text": " already is coming from Profi, we kind of, we know it's not going to be an author of the pre-brand.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00100_12-59.jpg",
+        "time": 779.9200000000001
+      }
+    },
+    {
+      "start": 785.44,
+      "end": 794.4,
+      "start_hms": "13:05",
+      "end_hms": "13:14",
+      "text": " And we do have an automation running to make sure we can kind of cancel out or hide any",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00101_13-05.jpg",
+        "time": 785.44
+      }
+    },
+    {
+      "start": 794.4,
+      "end": 800.0799999999999,
+      "start_hms": "13:14",
+      "end_hms": "13:20",
+      "text": " AI suggested reviewers who have been recently invited. But there's just race conditions and",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00102_13-14.jpg",
+        "time": 794.4
+      }
+    },
+    {
+      "start": 800.0799999999999,
+      "end": 806.4,
+      "start_hms": "13:20",
+      "end_hms": "13:26",
+      "text": " things to take into account. So that's also some code that we have. Okay, so those are the",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00103_13-20.jpg",
+        "time": 800.0799999999999
+      }
+    },
+    {
+      "start": 806.4,
+      "end": 812.0799999999999,
+      "start_hms": "13:26",
+      "end_hms": "13:32",
+      "text": " proposing reviewers. The two, they're the three most important things for that. So where once",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00104_13-26.jpg",
+        "time": 806.4
+      }
+    },
+    {
+      "start": 812.0799999999999,
+      "end": 818.0,
+      "start_hms": "13:32",
+      "end_hms": "13:38",
+      "text": " proposed reviewers are proposed, where does that go within soft art? And the main one is the",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00105_13-32.jpg",
+        "time": 812.0799999999999
+      }
+    },
+    {
+      "start": 818.0,
+      "end": 824.96,
+      "start_hms": "13:38",
+      "end_hms": "13:44",
+      "text": " quality check portal. But you can see here, there's a lot of them. So these two are just testers",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00106_13-38.jpg",
+        "time": 818.0
+      }
+    },
+    {
+      "start": 824.96,
+      "end": 830.48,
+      "start_hms": "13:44",
+      "end_hms": "13:50",
+      "text": " right now, but their quality check portal quality check portal complete my quality checks.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00107_13-44.jpg",
+        "time": 824.96
+      }
+    },
+    {
+      "start": 832.24,
+      "end": 840.08,
+      "start_hms": "13:52",
+      "end_hms": "14:00",
+      "text": " And that's it. So the quality check portal is where assistant editors and the central team go",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00108_13-52.jpg",
+        "time": 832.24
+      }
+    },
+    {
+      "start": 840.08,
+      "end": 848.5600000000001,
+      "start_hms": "14:00",
+      "end_hms": "14:08",
+      "text": " to view all of the proposed reviewers. I don't want to preview it, but I will just so we're on",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00109_14-00.jpg",
+        "time": 840.08
+      }
+    },
+    {
+      "start": 848.5600000000001,
+      "end": 854.32,
+      "start_hms": "14:08",
+      "end_hms": "14:14",
+      "text": " the same page. But you can see on the soft art end of things, this is a very simple page. It's",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00110_14-08.jpg",
+        "time": 848.5600000000001
+      }
+    },
+    {
+      "start": 854.32,
+      "end": 860.4000000000001,
+      "start_hms": "14:14",
+      "end_hms": "14:20",
+      "text": " some written text just so people kind of are on the same page about what they're seeing and then",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00111_14-14.jpg",
+        "time": 854.32
+      }
+    },
+    {
+      "start": 860.4000000000001,
+      "end": 868.0,
+      "start_hms": "14:20",
+      "end_hms": "14:28",
+      "text": " custom code. And I want to say if there is no nothing. Yeah, there's nothing in the upper head. It's",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00112_14-20.jpg",
+        "time": 860.4000000000001
+      }
+    },
+    {
+      "start": 868.0,
+      "end": 877.2,
+      "start_hms": "14:28",
+      "end_hms": "14:37",
+      "text": " just our quality check table is actually hard coded within this soft art field. And you can see",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00113_14-28.jpg",
+        "time": 868.0
+      }
+    },
+    {
+      "start": 877.2,
+      "end": 886.16,
+      "start_hms": "14:37",
+      "end_hms": "14:46",
+      "text": " here things that were not being rendered. Actually, the HTML here actually is being rendered.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00114_14-37.jpg",
+        "time": 877.2
+      }
+    },
+    {
+      "start": 886.16,
+      "end": 892.08,
+      "start_hms": "14:46",
+      "end_hms": "14:52",
+      "text": " And it's pulling all the air table data through our own scripts and showing this user interface.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00115_14-46.jpg",
+        "time": 886.16
+      }
+    },
+    {
+      "start": 892.08,
+      "end": 901.44,
+      "start_hms": "14:52",
+      "end_hms": "15:01",
+      "text": " It has a lot of room for improvement. So that's our quality check portal. This is only for",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00116_14-52.jpg",
+        "time": 892.08
+      }
+    },
+    {
+      "start": 901.44,
+      "end": 910.88,
+      "start_hms": "15:01",
+      "end_hms": "15:10",
+      "text": " in process preprints, so ones that are not yet complete. Then we also have the complete ones.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00117_15-01.jpg",
+        "time": 901.44
+      }
+    },
+    {
+      "start": 910.88,
+      "end": 915.6800000000001,
+      "start_hms": "15:10",
+      "end_hms": "15:15",
+      "text": " And then finally, what we call my quality checks. And that's basically just for students",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00118_15-10.jpg",
+        "time": 910.88
+      }
+    },
+    {
+      "start": 916.3199999999999,
+      "end": 923.76,
+      "start_hms": "15:16",
+      "end_hms": "15:23",
+      "text": " being able to see it's it's the same idea. They have the in process and the complete. However,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00119_15-16.jpg",
+        "time": 916.3199999999999
+      }
+    },
+    {
+      "start": 926.2399999999999,
+      "end": 934.16,
+      "start_hms": "15:26",
+      "end_hms": "15:34",
+      "text": " a student can't see other people's proposed reviewers specifically within this. It's for them",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00120_15-26.jpg",
+        "time": 926.2399999999999
+      }
+    },
+    {
+      "start": 934.16,
+      "end": 940.3199999999999,
+      "start_hms": "15:34",
+      "end_hms": "15:40",
+      "text": " to see the outcomes of their proposed reviewers. So it has very similar functionality, but just",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00121_15-34.jpg",
+        "time": 934.16
+      }
+    },
+    {
+      "start": 940.96,
+      "end": 955.6800000000001,
+      "start_hms": "15:40",
+      "end_hms": "15:55",
+      "text": " filtered for that. And that's I think that this preprint control panel is only visible to",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00122_15-40.jpg",
+        "time": 940.96
+      }
+    },
+    {
+      "start": 956.48,
+      "end": 962.5600000000001,
+      "start_hms": "15:56",
+      "end_hms": "16:02",
+      "text": " central team. And it's kind of a way for them to be able to manipulate some of the the preprints that",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00123_15-56.jpg",
+        "time": 956.48
+      }
+    },
+    {
+      "start": 963.1999999999999,
+      "end": 968.8,
+      "start_hms": "16:03",
+      "end_hms": "16:08",
+      "text": " and their information without actually having to log into the dev spa and",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00124_16-03.jpg",
+        "time": 963.1999999999999
+      }
+    },
+    {
+      "start": 970.7199999999999,
+      "end": 975.92,
+      "start_hms": "16:10",
+      "end_hms": "16:15",
+      "text": " change directly from air table. It also makes it a little bit safer just as the team grows.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00125_16-10.jpg",
+        "time": 970.7199999999999
+      }
+    },
+    {
+      "start": 975.92,
+      "end": 981.3599999999999,
+      "start_hms": "16:15",
+      "end_hms": "16:21",
+      "text": " So they can go in and choose to make a preprint active, update what their",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00126_16-15.jpg",
+        "time": 975.92
+      }
+    },
+    {
+      "start": 983.1199999999999,
+      "end": 987.3599999999999,
+      "start_hms": "16:23",
+      "end_hms": "16:27",
+      "text": " ranking is. If there's preprint information that needs to be",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00127_16-23.jpg",
+        "time": 983.1199999999999
+      }
+    },
+    {
+      "start": 988.32,
+      "end": 996.48,
+      "start_hms": "16:28",
+      "end_hms": "16:36",
+      "text": " improved, they can do that. So you can control what item fields show up and then what actions.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00128_16-28.jpg",
+        "time": 988.32
+      }
+    },
+    {
+      "start": 996.48,
+      "end": 1001.76,
+      "start_hms": "16:36",
+      "end_hms": "16:41",
+      "text": " So you can go in and be like, what can they edit here? So here they can update the maintain",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00129_16-36.jpg",
+        "time": 996.48
+      }
+    },
+    {
+      "start": 1001.76,
+      "end": 1005.84,
+      "start_hms": "16:41",
+      "end_hms": "16:45",
+      "text": " email and information about the reviewer profile.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00130_16-41.jpg",
+        "time": 1001.76
+      }
+    },
+    {
+      "start": 1006.8000000000001,
+      "end": 1020.96,
+      "start_hms": "16:46",
+      "end_hms": "17:00",
+      "text": " This is a way, once again, for central to go and update information about our user database",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00131_16-46.jpg",
+        "time": 1006.8000000000001
+      }
+    },
+    {
+      "start": 1020.96,
+      "end": 1027.68,
+      "start_hms": "17:00",
+      "end_hms": "17:07",
+      "text": " without having to log into air table directly. But yeah, they have options to set the person to active",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00132_17-00.jpg",
+        "time": 1020.96
+      }
+    },
+    {
+      "start": 1028.48,
+      "end": 1036.4,
+      "start_hms": "17:08",
+      "end_hms": "17:16",
+      "text": " map to. Why wouldn't email work? Oh, because it's a text email.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00133_17-08.jpg",
+        "time": 1028.48
+      }
+    },
+    {
+      "start": 1039.6000000000001,
+      "end": 1044.8,
+      "start_hms": "17:19",
+      "end_hms": "17:24",
+      "text": " I'm just going to make sure that that's supposed to be. That's not working. Yeah, active,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00134_17-19.jpg",
+        "time": 1039.6000000000001
+      }
+    },
+    {
+      "start": 1044.8,
+      "end": 1049.1200000000001,
+      "start_hms": "17:24",
+      "end_hms": "17:29",
+      "text": " choose the number of units or team or domain or how they're participating. Just things that",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00135_17-24.jpg",
+        "time": 1044.8
+      }
+    },
+    {
+      "start": 1049.12,
+      "end": 1058.32,
+      "start_hms": "17:29",
+      "end_hms": "17:38",
+      "text": " central might want to be able to do. Profi dashboard. Oh, this is just, that's embedded air table",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00136_17-29.jpg",
+        "time": 1049.12
+      }
+    },
+    {
+      "start": 1058.32,
+      "end": 1067.1999999999998,
+      "start_hms": "17:38",
+      "end_hms": "17:47",
+      "text": " interfaces to see how profi is doing. Invited preprints. This isn't really in use and it should",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00137_17-38.jpg",
+        "time": 1058.32
+      }
+    },
+    {
+      "start": 1067.1999999999998,
+      "end": 1075.1999999999998,
+      "start_hms": "17:47",
+      "end_hms": "17:55",
+      "text": " be something that it's kind of like we were ideating about what it would mean to improve the",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00138_17-47.jpg",
+        "time": 1067.1999999999998
+      }
+    },
+    {
+      "start": 1075.2,
+      "end": 1082.4,
+      "start_hms": "17:55",
+      "end_hms": "18:02",
+      "text": " automations or the the after the facts of finding reviewers to actually receiving those reviews",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00139_17-55.jpg",
+        "time": 1075.2
+      }
+    },
+    {
+      "start": 1082.4,
+      "end": 1088.8,
+      "start_hms": "18:02",
+      "end_hms": "18:08",
+      "text": " and for angel to be able to come in or angel or whoever is on the central team who's tracking",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00140_18-02.jpg",
+        "time": 1082.4
+      }
+    },
+    {
+      "start": 1088.8,
+      "end": 1094.24,
+      "start_hms": "18:08",
+      "end_hms": "18:14",
+      "text": " through reviews that are sent out to come in and update those. And hopefully we'll have that",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00141_18-08.jpg",
+        "time": 1088.8
+      }
+    },
+    {
+      "start": 1094.24,
+      "end": 1102.64,
+      "start_hms": "18:14",
+      "end_hms": "18:22",
+      "text": " integrated within our infrastructure infrastructure processes so that we can help alleviate manual",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00142_18-14.jpg",
+        "time": 1094.24
+      }
+    },
+    {
+      "start": 1103.6000000000001,
+      "end": 1113.8400000000001,
+      "start_hms": "18:23",
+      "end_hms": "18:33",
+      "text": " lever. This help is just some intro things for people to have access to. They're quite outdated.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00143_18-23.jpg",
+        "time": 1103.6000000000001
+      }
+    },
+    {
+      "start": 1113.8400000000001,
+      "end": 1118.4,
+      "start_hms": "18:33",
+      "end_hms": "18:38",
+      "text": " And I think that articulate is kind of replacing that, but it's what we used to do.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00144_18-33.jpg",
+        "time": 1113.8400000000001
+      }
+    },
+    {
+      "start": 1120.24,
+      "end": 1127.6000000000001,
+      "start_hms": "18:40",
+      "end_hms": "18:47",
+      "text": " Productivity dashboard. This one's pretty important. You can see that there's a lot of different ideas",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00145_18-40.jpg",
+        "time": 1120.24
+      }
+    },
+    {
+      "start": 1127.76,
+      "end": 1133.76,
+      "start_hms": "18:47",
+      "end_hms": "18:53",
+      "text": " on how to organize this information. But basically when central and assistant editors come in,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00146_18-47.jpg",
+        "time": 1127.76
+      }
+    },
+    {
+      "start": 1133.76,
+      "end": 1140.7199999999998,
+      "start_hms": "18:53",
+      "end_hms": "19:00",
+      "text": " they want to see a number of things. Student productivity, A productivity, the team performance,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00147_18-53.jpg",
+        "time": 1133.76
+      }
+    },
+    {
+      "start": 1140.7199999999998,
+      "end": 1146.7199999999998,
+      "start_hms": "19:00",
+      "end_hms": "19:06",
+      "text": " domain performance, just be able to search for students and team pitching. But if you go in here,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00148_19-00.jpg",
+        "time": 1140.7199999999998
+      }
+    },
+    {
+      "start": 1146.8,
+      "end": 1156.16,
+      "start_hms": "19:06",
+      "end_hms": "19:16",
+      "text": " all of it is custom code. So I wonder if, you know, because it's an embed link.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00149_19-06.jpg",
+        "time": 1146.8
+      }
+    },
+    {
+      "start": 1158.8,
+      "end": 1165.44,
+      "start_hms": "19:18",
+      "end_hms": "19:25",
+      "text": " But anyway, yeah, some of these are air table embeds. In fact, I think they're all air table embeds.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00150_19-18.jpg",
+        "time": 1158.8
+      }
+    },
+    {
+      "start": 1167.44,
+      "end": 1173.52,
+      "start_hms": "19:27",
+      "end_hms": "19:33",
+      "text": " Yeah, so it's either an interface or just an actual view that's being embedded here.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00151_19-27.jpg",
+        "time": 1167.44
+      }
+    },
+    {
+      "start": 1173.68,
+      "end": 1183.52,
+      "start_hms": "19:33",
+      "end_hms": "19:43",
+      "text": " For central to see any can preview to see what that is. And then central",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00152_19-33.jpg",
+        "time": 1173.68
+      }
+    },
+    {
+      "start": 1183.52,
+      "end": 1192.16,
+      "start_hms": "19:43",
+      "end_hms": "19:52",
+      "text": " and performance. You might have to preview that. See, I think that this isn't also outdated. Okay,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00153_19-43.jpg",
+        "time": 1183.52
+      }
+    },
+    {
+      "start": 1192.16,
+      "end": 1198.96,
+      "start_hms": "19:52",
+      "end_hms": "19:58",
+      "text": " then finally, it's the achievement and training dashboard. So this is connected to its own base within",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00154_19-52.jpg",
+        "time": 1192.16
+      }
+    },
+    {
+      "start": 1198.96,
+      "end": 1209.52,
+      "start_hms": "19:58",
+      "end_hms": "20:09",
+      "text": " air table called, I think, training dashboard, something like that. So when the person comes in,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00155_19-58.jpg",
+        "time": 1198.96
+      }
+    },
+    {
+      "start": 1209.52,
+      "end": 1214.08,
+      "start_hms": "20:09",
+      "end_hms": "20:14",
+      "text": " they're kind of being onboarded and they're learning along the way. We have information for",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00156_20-09.jpg",
+        "time": 1209.52
+      }
+    },
+    {
+      "start": 1214.08,
+      "end": 1221.2,
+      "start_hms": "20:14",
+      "end_hms": "20:21",
+      "text": " their badges. So there's kind of things that are just like RID specific, reviewer proposal",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00157_20-14.jpg",
+        "time": 1214.08
+      }
+    },
+    {
+      "start": 1221.2,
+      "end": 1227.68,
+      "start_hms": "20:21",
+      "end_hms": "20:27",
+      "text": " specific, and then preprint pitching specific. And as you can see, there's badges that people can",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00158_20-21.jpg",
+        "time": 1221.2
+      }
+    },
+    {
+      "start": 1227.68,
+      "end": 1236.88,
+      "start_hms": "20:27",
+      "end_hms": "20:36",
+      "text": " earn at the top. You also have different tabs to see within one of those pillars. What is their",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00159_20-27.jpg",
+        "time": 1227.68
+      }
+    },
+    {
+      "start": 1236.88,
+      "end": 1245.6000000000001,
+      "start_hms": "20:36",
+      "end_hms": "20:45",
+      "text": " progress? And how is that looking? I think the eduetech thing is a whole thing to discuss",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00160_20-36.jpg",
+        "time": 1236.88
+      }
+    },
+    {
+      "start": 1247.6000000000001,
+      "end": 1252.5600000000002,
+      "start_hms": "20:47",
+      "end_hms": "20:52",
+      "text": " in its own separate thing. But yeah, people can track, you know, what they've been able to",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00161_20-47.jpg",
+        "time": 1247.6000000000001
+      }
+    },
+    {
+      "start": 1253.52,
+      "end": 1265.76,
+      "start_hms": "20:53",
+      "end_hms": "21:05",
+      "text": " succeed in managing. And I think that's just about it. The one other thing I'll show is",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00162_20-53.jpg",
+        "time": 1253.52
+      }
+    },
+    {
+      "start": 1270.08,
+      "end": 1281.28,
+      "start_hms": "21:10",
+      "end_hms": "21:21",
+      "text": " maybe not. For students to be able to get like the direct feedback of how many people have I,",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00163_21-10.jpg",
+        "time": 1270.08
+      }
+    },
+    {
+      "start": 1281.28,
+      "end": 1286.56,
+      "start_hms": "21:21",
+      "end_hms": "21:26",
+      "text": " what's my total green light rate? Things like that. Just those important numbers that they know",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00164_21-21.jpg",
+        "time": 1281.28
+      }
+    },
+    {
+      "start": 1286.56,
+      "end": 1296.8799999999999,
+      "start_hms": "21:26",
+      "end_hms": "21:36",
+      "text": " that they need to be tracking to be able to pass. Okay, thank you. And then I guess last but not",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00165_21-26.jpg",
+        "time": 1286.56
+      }
+    },
+    {
+      "start": 1296.8799999999999,
+      "end": 1304.8799999999999,
+      "start_hms": "21:36",
+      "end_hms": "21:44",
+      "text": " least is the header navigation. These are all the headers. And if you just want to see who can view",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00166_21-36.jpg",
+        "time": 1296.8799999999999
+      }
+    },
+    {
+      "start": 1304.96,
+      "end": 1309.8400000000001,
+      "start_hms": "21:44",
+      "end_hms": "21:49",
+      "text": " it, you can select that and see how it is organized.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00167_21-44.jpg",
+        "time": 1304.96
+      }
+    },
+    {
+      "start": 1315.2,
+      "end": 1317.2,
+      "start_hms": "21:55",
+      "end_hms": "21:57",
+      "text": " Okay.",
+      "frame": {
+        "path": "output/softr/20251119_071215/frames/frame_00168_21-55.jpg",
+        "time": 1315.2
+      }
+    }
+  ]
+}
