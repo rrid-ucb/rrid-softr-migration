@@ -239,7 +239,7 @@ Um, and we also will burn… AI-suggested reviewers who have that same domain, b
 This is tracking, um… For preprints, when they are… selected the final ranking, like, the field that decides.
 
 [Rrid SP_Account] 12:31:30
-What the final ranking of that preprint will be, whether it be 1, 2, 3, 4, 5, like, what's our priority is in Steph's ranking field, so… When that is updated, we'll change the rank, um… inputted by Steph.
+What the final ranking of that preprint will be, whether it be 1, 2, 3, 4, 5, like, what's our priority is in Stef's ranking field, so… When that is updated, we'll change the rank, um… inputted by Stef.
 
 [Rrid SP_Account] 12:31:45
 I would suggest looking through the code, but it's a little bit… there's a little bit more nuance to it, um… Because we have to take into account.
@@ -452,7 +452,7 @@ Okay, and then what if it's in circulation, but then all of a sudden… We rejec
 Um, our goal of 30 invites, then we'll set more invites needed, or the formula will.
 
 [Rrid SP_Account] 12:42:19
-be set to more invites needed. Um, and that's… then we need to bring this preprint back alive, so… This is new. Steph wants it to just immediately be made active, and so that's what we do. We set it to active immediately.
+be set to more invites needed. Um, and that's… then we need to bring this preprint back alive, so… This is new. Stef wants it to just immediately be made active, and so that's what we do. We set it to active immediately.
 
 [Rrid SP_Account] 12:42:37
 Um, and in so doing… We're gonna, like, move it up, and then re-rank everything.
@@ -770,7 +770,7 @@ Um, and that they should go… Quality check.
 In the other case where the unchecked count is.
 
 [Rrid SP_Account] 12:58:03
-greater than 30, then we want Steph to also be flagged.
+greater than 30, then we want Stef to also be flagged.
 
 [Rrid SP_Account] 12:58:09
 Um… If the list of AI-suggested reviewers does not seem to be doing well.
