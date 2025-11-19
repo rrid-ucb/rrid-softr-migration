@@ -2,11 +2,43 @@
 
 Transform video walkthroughs into comprehensive product documentation using AI-powered analysis.
 
+## Table of Contents
+
+- [Generated Documentation](#generated-documentation)
+  - [Softr Application Walkthrough](#softr-application-walkthrough)
+    - [Softr Linear Walkthrough](#-softr-linear-walkthrough)
+    - [Softr Personas, User Stories, and User Journeys](#-softr-personas-user-stories-and-user-journeys)
+    - [Softr Product Requirements Document (PRD)](#-softr-product-requirements-document-prd)
+  - [Airtable Backend Walkthrough](#airtable-backend-walkthrough)
+    - [Airtable Linear Walkthrough](#-airtable-linear-walkthrough)
+    - [Airtable Personas, User Stories, and User Journeys](#-airtable-personas-user-stories-and-user-journeys)
+    - [Airtable Product Requirements Document (PRD)](#-airtable-product-requirements-document-prd)
+    - [Airtable Issues & Pain Points](#-airtable-issues--pain-points)
+- [What This Does](#what-this-does)
+- [Quick Start](#quick-start)
+- [Documentation](#documentation)
+- [Example Use Case](#example-use-case-softr-migration)
+- [What You Need](#what-you-need)
+- [File Structure](#file-structure)
+- [Usage Examples](#usage-examples)
+- [Output Documents Explained](#output-documents-explained)
+- [Cost](#cost)
+- [Tips for Best Results](#tips-for-best-results)
+- [Troubleshooting](#troubleshooting)
+- [Project Status](#project-status)
+
 ## Generated Documentation
 
-This project has generated comprehensive documentation from a Softr application walkthrough. The following enriched documents provide detailed analysis of the RRID Reviewer Selection system:
+This project has generated comprehensive documentation from two video walkthroughs:
 
-### 📖 [Linear Walkthrough](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md)
+1. **Softr Application Walkthrough** - Frontend user interface and workflows
+2. **Airtable Backend Walkthrough** - Backend architecture, automations, and integrations
+
+### Softr Application Walkthrough
+
+Documentation from the Softr application walkthrough providing detailed analysis of the RRID Reviewer Selection system frontend.
+
+#### 📖 [Softr Linear Walkthrough](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md)
 
 A comprehensive, chapter-by-chapter walkthrough of the Softr application that goes beyond the speaker's narration to identify interface components, Airtable integrations, and UI details. Perfect for understanding the complete application flow and training new team members.
 
@@ -21,7 +53,7 @@ A comprehensive, chapter-by-chapter walkthrough of the Softr application that go
 - [Chapter 8: Central Team Dashboards: Productivity and Training](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-8-central-team-dashboards-productivity-and-training) - Productivity tracking and achievement/training dashboards
 - [Chapter 9: Tracking Progress and Configuring Header Navigation](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-9-tracking-progress-and-configuring-header-navigation) - Student progress tracking and navigation configuration
 
-### 👥 [Personas, User Stories, and User Journeys](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md)
+#### 👥 [Softr Personas, User Stories, and User Journeys](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md)
 
 User-centric documentation identifying three distinct personas (Administrator, AE Assignee, Reviewer), their goals, pain points, and how they interact with the system. Includes detailed user stories with acceptance criteria and complete user journeys.
 
@@ -31,7 +63,7 @@ User-centric documentation identifying three distinct personas (Administrator, A
 - [Feature Mapping](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#3-feature-mapping) - Mapping of features to personas and their access levels
 - [User Journeys](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#4-user-journeys) - Complete workflows for Administrator customization, AE reviewer assignment, and Reviewer preprint claiming
 
-### 📋 [Product Requirements Document (PRD)](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md)
+#### 📋 [Softr Product Requirements Document (PRD)](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md)
 
 A comprehensive PRD with page-by-page specifications, technical requirements, data models, and user workflows. Essential for development planning, technical specifications, and migration projects.
 
@@ -42,6 +74,59 @@ A comprehensive PRD with page-by-page specifications, technical requirements, da
 - [Data Models](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#4-data-models-inferred) - Inferred data structures for Preprints, Reviewers, Users, and Review Assignments
 - [User Workflows](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#5-user-workflows) - Step-by-step workflows for adding reviewers, evaluating reviewers, and claiming preprints
 
+### Airtable Backend Walkthrough
+
+Documentation from the Airtable backend walkthrough providing detailed analysis of automations, table structures, integrations, and system architecture.
+
+#### 📖 [Airtable Linear Walkthrough](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md)
+
+A comprehensive walkthrough of the Airtable backend automations and workflows that power the reviewer selection process. Documents each automation, its triggers, actions, and business logic.
+
+**Table of Contents:**
+- [Introduction to Automations in Reviewer Selection Base](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#introduction-to-automations-in-reviewer-selection-base) - Overview of tables and base structure
+- [Walking Through Automations: From Selected to Preprint Info](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#walking-through-automations-from-selected-to-preprint-info) - Initial automation workflows
+- [Tracking Team Performance and Domain Performance](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#tracking-team-performance-and-domain-performance) - Performance tracking automations
+- [Automations Related to Student Reviewer Inputs (SRI)](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#automations-related-to-student-reviewer-inputs-sri) - Student workflow automations
+- [Automations for Quality Checking and COI (Conflict of Interest)](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#automations-for-quality-checking-and-coi-conflict-of-interest) - Quality assurance workflows
+- [Managing Preprint Ranking and Status](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#managing-preprint-ranking-and-status) - Status management automations
+- [Complex Logic for Preprint Status and Invites](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#complex-logic-for-preprint-status-and-invites) - Advanced workflow logic
+- [Managing Invite Processes and COI Checks](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#managing-invite-processes-and-coi-checks) - Reviewer invitation workflows
+- [Finalizing Invites and Limiting Claims](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#finalizing-invites-and-limiting-claims) - Invitation completion processes
+- [Post-Invite Actions and Clean-Up](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#post-invite-actions-and-clean-up) - Post-processing automations
+- [Tracking and Managing Reviewers and Preprints](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/linear_walkthrough_gemini.md#tracking-and-managing-reviewers-and-preprints) - Ongoing management workflows
+
+#### 👥 [Airtable Personas, User Stories, and User Journeys](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/personas_stories_gemini.md)
+
+User-centric documentation for the Airtable backend system, identifying personas (Editorial Lead, Assistant Editor, Student Reviewer Proposer), their goals, pain points, and how they interact with automations.
+
+**Table of Contents:**
+- [User Personas](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/personas_stories_gemini.md#1-user-personas) - Editorial Lead (Stef), Assistant Editor (Angel), Student Reviewer Proposer, and AI Model personas
+- [User Stories](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/personas_stories_gemini.md#2-user-stories) - 14 automation-specific user stories with acceptance criteria
+- [Feature Mapping](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/personas_stories_gemini.md#3-feature-mapping) - Mapping of automations to personas and their access levels
+- [User Journeys](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/personas_stories_gemini.md#4-user-journeys) - Complete workflows for preprint processing and quality checking
+
+#### 📋 [Airtable Product Requirements Document (PRD)](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/prd_document_gemini.md)
+
+A comprehensive PRD documenting all Airtable tables, automations, data models, and technical requirements. Essential for understanding the backend architecture and rebuilding the system.
+
+**Table of Contents:**
+- [Executive Summary](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/prd_document_gemini.md#1-executive-summary) - System overview and key features
+- [Pages and Features](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/prd_document_gemini.md#7-pages-and-features) - Detailed specs for 37 automations and 9 data tables
+- [Technical Requirements](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/prd_document_gemini.md#8-technical-requirements) - Platform, scripting, and integration requirements
+- [Data Model](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/prd_document_gemini.md#10-data-model) - Complete data structures for all tables
+- [User Interactions and Workflows](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/prd_document_gemini.md#9-user-interactions-and-workflows) - Step-by-step automation workflows
+
+#### ⚠️ [Airtable Issues & Pain Points](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md)
+
+A comprehensive catalog of problems, pain points, and technical concerns identified in the Airtable backend system. Documents bugs, workflow inefficiencies, system limitations, and suggested solutions.
+
+**Table of Contents:**
+- [General Observations](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md#i-general-observations) - Overall system complexity and concerns
+- [Problems Identified](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md#ii-problems-identified) - Data inconsistencies, integration failures, and automation bugs
+- [Pain Points](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md#iii-pain-points) - Workflow inefficiencies, UX issues, and manual workarounds
+- [Architecture Concerns](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md#iv-architecture-concerns) - System limitations, technical debt, and maintenance challenges
+- [Additional Notes](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md#v-additional-notes) - Knowledge gaps and documentation concerns
+
 ## What This Does
 
 Takes a video walkthrough (like a product demo or UI tour) and automatically generates:
@@ -49,6 +134,7 @@ Takes a video walkthrough (like a product demo or UI tour) and automatically gen
 1. **Linear Walkthrough** - Organized chapters with key takeaways and timestamps
 2. **PRD Document** - Page-by-page specs for rebuilding the application  
 3. **Personas & User Stories** - User-centric documentation with acceptance criteria
+4. **Issues & Pain Points** - For backend/architecture videos, catalogs problems, bugs, and technical debt
 
 All with screenshots, timestamps, and detailed UI descriptions.
 
