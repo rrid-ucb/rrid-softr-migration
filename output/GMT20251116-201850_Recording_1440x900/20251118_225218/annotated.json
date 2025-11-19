@@ -1,0 +1,3538 @@
+{
+  "video": "input/airtable-walkthru-2025-11-16/VIDEO Airtable Reviewer Selection Process \u2014 Overvi/GMT20251116-201850_Recording_1440x900.mp4",
+  "transcript": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/GMT20251116-201850_Recording_1440x900.json",
+  "frames_dir": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames",
+  "items": [
+    {
+      "start": 15.04,
+      "end": 18.559,
+      "start_hms": "00:15",
+      "end_hms": "00:18",
+      "text": "Okay, this is an attempt to explain",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00001_00-15.jpg",
+        "time": 15.04
+      }
+    },
+    {
+      "start": 19.9,
+      "end": 25.31,
+      "start_hms": "00:19",
+      "end_hms": "00:25",
+      "text": "The automations, specifically within the reviewer selection process base.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00002_00-19.jpg",
+        "time": 19.9
+      }
+    },
+    {
+      "start": 26.93,
+      "end": 40.319,
+      "start_hms": "00:26",
+      "end_hms": "00:40",
+      "text": "There will be a bit of exploration as we go about it, but just as a quick reminder, within this base, the relevant tables are the preprint info only, and that's looking at,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00003_00-26.jpg",
+        "time": 26.93
+      }
+    },
+    {
+      "start": 40.52,
+      "end": 51.75,
+      "start_hms": "00:40",
+      "end_hms": "00:51",
+      "text": "preprint information that gets connected to our student reviewer inputs, and those are reviewers that are proposed for each preprint, and it's indexed by the preprint ID.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00004_00-40.jpg",
+        "time": 40.52
+      }
+    },
+    {
+      "start": 52.28,
+      "end": 60.739,
+      "start_hms": "00:52",
+      "end_hms": "01:00",
+      "text": "We also have referees, which is our old naming for AI-suggested reviewers, and those also get attached to\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00005_00-52.jpg",
+        "time": 52.28
+      }
+    },
+    {
+      "start": 61.36,
+      "end": 68.559,
+      "start_hms": "01:01",
+      "end_hms": "01:08",
+      "text": "preprint info, as well as whether they were proposed or not within student reviewer input, so we have linked fields for that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00006_01-01.jpg",
+        "time": 61.36
+      }
+    },
+    {
+      "start": 70.23,
+      "end": 75.14,
+      "start_hms": "01:10",
+      "end_hms": "01:15",
+      "text": "There's also recent reviewers, so those are, people who have been invited.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00007_01-10.jpg",
+        "time": 70.23
+      }
+    },
+    {
+      "start": 75.42,
+      "end": 77.079,
+      "start_hms": "01:15",
+      "end_hms": "01:17",
+      "text": "That will be relevant.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00008_01-15.jpg",
+        "time": 75.42
+      }
+    },
+    {
+      "start": 77.43,
+      "end": 84.909,
+      "start_hms": "01:17",
+      "end_hms": "01:24",
+      "text": "there's all users, and that, as you can see by the lightning bolt, is connected to our RID app user.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00009_01-17.jpg",
+        "time": 77.43
+      }
+    },
+    {
+      "start": 85.2,
+      "end": 86.34,
+      "start_hms": "01:25",
+      "end_hms": "01:26",
+      "text": "Base?",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00010_01-25.jpg",
+        "time": 85.2
+      }
+    },
+    {
+      "start": 94.48,
+      "end": 101.63,
+      "start_hms": "01:34",
+      "end_hms": "01:41",
+      "text": "Great, and then we have team performance. That's looking\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00011_01-34.jpg",
+        "time": 94.48
+      }
+    },
+    {
+      "start": 102.31,
+      "end": 118.139,
+      "start_hms": "01:42",
+      "end_hms": "01:58",
+      "text": "across each\u2026 what RAD considers a team, so usually it's just by the country, but when it comes to Berkeley, there's\u2026 it also has to take into account the domain. You'll see that in the automation. There's also domain performance, so that's just,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00012_01-42.jpg",
+        "time": 102.31
+      }
+    },
+    {
+      "start": 118.19,
+      "end": 125.039,
+      "start_hms": "01:58",
+      "end_hms": "02:05",
+      "text": "Actually, based on the preprint that's been proposed, rather than the students who are contributing.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00013_01-58.jpg",
+        "time": 118.19
+      }
+    },
+    {
+      "start": 125.63,
+      "end": 127.38,
+      "start_hms": "02:05",
+      "end_hms": "02:07",
+      "text": "It's an annoying thing.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00014_02-05.jpg",
+        "time": 125.63
+      }
+    },
+    {
+      "start": 130.039,
+      "end": 133.2,
+      "start_hms": "02:10",
+      "end_hms": "02:13",
+      "text": "Okay, I think the last important one is selected.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00015_02-10.jpg",
+        "time": 130.039
+      }
+    },
+    {
+      "start": 133.78,
+      "end": 137.49,
+      "start_hms": "02:13",
+      "end_hms": "02:17",
+      "text": "And this gets pulled from the Rapid Reviews Infectious Disease.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00016_02-13.jpg",
+        "time": 133.78
+      }
+    },
+    {
+      "start": 137.94,
+      "end": 155.849,
+      "start_hms": "02:17",
+      "end_hms": "02:35",
+      "text": "base, which is basically just the preprints that are pulled and then selected, or in pitch\u2026 er, sorry, or to pitch editorial. So those are the two preprint statuses that are required for, these preprints to enter this reviewer selection process base.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00017_02-17.jpg",
+        "time": 137.94
+      }
+    },
+    {
+      "start": 157.24,
+      "end": 167.85,
+      "start_hms": "02:37",
+      "end_hms": "02:47",
+      "text": "Okay, so with that kind of contextualized, we're just gonna walk through every single automation and kind of explain the\u2026 what it's achieving, and in so doing, try to\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00018_02-37.jpg",
+        "time": 157.24
+      }
+    },
+    {
+      "start": 168.23,
+      "end": 171.759,
+      "start_hms": "02:48",
+      "end_hms": "02:51",
+      "text": "Just document the behind the scenes of this base.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00019_02-48.jpg",
+        "time": 168.23
+      }
+    },
+    {
+      "start": 171.87,
+      "end": 177.509,
+      "start_hms": "02:51",
+      "end_hms": "02:57",
+      "text": "And the things that\u2026 are needed. Okay, so to get started, the first one is",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00020_02-51.jpg",
+        "time": 171.87
+      }
+    },
+    {
+      "start": 177.85,
+      "end": 189.019,
+      "start_hms": "02:57",
+      "end_hms": "03:09",
+      "text": "when a record is created in Selected, so once again, that's a preprint. Within the preprint scraping side of the process has been flagged as selected for\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00021_02-57.jpg",
+        "time": 177.85
+      }
+    },
+    {
+      "start": 189.17,
+      "end": 191.309,
+      "start_hms": "03:09",
+      "end_hms": "03:11",
+      "text": "By the editorial team.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00022_03-09.jpg",
+        "time": 189.17
+      }
+    },
+    {
+      "start": 191.83,
+      "end": 201.62,
+      "start_hms": "03:11",
+      "end_hms": "03:21",
+      "text": "We create a corresponding record within our main preprint info only base. We link it to the selected.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00023_03-11.jpg",
+        "time": 191.83
+      }
+    },
+    {
+      "start": 202.04,
+      "end": 206.13,
+      "start_hms": "03:22",
+      "end_hms": "03:26",
+      "text": "And we update the title and DOI, so\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00024_03-22.jpg",
+        "time": 202.04
+      }
+    },
+    {
+      "start": 206.85,
+      "end": 216.7,
+      "start_hms": "03:26",
+      "end_hms": "03:36",
+      "text": "a lot of the, information we can then pull from selected, but just in case something happens on that side of the\u2026 on the selected\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00025_03-26.jpg",
+        "time": 206.85
+      }
+    },
+    {
+      "start": 218.05,
+      "end": 225.199,
+      "start_hms": "03:38",
+      "end_hms": "03:45",
+      "text": "table, we also\u2026 I, like, also create a title and DOI backup information, just so we can\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00026_03-38.jpg",
+        "time": 218.05
+      }
+    },
+    {
+      "start": 226.11,
+      "end": 230.329,
+      "start_hms": "03:46",
+      "end_hms": "03:50",
+      "text": "Investigate, and not have all of that data deleted.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00027_03-46.jpg",
+        "time": 226.11
+      }
+    },
+    {
+      "start": 230.67,
+      "end": 235.77,
+      "start_hms": "03:50",
+      "end_hms": "03:55",
+      "text": "Okay, so this script\u2026 is\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00028_03-50.jpg",
+        "time": 230.67
+      }
+    },
+    {
+      "start": 239.96,
+      "end": 241.17,
+      "start_hms": "03:59",
+      "end_hms": "04:01",
+      "text": "Open it up.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00029_03-59.jpg",
+        "time": 239.96
+      }
+    },
+    {
+      "start": 245.11,
+      "end": 253.6,
+      "start_hms": "04:05",
+      "end_hms": "04:13",
+      "text": "It's getting some important information, such as what the ranking has been, what the assigned team is\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00030_04-05.jpg",
+        "time": 245.11
+      }
+    },
+    {
+      "start": 254.38,
+      "end": 257.56,
+      "start_hms": "04:14",
+      "end_hms": "04:17",
+      "text": "And it's getting the initial rank,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00031_04-14.jpg",
+        "time": 254.38
+      }
+    },
+    {
+      "start": 260.01,
+      "end": 270.31,
+      "start_hms": "04:20",
+      "end_hms": "04:30",
+      "text": "And then, once it's pulled, it will kind of decide whether on our end of the base it needs to be updated to a rank, so sometimes it will come in and the rank",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00032_04-20.jpg",
+        "time": 260.01
+      }
+    },
+    {
+      "start": 270.47,
+      "end": 283.55,
+      "start_hms": "04:30",
+      "end_hms": "04:43",
+      "text": "that the editorial team gives. It can be 1, 2, 3, 4, like, at what point, or how high of a priority is this preprint? If it's NA, they haven't given it a ranking yet, so we're just gonna set it to NA.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00033_04-30.jpg",
+        "time": 270.47
+      }
+    },
+    {
+      "start": 283.55,
+      "end": 295.159,
+      "start_hms": "04:43",
+      "end_hms": "04:55",
+      "text": "If it's out of circulation, then it's already been within our base, we're not gonna touch it. And then, otherwise, we're gonna actually set that single select field to the number that it was, assigned.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00034_04-43.jpg",
+        "time": 283.55
+      }
+    },
+    {
+      "start": 296.13,
+      "end": 297.949,
+      "start_hms": "04:56",
+      "end_hms": "04:57",
+      "text": "And then we'll kind of push that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00035_04-56.jpg",
+        "time": 296.13
+      }
+    },
+    {
+      "start": 301.37,
+      "end": 305.59,
+      "start_hms": "05:01",
+      "end_hms": "05:05",
+      "text": "And yeah, if we notice any change, we'll have to change that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00036_05-01.jpg",
+        "time": 301.37
+      }
+    },
+    {
+      "start": 306.21,
+      "end": 311.799,
+      "start_hms": "05:06",
+      "end_hms": "05:11",
+      "text": "If the assigned team is updated\u2026 let me do a\u2026 we updated it.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00037_05-06.jpg",
+        "time": 306.21
+      }
+    },
+    {
+      "start": 312.32,
+      "end": 316.52,
+      "start_hms": "05:12",
+      "end_hms": "05:16",
+      "text": "So the assigned team, there's people that, are given priority, too.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00038_05-12.jpg",
+        "time": 312.32
+      }
+    },
+    {
+      "start": 317.22,
+      "end": 324.73,
+      "start_hms": "05:17",
+      "end_hms": "05:24",
+      "text": "Do that. Okay, and then we also create a record within the referees table.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00039_05-17.jpg",
+        "time": 317.22
+      }
+    },
+    {
+      "start": 326.59,
+      "end": 335.999,
+      "start_hms": "05:26",
+      "end_hms": "05:35",
+      "text": "And that is\u2026 this is specifically when somebody, pitches a preprint, they also pitch who they think, like, a\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00040_05-26.jpg",
+        "time": 326.59
+      }
+    },
+    {
+      "start": 336.27,
+      "end": 348.289,
+      "start_hms": "05:36",
+      "end_hms": "05:48",
+      "text": "a ideal reviewer would be. So there's two different models, and we're just pushing that into our suggested reviewer table for somebody to actually, you know, propose those model reviewers.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00041_05-36.jpg",
+        "time": 336.27
+      }
+    },
+    {
+      "start": 350.12,
+      "end": 353.5,
+      "start_hms": "05:50",
+      "end_hms": "05:53",
+      "text": "Alright, then there is tracking team performance, so\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00042_05-50.jpg",
+        "time": 350.12
+      }
+    },
+    {
+      "start": 354.21,
+      "end": 358.34,
+      "start_hms": "05:54",
+      "end_hms": "05:58",
+      "text": "This kind of\u2026 this requires the preprint, or,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00043_05-54.jpg",
+        "time": 354.21
+      }
+    },
+    {
+      "start": 358.48,
+      "end": 365.289,
+      "start_hms": "05:58",
+      "end_hms": "06:05",
+      "text": "Sorry, not true. When a person proposes a reviewer to a certain preprint, we want to see\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00044_05-58.jpg",
+        "time": 358.48
+      }
+    },
+    {
+      "start": 365.82,
+      "end": 383.73,
+      "start_hms": "06:05",
+      "end_hms": "06:23",
+      "text": "who the team is that that person is associated with, and what the domain of the preprint is. And given that information, we will link that proposed reviewer to the team. So, as mentioned, Berkeley requires knowing not just that they're from Berkeley, but also what domain they are.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00045_06-05.jpg",
+        "time": 365.82
+      }
+    },
+    {
+      "start": 384.08,
+      "end": 391.04,
+      "start_hms": "06:24",
+      "end_hms": "06:31",
+      "text": "And if that's not the case, if it's not Berkeley, then\u2026 We'll simply just link.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00046_06-24.jpg",
+        "time": 384.08
+      }
+    },
+    {
+      "start": 392.0,
+      "end": 398.259,
+      "start_hms": "06:32",
+      "end_hms": "06:38",
+      "text": "The proposed reviewer, to the team or domain\u2026 to the team that the student is associated with.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00047_06-32.jpg",
+        "time": 392.0
+      }
+    },
+    {
+      "start": 398.54,
+      "end": 402.16,
+      "start_hms": "06:38",
+      "end_hms": "06:42",
+      "text": "So that could be, like, Vietnam, or FAMSA.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00048_06-38.jpg",
+        "time": 398.54
+      }
+    },
+    {
+      "start": 402.54,
+      "end": 403.729,
+      "start_hms": "06:42",
+      "end_hms": "06:43",
+      "text": "Or somewhere else.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00049_06-42.jpg",
+        "time": 402.54
+      }
+    },
+    {
+      "start": 405.7,
+      "end": 411.71,
+      "start_hms": "06:45",
+      "end_hms": "06:51",
+      "text": "Okay, so when a record is created within our preprint info only, we\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00050_06-45.jpg",
+        "time": 405.7
+      }
+    },
+    {
+      "start": 412.16,
+      "end": 418.619,
+      "start_hms": "06:52",
+      "end_hms": "06:58",
+      "text": "Find within the domain performance, so the table tracking performance across domains,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00051_06-52.jpg",
+        "time": 412.16
+      }
+    },
+    {
+      "start": 419.9,
+      "end": 425.629,
+      "start_hms": "06:59",
+      "end_hms": "07:05",
+      "text": "Kind of that record that has the same domain as this associated preprint, and then link it",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00052_06-59.jpg",
+        "time": 419.9
+      }
+    },
+    {
+      "start": 426.01,
+      "end": 429.209,
+      "start_hms": "07:06",
+      "end_hms": "07:09",
+      "text": "This is hard to do within scripts, because it,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00053_07-06.jpg",
+        "time": 426.01
+      }
+    },
+    {
+      "start": 429.38,
+      "end": 431.41,
+      "start_hms": "07:09",
+      "end_hms": "07:11",
+      "text": "It's just tricky to do with code.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00054_07-09.jpg",
+        "time": 429.38
+      }
+    },
+    {
+      "start": 433.55,
+      "end": 440.44,
+      "start_hms": "07:13",
+      "end_hms": "07:20",
+      "text": "In another way. And\u2026 Then we also go to Team Performance.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00055_07-13.jpg",
+        "time": 433.55
+      }
+    },
+    {
+      "start": 441.38,
+      "end": 448.04,
+      "start_hms": "07:21",
+      "end_hms": "07:28",
+      "text": "and update the preprint info. So, within the team performance, we're tracking",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00056_07-21.jpg",
+        "time": 441.38
+      }
+    },
+    {
+      "start": 448.28,
+      "end": 465.459,
+      "start_hms": "07:28",
+      "end_hms": "07:45",
+      "text": "students' contributions to their team, but we're also tracking, like, a preprint, when it's proposed, it's associated to a team. And so when\u2026 we also want to, like, link that to the team to see how many of their preprints that they're, pitching and proposing.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00057_07-28.jpg",
+        "time": 448.28
+      }
+    },
+    {
+      "start": 466.42,
+      "end": 468.88,
+      "start_hms": "07:46",
+      "end_hms": "07:48",
+      "text": "Come across, and are successful.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00058_07-46.jpg",
+        "time": 466.42
+      }
+    },
+    {
+      "start": 469.59,
+      "end": 474.72,
+      "start_hms": "07:49",
+      "end_hms": "07:54",
+      "text": "And then the last one is the mini-team emails, so there's,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00059_07-49.jpg",
+        "time": 469.59
+      }
+    },
+    {
+      "start": 476.78,
+      "end": 482.429,
+      "start_hms": "07:56",
+      "end_hms": "08:02",
+      "text": "Yeah, it basically just, like, puts together the people that will have early access to that preprint.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00060_07-56.jpg",
+        "time": 476.78
+      }
+    },
+    {
+      "start": 484.91,
+      "end": 489.089,
+      "start_hms": "08:04",
+      "end_hms": "08:09",
+      "text": "Okay, maybe it makes sense to\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00061_08-04.jpg",
+        "time": 484.91
+      }
+    },
+    {
+      "start": 489.68,
+      "end": 496.119,
+      "start_hms": "08:09",
+      "end_hms": "08:16",
+      "text": "First due record created. So SRI just stands for Student Reviewer Inputs, and that's the table where",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00062_08-09.jpg",
+        "time": 489.68
+      }
+    },
+    {
+      "start": 496.86,
+      "end": 498.76,
+      "start_hms": "08:16",
+      "end_hms": "08:18",
+      "text": "Reviewers are proposed to.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00063_08-16.jpg",
+        "time": 496.86
+      }
+    },
+    {
+      "start": 499.61,
+      "end": 503.239,
+      "start_hms": "08:19",
+      "end_hms": "08:23",
+      "text": "So when a record is created in there, there's a number of things.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00064_08-19.jpg",
+        "time": 499.61
+      }
+    },
+    {
+      "start": 503.86,
+      "end": 519.529,
+      "start_hms": "08:23",
+      "end_hms": "08:39",
+      "text": "that need to be done. One is just finding within preprint info only the associated ID, and then we do a couple of updates. So we link the student who proposed it to the all users base, so we can track their productivity.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00065_08-23.jpg",
+        "time": 503.86
+      }
+    },
+    {
+      "start": 519.73,
+      "end": 529.689,
+      "start_hms": "08:39",
+      "end_hms": "08:49",
+      "text": "We have an auto-update, for the link to publication, so there's, like, a formula field that puts together, the sub-discipline and the",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00066_08-39.jpg",
+        "time": 519.73
+      }
+    },
+    {
+      "start": 530.2,
+      "end": 532.929,
+      "start_hms": "08:50",
+      "end_hms": "08:52",
+      "text": "No, sorry, the reviewer's name.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00067_08-50.jpg",
+        "time": 530.2
+      }
+    },
+    {
+      "start": 533.41,
+      "end": 543.66,
+      "start_hms": "08:53",
+      "end_hms": "09:03",
+      "text": "And from that, it creates, like, an auto-link to the publications on PubMed, but that actually needs to be put into the associated field, and the formula doesn't allow for that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00068_08-53.jpg",
+        "time": 533.41
+      }
+    },
+    {
+      "start": 544.3,
+      "end": 553.62,
+      "start_hms": "09:04",
+      "end_hms": "09:13",
+      "text": "And then we also create a linking to\u2026 If there's\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00069_09-04.jpg",
+        "time": 544.3
+      }
+    },
+    {
+      "start": 558.42,
+      "end": 561.339,
+      "start_hms": "09:18",
+      "end_hms": "09:21",
+      "text": "Oh, that's not\u2026 that's out of place.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00070_09-18.jpg",
+        "time": 558.42
+      }
+    },
+    {
+      "start": 566.3,
+      "end": 570.05,
+      "start_hms": "09:26",
+      "end_hms": "09:30",
+      "text": "That wouldn't make sense, nobody\u2026 That's misplaced.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00071_09-26.jpg",
+        "time": 566.3
+      }
+    },
+    {
+      "start": 577.89,
+      "end": 579.119,
+      "start_hms": "09:37",
+      "end_hms": "09:39",
+      "text": "Ignore that one.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00072_09-37.jpg",
+        "time": 577.89
+      }
+    },
+    {
+      "start": 579.98,
+      "end": 591.3,
+      "start_hms": "09:39",
+      "end_hms": "09:51",
+      "text": "And then, yes, also attaching the associated record that we found to their preprint info only, so that that preprint is now associated with that proposed reviewer.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00073_09-39.jpg",
+        "time": 579.98
+      }
+    },
+    {
+      "start": 592.94,
+      "end": 601.049,
+      "start_hms": "09:52",
+      "end_hms": "10:01",
+      "text": "Okay, now there's also the potential for, within the quality checking process, for proposers.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00074_09-52.jpg",
+        "time": 592.94
+      }
+    },
+    {
+      "start": 601.59,
+      "end": 611.009,
+      "start_hms": "10:01",
+      "end_hms": "10:11",
+      "text": "Or, sorry, for proposed reviewers' fields to be updated, and there's a few important ones that we need to track for that. There's justification for invite.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00075_10-01.jpg",
+        "time": 601.59
+      }
+    },
+    {
+      "start": 611.07,
+      "end": 622.49,
+      "start_hms": "10:11",
+      "end_hms": "10:22",
+      "text": "So that takes the sub-discipline and the preprint's title and pulls together a sentence that we email to the reviewers. We use this as a formula, just because students were really not\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00076_10-11.jpg",
+        "time": 611.07
+      }
+    },
+    {
+      "start": 623.22,
+      "end": 626.08,
+      "start_hms": "10:23",
+      "end_hms": "10:26",
+      "text": "Understanding how to write it correctly.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00077_10-23.jpg",
+        "time": 623.22
+      }
+    },
+    {
+      "start": 626.65,
+      "end": 636.449,
+      "start_hms": "10:26",
+      "end_hms": "10:36",
+      "text": "And then we also have the email of the quality checker and the email of the quality checker in training, and so if any of those, get adjusted, we want to link.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00078_10-26.jpg",
+        "time": 626.65
+      }
+    },
+    {
+      "start": 637.0,
+      "end": 643.839,
+      "start_hms": "10:37",
+      "end_hms": "10:43",
+      "text": "The correct email, of the quality checker and the quality checker in training, as well as update the justification for invite.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00079_10-37.jpg",
+        "time": 637.0
+      }
+    },
+    {
+      "start": 646.73,
+      "end": 652.65,
+      "start_hms": "10:46",
+      "end_hms": "10:52",
+      "text": "Alright, when a record is\u2026 Here's a way that we could make this more efficient.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00080_10-46.jpg",
+        "time": 646.73
+      }
+    },
+    {
+      "start": 653.17,
+      "end": 658.77,
+      "start_hms": "10:53",
+      "end_hms": "10:58",
+      "text": "I'll do that later, actually.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00081_10-53.jpg",
+        "time": 653.17
+      }
+    },
+    {
+      "start": 659.32,
+      "end": 671.0,
+      "start_hms": "10:59",
+      "end_hms": "11:11",
+      "text": "But basically, this is the immediate reviewer COI checker, so we want to make sure that the author, or the reviewer isn't the author, they're not proposed yet, and they're not a recent reviewer.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00082_10-59.jpg",
+        "time": 659.32
+      }
+    },
+    {
+      "start": 671.15,
+      "end": 683.18,
+      "start_hms": "11:11",
+      "end_hms": "11:23",
+      "text": "And then we also want to check that there's no duplicate domains, so if somebody from berkeley.edu was proposed, but somebody already was, we kind of flag that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00083_11-11.jpg",
+        "time": 671.15
+      }
+    },
+    {
+      "start": 683.66,
+      "end": 685.75,
+      "start_hms": "11:23",
+      "end_hms": "11:25",
+      "text": "And we also will burn.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00084_11-23.jpg",
+        "time": 683.66
+      }
+    },
+    {
+      "start": 686.22,
+      "end": 692.43,
+      "start_hms": "11:26",
+      "end_hms": "11:32",
+      "text": "AI-suggested reviewers who have that same domain, because we already know that it'll have a COI flag.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00085_11-26.jpg",
+        "time": 686.22
+      }
+    },
+    {
+      "start": 696.93,
+      "end": 702.41,
+      "start_hms": "11:36",
+      "end_hms": "11:42",
+      "text": "This is tracking, for preprints, when they are\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00086_11-36.jpg",
+        "time": 696.93
+      }
+    },
+    {
+      "start": 702.82,
+      "end": 708.14,
+      "start_hms": "11:42",
+      "end_hms": "11:48",
+      "text": "selected. The final ranking, like, the field that decides",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00087_11-42.jpg",
+        "time": 702.82
+      }
+    },
+    {
+      "start": 708.61,
+      "end": 717.01,
+      "start_hms": "11:48",
+      "end_hms": "11:57",
+      "text": "what the final ranking of that preprint will be, whether it be 1, 2, 3, 4, 5, like, what's our priority is in Steph's ranking field, so\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00088_11-48.jpg",
+        "time": 708.61
+      }
+    },
+    {
+      "start": 717.25,
+      "end": 722.879,
+      "start_hms": "11:57",
+      "end_hms": "12:02",
+      "text": "when that is updated, we'll change the rank, inputted by Steph.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00089_11-57.jpg",
+        "time": 717.25
+      }
+    },
+    {
+      "start": 724.28,
+      "end": 732.339,
+      "start_hms": "12:04",
+      "end_hms": "12:12",
+      "text": "I would suggest looking through the code, but it's a little bit\u2026 there's a little bit more nuance to it, because we have to take into account",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00090_12-04.jpg",
+        "time": 724.28
+      }
+    },
+    {
+      "start": 733.27,
+      "end": 744.549,
+      "start_hms": "12:13",
+      "end_hms": "12:24",
+      "text": "Basically, whether there's other preprints that are on hold that have higher ranking, and we kind of want to adjust that ranking, but basically we want to keep it in relative order based on this ranking.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00091_12-13.jpg",
+        "time": 733.27
+      }
+    },
+    {
+      "start": 746.64,
+      "end": 751.02,
+      "start_hms": "12:26",
+      "end_hms": "12:31",
+      "text": "Then there is, populating the\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00092_12-26.jpg",
+        "time": 746.64
+      }
+    },
+    {
+      "start": 751.32,
+      "end": 754.06,
+      "start_hms": "12:31",
+      "end_hms": "12:34",
+      "text": "AI-suggested reviewer, so when a preprint",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00093_12-31.jpg",
+        "time": 751.32
+      }
+    },
+    {
+      "start": 755.71,
+      "end": 758.64,
+      "start_hms": "12:35",
+      "end_hms": "12:38",
+      "text": "Referee's info is not empty.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00094_12-35.jpg",
+        "time": 755.71
+      }
+    },
+    {
+      "start": 758.76,
+      "end": 770.94,
+      "start_hms": "12:38",
+      "end_hms": "12:50",
+      "text": "we\u2026 will\u2026 parse through\u2026 I'll show\u2026 I could show what the list is. It's basically\u2026 it's a single\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00095_12-38.jpg",
+        "time": 758.76
+      }
+    },
+    {
+      "start": 771.61,
+      "end": 775.019,
+      "start_hms": "12:51",
+      "end_hms": "12:55",
+      "text": "Field, and it has a giant list of\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00096_12-51.jpg",
+        "time": 771.61
+      }
+    },
+    {
+      "start": 775.3,
+      "end": 783.09,
+      "start_hms": "12:55",
+      "end_hms": "13:03",
+      "text": "the AI-suggested reviewer's details, so it will include things such as, their name, their H-index.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00097_12-55.jpg",
+        "time": 775.3
+      }
+    },
+    {
+      "start": 783.39,
+      "end": 800.769,
+      "start_hms": "13:03",
+      "end_hms": "13:20",
+      "text": "their affiliations, maybe their ORCID ID, maybe their author URL, and maybe used emails, and we used rejects to extract all of that, and then for each, we'd build out a single record for all of those AI-suggested reviewers. We'd do some checks to see if\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00098_13-03.jpg",
+        "time": 783.39
+      }
+    },
+    {
+      "start": 801.73,
+      "end": 808.299,
+      "start_hms": "13:21",
+      "end_hms": "13:28",
+      "text": "That referee shouldn't actually be an option based on whether they're in the recent reviewers or\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00099_13-21.jpg",
+        "time": 801.73
+      }
+    },
+    {
+      "start": 809.64,
+      "end": 812.43,
+      "start_hms": "13:29",
+      "end_hms": "13:32",
+      "text": "Already, like, a domain, common domain.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00100_13-29.jpg",
+        "time": 809.64
+      }
+    },
+    {
+      "start": 812.89,
+      "end": 817.45,
+      "start_hms": "13:32",
+      "end_hms": "13:37",
+      "text": "And then we'll, add a record for each within our referees table.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00101_13-32.jpg",
+        "time": 812.89
+      }
+    },
+    {
+      "start": 880.19,
+      "end": 882.62,
+      "start_hms": "14:40",
+      "end_hms": "14:42",
+      "text": "Oops, sorry, I thought that I paused that, but I did.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00102_14-40.jpg",
+        "time": 880.19
+      }
+    },
+    {
+      "start": 883.08,
+      "end": 897.03,
+      "start_hms": "14:43",
+      "end_hms": "14:57",
+      "text": "Prokies are just reviewers\u2026 Yes, we did that. Okay, so\u2026 This whole block of\u2026 Automations are going through\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00103_14-43.jpg",
+        "time": 883.08
+      }
+    },
+    {
+      "start": 898.03,
+      "end": 907.909,
+      "start_hms": "14:58",
+      "end_hms": "15:07",
+      "text": "Our preprint ranking, and kind of the flow of making a preprint active, on hold, sending out invites, and things like that. So, it's pretty messy.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00104_14-58.jpg",
+        "time": 898.03
+      }
+    },
+    {
+      "start": 908.05,
+      "end": 911.589,
+      "start_hms": "15:08",
+      "end_hms": "15:11",
+      "text": "And it should be adjusted and fixed, but\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00105_15-08.jpg",
+        "time": 908.05
+      }
+    },
+    {
+      "start": 912.32,
+      "end": 915.079,
+      "start_hms": "15:12",
+      "end_hms": "15:15",
+      "text": "Yeah, this whole thing is just kind of a mess.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00106_15-12.jpg",
+        "time": 912.32
+      }
+    },
+    {
+      "start": 915.45,
+      "end": 924.939,
+      "start_hms": "15:15",
+      "end_hms": "15:24",
+      "text": "So, first and foremost, when the rank is zero and the preprint status is active, those are the two necessary",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00107_15-15.jpg",
+        "time": 915.45
+      }
+    },
+    {
+      "start": 928.5,
+      "end": 945.09,
+      "start_hms": "15:28",
+      "end_hms": "15:45",
+      "text": "features or whatever that a preprint needs in order to be active. So when one or the other is true, we'll make it such that both are true. That's just because sometimes an assistant editor will go and make it active, but not know to adjust the rank.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00108_15-28.jpg",
+        "time": 928.5
+      }
+    },
+    {
+      "start": 945.65,
+      "end": 949.85,
+      "start_hms": "15:45",
+      "end_hms": "15:49",
+      "text": "If it's the first time being\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00109_15-45.jpg",
+        "time": 945.65
+      }
+    },
+    {
+      "start": 950.01,
+      "end": 953.94,
+      "start_hms": "15:50",
+      "end_hms": "15:53",
+      "text": "active. We'll need to set it to in process.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00110_15-50.jpg",
+        "time": 950.01
+      }
+    },
+    {
+      "start": 954.82,
+      "end": 958.75,
+      "start_hms": "15:54",
+      "end_hms": "15:58",
+      "text": "And then, when that happens, we'll update the date and process.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00111_15-54.jpg",
+        "time": 954.82
+      }
+    },
+    {
+      "start": 961.36,
+      "end": 962.55,
+      "start_hms": "16:01",
+      "end_hms": "16:02",
+      "text": "Oh, no.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00112_16-01.jpg",
+        "time": 961.36
+      }
+    },
+    {
+      "start": 967.89,
+      "end": 970.989,
+      "start_hms": "16:07",
+      "end_hms": "16:10",
+      "text": "Well, this will have to be looked into, but,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00113_16-07.jpg",
+        "time": 967.89
+      }
+    },
+    {
+      "start": 971.46,
+      "end": 974.09,
+      "start_hms": "16:11",
+      "end_hms": "16:14",
+      "text": "What this is supposed to be doing,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00114_16-11.jpg",
+        "time": 971.46
+      }
+    },
+    {
+      "start": 975.76,
+      "end": 979.42,
+      "start_hms": "16:15",
+      "end_hms": "16:19",
+      "text": "When the invite count is greater than or equal to 20,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00115_16-15.jpg",
+        "time": 975.76
+      }
+    },
+    {
+      "start": 979.7,
+      "end": 982.49,
+      "start_hms": "16:19",
+      "end_hms": "16:22",
+      "text": "And the preprint status is dormant.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00116_16-19.jpg",
+        "time": 979.7
+      }
+    },
+    {
+      "start": 984.01,
+      "end": 990.61,
+      "start_hms": "16:24",
+      "end_hms": "16:30",
+      "text": "we\u2026 Think that the\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00117_16-24.jpg",
+        "time": 984.01
+      }
+    },
+    {
+      "start": 1001.04,
+      "end": 1003.529,
+      "start_hms": "16:41",
+      "end_hms": "16:43",
+      "text": "I think that they just flew the link process.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00118_16-41.jpg",
+        "time": 1001.04
+      }
+    },
+    {
+      "start": 1016.1,
+      "end": 1026.049,
+      "start_hms": "16:56",
+      "end_hms": "17:06",
+      "text": "What this is supposed to be doing is, when the mini-team is working on a preprint that's dormant, and it hits the invite count 20, we want it to be made active immediately.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00119_16-56.jpg",
+        "time": 1016.1
+      }
+    },
+    {
+      "start": 1026.23,
+      "end": 1031.509,
+      "start_hms": "17:06",
+      "end_hms": "17:11",
+      "text": "So it's kind of a way of, like, getting them incentivized to do that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00120_17-06.jpg",
+        "time": 1026.23
+      }
+    },
+    {
+      "start": 1032.31,
+      "end": 1036.879,
+      "start_hms": "17:12",
+      "end_hms": "17:16",
+      "text": "And this is supposed to be readjusting the ranks, but that is failing.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00121_17-12.jpg",
+        "time": 1032.31
+      }
+    },
+    {
+      "start": 1037.0,
+      "end": 1040.15,
+      "start_hms": "17:17",
+      "end_hms": "17:20",
+      "text": "So I'll come back to that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00122_17-17.jpg",
+        "time": 1037.0
+      }
+    },
+    {
+      "start": 1040.56,
+      "end": 1049.439,
+      "start_hms": "17:20",
+      "end_hms": "17:29",
+      "text": "But\u2026 Yeah, it's a\u2026 it's a very complex\u2026 Logic behind adjusting the ranks.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00123_17-20.jpg",
+        "time": 1040.56
+      }
+    },
+    {
+      "start": 1051.09,
+      "end": 1053.879,
+      "start_hms": "17:31",
+      "end_hms": "17:33",
+      "text": "Then there is setting the preprint status.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00124_17-31.jpg",
+        "time": 1051.09
+      }
+    },
+    {
+      "start": 1054.73,
+      "end": 1063.359,
+      "start_hms": "17:34",
+      "end_hms": "17:43",
+      "text": "to on hold. So, this is really critical, in the way that we're tracking. I think that it could be a lot better, but basically there's\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00125_17-34.jpg",
+        "time": 1054.73
+      }
+    },
+    {
+      "start": 1063.56,
+      "end": 1082.45,
+      "start_hms": "17:43",
+      "end_hms": "18:02",
+      "text": "multiple steps, that we've included in the operations of when a preprint is\u2026 it gets its invites sent out, or when is it done, receiving invites, and that's captured with the more invites needed field. I'm just gonna show that, it's in another video, but I think it's pretty critical to understand.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00126_17-43.jpg",
+        "time": 1063.56
+      }
+    },
+    {
+      "start": 1082.88,
+      "end": 1090.919,
+      "start_hms": "18:02",
+      "end_hms": "18:10",
+      "text": "The role that it plays, so let's just look at\u2026 This formula field.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00127_18-02.jpg",
+        "time": 1082.88
+      }
+    },
+    {
+      "start": 1091.17,
+      "end": 1094.35,
+      "start_hms": "18:11",
+      "end_hms": "18:14",
+      "text": "It's taking into account multiple\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00128_18-11.jpg",
+        "time": 1091.17
+      }
+    },
+    {
+      "start": 1095.79,
+      "end": 1100.229,
+      "start_hms": "18:15",
+      "end_hms": "18:20",
+      "text": "So you can see here, we have a round 1, more invites needed, round two, round 3, round 4.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00129_18-15.jpg",
+        "time": 1095.79
+      }
+    },
+    {
+      "start": 1100.46,
+      "end": 1113.71,
+      "start_hms": "18:20",
+      "end_hms": "18:33",
+      "text": "So, based on what the invite round is, it will look at\u2026 the corresponding\u2026 formula?",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00130_18-20.jpg",
+        "time": 1100.46
+      }
+    },
+    {
+      "start": 1114.64,
+      "end": 1117.5,
+      "start_hms": "18:34",
+      "end_hms": "18:37",
+      "text": "So let's say it's in its first invite round.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00131_18-34.jpg",
+        "time": 1114.64
+      }
+    },
+    {
+      "start": 1118.37,
+      "end": 1132.739,
+      "start_hms": "18:38",
+      "end_hms": "18:52",
+      "text": "It only\u2026 we only accept and think that it needs more invites if either, the total invite count plus the, like, 60% of the unchecked count is less than our invites required, which is 30.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00132_18-38.jpg",
+        "time": 1118.37
+      }
+    },
+    {
+      "start": 1132.9,
+      "end": 1138.21,
+      "start_hms": "18:52",
+      "end_hms": "18:58",
+      "text": "Or the unchecked count is\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00133_18-52.jpg",
+        "time": 1132.9
+      }
+    },
+    {
+      "start": 1139.07,
+      "end": 1145.069,
+      "start_hms": "18:59",
+      "end_hms": "19:05",
+      "text": "If it's more than 50 unchecked, then we think that it shouldn't\u2026 we should wait for those to get quality checked.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00134_18-59.jpg",
+        "time": 1139.07
+      }
+    },
+    {
+      "start": 1145.53,
+      "end": 1148.99,
+      "start_hms": "19:05",
+      "end_hms": "19:08",
+      "text": "And that's basically what it is for round 2 and round 3.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00135_19-05.jpg",
+        "time": 1145.53
+      }
+    },
+    {
+      "start": 1150.35,
+      "end": 1154.639,
+      "start_hms": "19:10",
+      "end_hms": "19:14",
+      "text": "So, when it's the case that we think that no additional inmates are needed.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00136_19-10.jpg",
+        "time": 1150.35
+      }
+    },
+    {
+      "start": 1154.93,
+      "end": 1161.17,
+      "start_hms": "19:14",
+      "end_hms": "19:21",
+      "text": "We're gonna set it to on hold and out of circulation, so it's not gonna accept anymore.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00137_19-14.jpg",
+        "time": 1154.93
+      }
+    },
+    {
+      "start": 1163.24,
+      "end": 1169.47,
+      "start_hms": "19:23",
+      "end_hms": "19:29",
+      "text": "Proposed reviewers from students, we just want assistant editors to quality check it.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00138_19-23.jpg",
+        "time": 1163.24
+      }
+    },
+    {
+      "start": 1169.89,
+      "end": 1173.08,
+      "start_hms": "19:29",
+      "end_hms": "19:33",
+      "text": "And\u2026 This code\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00139_19-29.jpg",
+        "time": 1169.89
+      }
+    },
+    {
+      "start": 1174.84,
+      "end": 1183.489,
+      "start_hms": "19:34",
+      "end_hms": "19:43",
+      "text": "Basically, once a preprint gets put on hold, we need to make sure that there's another preprint within that domain that is active.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00140_19-34.jpg",
+        "time": 1174.84
+      }
+    },
+    {
+      "start": 1183.92,
+      "end": 1186.86,
+      "start_hms": "19:43",
+      "end_hms": "19:46",
+      "text": "So, we,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00141_19-43.jpg",
+        "time": 1183.92
+      }
+    },
+    {
+      "start": 1187.01,
+      "end": 1196.25,
+      "start_hms": "19:47",
+      "end_hms": "19:56",
+      "text": "kind of find other preprints that have that domain, if there's already an active one. So sometimes, like, two are active.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00142_19-47.jpg",
+        "time": 1187.01
+      }
+    },
+    {
+      "start": 1197.38,
+      "end": 1199.949,
+      "start_hms": "19:57",
+      "end_hms": "19:59",
+      "text": "Then\u2026 we're all good.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00143_19-57.jpg",
+        "time": 1197.38
+      }
+    },
+    {
+      "start": 1206.33,
+      "end": 1212.03,
+      "start_hms": "20:06",
+      "end_hms": "20:12",
+      "text": "Then we separate them by ranking, we don't want to consider anything out of circulation.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00144_20-06.jpg",
+        "time": 1206.33
+      }
+    },
+    {
+      "start": 1216.91,
+      "end": 1220.799,
+      "start_hms": "20:16",
+      "end_hms": "20:20",
+      "text": "Do some extra checks while we're at it. I'm just cleaning up house.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00145_20-16.jpg",
+        "time": 1216.91
+      }
+    },
+    {
+      "start": 1226.51,
+      "end": 1240.569,
+      "start_hms": "20:26",
+      "end_hms": "20:40",
+      "text": "We also need to take into account whether preprint is dormant, so it's not been worked on yet, or it's on hold. So it's been active, but now it's not being worked on. The on-hold ones are higher priority, just because people have already started putting work into them.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00146_20-26.jpg",
+        "time": 1226.51
+      }
+    },
+    {
+      "start": 1241.52,
+      "end": 1244.54,
+      "start_hms": "20:41",
+      "end_hms": "20:44",
+      "text": "We also take into account the total invite.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00147_20-41.jpg",
+        "time": 1241.52
+      }
+    },
+    {
+      "start": 1244.71,
+      "end": 1261.9,
+      "start_hms": "20:44",
+      "end_hms": "21:01",
+      "text": "or greenlit, so a preprint that's on hold with a really high invite count, but it's not yet complete is higher priority than one with lower invite count. If one is older, so it, like, was in process two weeks ago versus the one that was in process one week ago, we want to prioritize the older ones to get them through.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00148_20-44.jpg",
+        "time": 1244.71
+      }
+    },
+    {
+      "start": 1262.82,
+      "end": 1266.709,
+      "start_hms": "21:02",
+      "end_hms": "21:06",
+      "text": "And then we also, lastly, will take into account Steph's ranking.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00149_21-02.jpg",
+        "time": 1262.82
+      }
+    },
+    {
+      "start": 1267.87,
+      "end": 1269.529,
+      "start_hms": "21:07",
+      "end_hms": "21:09",
+      "text": "For the dormant ones.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00150_21-07.jpg",
+        "time": 1267.87
+      }
+    },
+    {
+      "start": 1271.24,
+      "end": 1273.91,
+      "start_hms": "21:11",
+      "end_hms": "21:13",
+      "text": "Assign\u2026 reassign rankings,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00151_21-11.jpg",
+        "time": 1271.24
+      }
+    },
+    {
+      "start": 1274.31,
+      "end": 1280.839,
+      "start_hms": "21:14",
+      "end_hms": "21:20",
+      "text": "Make sure that everything is up to date, and then push those changes. I would advise actually looking at the code to better, like, I think\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00152_21-14.jpg",
+        "time": 1274.31
+      }
+    },
+    {
+      "start": 1281.25,
+      "end": 1284.33,
+      "start_hms": "21:21",
+      "end_hms": "21:24",
+      "text": "It's a pretty good source of truth for just how it should be working.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00153_21-21.jpg",
+        "time": 1281.25
+      }
+    },
+    {
+      "start": 1287.38,
+      "end": 1288.46,
+      "start_hms": "21:27",
+      "end_hms": "21:28",
+      "text": "Okay\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00154_21-27.jpg",
+        "time": 1287.38
+      }
+    },
+    {
+      "start": 1300.9,
+      "end": 1306.43,
+      "start_hms": "21:40",
+      "end_hms": "21:46",
+      "text": "So then there's the other, potential workflow where\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00155_21-40.jpg",
+        "time": 1300.9
+      }
+    },
+    {
+      "start": 1306.71,
+      "end": 1318.42,
+      "start_hms": "21:46",
+      "end_hms": "21:58",
+      "text": "The preprint is on hold, but then we had it in a non\u2026 we\u2026 like, the rank might have been, like, 3, so it was, like, on hold, but still in line. But then, actually.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00156_21-46.jpg",
+        "time": 1306.71
+      }
+    },
+    {
+      "start": 1319.86,
+      "end": 1327.8,
+      "start_hms": "21:59",
+      "end_hms": "22:07",
+      "text": "people were quality checking, and it seems like it actually doesn't need more invites. Then we'll set the rank to out of circulation.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00157_21-59.jpg",
+        "time": 1319.86
+      }
+    },
+    {
+      "start": 1328.25,
+      "end": 1332.65,
+      "start_hms": "22:08",
+      "end_hms": "22:12",
+      "text": "Yes.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00158_22-08.jpg",
+        "time": 1328.25
+      }
+    },
+    {
+      "start": 1335.09,
+      "end": 1354.97,
+      "start_hms": "22:15",
+      "end_hms": "22:34",
+      "text": "Okay, and then what if it's in circulation, but then all of a sudden we rejected all of the unchecked reviewers, and we realize we need a lot more reviewers to be proposed to get our, our goal of 30 invites, then we'll set more invites needed, or the formula will be set to more invites needed.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00159_22-15.jpg",
+        "time": 1335.09
+      }
+    },
+    {
+      "start": 1355.11,
+      "end": 1360.119,
+      "start_hms": "22:35",
+      "end_hms": "22:40",
+      "text": "And that's\u2026 then we need to bring this preprint back alive, so\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00160_22-35.jpg",
+        "time": 1355.11
+      }
+    },
+    {
+      "start": 1360.63,
+      "end": 1368.41,
+      "start_hms": "22:40",
+      "end_hms": "22:48",
+      "text": "This is new, Steph wants it to just immediately be made active, and so that's what we do. We set it to active immediately.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00161_22-40.jpg",
+        "time": 1360.63
+      }
+    },
+    {
+      "start": 1370.5,
+      "end": 1372.959,
+      "start_hms": "22:50",
+      "end_hms": "22:52",
+      "text": "And in so doing\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00162_22-50.jpg",
+        "time": 1370.5
+      }
+    },
+    {
+      "start": 1375.01,
+      "end": 1381.85,
+      "start_hms": "22:55",
+      "end_hms": "23:01",
+      "text": "we're gonna, like, move it up, and then re-rank everything, accordingly. So it's kind of actually, like.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00163_22-55.jpg",
+        "time": 1375.01
+      }
+    },
+    {
+      "start": 1382.72,
+      "end": 1385.489,
+      "start_hms": "23:02",
+      "end_hms": "23:05",
+      "text": "Incrementing the ranks rather than decrementing.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00164_23-02.jpg",
+        "time": 1382.72
+      }
+    },
+    {
+      "start": 1386.76,
+      "end": 1393.559,
+      "start_hms": "23:06",
+      "end_hms": "23:13",
+      "text": "Okay, and then we'll get into a preprint as received invites, and the process for that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00165_23-06.jpg",
+        "time": 1386.76
+      }
+    },
+    {
+      "start": 1394.25,
+      "end": 1398.409,
+      "start_hms": "23:14",
+      "end_hms": "23:18",
+      "text": "So if a preprint is any of, dormant, active on hold.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00166_23-14.jpg",
+        "time": 1394.25
+      }
+    },
+    {
+      "start": 1398.67,
+      "end": 1402.11,
+      "start_hms": "23:18",
+      "end_hms": "23:22",
+      "text": "Unsent invites is greater than or equal to 20.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00167_23-18.jpg",
+        "time": 1398.67
+      }
+    },
+    {
+      "start": 1402.43,
+      "end": 1405.68,
+      "start_hms": "23:22",
+      "end_hms": "23:25",
+      "text": "It's selected, and it's the first invite round.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00168_23-22.jpg",
+        "time": 1402.43
+      }
+    },
+    {
+      "start": 1406.6,
+      "end": 1410.99,
+      "start_hms": "23:26",
+      "end_hms": "23:30",
+      "text": "then we've hit our goal of the first 20. So we're going to\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00169_23-26.jpg",
+        "time": 1406.6
+      }
+    },
+    {
+      "start": 1411.66,
+      "end": 1426.85,
+      "start_hms": "23:31",
+      "end_hms": "23:46",
+      "text": "Check that none of the proposed reviewers are authors, or recent reviewers, or already proposed, and if that's the case, we want to check, is it still\u2026 are the unsent invites still above 20? Just in the case that maybe we rejected too many.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00170_23-31.jpg",
+        "time": 1411.66
+      }
+    },
+    {
+      "start": 1427.16,
+      "end": 1433.54,
+      "start_hms": "23:47",
+      "end_hms": "23:53",
+      "text": "And then, if that's true, we can say that we checked the field, we verified the verse 20, they are good to go.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00171_23-47.jpg",
+        "time": 1427.16
+      }
+    },
+    {
+      "start": 1433.84,
+      "end": 1436.779,
+      "start_hms": "23:53",
+      "end_hms": "23:56",
+      "text": "That will trigger this automation.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00172_23-53.jpg",
+        "time": 1433.84
+      }
+    },
+    {
+      "start": 1438.35,
+      "end": 1445.389,
+      "start_hms": "23:58",
+      "end_hms": "24:05",
+      "text": "Where you can see verified first 20. I had to split it up because there seemed to be\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00173_23-58.jpg",
+        "time": 1438.35
+      }
+    },
+    {
+      "start": 1446.22,
+      "end": 1454.799,
+      "start_hms": "24:06",
+      "end_hms": "24:14",
+      "text": "a delay? I can't completely remember why, but it did not work when I put them together.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00174_24-06.jpg",
+        "time": 1446.22
+      }
+    },
+    {
+      "start": 1454.9,
+      "end": 1456.51,
+      "start_hms": "24:14",
+      "end_hms": "24:16",
+      "text": "I'm trying to remember why, but I can't.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00175_24-14.jpg",
+        "time": 1454.9
+      }
+    },
+    {
+      "start": 1456.98,
+      "end": 1460.949,
+      "start_hms": "24:16",
+      "end_hms": "24:20",
+      "text": "So\u2026 Yeah, a preprint is\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00176_24-16.jpg",
+        "time": 1456.98
+      }
+    },
+    {
+      "start": 1462.25,
+      "end": 1466.9,
+      "start_hms": "24:22",
+      "end_hms": "24:26",
+      "text": "Ready to get its invites sent out, so we're gonna\u2026 re-rank.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00177_24-22.jpg",
+        "time": 1462.25
+      }
+    },
+    {
+      "start": 1467.55,
+      "end": 1470.99,
+      "start_hms": "24:27",
+      "end_hms": "24:30",
+      "text": "The preprints, we're putting that one on hold.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00178_24-27.jpg",
+        "time": 1467.55
+      }
+    },
+    {
+      "start": 1471.3,
+      "end": 1474.629,
+      "start_hms": "24:31",
+      "end_hms": "24:34",
+      "text": "Because we want to wait to see if the 20 was sufficient or not.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00179_24-31.jpg",
+        "time": 1471.3
+      }
+    },
+    {
+      "start": 1481.67,
+      "end": 1483.5,
+      "start_hms": "24:41",
+      "end_hms": "24:43",
+      "text": "Do you know what that says it should be.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00180_24-41.jpg",
+        "time": 1481.67
+      }
+    },
+    {
+      "start": 1484.32,
+      "end": 1489.11,
+      "start_hms": "24:44",
+      "end_hms": "24:49",
+      "text": "This is just what pushes to the Google Cloud.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00181_24-44.jpg",
+        "time": 1484.32
+      }
+    },
+    {
+      "start": 1489.52,
+      "end": 1492.039,
+      "start_hms": "24:49",
+      "end_hms": "24:52",
+      "text": "server to send the CSVs.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00182_24-49.jpg",
+        "time": 1489.52
+      }
+    },
+    {
+      "start": 1493.94,
+      "end": 1498.19,
+      "start_hms": "24:53",
+      "end_hms": "24:58",
+      "text": "This updates the preprint status to on hold, but I am now\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00183_24-53.jpg",
+        "time": 1493.94
+      }
+    },
+    {
+      "start": 1499.36,
+      "end": 1503.519,
+      "start_hms": "24:59",
+      "end_hms": "25:03",
+      "text": "hesitating, because I think that it should remain active.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00184_24-59.jpg",
+        "time": 1499.36
+      }
+    },
+    {
+      "start": 1504.06,
+      "end": 1506.909,
+      "start_hms": "25:04",
+      "end_hms": "25:06",
+      "text": "That's something to follow up with Angel about.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00185_25-04.jpg",
+        "time": 1504.06
+      }
+    },
+    {
+      "start": 1507.73,
+      "end": 1526.59,
+      "start_hms": "25:07",
+      "end_hms": "25:26",
+      "text": "And then set invited to true for, all of those reviewers, so that's kind of, our way\u2026 there's the unsent invites, and then there's the invite\u2026 total invite count, and we only want to trigger it when the unsent invites are above a certain number, so, this is a way of updating.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00186_25-07.jpg",
+        "time": 1507.73
+      }
+    },
+    {
+      "start": 1526.8,
+      "end": 1532.389,
+      "start_hms": "25:26",
+      "end_hms": "25:32",
+      "text": "the reviewers who we know we've already, sent it, or who's already been included in a CSV.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00187_25-26.jpg",
+        "time": 1526.8
+      }
+    },
+    {
+      "start": 1536.15,
+      "end": 1542.31,
+      "start_hms": "25:36",
+      "end_hms": "25:42",
+      "text": "Okay, then there's the next step, so when the invite count is above 30,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00188_25-36.jpg",
+        "time": 1536.15
+      }
+    },
+    {
+      "start": 1543.05,
+      "end": 1557.599,
+      "start_hms": "25:43",
+      "end_hms": "25:57",
+      "text": "And the total unsent is above 10, so that's after the first 20 are sent out, we now have gained 10 more, and there's 0 unchecked, so this preprint is cleaned up, it's got our total reviewers.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00189_25-43.jpg",
+        "time": 1543.05
+      }
+    },
+    {
+      "start": 1558.28,
+      "end": 1561.269,
+      "start_hms": "25:58",
+      "end_hms": "26:01",
+      "text": "We want to, again, check for no COI.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00190_25-58.jpg",
+        "time": 1558.28
+      }
+    },
+    {
+      "start": 1562.04,
+      "end": 1570.94,
+      "start_hms": "26:02",
+      "end_hms": "26:10",
+      "text": "And then there's these kind of conditions, so if the invite count is above 50, we\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00191_26-02.jpg",
+        "time": 1562.04
+      }
+    },
+    {
+      "start": 1573.52,
+      "end": 1580.01,
+      "start_hms": "26:13",
+      "end_hms": "26:20",
+      "text": "We'll update the invite round. Basically, what this is doing is just making that our\u2026 making sure our invite round is,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00192_26-13.jpg",
+        "time": 1573.52
+      }
+    },
+    {
+      "start": 1580.67,
+      "end": 1588.2,
+      "start_hms": "26:20",
+      "end_hms": "26:28",
+      "text": "Accurate, where the infant ground is, determined by\u2026 The invite count, which\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00193_26-20.jpg",
+        "time": 1580.67
+      }
+    },
+    {
+      "start": 1589.0,
+      "end": 1592.27,
+      "start_hms": "26:29",
+      "end_hms": "26:32",
+      "text": "Maybe it doesn't make sense, but this would run off. This would\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00194_26-29.jpg",
+        "time": 1589.0
+      }
+    },
+    {
+      "start": 1592.89,
+      "end": 1598.16,
+      "start_hms": "26:32",
+      "end_hms": "26:38",
+      "text": "be triggered once 10 gets hit, so\u2026 Hopefully it\u2026 Works.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00195_26-32.jpg",
+        "time": 1592.89
+      }
+    },
+    {
+      "start": 1600.05,
+      "end": 1604.38,
+      "start_hms": "26:40",
+      "end_hms": "26:44",
+      "text": "Okay, then there is manually send.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00196_26-40.jpg",
+        "time": 1600.05
+      }
+    },
+    {
+      "start": 1604.74,
+      "end": 1606.439,
+      "start_hms": "26:44",
+      "end_hms": "26:46",
+      "text": "Sending invites, so\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00197_26-44.jpg",
+        "time": 1604.74
+      }
+    },
+    {
+      "start": 1607.88,
+      "end": 1617.799,
+      "start_hms": "26:47",
+      "end_hms": "26:57",
+      "text": "this was a way where, like, if Angel or somebody on the editorial team just wanted to, like, send out, like, force the preprint to send out the CSVs.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00198_26-47.jpg",
+        "time": 1607.88
+      }
+    },
+    {
+      "start": 1617.92,
+      "end": 1622.519,
+      "start_hms": "26:57",
+      "end_hms": "27:02",
+      "text": "They can kind of just, like, click this check button called Manual Send Invites.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00199_26-57.jpg",
+        "time": 1617.92
+      }
+    },
+    {
+      "start": 1622.75,
+      "end": 1625.469,
+      "start_hms": "27:02",
+      "end_hms": "27:05",
+      "text": "And it only makes sense to do so if\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00200_27-02.jpg",
+        "time": 1622.75
+      }
+    },
+    {
+      "start": 1625.9,
+      "end": 1631.35,
+      "start_hms": "27:05",
+      "end_hms": "27:11",
+      "text": "There's a non-zero amount of unsent invites. Once again, it'll check for COI.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00201_27-05.jpg",
+        "time": 1625.9
+      }
+    },
+    {
+      "start": 1632.55,
+      "end": 1637.69,
+      "start_hms": "27:12",
+      "end_hms": "27:17",
+      "text": "Update\u2026 Clean it up.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00202_27-12.jpg",
+        "time": 1632.55
+      }
+    },
+    {
+      "start": 1638.52,
+      "end": 1644.17,
+      "start_hms": "27:18",
+      "end_hms": "27:24",
+      "text": "And then we'll check the\u2026 Verified, and that triggers this.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00203_27-18.jpg",
+        "time": 1638.52
+      }
+    },
+    {
+      "start": 1646.11,
+      "end": 1652.519,
+      "start_hms": "27:26",
+      "end_hms": "27:32",
+      "text": "Which\u2026 It requires both send invites as checked and verified, so\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00204_27-26.jpg",
+        "time": 1646.11
+      }
+    },
+    {
+      "start": 1652.75,
+      "end": 1657.06,
+      "start_hms": "27:32",
+      "end_hms": "27:37",
+      "text": "Somebody's requested that the invites be sent out, and we've checked that there's no COI.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00205_27-32.jpg",
+        "time": 1652.75
+      }
+    },
+    {
+      "start": 1657.42,
+      "end": 1660.279,
+      "start_hms": "27:37",
+      "end_hms": "27:40",
+      "text": "We'll talk to the Google Cloud function.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00206_27-37.jpg",
+        "time": 1657.42
+      }
+    },
+    {
+      "start": 1661.12,
+      "end": 1663.72,
+      "start_hms": "27:41",
+      "end_hms": "27:43",
+      "text": "Update it so that those are cleared again.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00207_27-41.jpg",
+        "time": 1661.12
+      }
+    },
+    {
+      "start": 1667.94,
+      "end": 1669.67,
+      "start_hms": "27:47",
+      "end_hms": "27:49",
+      "text": "Find records\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00208_27-47.jpg",
+        "time": 1667.94
+      }
+    },
+    {
+      "start": 1670.88,
+      "end": 1676.87,
+      "start_hms": "27:50",
+      "end_hms": "27:56",
+      "text": "that have not been checked as invited. I think that that's being done in scripts another way, and then just\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00209_27-50.jpg",
+        "time": 1670.88
+      }
+    },
+    {
+      "start": 1677.2,
+      "end": 1679.45,
+      "start_hms": "27:57",
+      "end_hms": "27:59",
+      "text": "Flag those as invited.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00210_27-57.jpg",
+        "time": 1677.2
+      }
+    },
+    {
+      "start": 1679.61,
+      "end": 1681.119,
+      "start_hms": "27:59",
+      "end_hms": "28:01",
+      "text": "In the sense of, like, the\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00211_27-59.jpg",
+        "time": 1679.61
+      }
+    },
+    {
+      "start": 1682.6,
+      "end": 1687.7,
+      "start_hms": "28:02",
+      "end_hms": "28:07",
+      "text": "Email invite has been sent out, that could be\u2026 Clarified.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00212_28-02.jpg",
+        "time": 1682.6
+      }
+    },
+    {
+      "start": 1687.92,
+      "end": 1689.11,
+      "start_hms": "28:07",
+      "end_hms": "28:09",
+      "text": "Okay\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00213_28-07.jpg",
+        "time": 1687.92
+      }
+    },
+    {
+      "start": 1692.13,
+      "end": 1693.68,
+      "start_hms": "28:12",
+      "end_hms": "28:13",
+      "text": "Oh, is this one?",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00214_28-12.jpg",
+        "time": 1692.13
+      }
+    },
+    {
+      "start": 1696.98,
+      "end": 1699.58,
+      "start_hms": "28:16",
+      "end_hms": "28:19",
+      "text": "Oh, this is one that unchecked is non-zero.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00215_28-16.jpg",
+        "time": 1696.98
+      }
+    },
+    {
+      "start": 1699.87,
+      "end": 1704.69,
+      "start_hms": "28:19",
+      "end_hms": "28:24",
+      "text": "So this is when\u2026 Unchecked is 0, sorry about that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00216_28-19.jpg",
+        "time": 1699.87
+      }
+    },
+    {
+      "start": 1705.13,
+      "end": 1713.0,
+      "start_hms": "28:25",
+      "end_hms": "28:33",
+      "text": "So once again, it's the case where invite count is greater than 30, and there's no more that are unchecked, so it's pretty clean.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00217_28-25.jpg",
+        "time": 1705.13
+      }
+    },
+    {
+      "start": 1714.16,
+      "end": 1716.61,
+      "start_hms": "28:34",
+      "end_hms": "28:36",
+      "text": "We'll once again run the COI.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00218_28-34.jpg",
+        "time": 1714.16
+      }
+    },
+    {
+      "start": 1721.61,
+      "end": 1723.749,
+      "start_hms": "28:41",
+      "end_hms": "28:43",
+      "text": "What is the difference between those two?",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00219_28-41.jpg",
+        "time": 1721.61
+      }
+    },
+    {
+      "start": 1729.34,
+      "end": 1730.97,
+      "start_hms": "28:49",
+      "end_hms": "28:50",
+      "text": "That's just running the COI.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00220_28-49.jpg",
+        "time": 1729.34
+      }
+    },
+    {
+      "start": 1733.06,
+      "end": 1734.379,
+      "start_hms": "28:53",
+      "end_hms": "28:54",
+      "text": "Does this change anything?",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00221_28-53.jpg",
+        "time": 1733.06
+      }
+    },
+    {
+      "start": 1761.64,
+      "end": 1768.13,
+      "start_hms": "29:21",
+      "end_hms": "29:28",
+      "text": "Hmm, I think that that could be deleted. I think that's basically the same as that. The only difference is here with this automation.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00222_29-21.jpg",
+        "time": 1761.64
+      }
+    },
+    {
+      "start": 1768.27,
+      "end": 1773.63,
+      "start_hms": "29:28",
+      "end_hms": "29:33",
+      "text": "It does matter\u2026 Whether the unchecked count is zero or not.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00223_29-28.jpg",
+        "time": 1768.27
+      }
+    },
+    {
+      "start": 1775.4,
+      "end": 1781.32,
+      "start_hms": "29:35",
+      "end_hms": "29:41",
+      "text": "Because the preprint would be considered complete, so we want to update.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00224_29-35.jpg",
+        "time": 1775.4
+      }
+    },
+    {
+      "start": 1783.87,
+      "end": 1790.589,
+      "start_hms": "29:43",
+      "end_hms": "29:50",
+      "text": "So it's once again updating the preprint status.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00225_29-43.jpg",
+        "time": 1783.87
+      }
+    },
+    {
+      "start": 1791.37,
+      "end": 1798.069,
+      "start_hms": "29:51",
+      "end_hms": "29:58",
+      "text": "yeah, here we are updating it to complete and out of circulation. So that's the main difference of whether the unchecked count is zero or not.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00226_29-51.jpg",
+        "time": 1791.37
+      }
+    },
+    {
+      "start": 1799.62,
+      "end": 1808.18,
+      "start_hms": "29:59",
+      "end_hms": "30:08",
+      "text": "It's an entire CSV, this is a way\u2026 This will just push\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00227_29-59.jpg",
+        "time": 1799.62
+      }
+    },
+    {
+      "start": 1810.42,
+      "end": 1816.85,
+      "start_hms": "30:10",
+      "end_hms": "30:16",
+      "text": "All the reviewers, however, you kind of need to go in and change it so that their invited field is not checked.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00228_30-10.jpg",
+        "time": 1810.42
+      }
+    },
+    {
+      "start": 1817.13,
+      "end": 1818.599,
+      "start_hms": "30:17",
+      "end_hms": "30:18",
+      "text": "To get the full list.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00229_30-17.jpg",
+        "time": 1817.13
+      }
+    },
+    {
+      "start": 1819.65,
+      "end": 1821.729,
+      "start_hms": "30:19",
+      "end_hms": "30:21",
+      "text": "Okay, so that's that process.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00230_30-19.jpg",
+        "time": 1819.65
+      }
+    },
+    {
+      "start": 1822.24,
+      "end": 1824.35,
+      "start_hms": "30:22",
+      "end_hms": "30:24",
+      "text": "I think it needs.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00231_30-22.jpg",
+        "time": 1822.24
+      }
+    },
+    {
+      "start": 1825.18,
+      "end": 1827.18,
+      "start_hms": "30:25",
+      "end_hms": "30:27",
+      "text": "To be rethought out.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00232_30-25.jpg",
+        "time": 1825.18
+      }
+    },
+    {
+      "start": 1827.43,
+      "end": 1829.769,
+      "start_hms": "30:27",
+      "end_hms": "30:29",
+      "text": "But it's working for the most part.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00233_30-27.jpg",
+        "time": 1827.43
+      }
+    },
+    {
+      "start": 1830.42,
+      "end": 1834.52,
+      "start_hms": "30:30",
+      "end_hms": "30:34",
+      "text": "Then there's the referee claimed limit, so,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00234_30-30.jpg",
+        "time": 1830.42
+      }
+    },
+    {
+      "start": 1835.98,
+      "end": 1849.099,
+      "start_hms": "30:35",
+      "end_hms": "30:49",
+      "text": "For AI-suggested reviewers, students are allowed to claim a reviewer, that they want to look into, but we don't want them to just claim a bunch and then leave them stagnant, so we only allow them to claim, I believe, 3.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00235_30-35.jpg",
+        "time": 1835.98
+      }
+    },
+    {
+      "start": 1849.65,
+      "end": 1855.829,
+      "start_hms": "30:49",
+      "end_hms": "30:55",
+      "text": "So that's tracking the count, and then\u2026 If it's above 2.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00236_30-49.jpg",
+        "time": 1849.65
+      }
+    },
+    {
+      "start": 1856.54,
+      "end": 1859.3,
+      "start_hms": "30:56",
+      "end_hms": "30:59",
+      "text": "So, we'll just let go the\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00237_30-56.jpg",
+        "time": 1856.54
+      }
+    },
+    {
+      "start": 1859.48,
+      "end": 1866.159,
+      "start_hms": "30:59",
+      "end_hms": "31:06",
+      "text": "One that they claimed, the farthest away, and make it look like it is unable to evaluate.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00238_30-59.jpg",
+        "time": 1859.48
+      }
+    },
+    {
+      "start": 1867.13,
+      "end": 1869.669,
+      "start_hms": "31:07",
+      "end_hms": "31:09",
+      "text": "Just so that there's, like, somebody else can claim it.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00239_31-07.jpg",
+        "time": 1867.13
+      }
+    },
+    {
+      "start": 1870.49,
+      "end": 1877.02,
+      "start_hms": "31:10",
+      "end_hms": "31:17",
+      "text": "Then there is\u2026 One of preprint status.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00240_31-10.jpg",
+        "time": 1870.49
+      }
+    },
+    {
+      "start": 1878.57,
+      "end": 1880.28,
+      "start_hms": "31:18",
+      "end_hms": "31:20",
+      "text": "is complete.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00241_31-18.jpg",
+        "time": 1878.57
+      }
+    },
+    {
+      "start": 1881.49,
+      "end": 1883.97,
+      "start_hms": "31:21",
+      "end_hms": "31:23",
+      "text": "I'm gonna remove the invite code, I don't know why that\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00242_31-21.jpg",
+        "time": 1881.49
+      }
+    },
+    {
+      "start": 1891.57,
+      "end": 1898.46,
+      "start_hms": "31:31",
+      "end_hms": "31:38",
+      "text": "In the Quality Check Portal,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00243_31-31.jpg",
+        "time": 1891.57
+      }
+    },
+    {
+      "start": 1899.55,
+      "end": 1906.799,
+      "start_hms": "31:39",
+      "end_hms": "31:46",
+      "text": "For the race conditions, we require assistant editors to kind of put their name on records that they are QCing.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00244_31-39.jpg",
+        "time": 1899.55
+      }
+    },
+    {
+      "start": 1907.01,
+      "end": 1913.67,
+      "start_hms": "31:47",
+      "end_hms": "31:53",
+      "text": "And so, our thought process was, when a preprint is complete, we want to clear those columns, just so that",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00245_31-47.jpg",
+        "time": 1907.01
+      }
+    },
+    {
+      "start": 1914.0,
+      "end": 1919.779,
+      "start_hms": "31:54",
+      "end_hms": "31:59",
+      "text": "It's, cleaner going forward, and if they want to go back to that preprint, they don't have to\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00246_31-54.jpg",
+        "time": 1914.0
+      }
+    },
+    {
+      "start": 1920.45,
+      "end": 1923.649,
+      "start_hms": "32:00",
+      "end_hms": "32:03",
+      "text": "Re or claim or have anything hidden.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00247_32-00.jpg",
+        "time": 1920.45
+      }
+    },
+    {
+      "start": 1926.56,
+      "end": 1932.649,
+      "start_hms": "32:06",
+      "end_hms": "32:12",
+      "text": "Also, when a preprint is invited or complete, that means the same thing right now.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00248_32-06.jpg",
+        "time": 1926.56
+      }
+    },
+    {
+      "start": 1932.85,
+      "end": 1937.059,
+      "start_hms": "32:12",
+      "end_hms": "32:17",
+      "text": "And\u2026 Their status is.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00249_32-12.jpg",
+        "time": 1932.85
+      }
+    },
+    {
+      "start": 1937.63,
+      "end": 1940.64,
+      "start_hms": "32:17",
+      "end_hms": "32:20",
+      "text": "Invite will create a record.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00250_32-17.jpg",
+        "time": 1937.63
+      }
+    },
+    {
+      "start": 1944.05,
+      "end": 1945.669,
+      "start_hms": "32:24",
+      "end_hms": "32:25",
+      "text": "Oh, wow, okay.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00251_32-24.jpg",
+        "time": 1944.05
+      }
+    },
+    {
+      "start": 1946.14,
+      "end": 1957.11,
+      "start_hms": "32:26",
+      "end_hms": "32:37",
+      "text": "who they should be batched, for sure. We do it by each reviewer, but we could definitely make it so that it's, when the entire preprint",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00252_32-26.jpg",
+        "time": 1946.14
+      }
+    },
+    {
+      "start": 1957.33,
+      "end": 1965.069,
+      "start_hms": "32:37",
+      "end_hms": "32:45",
+      "text": "is complete, we just fetch all of their invited reviewers and update and populate them in our recent reviewer.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00253_32-37.jpg",
+        "time": 1957.33
+      }
+    },
+    {
+      "start": 1965.48,
+      "end": 1966.6,
+      "start_hms": "32:45",
+      "end_hms": "32:46",
+      "text": "table?",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00254_32-45.jpg",
+        "time": 1965.48
+      }
+    },
+    {
+      "start": 1967.98,
+      "end": 1976.299,
+      "start_hms": "32:47",
+      "end_hms": "32:56",
+      "text": "So that's basically tracking the date that they were invited, and we don't want to invite them until 3 months after.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00255_32-47.jpg",
+        "time": 1967.98
+      }
+    },
+    {
+      "start": 1976.61,
+      "end": 1984.12,
+      "start_hms": "32:56",
+      "end_hms": "33:04",
+      "text": "Those are people that have requested not to, so you can see the delete date, and there's an automation that deletes them. So we track their email and their name.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00256_32-56.jpg",
+        "time": 1976.61
+      }
+    },
+    {
+      "start": 1984.71,
+      "end": 1988.66,
+      "start_hms": "33:04",
+      "end_hms": "33:08",
+      "text": "And\u2026 The preprint they're associated with.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00257_33-04.jpg",
+        "time": 1984.71
+      }
+    },
+    {
+      "start": 1991.36,
+      "end": 1993.199,
+      "start_hms": "33:11",
+      "end_hms": "33:13",
+      "text": "But that could definitely be cleaner.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00258_33-11.jpg",
+        "time": 1991.36
+      }
+    },
+    {
+      "start": 1995.99,
+      "end": 1999.91,
+      "start_hms": "33:15",
+      "end_hms": "33:19",
+      "text": "As mentioned, this is the\u2026 When the delete date is today.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00259_33-15.jpg",
+        "time": 1995.99
+      }
+    },
+    {
+      "start": 2000.51,
+      "end": 2010.51,
+      "start_hms": "33:20",
+      "end_hms": "33:30",
+      "text": "delete them\u2026 It's also when a reviewer is added, and\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00260_33-20.jpg",
+        "time": 2000.51
+      }
+    },
+    {
+      "start": 2011.83,
+      "end": 2024.169,
+      "start_hms": "33:31",
+      "end_hms": "33:44",
+      "text": "It's an assistant editor who proposed it, and they didn't mark it as incomplete, then we want to just set that reviewer to invite it immediately, because\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00261_33-31.jpg",
+        "time": 2011.83
+      }
+    },
+    {
+      "start": 2025.86,
+      "end": 2030.99,
+      "start_hms": "33:45",
+      "end_hms": "33:50",
+      "text": "The assistant editor would only propose a reviewer if\u2026 It was inappropriate.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00262_33-45.jpg",
+        "time": 2025.86
+      }
+    },
+    {
+      "start": 2032.05,
+      "end": 2033.1,
+      "start_hms": "33:52",
+      "end_hms": "33:53",
+      "text": "Options.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00263_33-52.jpg",
+        "time": 2032.05
+      }
+    },
+    {
+      "start": 2038.82,
+      "end": 2046.92,
+      "start_hms": "33:58",
+      "end_hms": "34:06",
+      "text": "Okay, so there's also the concern if a reviewer is flagged as invite, We need to\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00264_33-58.jpg",
+        "time": 2038.82
+      }
+    },
+    {
+      "start": 2047.9,
+      "end": 2055.63,
+      "start_hms": "34:07",
+      "end_hms": "34:15",
+      "text": "make sure that they haven't been proposed in any other preprints, so say I, like, proposed",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00265_34-07.jpg",
+        "time": 2047.9
+      }
+    },
+    {
+      "start": 2055.63,
+      "end": 2068.539,
+      "start_hms": "34:15",
+      "end_hms": "34:28",
+      "text": "Aaron for preprint A, and Aaron for preprint B. If I invite Aaron for preprint A, I should reject him for preprint B, because we don't want to invite him within, like, one week, for two different preprints.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00266_34-15.jpg",
+        "time": 2055.63
+      }
+    },
+    {
+      "start": 2069.36,
+      "end": 2071.37,
+      "start_hms": "34:29",
+      "end_hms": "34:31",
+      "text": "So that's what that's doing.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00267_34-29.jpg",
+        "time": 2069.36
+      }
+    },
+    {
+      "start": 2073.84,
+      "end": 2079.3,
+      "start_hms": "34:33",
+      "end_hms": "34:39",
+      "text": "It will also\u2026 go in, say, like, there's a berkeley.edu.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00268_34-33.jpg",
+        "time": 2073.84
+      }
+    },
+    {
+      "start": 2080.179,
+      "end": 2092.879,
+      "start_hms": "34:40",
+      "end_hms": "34:52",
+      "text": "email associated with that invited reviewer. We don't want to invite multiple people from the same institution, so we'll go into our AI-suggested reviewer for that preprint and burn anybody, or like\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00269_34-40.jpg",
+        "time": 2080.179
+      }
+    },
+    {
+      "start": 2093.02,
+      "end": 2098.569,
+      "start_hms": "34:53",
+      "end_hms": "34:58",
+      "text": "Cross them out, for being considered if they have the same domain as that invited reviewer.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00270_34-53.jpg",
+        "time": 2093.02
+      }
+    },
+    {
+      "start": 2099.05,
+      "end": 2104.68,
+      "start_hms": "34:59",
+      "end_hms": "35:04",
+      "text": "Then there's the tracksuit in\u2026 Referee productivity, so\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00271_34-59.jpg",
+        "time": 2099.05
+      }
+    },
+    {
+      "start": 2106.3,
+      "end": 2111.389,
+      "start_hms": "35:06",
+      "end_hms": "35:11",
+      "text": "if the status in the AI referee's AI Suggested Reviewer table",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00272_35-06.jpg",
+        "time": 2106.3
+      }
+    },
+    {
+      "start": 2112.77,
+      "end": 2117.789,
+      "start_hms": "35:12",
+      "end_hms": "35:17",
+      "text": "It's updated to reject or proposed, then that is now an important thing that we track.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00273_35-12.jpg",
+        "time": 2112.77
+      }
+    },
+    {
+      "start": 2118.11,
+      "end": 2126.96,
+      "start_hms": "35:18",
+      "end_hms": "35:26",
+      "text": "And we input the student email, and associate it with their\u2026 User productivity.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00274_35-18.jpg",
+        "time": 2118.11
+      }
+    },
+    {
+      "start": 2131.44,
+      "end": 2134.07,
+      "start_hms": "35:31",
+      "end_hms": "35:34",
+      "text": "Preprint editorial rejected, so\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00275_35-31.jpg",
+        "time": 2131.44
+      }
+    },
+    {
+      "start": 2135.66,
+      "end": 2142.29,
+      "start_hms": "35:35",
+      "end_hms": "35:42",
+      "text": "We're checking if it's\u2026 is empty, but basically the reason for that is these are fields from selected, so when it's",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00276_35-35.jpg",
+        "time": 2135.66
+      }
+    },
+    {
+      "start": 2143.01,
+      "end": 2154.079,
+      "start_hms": "35:43",
+      "end_hms": "35:54",
+      "text": "editorial rejected, it's no longer going to be in the selected base, so it'll basically disappear. And so we will no longer have these linkings correctly showing.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00277_35-43.jpg",
+        "time": 2143.01
+      }
+    },
+    {
+      "start": 2154.24,
+      "end": 2161.21,
+      "start_hms": "35:54",
+      "end_hms": "36:01",
+      "text": "So that shows to us that the status is no longer selected unless the preprint has been editorial rejected.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00278_35-54.jpg",
+        "time": 2154.24
+      }
+    },
+    {
+      "start": 2161.57,
+      "end": 2167.979,
+      "start_hms": "36:01",
+      "end_hms": "36:07",
+      "text": "And it matters whether it's possible that maybe it was\u2026 people started proposing",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00279_36-01.jpg",
+        "time": 2161.57
+      }
+    },
+    {
+      "start": 2168.27,
+      "end": 2173.869,
+      "start_hms": "36:08",
+      "end_hms": "36:13",
+      "text": "Or didn't propose anything for that preprint, so, you know, no harm, no foul, we'll just delete that record.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00280_36-08.jpg",
+        "time": 2168.27
+      }
+    },
+    {
+      "start": 2174.56,
+      "end": 2181.869,
+      "start_hms": "36:14",
+      "end_hms": "36:21",
+      "text": "On the other hand, if people have proposed it, we don't really want to, like, fully throw it out, so we'll just set the preprint status to discarded.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00281_36-14.jpg",
+        "time": 2174.56
+      }
+    },
+    {
+      "start": 2182.09,
+      "end": 2186.42,
+      "start_hms": "36:22",
+      "end_hms": "36:26",
+      "text": "But the student can still receive credit for who\u2026 what they proposed.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00282_36-22.jpg",
+        "time": 2182.09
+      }
+    },
+    {
+      "start": 2187.64,
+      "end": 2195.51,
+      "start_hms": "36:27",
+      "end_hms": "36:35",
+      "text": "This is for sending daily reject summaries. This was set up by\u2026 A different person?",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00283_36-27.jpg",
+        "time": 2187.64
+      }
+    },
+    {
+      "start": 2202.22,
+      "end": 2207.1,
+      "start_hms": "36:42",
+      "end_hms": "36:47",
+      "text": "I think we should include\u2026 Hold on a sec.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00284_36-42.jpg",
+        "time": 2202.22
+      }
+    },
+    {
+      "start": 2208.92,
+      "end": 2217.72,
+      "start_hms": "36:48",
+      "end_hms": "36:57",
+      "text": "So include\u2026 Well, yeah, that's also\u2026 So this\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00285_36-48.jpg",
+        "time": 2208.92
+      }
+    },
+    {
+      "start": 2223.72,
+      "end": 2227.669,
+      "start_hms": "37:03",
+      "end_hms": "37:07",
+      "text": "We'll send an invite through the Google Cloud function.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00286_37-03.jpg",
+        "time": 2223.72
+      }
+    },
+    {
+      "start": 2228.23,
+      "end": 2235.569,
+      "start_hms": "37:08",
+      "end_hms": "37:15",
+      "text": "of the information\u2026 By status, and it'll include the quality check viewer comments.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00287_37-08.jpg",
+        "time": 2228.23
+      }
+    },
+    {
+      "start": 2236.07,
+      "end": 2239.31,
+      "start_hms": "37:16",
+      "end_hms": "37:19",
+      "text": "Given that, I'm gonna include fixable.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00288_37-16.jpg",
+        "time": 2236.07
+      }
+    },
+    {
+      "start": 2241.42,
+      "end": 2249.419,
+      "start_hms": "37:21",
+      "end_hms": "37:29",
+      "text": "So that will run\u2026 This email's the student of the fixable reviewer. I might\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00289_37-21.jpg",
+        "time": 2241.42
+      }
+    },
+    {
+      "start": 2250.29,
+      "end": 2256.339,
+      "start_hms": "37:30",
+      "end_hms": "37:36",
+      "text": "test this out to see if I can delete that, and it can all just be within the daily reject summaries, because I think\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00290_37-30.jpg",
+        "time": 2250.29
+      }
+    },
+    {
+      "start": 2256.84,
+      "end": 2260.52,
+      "start_hms": "37:36",
+      "end_hms": "37:40",
+      "text": "Summaries are better than\u2026 each email.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00291_37-36.jpg",
+        "time": 2256.84
+      }
+    },
+    {
+      "start": 2261.77,
+      "end": 2267.4,
+      "start_hms": "37:41",
+      "end_hms": "37:47",
+      "text": "If there are any preprints that have",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00292_37-41.jpg",
+        "time": 2261.77
+      }
+    },
+    {
+      "start": 2267.75,
+      "end": 2270.279,
+      "start_hms": "37:47",
+      "end_hms": "37:50",
+      "text": "An unchecked count greater than 10.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00293_37-47.jpg",
+        "time": 2267.75
+      }
+    },
+    {
+      "start": 2270.44,
+      "end": 2274.129,
+      "start_hms": "37:50",
+      "end_hms": "37:54",
+      "text": "Every day at, wow, 8 AM. It's a way to wake up.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00294_37-50.jpg",
+        "time": 2270.44
+      }
+    },
+    {
+      "start": 2274.46,
+      "end": 2285.25,
+      "start_hms": "37:54",
+      "end_hms": "38:05",
+      "text": "We will email\u2026 A summary to people associated with that domain who are assistant editors.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00295_37-54.jpg",
+        "time": 2274.46
+      }
+    },
+    {
+      "start": 2285.81,
+      "end": 2291.0,
+      "start_hms": "38:05",
+      "end_hms": "38:11",
+      "text": "And that they should go\u2026 Quality check.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00296_38-05.jpg",
+        "time": 2285.81
+      }
+    },
+    {
+      "start": 2293.52,
+      "end": 2296.28,
+      "start_hms": "38:13",
+      "end_hms": "38:16",
+      "text": "In the other case where the unchecked count is",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00297_38-13.jpg",
+        "time": 2293.52
+      }
+    },
+    {
+      "start": 2296.71,
+      "end": 2300.999,
+      "start_hms": "38:16",
+      "end_hms": "38:20",
+      "text": "greater than 30, then we want Steph to also be flagged.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00298_38-16.jpg",
+        "time": 2296.71
+      }
+    },
+    {
+      "start": 2302.49,
+      "end": 2305.64,
+      "start_hms": "38:22",
+      "end_hms": "38:25",
+      "text": "If\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00299_38-22.jpg",
+        "time": 2302.49
+      }
+    },
+    {
+      "start": 2305.99,
+      "end": 2314.95,
+      "start_hms": "38:25",
+      "end_hms": "38:34",
+      "text": "The list of AI-suggested reviewers does not seem to be doing well. Either there's a really high reject rate.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00300_38-25.jpg",
+        "time": 2305.99
+      }
+    },
+    {
+      "start": 2315.06,
+      "end": 2321.059,
+      "start_hms": "38:35",
+      "end_hms": "38:41",
+      "text": "or there's a very low number of AI-suggested reviewers remaining.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00301_38-35.jpg",
+        "time": 2315.06
+      }
+    },
+    {
+      "start": 2321.9,
+      "end": 2323.36,
+      "start_hms": "38:41",
+      "end_hms": "38:43",
+      "text": "We will\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00302_38-41.jpg",
+        "time": 2321.9
+      }
+    },
+    {
+      "start": 2323.58,
+      "end": 2329.619,
+      "start_hms": "38:43",
+      "end_hms": "38:49",
+      "text": "Send emails to people of, you know, there's a really high reject rate, maybe you should go\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00303_38-43.jpg",
+        "time": 2323.58
+      }
+    },
+    {
+      "start": 2329.98,
+      "end": 2335.45,
+      "start_hms": "38:49",
+      "end_hms": "38:55",
+      "text": "Adjust the pro-fee information and repopulate that list.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00304_38-49.jpg",
+        "time": 2329.98
+      }
+    },
+    {
+      "start": 2336.9,
+      "end": 2344.839,
+      "start_hms": "38:56",
+      "end_hms": "39:04",
+      "text": "Maybe if it hits zero, it's like, okay, it's\u2026 there's no more available AI reviewers, please go update that, and then\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00305_38-56.jpg",
+        "time": 2336.9
+      }
+    },
+    {
+      "start": 2345.2,
+      "end": 2348.569,
+      "start_hms": "39:05",
+      "end_hms": "39:08",
+      "text": "If the unclaimed AI reviewers is.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00306_39-05.jpg",
+        "time": 2345.2
+      }
+    },
+    {
+      "start": 2349.17,
+      "end": 2354.129,
+      "start_hms": "39:09",
+      "end_hms": "39:14",
+      "text": "Less than 15, that's also, you know, we're getting close. Go\u2026 go help out with that.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00307_39-09.jpg",
+        "time": 2349.17
+      }
+    },
+    {
+      "start": 2358.09,
+      "end": 2364.869,
+      "start_hms": "39:18",
+      "end_hms": "39:24",
+      "text": "Okay, and then this is\u2026 Monday on 7 AM?",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00308_39-18.jpg",
+        "time": 2358.09
+      }
+    },
+    {
+      "start": 2366.18,
+      "end": 2367.639,
+      "start_hms": "39:26",
+      "end_hms": "39:27",
+      "text": "I don't think I set this one up.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00309_39-26.jpg",
+        "time": 2366.18
+      }
+    },
+    {
+      "start": 2375.55,
+      "end": 2377.219,
+      "start_hms": "39:35",
+      "end_hms": "39:37",
+      "text": "I did not create this.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00310_39-35.jpg",
+        "time": 2375.55
+      }
+    },
+    {
+      "start": 2397.76,
+      "end": 2400.299,
+      "start_hms": "39:57",
+      "end_hms": "40:00",
+      "text": "I have no idea what this is doing. I think Prashad.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00311_39-57.jpg",
+        "time": 2397.76
+      }
+    },
+    {
+      "start": 2400.84,
+      "end": 2401.94,
+      "start_hms": "40:00",
+      "end_hms": "40:01",
+      "text": "Created this.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00312_40-00.jpg",
+        "time": 2400.84
+      }
+    },
+    {
+      "start": 2403.91,
+      "end": 2407.48,
+      "start_hms": "40:03",
+      "end_hms": "40:07",
+      "text": "But it seems like weekly\u2026 They're sending,",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00313_40-03.jpg",
+        "time": 2403.91
+      }
+    },
+    {
+      "start": 2408.0,
+      "end": 2411.78,
+      "start_hms": "40:08",
+      "end_hms": "40:11",
+      "text": "General information about the preprints that they should be paying attention to.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00314_40-08.jpg",
+        "time": 2408.0
+      }
+    },
+    {
+      "start": 2418.91,
+      "end": 2420.16,
+      "start_hms": "40:18",
+      "end_hms": "40:20",
+      "text": "And\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00315_40-18.jpg",
+        "time": 2418.91
+      }
+    },
+    {
+      "start": 2424.65,
+      "end": 2425.62,
+      "start_hms": "40:24",
+      "end_hms": "40:25",
+      "text": "Oh, cool.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00316_40-24.jpg",
+        "time": 2424.65
+      }
+    },
+    {
+      "start": 2426.27,
+      "end": 2428.12,
+      "start_hms": "40:26",
+      "end_hms": "40:28",
+      "text": "Inputs the email.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00317_40-26.jpg",
+        "time": 2426.27
+      }
+    },
+    {
+      "start": 2430.18,
+      "end": 2431.209,
+      "start_hms": "40:30",
+      "end_hms": "40:31",
+      "text": "It's very interesting.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00318_40-30.jpg",
+        "time": 2430.18
+      }
+    },
+    {
+      "start": 2433.35,
+      "end": 2437.53,
+      "start_hms": "40:33",
+      "end_hms": "40:37",
+      "text": "Can you take\u2026 Oh, wow, cool. Okay, so you get the outputs from this.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00319_40-33.jpg",
+        "time": 2433.35
+      }
+    },
+    {
+      "start": 2438.05,
+      "end": 2449.629,
+      "start_hms": "40:38",
+      "end_hms": "40:49",
+      "text": "you'll get the list of emails, and then you'll input the email generated from this script. That's very cool, I didn't know that you could do that. Okay, so that is the automations for\u2026",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00320_40-38.jpg",
+        "time": 2438.05
+      }
+    },
+    {
+      "start": 2451.42,
+      "end": 2453.43,
+      "start_hms": "40:51",
+      "end_hms": "40:53",
+      "text": "The reviewer selection base.",
+      "frame": {
+        "path": "output/GMT20251116-201850_Recording_1440x900/20251118_225218/frames/frame_00321_40-51.jpg",
+        "time": 2451.42
+      }
+    }
+  ]
+}
