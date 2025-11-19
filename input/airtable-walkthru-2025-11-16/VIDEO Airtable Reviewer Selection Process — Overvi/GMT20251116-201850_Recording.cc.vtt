@@ -1,0 +1,827 @@
+WEBVTT
+
+00:00:15.000 --> 00:00:25.000
+Okay, this is an attempt to explain… The automations, specifically within the reviewer selection process base.
+
+00:00:25.000 --> 00:00:29.000
+Um… there will be a bit of exploration as we go about it.
+
+00:00:29.000 --> 00:00:42.000
+Um, but just as a quick reminder. Within this base, the… Relevant tables are the preprint info only, and that's looking at, um… Preprint information.
+
+00:00:42.000 --> 00:00:46.000
+that gets connected to our student reviewer inputs, and those are.
+
+00:00:46.000 --> 00:00:52.000
+reviewers that are proposed for each preprint, and it's indexed by the preprint ID.
+
+00:00:52.000 --> 00:01:01.000
+We also have referees, which is our old naming for AI-suggested reviewers, and those also get attached to.
+
+00:01:01.000 --> 00:01:10.000
+preprint info, um, as well as whether they were proposed or not within student reviewer input, so we have linked fields for that.
+
+00:01:10.000 --> 00:01:15.000
+There's also recent reviewers, so those are people who have been invited.
+
+00:01:15.000 --> 00:01:22.000
+That will be relevant. There's all users, and that, as you can see by the lightning bolt, is connected to.
+
+00:01:22.000 --> 00:01:34.000
+our RID app user… Base…
+
+00:01:34.000 --> 00:01:52.000
+Um… Great, and then we have team performance, that's looking… across each… what RAD considers a team, so usually it's just by the country, but when it comes to Berkeley, there's… it also has to take into account the domain.
+
+00:01:52.000 --> 00:02:05.000
+You'll see that in the automation. There's also domain performance, so that's just, um… actually based on the preprint that's been proposed, rather than the students who are contributing.
+
+00:02:05.000 --> 00:02:17.000
+It's an annoying thing. Okay, I think the last important one is selected… And this gets pulled from the Rapid Reviews Infectious Disease.
+
+00:02:17.000 --> 00:02:27.000
+base, which is basically just the preprints that are pulled and then selected, um… or, sorry, or two-pitch editorial.
+
+00:02:27.000 --> 00:02:37.000
+So those are the two preprint statuses that are required for, um… these preprints to enter this reviewer selection process base.
+
+00:02:37.000 --> 00:02:43.000
+Okay, so with that kind of contextualized, we're just going to walk through every single automation and kind of explain.
+
+00:02:43.000 --> 00:02:48.000
+Uh, what it's achieving, um, and in so doing, try to.
+
+00:02:48.000 --> 00:03:01.000
+just document the behind-the-scenes of this piece. And the things that… are needed. Okay, so to get started, the… First one is when a record is created in selected.
+
+00:03:01.000 --> 00:03:09.000
+So once again, that's a preprint. Within the preprint scraping side of the process has been flagged as selected for.
+
+00:03:09.000 --> 00:03:19.000
+Um, by the editorial team. we create a corresponding record within our main preprint info only base.
+
+00:03:19.000 --> 00:03:34.000
+We link it to the selected. Uh, and we update the title and DOI, so… A lot of the, um, information we can then pull from selected, but just in case something happens on that side of the…
+
+00:03:34.000 --> 00:03:43.000
+on the selected… Um, table. We also… I, like, also create a title and DOI backup.
+
+00:03:43.000 --> 00:03:50.000
+information, just so we can… Investigate, um, and not have all of that data deleted.
+
+00:03:50.000 --> 00:04:00.000
+Okay, so this script… is…
+
+00:04:00.000 --> 00:04:04.000
+Open it up…
+
+00:04:04.000 --> 00:04:09.000
+It's getting some important information, such as what the ranking has been.
+
+00:04:09.000 --> 00:04:16.000
+Um… with the assigned team is… And it's getting the initial rank.
+
+00:04:16.000 --> 00:04:30.000
+Um… And then, once it's pulled, it will kind of decide whether, on our end of the base it needs to… be updated to a ring, so sometimes it will come in and the rank.
+
+00:04:30.000 --> 00:04:38.000
+That the editorial team gives. It can be 1, 2, 3, 4, like, at what point, or how high of a priority is this preprint? If it's.
+
+00:04:38.000 --> 00:04:42.000
+and A, they haven't given it a ranking yet, so we're just going to set it to NA.
+
+00:04:42.000 --> 00:04:47.000
+Um, if it's out of circulation, then it's already been within our base, we're not gonna touch it.
+
+00:04:47.000 --> 00:04:51.000
+And then otherwise, we're gonna actually set that single select field.
+
+00:04:51.000 --> 00:05:01.000
+To the number that it was, um, assigned. And then we'll kind of push that.
+
+00:05:01.000 --> 00:05:06.000
+And yeah, if we notice any change… We'll have to change that.
+
+00:05:06.000 --> 00:05:12.000
+Um, if the assigned team is updated… We do… let me update it.
+
+00:05:12.000 --> 00:05:17.000
+So the assigned team, there's people that, um, are given priority to.
+
+00:05:17.000 --> 00:05:22.000
+do that. Okay, and then… We also create a record.
+
+00:05:22.000 --> 00:05:34.000
+Within the referees table. Um, and that is… This is specifically when somebody, um, pitches a preprint, they also pitch.
+
+00:05:34.000 --> 00:05:45.000
+who they think, like, a ideal reviewer would be, so that there's two different models, and we're just pushing that into our suggested reviewer table for somebody to actually, you know.
+
+00:05:45.000 --> 00:06:03.000
+propose those model reviewers. Alright, then there is tracking team performance, so… this kind of… this requires the preprint or, um… Sorry, not true. When a person proposes a reviewer to a certain preprint.
+
+00:06:03.000 --> 00:06:10.000
+We want to see… Who the team is that that person is associated with, and what the domain of the preprint is.
+
+00:06:10.000 --> 00:06:18.000
+And given that information, we will link. That proposed reviewer to the team. So, as mentioned.
+
+00:06:18.000 --> 00:06:22.000
+Berkeley requires knowing not just that they're from Berkeley, but also what domain they are.
+
+00:06:22.000 --> 00:06:31.000
+Um, and if that's not the case, if it's not Berkeley, um, then… We'll simply just link.
+
+00:06:31.000 --> 00:06:38.000
+The proposed reviewer, um, to the team or domain… to the team that the student is associated with.
+
+00:06:38.000 --> 00:06:45.000
+So that could be, like, Vietnam, um… Or FAMHSA, or somewhere else.
+
+00:06:45.000 --> 00:06:50.000
+Okay, so when a record is created within our preprint info only.
+
+00:06:50.000 --> 00:07:05.000
+We find within the domain performance, so the table tracking performance across domains, um… kind of that record that has the same domain as this associated preprint, and then link it.
+
+00:07:05.000 --> 00:07:11.000
+This is hard to do within scripts, because it, uh… It's just tricky to do with code.
+
+00:07:11.000 --> 00:07:21.000
+Um… In another way, and… Then we also go to team performance.
+
+00:07:21.000 --> 00:07:36.000
+And update the preprint info. So, within the team performance, we're tracking… students' contributions to their team, but we're also tracking, like, a preprint when it's proposed, it's associated to a team.
+
+00:07:36.000 --> 00:07:40.000
+Um, and so when… we also want to link that to the team.
+
+00:07:40.000 --> 00:07:46.000
+To see how many of their preprints that they're, um… pitching and proposing.
+
+00:07:46.000 --> 00:08:04.000
+come across and are successful. And then the last one is the mini-team email, so… There's, um… yeah, basically just, like, puts together the… the people that will have early access to that preprint.
+
+00:08:04.000 --> 00:08:15.000
+Okay, um… Maybe it makes sense to… First, do record created. So SRI just stands for Student Reviewer Inputs, and that's the table.
+
+00:08:15.000 --> 00:08:23.000
+Where reviewers are proposed to. So when a record is created in there, there's a number of things.
+
+00:08:23.000 --> 00:08:30.000
+That need to be done. Uh, one is just finding within preprint info only the associated.
+
+00:08:30.000 --> 00:08:39.000
+ID, and then we do a couple of updates. So we link the student who proposed it to the all users base, so we can track their productivity.
+
+00:08:39.000 --> 00:08:44.000
+We have an auto-update, um, for the link to publication, so there's, like, a.
+
+00:08:44.000 --> 00:08:53.000
+Formula field that puts together. Um, the subdiscipline and the… No, sorry, the reviewer's name.
+
+00:08:53.000 --> 00:08:58.000
+And from that, it creates, like, an auto-link to the publications on PubMed.
+
+00:08:58.000 --> 00:09:04.000
+But that actually needs to be put into the associated… field, and the formula doesn't allow for that.
+
+00:09:04.000 --> 00:09:18.000
+And then we also create a linking to… Um… If there's…
+
+00:09:18.000 --> 00:09:26.000
+Oh, that's not… that's out of place.
+
+00:09:26.000 --> 00:09:37.000
+That wouldn't make sense, nobody… That's misplaced.
+
+00:09:37.000 --> 00:09:52.000
+Ignore that one. Um, and then… Yes, also attaching the associated… Record that we found to their preprint info only, so that… that preprint is now associated with that proposed reviewer.
+
+00:09:52.000 --> 00:09:58.000
+Okay, now there's also the potential for, within the quality checking process.
+
+00:09:58.000 --> 00:10:06.000
+Um, for proposers… Or, sorry, for proposed reviewers' fields to be updated, and there's a few important ones that.
+
+00:10:06.000 --> 00:10:10.000
+We need to track for that. Um, there's justification for invite.
+
+00:10:10.000 --> 00:10:21.000
+Um, so that takes the sub-discipline and the preprint's title and pulls together a sentence that we email to the reviewers. Um, we use this as a formula, just because students were really.
+
+00:10:21.000 --> 00:10:33.000
+Not, uh, understanding how to write it correctly. And then we also have the email of the quality checker and the email of the quality checker in training. And so if any of those, um.
+
+00:10:33.000 --> 00:10:46.000
+get adjusted, we want to link. Um, the correct email… Um, of the quality checker and the quality checker in training, as well as update the justification for invite.
+
+00:10:46.000 --> 00:10:53.000
+Alright, when a record is… Ooh, here's a way that we could make this more efficient.
+
+00:10:53.000 --> 00:10:59.000
+Um… I'll do that later, actually.
+
+00:10:59.000 --> 00:11:05.000
+But basically, this is the immediate reviewer COI checker, so we want to make sure that the author.
+
+00:11:05.000 --> 00:11:11.000
+Or the reviewer isn't the author, they're not proposed yet, and they're not a recent reviewer.
+
+00:11:11.000 --> 00:11:18.000
+And then we also want to check that. There's no duplicate domains, so if somebody from Berkeley.edu.
+
+00:11:18.000 --> 00:11:22.000
+was proposed, but somebody already was, we kind of flagged that.
+
+00:11:22.000 --> 00:11:36.000
+Um, and we also will burn… AI-suggested reviewers who have that same domain, because we already know that it'll have a COI flag.
+
+00:11:36.000 --> 00:11:48.000
+This is tracking, um… For preprints, when they are… selected the final ranking, like, the field that decides.
+
+00:11:48.000 --> 00:12:04.000
+What the final ranking of that preprint will be, whether it be 1, 2, 3, 4, 5, like, what's our priority is in Steph's ranking field, so… When that is updated, we'll change the rank, um… inputted by Steph.
+
+00:12:04.000 --> 00:12:13.000
+I would suggest looking through the code, but it's a little bit… there's a little bit more nuance to it, um… Because we have to take into account.
+
+00:12:13.000 --> 00:12:18.000
+Basically, whether there's other preprints that are on hold that have higher ranking, and we kind of want to adjust.
+
+00:12:18.000 --> 00:12:22.000
+that ranking, but basically we want to keep it in relative order.
+
+00:12:22.000 --> 00:12:35.000
+Based on this ranking. Then there is… Um, populating the… AI-suggested reviewers, so when a preprint.
+
+00:12:35.000 --> 00:12:45.000
+Uh, referee's info is not empty. We… will parse through.
+
+00:12:45.000 --> 00:13:00.000
+Um, I'll show… I could show what the list is. It's basically, it's a single… field, and it has a giant list of… the AI-suggested reviewer's details, so it will include things such as…
+
+00:13:00.000 --> 00:13:12.000
+Um, their name, their age index. Uh, their affiliations, maybe their orchid ID, maybe their author URL, and maybe used emails, and… We use rejects to extract all of that, and then.
+
+00:13:12.000 --> 00:13:15.000
+Um, for each, we build out a single record.
+
+00:13:15.000 --> 00:13:21.000
+For all of those AI-suggested reviewers. Um, we do some checks to see if.
+
+00:13:21.000 --> 00:13:32.000
+Um, that referee shouldn't actually… Be an option based on whether they're in the recent reviewers or… Um, already, like, a domain, common domain.
+
+00:13:32.000 --> 00:14:02.000
+And then we'll, um, add a record for each within our referees table.
+
+00:14:40.000 --> 00:14:43.000
+Oops, sorry, I thought that I paused that, but I did.
+
+00:14:43.000 --> 00:15:08.000
+Um, update pro user reviewers… Yes, we did that. Okay, so… this whole block of… automations are going through… Um, our preprint ranking… And kind of the flow of making a preprint active, on hold, sending out invites, and things like that, so it's pretty messy.
+
+00:15:08.000 --> 00:15:15.000
+Um, and it should be adjusted and fixed, but… Yeah, this whole thing is just kind of a mess.
+
+00:15:15.000 --> 00:15:20.000
+So, first and foremost, um, when the rank is zero in the.
+
+00:15:20.000 --> 00:15:25.000
+preprint status is active. Those are the two. necessary.
+
+00:15:25.000 --> 00:15:34.000
+Um… features, or whatever, that a preprint needs in order to be active.
+
+00:15:34.000 --> 00:15:45.000
+So, when one or the other… is true, will make it such that both are true. That's just because sometimes an assistant editor will go and make it active, but not know to adjust the rate.
+
+00:15:45.000 --> 00:15:54.000
+Um… if it's the first time being… active, um, we'll need to set it to in process.
+
+00:15:54.000 --> 00:16:01.000
+And then, when that happens, we'll update the date and process.
+
+00:16:01.000 --> 00:16:08.000
+Oh, no.
+
+00:16:08.000 --> 00:16:19.000
+Well, this will have to be looked into, but, um… What this is supposed to be doing, um… When the invite count is greater than or equal to 20.
+
+00:16:19.000 --> 00:16:29.000
+And the preprint status is dormant. We… think that the.
+
+00:16:29.000 --> 00:16:41.000
+Um…
+
+00:16:41.000 --> 00:16:56.000
+I think that it is in process.
+
+00:16:56.000 --> 00:17:01.000
+What this is supposed to be doing is, when the mini team is working on a preprint that's dormant.
+
+00:17:01.000 --> 00:17:06.000
+And it hits the invite count 20. We want it to be made active immediately.
+
+00:17:06.000 --> 00:17:12.000
+Um… so it's kind of a way of, like, getting them incentivized to do that.
+
+00:17:12.000 --> 00:17:17.000
+And this is supposed to be readjusting the ranks, but that is failing.
+
+00:17:17.000 --> 00:17:24.000
+Um… so I'll come back to that. But, yeah, it's a… it's a very complex.
+
+00:17:24.000 --> 00:17:31.000
+Um… Logic behind adjusting the ranks.
+
+00:17:31.000 --> 00:17:43.000
+Then there is setting the preprint status. to on hold. So, this is really critical, um, in the way that we're tracking. I think that it could be a lot better, but basically there's.
+
+00:17:43.000 --> 00:17:49.000
+Multiple steps, um, that we've included in the operations of when a preprint is.
+
+00:17:49.000 --> 00:17:52.000
+It gets its invites sent out, or when is it done?
+
+00:17:52.000 --> 00:17:57.000
+Receiving invites, um, and that's captured with the more invites needed field.
+
+00:17:57.000 --> 00:18:02.000
+I'm just gonna show that, it's in another video, but I think it's pretty critical to understand.
+
+00:18:02.000 --> 00:18:15.000
+the role that it plays, um… So let's just look at… This formula field… It's taking into account multiple.
+
+00:18:15.000 --> 00:18:20.000
+So you can see here, we have a round one, more invites needed, round two, round 3, round four.
+
+00:18:20.000 --> 00:18:27.000
+Um… So, based on what the invite round is.
+
+00:18:27.000 --> 00:18:34.000
+It will look at… the corresponding… Formula?
+
+00:18:34.000 --> 00:18:38.000
+So let's say it's in its first invite round.
+
+00:18:38.000 --> 00:18:44.000
+Uh, it only, we only accept and think that it needs more invites if either, um.
+
+00:18:44.000 --> 00:18:53.000
+The total invite count plus the, like, 60% of the unchecked count is… less than our invites required, which is 30.
+
+00:18:53.000 --> 00:19:05.000
+Um, or the unchecked count is. If it's more than 50 unchecked, then we think that it shouldn't, we should wait for those to get quality checked.
+
+00:19:05.000 --> 00:19:10.000
+And that's basically what it is for round 2 and round 3.
+
+00:19:10.000 --> 00:19:15.000
+So, when it's the case that we think that no additional invites are needed.
+
+00:19:15.000 --> 00:19:20.000
+we're gonna set it to on hold and out of circulation, so it's not gonna accept.
+
+00:19:20.000 --> 00:19:30.000
+Anymore. Um… proposed reviewers from students, we just want assistant editors to quality check it.
+
+00:19:30.000 --> 00:19:44.000
+And this code… Basically, once a preprint gets put on hold, we need to make sure that there's another preprint within that domain that is active.
+
+00:19:44.000 --> 00:19:50.000
+So, we, um… kind of find other preprints that have that.
+
+00:19:50.000 --> 00:19:57.000
+domain… if there's already an active one, um, so sometimes, like, two are active.
+
+00:19:57.000 --> 00:20:06.000
+Then… we're all good. Um…
+
+00:20:06.000 --> 00:20:17.000
+Then we separate them… By ranking, we don't want to consider anything out of circulation.
+
+00:20:17.000 --> 00:20:26.000
+Do some extra checks while we're at it, just cleaning up house.
+
+00:20:26.000 --> 00:20:34.000
+We also need to take into account whether preprint is dormant, so it's not been worked on yet, or it's on hold. So it's been active, but now it's not being worked on.
+
+00:20:34.000 --> 00:20:41.000
+the on-hold ones are higher priority, just because people have already started putting work into them.
+
+00:20:41.000 --> 00:20:44.000
+Um, we also take into account the total invite.
+
+00:20:44.000 --> 00:20:53.000
+Or greenlit, so a preprint that's on hold with a really high invite count, but it's not yet complete, is higher priority than one with lower invite count.
+
+00:20:53.000 --> 00:21:02.000
+If one is older, so it, like, was in process two weeks ago versus the one that was in process 1 week ago, we want to prioritize the older ones to get them through.
+
+00:21:02.000 --> 00:21:07.000
+And then we also, lastly, will take into account staff's ranking.
+
+00:21:07.000 --> 00:21:21.000
+For the dormant ones. Assign… reassign rankings, um… Make sure that everything is up to date, and then push those changes. I would advise actually looking at the code to better, like, I think.
+
+00:21:21.000 --> 00:21:27.000
+it's a pretty good source of truth for just how it should be working.
+
+00:21:27.000 --> 00:21:40.000
+Okay…
+
+00:21:40.000 --> 00:21:53.000
+So then there's the other, um… potential workflow where… The preprint is on hold, but then we had it in a non… we… like, the rank might have been.
+
+00:21:53.000 --> 00:21:58.000
+like, 3, so it was, like, on hold, but still in line. But then, actually.
+
+00:21:58.000 --> 00:22:04.000
+Um… people were quality checking, and it seems like it actually doesn't need more invites.
+
+00:22:04.000 --> 00:22:08.000
+Then we'll set the rink to out of circulation.
+
+00:22:08.000 --> 00:22:15.000
+Um… Yes.
+
+00:22:15.000 --> 00:22:27.000
+Okay, and then what if it's in circulation, but then all of a sudden… We rejected all of the unchecked reviewers, and we realized we need a lot more reviewers to be proposed to get our.
+
+00:22:27.000 --> 00:22:33.000
+Um, our goal of 30 invites, then we'll set more invites needed, or the formula will.
+
+00:22:33.000 --> 00:22:50.000
+be set to more invites needed. Um, and that's… then we need to bring this preprint back alive, so… This is new. Steph wants it to just immediately be made active, and so that's what we do. We set it to active immediately.
+
+00:22:50.000 --> 00:22:58.000
+Um, and in so doing… We're gonna, like, move it up, and then re-rank everything.
+
+00:22:58.000 --> 00:23:06.000
+Um, accordingly. So that's kind of actually, like. Incrementing the ranks rather than decrementing.
+
+00:23:06.000 --> 00:23:11.000
+Okay, and then we'll get into… A preprint has received.
+
+00:23:11.000 --> 00:23:18.000
+invites and the process for that. So if preprint is any of, um, dormant, active on hold.
+
+00:23:18.000 --> 00:23:22.000
+unsent invites is greater than or equal to 20.
+
+00:23:22.000 --> 00:23:29.000
+It's selected, and it's the first invite round. Then we've hit our goal of the first 20.
+
+00:23:29.000 --> 00:23:39.000
+So we're going to… Check that none of the proposed reviewers are authors or recent reviewers, or already proposed, and if that's the case.
+
+00:23:39.000 --> 00:23:47.000
+We want to check, is it still… are the unsent invites still above 20? Um, just in the case that maybe we rejected too many.
+
+00:23:47.000 --> 00:23:53.000
+And then, if that's true, we can say that we checked the field, we verified the verse 20, they are good to go.
+
+00:23:53.000 --> 00:24:14.000
+That will trigger this automation. Um… Where you can see verified first 20. I had to split it up because there seemed to be… A delay, um… I can't completely remember why, but it did not work when I put them together.
+
+00:24:14.000 --> 00:24:31.000
+I'm trying to remember why, but I can't. Um, so… yeah, a preprint is… ready to get its invite sent out, so we're gonna… re-rank… The preprints, um, we're putting that one on hold.
+
+00:24:31.000 --> 00:24:42.000
+Because we want to wait to see if the 20 was sufficient or not.
+
+00:24:42.000 --> 00:24:44.000
+I don't know if that's as it should be.
+
+00:24:44.000 --> 00:24:49.000
+Um… this… It's just what pushes to the Google Cloud.
+
+00:24:49.000 --> 00:25:04.000
+Server to send the CSVs… This update to the preprint status to on hold, but I am now… Hesitating, because I think that it should remain active.
+
+00:25:04.000 --> 00:25:07.000
+Um, that's something to follow up with Angel about.
+
+00:25:07.000 --> 00:25:15.000
+And then set invited to true for… Um, all of those reviewers, so that's kind of, um, our way.
+
+00:25:15.000 --> 00:25:18.000
+There's the unsent invites, and then there's the invite.
+
+00:25:18.000 --> 00:25:21.000
+total invite count, and we only want to trigger it when.
+
+00:25:21.000 --> 00:25:26.000
+the unsent invites are above a certain number, so, um, this is a way of updating.
+
+00:25:26.000 --> 00:25:36.000
+The reviewers who we know we've already sent it, or who's already been included in a CSV.
+
+00:25:36.000 --> 00:25:40.000
+Okay, then there's the next step, so when the invite count.
+
+00:25:40.000 --> 00:25:48.000
+is above 30. And the total incent is above 10, so that's after the first 20 are sent out, we now have gained 10 more.
+
+00:25:48.000 --> 00:26:02.000
+Um, and there's zero unchecked, so this preprint. is cleaned up, it's got our total reviewers… We want to, again, check for no COI.
+
+00:26:02.000 --> 00:26:09.000
+And then there's these kind of conditions, so if the invite count is… Above 50?
+
+00:26:09.000 --> 00:26:22.000
+We… We'll update the invite round. Basically, what this is doing is just making our… making sure our invite round is, um… Accurate, where the info round is.
+
+00:26:22.000 --> 00:26:40.000
+Um… determined by… The invite count, which… Maybe it doesn't make sense, but this would run off. This would… be triggered once 10 gets hit, so… Hopefully it works.
+
+00:26:40.000 --> 00:26:54.000
+Okay, then there is… manually send… Sending invites, so… This was a way where, like, if Angel or somebody on the editorial team just wanted to, like, send out.
+
+00:26:54.000 --> 00:26:58.000
+like, force the preprint to send out the CSVs.
+
+00:26:58.000 --> 00:27:02.000
+Um, they can kind of just, like, click this check button called manual send invites.
+
+00:27:02.000 --> 00:27:09.000
+Um, and it only makes sense to do so if… There's a non-zero amount of unsent invites.
+
+00:27:09.000 --> 00:27:26.000
+Once again, it'll check for COI… Um… Update, clean it up… And then we'll check the… Verified, and that triggers this.
+
+00:27:26.000 --> 00:27:37.000
+Which… It requires both send invites is checked and verified, so… Somebody's requested that the invites be sent out, and we've checked that there's no COI.
+
+00:27:37.000 --> 00:27:48.000
+We'll talk to the Google Cloud function… Update it so that those are cleared again.
+
+00:27:48.000 --> 00:27:59.000
+Find records… That have not been checked as invited. I think that that's being done in scripts another way, um… And then just flag those as invited.
+
+00:27:59.000 --> 00:28:12.000
+In the sense of, like, the… Email invite has been sent out, that could be… Clarified. Okay…
+
+00:28:12.000 --> 00:28:17.000
+Oh, is this one…
+
+00:28:17.000 --> 00:28:25.000
+Oh, this is when the unchecked is non-zero. So this is when… Unchecked is 0, sorry about that.
+
+00:28:25.000 --> 00:28:28.000
+Um, so once again, it's the case where invite count is.
+
+00:28:28.000 --> 00:28:34.000
+greater than 30, and there's no more that are unchecked, so it's pretty clean.
+
+00:28:34.000 --> 00:28:39.000
+We'll once again run the COI.
+
+00:28:39.000 --> 00:28:49.000
+Um… What is the difference between those two?
+
+00:28:49.000 --> 00:29:19.000
+Let's just running the COI. Does this change anything?
+
+00:29:21.000 --> 00:29:35.000
+I think that that could be deleted. I think that's basically the same as that. The only difference is… Here with this automation… Um, it does matter… Whether the uncheck count is zero or not.
+
+00:29:35.000 --> 00:29:43.000
+Because the preprint would be considered. complete, so we want to update.
+
+00:29:43.000 --> 00:29:51.000
+Um… This is once again updating the preprint status.
+
+00:29:51.000 --> 00:30:00.000
+Yeah, here we are updating it to complete and out of circulation. So that's the main difference of whether the unchecked count is zero or not.
+
+00:30:00.000 --> 00:30:17.000
+Um… it's an entire CSV, this is a way… This will just push… All the reviewers, however, you kind of need to go in and change it so that they're invited field is not checked.
+
+00:30:17.000 --> 00:30:22.000
+To get the full list. Okay, so that's that process.
+
+00:30:22.000 --> 00:30:27.000
+Um, I think it needs… To be rethought out.
+
+00:30:27.000 --> 00:30:40.000
+But it's working for the most part. Then there's the referee claimed limit, so… Um… for AI-suggested reviewers, students are allowed to claim.
+
+00:30:40.000 --> 00:30:47.000
+a reviewer, um, that they want to look into, but we don't want them to just claim a bunch and then leave them stagnant, so we only allow them to.
+
+00:30:47.000 --> 00:30:56.000
+playing, I believe, 3. So that's tracking the count, um, and then… If it's above 2.
+
+00:30:56.000 --> 00:31:02.000
+So, we'll just let go the… One that they claimed, um, the farthest away.
+
+00:31:02.000 --> 00:31:07.000
+And make it look like it is unable to evaluate.
+
+00:31:07.000 --> 00:31:10.000
+Just so that there's, like, somebody else can claim it.
+
+00:31:10.000 --> 00:31:21.000
+Then there is… Um… one of preprint status… is complete.
+
+00:31:21.000 --> 00:31:31.000
+I don't know why that works.
+
+00:31:31.000 --> 00:31:37.000
+Um… In the quality check portal.
+
+00:31:37.000 --> 00:31:47.000
+Uh… For the race conditions, we require assistant editors to kind of put their name on records that they are QCing.
+
+00:31:47.000 --> 00:31:54.000
+And so, our thought process was, when a preprint is complete, we want to clear those columns, just so that.
+
+00:31:54.000 --> 00:32:03.000
+It's, um, cleaner. going forward, and if they want to go back to that preprint, they don't have to… Re… or claim, or have anything.
+
+00:32:03.000 --> 00:32:12.000
+I didn't. also want to preprint… is invited or complete, that means the same thing right now.
+
+00:32:12.000 --> 00:32:24.000
+Um, and… their status is… Invite will create a record.
+
+00:32:24.000 --> 00:32:37.000
+Oh, wow, okay. This should be thatched, for sure. Um… We do it by each reviewer, but we could definitely make it so that it's… Um, when the entire preprint.
+
+00:32:37.000 --> 00:32:45.000
+is complete, we just fetch all of their invited reviewers, and… update and populate them in our recent reviewer.
+
+00:32:45.000 --> 00:32:54.000
+Table? So that's basically tracking the date that they were invited, and we don't want to invite them until.
+
+00:32:54.000 --> 00:33:05.000
+3 months after. Those are people that have requested not to, so you can see the delete date, and there's an automation that deletes them. So we track their email and their name.
+
+00:33:05.000 --> 00:33:11.000
+And… The pre-printer associated with.
+
+00:33:11.000 --> 00:33:16.000
+But that could definitely be cleaner.
+
+00:33:16.000 --> 00:33:23.000
+As mentioned, this is the… When they're doing this today… Doing them.
+
+00:33:23.000 --> 00:33:37.000
+Uh, it's also when a reviewer is added, and… Um… It's an assistant editor who proposed it, and they didn't mark it as incomplete.
+
+00:33:37.000 --> 00:33:45.000
+then we want to… just set that reviewer to… invited immediately, because.
+
+00:33:45.000 --> 00:33:52.000
+I'm the assistant editor would only propose a reviewer if… It was inappropriate.
+
+00:33:52.000 --> 00:33:58.000
+Option…
+
+00:33:58.000 --> 00:34:04.000
+Okay, so there's also the concern if, uh… reviewers flagged as invite.
+
+00:34:04.000 --> 00:34:15.000
+We need to… make sure that… they haven't been proposed in any other preprints, so say I, like, propose.
+
+00:34:15.000 --> 00:34:26.000
+Aaron for Preprint A and Erin for preprint B. If I invite Erin for preprint A, I should reject him for preprint B, because we don't want to invite him within, like, one week.
+
+00:34:26.000 --> 00:34:33.000
+Um, for two different preprints. So that's what that's doing.
+
+00:34:33.000 --> 00:34:53.000
+It will also… go in, say, like, there's a Berkeley.edu… Email associated with that invited reviewer, we don't want to invite multiple people from the same institution, so we'll go into our AI-suggested reviewer for that preprint and burn anybody, or, like.
+
+00:34:53.000 --> 00:34:59.000
+cross them out, um, for being considered if they have the same domain as that invited reviewer.
+
+00:34:59.000 --> 00:35:12.000
+Then there's the track student… um… referee productivity, so… If the status in the referee's AI suggested reviewer table.
+
+00:35:12.000 --> 00:35:18.000
+It's updated to reject or propose, then that is now an important thing that we track.
+
+00:35:18.000 --> 00:35:31.000
+Um, and we input the student email. Um, and associate it with their… Use your productivity…
+
+00:35:31.000 --> 00:35:43.000
+preprint editorial rejected, so… We're checking if it is empty, but basically the reason for that is these are fields from selected, so when it's.
+
+00:35:43.000 --> 00:35:48.000
+editorial rejected, it's no longer going to be in the selected base, so it'll basically disappear.
+
+00:35:48.000 --> 00:35:52.000
+Um, and so, we will no longer have these linkings.
+
+00:35:52.000 --> 00:36:01.000
+correctly showing. Um, so that shows to us that the status is no longer selected unless the preprint has been editorial rejected.
+
+00:36:01.000 --> 00:36:06.000
+And it matters whether it's possible that maybe it was.
+
+00:36:06.000 --> 00:36:14.000
+People started proposing. Or didn't propose anything for that preprint, so, you know, no harm, no foul, we'll just delete that record.
+
+00:36:14.000 --> 00:36:22.000
+Um, on the other hand, if people have proposed it, we don't really want to, like, fully throw it out, so we'll just set the preprint status to discarded.
+
+00:36:22.000 --> 00:36:27.000
+But the student can still receive credit for who… what they proposed.
+
+00:36:27.000 --> 00:36:42.000
+This is for sending daily reject summaries. This was set up by… a different person…
+
+00:36:42.000 --> 00:36:49.000
+I think we should include…
+
+00:36:49.000 --> 00:37:04.000
+to include… Well, yeah, let's just… Um, so this…
+
+00:37:04.000 --> 00:37:08.000
+We'll send an invite through the Google Cloud function.
+
+00:37:08.000 --> 00:37:16.000
+Of the information… by status, and it'll include the quality check viewer comments.
+
+00:37:16.000 --> 00:37:21.000
+Given that, I'm gonna include… Fixable.
+
+00:37:21.000 --> 00:37:28.000
+Um, so that will run… This email is the student of the fixable reviewer.
+
+00:37:28.000 --> 00:37:36.000
+I might… test this out to see if I can delete that, and it can all just be within the daily reject summaries, because I think.
+
+00:37:36.000 --> 00:37:47.000
+Summaries are better than… Each email… Um, if there are any preprints that have.
+
+00:37:47.000 --> 00:37:54.000
+An uncheck count greater than 10. Every day at, wow, 8am. It's a way to wake up.
+
+00:37:54.000 --> 00:38:05.000
+We will email… Um… A summary to people associated with that domain who are assistant editors.
+
+00:38:05.000 --> 00:38:13.000
+Um, and that they should go… Quality check.
+
+00:38:13.000 --> 00:38:16.000
+In the other case where the unchecked count is.
+
+00:38:16.000 --> 00:38:22.000
+greater than 30, then we want Steph to also be flagged.
+
+00:38:22.000 --> 00:38:31.000
+Um… If the list of AI-suggested reviewers does not seem to be doing well.
+
+00:38:31.000 --> 00:38:42.000
+Either… there's a really high reject rate. Or there's a very low number of AI-suggested reviewers remaining.
+
+00:38:42.000 --> 00:38:47.000
+We will, um, send emails to people of, you know.
+
+00:38:47.000 --> 00:38:57.000
+There's a really high reject rate, maybe you should go… Um, adjust the pro fee… information and repopulate that list.
+
+00:38:57.000 --> 00:39:09.000
+Um, maybe if it hits 0, it's like, okay, it's… there's no more available AI reviewers, please go update that, and then… If the unclaimed AI reviewers is.
+
+00:39:09.000 --> 00:39:18.000
+less than 15, that's also, you know, we're getting close. Go, go help out with that.
+
+00:39:18.000 --> 00:39:26.000
+Okay, and then this is… Monday on 7am?
+
+00:39:26.000 --> 00:39:35.000
+I don't think I said this one up.
+
+00:39:35.000 --> 00:39:57.000
+I did not create this.
+
+00:39:57.000 --> 00:40:00.000
+I have no idea what this is doing. I think Rashad.
+
+00:40:00.000 --> 00:40:06.000
+Created this. But it seems like weekly.
+
+00:40:06.000 --> 00:40:19.000
+They're sending, um… General information about the preprints that they should be paying attention to.
+
+00:40:19.000 --> 00:40:24.000
+And…
+
+00:40:24.000 --> 00:40:33.000
+Oh, cool. It inputs the email. It's very interesting.
+
+00:40:33.000 --> 00:40:38.000
+Can you take… oh, wow, cool. Okay, so you get the outputs from this.
+
+00:40:38.000 --> 00:40:44.000
+You'll get the list of emails, and then you'll input the email generated from this script.
+
+00:40:44.000 --> 00:41:00.000
+That's very cool, I didn't know that you could do that. Okay, so that is the automations for… the reviewer selection base.
+

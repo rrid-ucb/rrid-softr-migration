@@ -3,6 +3,9 @@
 *.mov
 *.avi
 
+# Audio
+*.m4a
+
 # Virtual environment
 venv/
 env/

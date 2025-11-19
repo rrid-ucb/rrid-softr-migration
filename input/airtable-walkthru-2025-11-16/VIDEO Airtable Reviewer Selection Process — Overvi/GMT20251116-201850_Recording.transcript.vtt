@@ -1,0 +1,1286 @@
+WEBVTT
+
+1
+00:00:15.040 --> 00:00:18.559
+Rrid SP_Account: Okay, this is an attempt to explain
+
+2
+00:00:19.900 --> 00:00:25.310
+Rrid SP_Account: The automations, specifically within the reviewer selection process base.
+
+3
+00:00:26.930 --> 00:00:40.319
+Rrid SP_Account: There will be a bit of exploration as we go about it, but just as a quick reminder, within this base, the relevant tables are the preprint info only, and that's looking at,
+
+4
+00:00:40.520 --> 00:00:51.750
+Rrid SP_Account: preprint information that gets connected to our student reviewer inputs, and those are reviewers that are proposed for each preprint, and it's indexed by the preprint ID.
+
+5
+00:00:52.280 --> 00:01:00.739
+Rrid SP_Account: We also have referees, which is our old naming for AI-suggested reviewers, and those also get attached to…
+
+6
+00:01:01.360 --> 00:01:08.559
+Rrid SP_Account: preprint info, as well as whether they were proposed or not within student reviewer input, so we have linked fields for that.
+
+7
+00:01:10.230 --> 00:01:15.140
+Rrid SP_Account: There's also recent reviewers, so those are, people who have been invited.
+
+8
+00:01:15.420 --> 00:01:17.079
+Rrid SP_Account: That will be relevant.
+
+9
+00:01:17.430 --> 00:01:24.909
+Rrid SP_Account: there's all users, and that, as you can see by the lightning bolt, is connected to our RID app user.
+
+10
+00:01:25.200 --> 00:01:26.340
+Rrid SP_Account: Base?
+
+11
+00:01:34.480 --> 00:01:41.630
+Rrid SP_Account: Great, and then we have team performance. That's looking…
+
+12
+00:01:42.310 --> 00:01:58.139
+Rrid SP_Account: across each… what RAD considers a team, so usually it's just by the country, but when it comes to Berkeley, there's… it also has to take into account the domain. You'll see that in the automation. There's also domain performance, so that's just,
+
+13
+00:01:58.190 --> 00:02:05.039
+Rrid SP_Account: Actually, based on the preprint that's been proposed, rather than the students who are contributing.
+
+14
+00:02:05.630 --> 00:02:07.380
+Rrid SP_Account: It's an annoying thing.
+
+15
+00:02:10.039 --> 00:02:13.200
+Rrid SP_Account: Okay, I think the last important one is selected.
+
+16
+00:02:13.780 --> 00:02:17.490
+Rrid SP_Account: And this gets pulled from the Rapid Reviews Infectious Disease.
+
+17
+00:02:17.940 --> 00:02:35.849
+Rrid SP_Account: base, which is basically just the preprints that are pulled and then selected, or in pitch… er, sorry, or to pitch editorial. So those are the two preprint statuses that are required for, these preprints to enter this reviewer selection process base.
+
+18
+00:02:37.240 --> 00:02:47.850
+Rrid SP_Account: Okay, so with that kind of contextualized, we're just gonna walk through every single automation and kind of explain the… what it's achieving, and in so doing, try to…
+
+19
+00:02:48.230 --> 00:02:51.759
+Rrid SP_Account: Just document the behind the scenes of this base.
+
+20
+00:02:51.870 --> 00:02:57.509
+Rrid SP_Account: And the things that… are needed. Okay, so to get started, the first one is
+
+21
+00:02:57.850 --> 00:03:09.019
+Rrid SP_Account: when a record is created in Selected, so once again, that's a preprint. Within the preprint scraping side of the process has been flagged as selected for…
+
+22
+00:03:09.170 --> 00:03:11.309
+Rrid SP_Account: By the editorial team.
+
+23
+00:03:11.830 --> 00:03:21.620
+Rrid SP_Account: We create a corresponding record within our main preprint info only base. We link it to the selected.
+
+24
+00:03:22.040 --> 00:03:26.130
+Rrid SP_Account: And we update the title and DOI, so…
+
+25
+00:03:26.850 --> 00:03:36.700
+Rrid SP_Account: a lot of the, information we can then pull from selected, but just in case something happens on that side of the… on the selected…
+
+26
+00:03:38.050 --> 00:03:45.199
+Rrid SP_Account: table, we also… I, like, also create a title and DOI backup information, just so we can…
+
+27
+00:03:46.110 --> 00:03:50.329
+Rrid SP_Account: Investigate, and not have all of that data deleted.
+
+28
+00:03:50.670 --> 00:03:55.770
+Rrid SP_Account: Okay, so this script… is…
+
+29
+00:03:59.960 --> 00:04:01.170
+Rrid SP_Account: Open it up.
+
+30
+00:04:05.110 --> 00:04:13.600
+Rrid SP_Account: It's getting some important information, such as what the ranking has been, what the assigned team is…
+
+31
+00:04:14.380 --> 00:04:17.560
+Rrid SP_Account: And it's getting the initial rank,
+
+32
+00:04:20.010 --> 00:04:30.310
+Rrid SP_Account: And then, once it's pulled, it will kind of decide whether on our end of the base it needs to be updated to a rank, so sometimes it will come in and the rank
+
+33
+00:04:30.470 --> 00:04:43.550
+Rrid SP_Account: that the editorial team gives. It can be 1, 2, 3, 4, like, at what point, or how high of a priority is this preprint? If it's NA, they haven't given it a ranking yet, so we're just gonna set it to NA.
+
+34
+00:04:43.550 --> 00:04:55.159
+Rrid SP_Account: If it's out of circulation, then it's already been within our base, we're not gonna touch it. And then, otherwise, we're gonna actually set that single select field to the number that it was, assigned.
+
+35
+00:04:56.130 --> 00:04:57.949
+Rrid SP_Account: And then we'll kind of push that.
+
+36
+00:05:01.370 --> 00:05:05.590
+Rrid SP_Account: And yeah, if we notice any change, we'll have to change that.
+
+37
+00:05:06.210 --> 00:05:11.799
+Rrid SP_Account: If the assigned team is updated… let me do a… we updated it.
+
+38
+00:05:12.320 --> 00:05:16.520
+Rrid SP_Account: So the assigned team, there's people that, are given priority, too.
+
+39
+00:05:17.220 --> 00:05:24.730
+Rrid SP_Account: Do that. Okay, and then we also create a record within the referees table.
+
+40
+00:05:26.590 --> 00:05:35.999
+Rrid SP_Account: And that is… this is specifically when somebody, pitches a preprint, they also pitch who they think, like, a…
+
+41
+00:05:36.270 --> 00:05:48.289
+Rrid SP_Account: a ideal reviewer would be. So there's two different models, and we're just pushing that into our suggested reviewer table for somebody to actually, you know, propose those model reviewers.
+
+42
+00:05:50.120 --> 00:05:53.500
+Rrid SP_Account: Alright, then there is tracking team performance, so…
+
+43
+00:05:54.210 --> 00:05:58.340
+Rrid SP_Account: This kind of… this requires the preprint, or,
+
+44
+00:05:58.480 --> 00:06:05.289
+Rrid SP_Account: Sorry, not true. When a person proposes a reviewer to a certain preprint, we want to see…
+
+45
+00:06:05.820 --> 00:06:23.730
+Rrid SP_Account: who the team is that that person is associated with, and what the domain of the preprint is. And given that information, we will link that proposed reviewer to the team. So, as mentioned, Berkeley requires knowing not just that they're from Berkeley, but also what domain they are.
+
+46
+00:06:24.080 --> 00:06:31.040
+Rrid SP_Account: And if that's not the case, if it's not Berkeley, then… We'll simply just link.
+
+47
+00:06:32.000 --> 00:06:38.259
+Rrid SP_Account: The proposed reviewer, to the team or domain… to the team that the student is associated with.
+
+48
+00:06:38.540 --> 00:06:42.160
+Rrid SP_Account: So that could be, like, Vietnam, or FAMSA.
+
+49
+00:06:42.540 --> 00:06:43.729
+Rrid SP_Account: Or somewhere else.
+
+50
+00:06:45.700 --> 00:06:51.710
+Rrid SP_Account: Okay, so when a record is created within our preprint info only, we…
+
+51
+00:06:52.160 --> 00:06:58.619
+Rrid SP_Account: Find within the domain performance, so the table tracking performance across domains,
+
+52
+00:06:59.900 --> 00:07:05.629
+Rrid SP_Account: Kind of that record that has the same domain as this associated preprint, and then link it
+
+53
+00:07:06.010 --> 00:07:09.209
+Rrid SP_Account: This is hard to do within scripts, because it,
+
+54
+00:07:09.380 --> 00:07:11.410
+Rrid SP_Account: It's just tricky to do with code.
+
+55
+00:07:13.550 --> 00:07:20.440
+Rrid SP_Account: In another way. And… Then we also go to Team Performance.
+
+56
+00:07:21.380 --> 00:07:28.040
+Rrid SP_Account: and update the preprint info. So, within the team performance, we're tracking
+
+57
+00:07:28.280 --> 00:07:45.459
+Rrid SP_Account: students' contributions to their team, but we're also tracking, like, a preprint, when it's proposed, it's associated to a team. And so when… we also want to, like, link that to the team to see how many of their preprints that they're, pitching and proposing.
+
+58
+00:07:46.420 --> 00:07:48.880
+Rrid SP_Account: Come across, and are successful.
+
+59
+00:07:49.590 --> 00:07:54.720
+Rrid SP_Account: And then the last one is the mini-team emails, so there's,
+
+60
+00:07:56.780 --> 00:08:02.429
+Rrid SP_Account: Yeah, it basically just, like, puts together the people that will have early access to that preprint.
+
+61
+00:08:04.910 --> 00:08:09.089
+Rrid SP_Account: Okay, maybe it makes sense to…
+
+62
+00:08:09.680 --> 00:08:16.119
+Rrid SP_Account: First due record created. So SRI just stands for Student Reviewer Inputs, and that's the table where
+
+63
+00:08:16.860 --> 00:08:18.760
+Rrid SP_Account: Reviewers are proposed to.
+
+64
+00:08:19.610 --> 00:08:23.239
+Rrid SP_Account: So when a record is created in there, there's a number of things.
+
+65
+00:08:23.860 --> 00:08:39.529
+Rrid SP_Account: that need to be done. One is just finding within preprint info only the associated ID, and then we do a couple of updates. So we link the student who proposed it to the all users base, so we can track their productivity.
+
+66
+00:08:39.730 --> 00:08:49.689
+Rrid SP_Account: We have an auto-update, for the link to publication, so there's, like, a formula field that puts together, the sub-discipline and the
+
+67
+00:08:50.200 --> 00:08:52.929
+Rrid SP_Account: No, sorry, the reviewer's name.
+
+68
+00:08:53.410 --> 00:09:03.660
+Rrid SP_Account: And from that, it creates, like, an auto-link to the publications on PubMed, but that actually needs to be put into the associated field, and the formula doesn't allow for that.
+
+69
+00:09:04.300 --> 00:09:13.620
+Rrid SP_Account: And then we also create a linking to… If there's…
+
+70
+00:09:18.420 --> 00:09:21.339
+Rrid SP_Account: Oh, that's not… that's out of place.
+
+71
+00:09:26.300 --> 00:09:30.050
+Rrid SP_Account: That wouldn't make sense, nobody… That's misplaced.
+
+72
+00:09:37.890 --> 00:09:39.119
+Rrid SP_Account: Ignore that one.
+
+73
+00:09:39.980 --> 00:09:51.300
+Rrid SP_Account: And then, yes, also attaching the associated record that we found to their preprint info only, so that that preprint is now associated with that proposed reviewer.
+
+74
+00:09:52.940 --> 00:10:01.049
+Rrid SP_Account: Okay, now there's also the potential for, within the quality checking process, for proposers.
+
+75
+00:10:01.590 --> 00:10:11.009
+Rrid SP_Account: Or, sorry, for proposed reviewers' fields to be updated, and there's a few important ones that we need to track for that. There's justification for invite.
+
+76
+00:10:11.070 --> 00:10:22.490
+Rrid SP_Account: So that takes the sub-discipline and the preprint's title and pulls together a sentence that we email to the reviewers. We use this as a formula, just because students were really not…
+
+77
+00:10:23.220 --> 00:10:26.080
+Rrid SP_Account: Understanding how to write it correctly.
+
+78
+00:10:26.650 --> 00:10:36.449
+Rrid SP_Account: And then we also have the email of the quality checker and the email of the quality checker in training, and so if any of those, get adjusted, we want to link.
+
+79
+00:10:37.000 --> 00:10:43.839
+Rrid SP_Account: The correct email, of the quality checker and the quality checker in training, as well as update the justification for invite.
+
+80
+00:10:46.730 --> 00:10:52.650
+Rrid SP_Account: Alright, when a record is… Here's a way that we could make this more efficient.
+
+81
+00:10:53.170 --> 00:10:58.770
+Rrid SP_Account: I'll do that later, actually.
+
+82
+00:10:59.320 --> 00:11:11.000
+Rrid SP_Account: But basically, this is the immediate reviewer COI checker, so we want to make sure that the author, or the reviewer isn't the author, they're not proposed yet, and they're not a recent reviewer.
+
+83
+00:11:11.150 --> 00:11:23.180
+Rrid SP_Account: And then we also want to check that there's no duplicate domains, so if somebody from berkeley.edu was proposed, but somebody already was, we kind of flag that.
+
+84
+00:11:23.660 --> 00:11:25.750
+Rrid SP_Account: And we also will burn.
+
+85
+00:11:26.220 --> 00:11:32.430
+Rrid SP_Account: AI-suggested reviewers who have that same domain, because we already know that it'll have a COI flag.
+
+86
+00:11:36.930 --> 00:11:42.410
+Rrid SP_Account: This is tracking, for preprints, when they are…
+
+87
+00:11:42.820 --> 00:11:48.140
+Rrid SP_Account: selected. The final ranking, like, the field that decides
+
+88
+00:11:48.610 --> 00:11:57.010
+Rrid SP_Account: what the final ranking of that preprint will be, whether it be 1, 2, 3, 4, 5, like, what's our priority is in Steph's ranking field, so…
+
+89
+00:11:57.250 --> 00:12:02.879
+Rrid SP_Account: when that is updated, we'll change the rank, inputted by Steph.
+
+90
+00:12:04.280 --> 00:12:12.339
+Rrid SP_Account: I would suggest looking through the code, but it's a little bit… there's a little bit more nuance to it, because we have to take into account
+
+91
+00:12:13.270 --> 00:12:24.549
+Rrid SP_Account: Basically, whether there's other preprints that are on hold that have higher ranking, and we kind of want to adjust that ranking, but basically we want to keep it in relative order based on this ranking.
+
+92
+00:12:26.640 --> 00:12:31.020
+Rrid SP_Account: Then there is, populating the…
+
+93
+00:12:31.320 --> 00:12:34.060
+Rrid SP_Account: AI-suggested reviewer, so when a preprint
+
+94
+00:12:35.710 --> 00:12:38.640
+Rrid SP_Account: Referee's info is not empty.
+
+95
+00:12:38.760 --> 00:12:50.940
+Rrid SP_Account: we… will… parse through… I'll show… I could show what the list is. It's basically… it's a single…
+
+96
+00:12:51.610 --> 00:12:55.019
+Rrid SP_Account: Field, and it has a giant list of…
+
+97
+00:12:55.300 --> 00:13:03.090
+Rrid SP_Account: the AI-suggested reviewer's details, so it will include things such as, their name, their H-index.
+
+98
+00:13:03.390 --> 00:13:20.769
+Rrid SP_Account: their affiliations, maybe their ORCID ID, maybe their author URL, and maybe used emails, and we used rejects to extract all of that, and then for each, we'd build out a single record for all of those AI-suggested reviewers. We'd do some checks to see if…
+
+99
+00:13:21.730 --> 00:13:28.299
+Rrid SP_Account: That referee shouldn't actually be an option based on whether they're in the recent reviewers or…
+
+100
+00:13:29.640 --> 00:13:32.430
+Rrid SP_Account: Already, like, a domain, common domain.
+
+101
+00:13:32.890 --> 00:13:37.450
+Rrid SP_Account: And then we'll, add a record for each within our referees table.
+
+102
+00:14:40.190 --> 00:14:42.620
+Rrid SP_Account: Oops, sorry, I thought that I paused that, but I did.
+
+103
+00:14:43.080 --> 00:14:57.030
+Rrid SP_Account: Prokies are just reviewers… Yes, we did that. Okay, so… This whole block of… Automations are going through…
+
+104
+00:14:58.030 --> 00:15:07.909
+Rrid SP_Account: Our preprint ranking, and kind of the flow of making a preprint active, on hold, sending out invites, and things like that. So, it's pretty messy.
+
+105
+00:15:08.050 --> 00:15:11.589
+Rrid SP_Account: And it should be adjusted and fixed, but…
+
+106
+00:15:12.320 --> 00:15:15.079
+Rrid SP_Account: Yeah, this whole thing is just kind of a mess.
+
+107
+00:15:15.450 --> 00:15:24.939
+Rrid SP_Account: So, first and foremost, when the rank is zero and the preprint status is active, those are the two necessary
+
+108
+00:15:28.500 --> 00:15:45.090
+Rrid SP_Account: features or whatever that a preprint needs in order to be active. So when one or the other is true, we'll make it such that both are true. That's just because sometimes an assistant editor will go and make it active, but not know to adjust the rank.
+
+109
+00:15:45.650 --> 00:15:49.850
+Rrid SP_Account: If it's the first time being…
+
+110
+00:15:50.010 --> 00:15:53.940
+Rrid SP_Account: active. We'll need to set it to in process.
+
+111
+00:15:54.820 --> 00:15:58.750
+Rrid SP_Account: And then, when that happens, we'll update the date and process.
+
+112
+00:16:01.360 --> 00:16:02.550
+Rrid SP_Account: Oh, no.
+
+113
+00:16:07.890 --> 00:16:10.989
+Rrid SP_Account: Well, this will have to be looked into, but,
+
+114
+00:16:11.460 --> 00:16:14.090
+Rrid SP_Account: What this is supposed to be doing,
+
+115
+00:16:15.760 --> 00:16:19.420
+Rrid SP_Account: When the invite count is greater than or equal to 20,
+
+116
+00:16:19.700 --> 00:16:22.490
+Rrid SP_Account: And the preprint status is dormant.
+
+117
+00:16:24.010 --> 00:16:30.610
+Rrid SP_Account: we… Think that the…
+
+118
+00:16:41.040 --> 00:16:43.529
+Rrid SP_Account: I think that they just flew the link process.
+
+119
+00:16:56.100 --> 00:17:06.049
+Rrid SP_Account: What this is supposed to be doing is, when the mini-team is working on a preprint that's dormant, and it hits the invite count 20, we want it to be made active immediately.
+
+120
+00:17:06.230 --> 00:17:11.509
+Rrid SP_Account: So it's kind of a way of, like, getting them incentivized to do that.
+
+121
+00:17:12.310 --> 00:17:16.879
+Rrid SP_Account: And this is supposed to be readjusting the ranks, but that is failing.
+
+122
+00:17:17.000 --> 00:17:20.150
+Rrid SP_Account: So I'll come back to that.
+
+123
+00:17:20.560 --> 00:17:29.439
+Rrid SP_Account: But… Yeah, it's a… it's a very complex… Logic behind adjusting the ranks.
+
+124
+00:17:31.090 --> 00:17:33.879
+Rrid SP_Account: Then there is setting the preprint status.
+
+125
+00:17:34.730 --> 00:17:43.359
+Rrid SP_Account: to on hold. So, this is really critical, in the way that we're tracking. I think that it could be a lot better, but basically there's…
+
+126
+00:17:43.560 --> 00:18:02.450
+Rrid SP_Account: multiple steps, that we've included in the operations of when a preprint is… it gets its invites sent out, or when is it done, receiving invites, and that's captured with the more invites needed field. I'm just gonna show that, it's in another video, but I think it's pretty critical to understand.
+
+127
+00:18:02.880 --> 00:18:10.919
+Rrid SP_Account: The role that it plays, so let's just look at… This formula field.
+
+128
+00:18:11.170 --> 00:18:14.350
+Rrid SP_Account: It's taking into account multiple…
+
+129
+00:18:15.790 --> 00:18:20.229
+Rrid SP_Account: So you can see here, we have a round 1, more invites needed, round two, round 3, round 4.
+
+130
+00:18:20.460 --> 00:18:33.710
+Rrid SP_Account: So, based on what the invite round is, it will look at… the corresponding… formula?
+
+131
+00:18:34.640 --> 00:18:37.500
+Rrid SP_Account: So let's say it's in its first invite round.
+
+132
+00:18:38.370 --> 00:18:52.739
+Rrid SP_Account: It only… we only accept and think that it needs more invites if either, the total invite count plus the, like, 60% of the unchecked count is less than our invites required, which is 30.
+
+133
+00:18:52.900 --> 00:18:58.210
+Rrid SP_Account: Or the unchecked count is…
+
+134
+00:18:59.070 --> 00:19:05.069
+Rrid SP_Account: If it's more than 50 unchecked, then we think that it shouldn't… we should wait for those to get quality checked.
+
+135
+00:19:05.530 --> 00:19:08.990
+Rrid SP_Account: And that's basically what it is for round 2 and round 3.
+
+136
+00:19:10.350 --> 00:19:14.639
+Rrid SP_Account: So, when it's the case that we think that no additional inmates are needed.
+
+137
+00:19:14.930 --> 00:19:21.170
+Rrid SP_Account: We're gonna set it to on hold and out of circulation, so it's not gonna accept anymore.
+
+138
+00:19:23.240 --> 00:19:29.470
+Rrid SP_Account: Proposed reviewers from students, we just want assistant editors to quality check it.
+
+139
+00:19:29.890 --> 00:19:33.080
+Rrid SP_Account: And… This code…
+
+140
+00:19:34.840 --> 00:19:43.489
+Rrid SP_Account: Basically, once a preprint gets put on hold, we need to make sure that there's another preprint within that domain that is active.
+
+141
+00:19:43.920 --> 00:19:46.860
+Rrid SP_Account: So, we,
+
+142
+00:19:47.010 --> 00:19:56.250
+Rrid SP_Account: kind of find other preprints that have that domain, if there's already an active one. So sometimes, like, two are active.
+
+143
+00:19:57.380 --> 00:19:59.949
+Rrid SP_Account: Then… we're all good.
+
+144
+00:20:06.330 --> 00:20:12.030
+Rrid SP_Account: Then we separate them by ranking, we don't want to consider anything out of circulation.
+
+145
+00:20:16.910 --> 00:20:20.799
+Rrid SP_Account: Do some extra checks while we're at it. I'm just cleaning up house.
+
+146
+00:20:26.510 --> 00:20:40.569
+Rrid SP_Account: We also need to take into account whether preprint is dormant, so it's not been worked on yet, or it's on hold. So it's been active, but now it's not being worked on. The on-hold ones are higher priority, just because people have already started putting work into them.
+
+147
+00:20:41.520 --> 00:20:44.540
+Rrid SP_Account: We also take into account the total invite.
+
+148
+00:20:44.710 --> 00:21:01.900
+Rrid SP_Account: or greenlit, so a preprint that's on hold with a really high invite count, but it's not yet complete is higher priority than one with lower invite count. If one is older, so it, like, was in process two weeks ago versus the one that was in process one week ago, we want to prioritize the older ones to get them through.
+
+149
+00:21:02.820 --> 00:21:06.709
+Rrid SP_Account: And then we also, lastly, will take into account Steph's ranking.
+
+150
+00:21:07.870 --> 00:21:09.529
+Rrid SP_Account: For the dormant ones.
+
+151
+00:21:11.240 --> 00:21:13.910
+Rrid SP_Account: Assign… reassign rankings,
+
+152
+00:21:14.310 --> 00:21:20.839
+Rrid SP_Account: Make sure that everything is up to date, and then push those changes. I would advise actually looking at the code to better, like, I think…
+
+153
+00:21:21.250 --> 00:21:24.330
+Rrid SP_Account: It's a pretty good source of truth for just how it should be working.
+
+154
+00:21:27.380 --> 00:21:28.460
+Rrid SP_Account: Okay…
+
+155
+00:21:40.900 --> 00:21:46.430
+Rrid SP_Account: So then there's the other, potential workflow where…
+
+156
+00:21:46.710 --> 00:21:58.420
+Rrid SP_Account: The preprint is on hold, but then we had it in a non… we… like, the rank might have been, like, 3, so it was, like, on hold, but still in line. But then, actually.
+
+157
+00:21:59.860 --> 00:22:07.800
+Rrid SP_Account: people were quality checking, and it seems like it actually doesn't need more invites. Then we'll set the rank to out of circulation.
+
+158
+00:22:08.250 --> 00:22:12.650
+Rrid SP_Account: Yes.
+
+159
+00:22:15.090 --> 00:22:34.970
+Rrid SP_Account: Okay, and then what if it's in circulation, but then all of a sudden we rejected all of the unchecked reviewers, and we realize we need a lot more reviewers to be proposed to get our, our goal of 30 invites, then we'll set more invites needed, or the formula will be set to more invites needed.
+
+160
+00:22:35.110 --> 00:22:40.119
+Rrid SP_Account: And that's… then we need to bring this preprint back alive, so…
+
+161
+00:22:40.630 --> 00:22:48.410
+Rrid SP_Account: This is new, Steph wants it to just immediately be made active, and so that's what we do. We set it to active immediately.
+
+162
+00:22:50.500 --> 00:22:52.959
+Rrid SP_Account: And in so doing…
+
+163
+00:22:55.010 --> 00:23:01.850
+Rrid SP_Account: we're gonna, like, move it up, and then re-rank everything, accordingly. So it's kind of actually, like.
+
+164
+00:23:02.720 --> 00:23:05.489
+Rrid SP_Account: Incrementing the ranks rather than decrementing.
+
+165
+00:23:06.760 --> 00:23:13.559
+Rrid SP_Account: Okay, and then we'll get into a preprint as received invites, and the process for that.
+
+166
+00:23:14.250 --> 00:23:18.409
+Rrid SP_Account: So if a preprint is any of, dormant, active on hold.
+
+167
+00:23:18.670 --> 00:23:22.110
+Rrid SP_Account: Unsent invites is greater than or equal to 20.
+
+168
+00:23:22.430 --> 00:23:25.680
+Rrid SP_Account: It's selected, and it's the first invite round.
+
+169
+00:23:26.600 --> 00:23:30.990
+Rrid SP_Account: then we've hit our goal of the first 20. So we're going to…
+
+170
+00:23:31.660 --> 00:23:46.850
+Rrid SP_Account: Check that none of the proposed reviewers are authors, or recent reviewers, or already proposed, and if that's the case, we want to check, is it still… are the unsent invites still above 20? Just in the case that maybe we rejected too many.
+
+171
+00:23:47.160 --> 00:23:53.540
+Rrid SP_Account: And then, if that's true, we can say that we checked the field, we verified the verse 20, they are good to go.
+
+172
+00:23:53.840 --> 00:23:56.779
+Rrid SP_Account: That will trigger this automation.
+
+173
+00:23:58.350 --> 00:24:05.389
+Rrid SP_Account: Where you can see verified first 20. I had to split it up because there seemed to be…
+
+174
+00:24:06.220 --> 00:24:14.799
+Rrid SP_Account: a delay? I can't completely remember why, but it did not work when I put them together.
+
+175
+00:24:14.900 --> 00:24:16.510
+Rrid SP_Account: I'm trying to remember why, but I can't.
+
+176
+00:24:16.980 --> 00:24:20.949
+Rrid SP_Account: So… Yeah, a preprint is…
+
+177
+00:24:22.250 --> 00:24:26.900
+Rrid SP_Account: Ready to get its invites sent out, so we're gonna… re-rank.
+
+178
+00:24:27.550 --> 00:24:30.990
+Rrid SP_Account: The preprints, we're putting that one on hold.
+
+179
+00:24:31.300 --> 00:24:34.629
+Rrid SP_Account: Because we want to wait to see if the 20 was sufficient or not.
+
+180
+00:24:41.670 --> 00:24:43.500
+Rrid SP_Account: Do you know what that says it should be.
+
+181
+00:24:44.320 --> 00:24:49.110
+Rrid SP_Account: This is just what pushes to the Google Cloud.
+
+182
+00:24:49.520 --> 00:24:52.039
+Rrid SP_Account: server to send the CSVs.
+
+183
+00:24:53.940 --> 00:24:58.190
+Rrid SP_Account: This updates the preprint status to on hold, but I am now…
+
+184
+00:24:59.360 --> 00:25:03.519
+Rrid SP_Account: hesitating, because I think that it should remain active.
+
+185
+00:25:04.060 --> 00:25:06.909
+Rrid SP_Account: That's something to follow up with Angel about.
+
+186
+00:25:07.730 --> 00:25:26.590
+Rrid SP_Account: And then set invited to true for, all of those reviewers, so that's kind of, our way… there's the unsent invites, and then there's the invite… total invite count, and we only want to trigger it when the unsent invites are above a certain number, so, this is a way of updating.
+
+187
+00:25:26.800 --> 00:25:32.389
+Rrid SP_Account: the reviewers who we know we've already, sent it, or who's already been included in a CSV.
+
+188
+00:25:36.150 --> 00:25:42.310
+Rrid SP_Account: Okay, then there's the next step, so when the invite count is above 30,
+
+189
+00:25:43.050 --> 00:25:57.599
+Rrid SP_Account: And the total unsent is above 10, so that's after the first 20 are sent out, we now have gained 10 more, and there's 0 unchecked, so this preprint is cleaned up, it's got our total reviewers.
+
+190
+00:25:58.280 --> 00:26:01.269
+Rrid SP_Account: We want to, again, check for no COI.
+
+191
+00:26:02.040 --> 00:26:10.940
+Rrid SP_Account: And then there's these kind of conditions, so if the invite count is above 50, we…
+
+192
+00:26:13.520 --> 00:26:20.010
+Rrid SP_Account: We'll update the invite round. Basically, what this is doing is just making that our… making sure our invite round is,
+
+193
+00:26:20.670 --> 00:26:28.200
+Rrid SP_Account: Accurate, where the infant ground is, determined by… The invite count, which…
+
+194
+00:26:29.000 --> 00:26:32.270
+Rrid SP_Account: Maybe it doesn't make sense, but this would run off. This would…
+
+195
+00:26:32.890 --> 00:26:38.160
+Rrid SP_Account: be triggered once 10 gets hit, so… Hopefully it… Works.
+
+196
+00:26:40.050 --> 00:26:44.380
+Rrid SP_Account: Okay, then there is manually send.
+
+197
+00:26:44.740 --> 00:26:46.439
+Rrid SP_Account: Sending invites, so…
+
+198
+00:26:47.880 --> 00:26:57.799
+Rrid SP_Account: this was a way where, like, if Angel or somebody on the editorial team just wanted to, like, send out, like, force the preprint to send out the CSVs.
+
+199
+00:26:57.920 --> 00:27:02.519
+Rrid SP_Account: They can kind of just, like, click this check button called Manual Send Invites.
+
+200
+00:27:02.750 --> 00:27:05.469
+Rrid SP_Account: And it only makes sense to do so if…
+
+201
+00:27:05.900 --> 00:27:11.350
+Rrid SP_Account: There's a non-zero amount of unsent invites. Once again, it'll check for COI.
+
+202
+00:27:12.550 --> 00:27:17.690
+Rrid SP_Account: Update… Clean it up.
+
+203
+00:27:18.520 --> 00:27:24.170
+Rrid SP_Account: And then we'll check the… Verified, and that triggers this.
+
+204
+00:27:26.110 --> 00:27:32.519
+Rrid SP_Account: Which… It requires both send invites as checked and verified, so…
+
+205
+00:27:32.750 --> 00:27:37.060
+Rrid SP_Account: Somebody's requested that the invites be sent out, and we've checked that there's no COI.
+
+206
+00:27:37.420 --> 00:27:40.279
+Rrid SP_Account: We'll talk to the Google Cloud function.
+
+207
+00:27:41.120 --> 00:27:43.720
+Rrid SP_Account: Update it so that those are cleared again.
+
+208
+00:27:47.940 --> 00:27:49.670
+Rrid SP_Account: Find records…
+
+209
+00:27:50.880 --> 00:27:56.870
+Rrid SP_Account: that have not been checked as invited. I think that that's being done in scripts another way, and then just…
+
+210
+00:27:57.200 --> 00:27:59.450
+Rrid SP_Account: Flag those as invited.
+
+211
+00:27:59.610 --> 00:28:01.119
+Rrid SP_Account: In the sense of, like, the…
+
+212
+00:28:02.600 --> 00:28:07.700
+Rrid SP_Account: Email invite has been sent out, that could be… Clarified.
+
+213
+00:28:07.920 --> 00:28:09.110
+Rrid SP_Account: Okay…
+
+214
+00:28:12.130 --> 00:28:13.680
+Rrid SP_Account: Oh, is this one?
+
+215
+00:28:16.980 --> 00:28:19.580
+Rrid SP_Account: Oh, this is one that unchecked is non-zero.
+
+216
+00:28:19.870 --> 00:28:24.690
+Rrid SP_Account: So this is when… Unchecked is 0, sorry about that.
+
+217
+00:28:25.130 --> 00:28:33.000
+Rrid SP_Account: So once again, it's the case where invite count is greater than 30, and there's no more that are unchecked, so it's pretty clean.
+
+218
+00:28:34.160 --> 00:28:36.610
+Rrid SP_Account: We'll once again run the COI.
+
+219
+00:28:41.610 --> 00:28:43.749
+Rrid SP_Account: What is the difference between those two?
+
+220
+00:28:49.340 --> 00:28:50.970
+Rrid SP_Account: That's just running the COI.
+
+221
+00:28:53.060 --> 00:28:54.379
+Rrid SP_Account: Does this change anything?
+
+222
+00:29:21.640 --> 00:29:28.130
+Rrid SP_Account: Hmm, I think that that could be deleted. I think that's basically the same as that. The only difference is here with this automation.
+
+223
+00:29:28.270 --> 00:29:33.630
+Rrid SP_Account: It does matter… Whether the unchecked count is zero or not.
+
+224
+00:29:35.400 --> 00:29:41.320
+Rrid SP_Account: Because the preprint would be considered complete, so we want to update.
+
+225
+00:29:43.870 --> 00:29:50.589
+Rrid SP_Account: So it's once again updating the preprint status.
+
+226
+00:29:51.370 --> 00:29:58.069
+Rrid SP_Account: yeah, here we are updating it to complete and out of circulation. So that's the main difference of whether the unchecked count is zero or not.
+
+227
+00:29:59.620 --> 00:30:08.180
+Rrid SP_Account: It's an entire CSV, this is a way… This will just push…
+
+228
+00:30:10.420 --> 00:30:16.850
+Rrid SP_Account: All the reviewers, however, you kind of need to go in and change it so that their invited field is not checked.
+
+229
+00:30:17.130 --> 00:30:18.599
+Rrid SP_Account: To get the full list.
+
+230
+00:30:19.650 --> 00:30:21.729
+Rrid SP_Account: Okay, so that's that process.
+
+231
+00:30:22.240 --> 00:30:24.350
+Rrid SP_Account: I think it needs.
+
+232
+00:30:25.180 --> 00:30:27.180
+Rrid SP_Account: To be rethought out.
+
+233
+00:30:27.430 --> 00:30:29.769
+Rrid SP_Account: But it's working for the most part.
+
+234
+00:30:30.420 --> 00:30:34.520
+Rrid SP_Account: Then there's the referee claimed limit, so,
+
+235
+00:30:35.980 --> 00:30:49.099
+Rrid SP_Account: For AI-suggested reviewers, students are allowed to claim a reviewer, that they want to look into, but we don't want them to just claim a bunch and then leave them stagnant, so we only allow them to claim, I believe, 3.
+
+236
+00:30:49.650 --> 00:30:55.829
+Rrid SP_Account: So that's tracking the count, and then… If it's above 2.
+
+237
+00:30:56.540 --> 00:30:59.300
+Rrid SP_Account: So, we'll just let go the…
+
+238
+00:30:59.480 --> 00:31:06.159
+Rrid SP_Account: One that they claimed, the farthest away, and make it look like it is unable to evaluate.
+
+239
+00:31:07.130 --> 00:31:09.669
+Rrid SP_Account: Just so that there's, like, somebody else can claim it.
+
+240
+00:31:10.490 --> 00:31:17.020
+Rrid SP_Account: Then there is… One of preprint status.
+
+241
+00:31:18.570 --> 00:31:20.280
+Rrid SP_Account: is complete.
+
+242
+00:31:21.490 --> 00:31:23.970
+Rrid SP_Account: I'm gonna remove the invite code, I don't know why that…
+
+243
+00:31:31.570 --> 00:31:38.460
+Rrid SP_Account: In the Quality Check Portal,
+
+244
+00:31:39.550 --> 00:31:46.799
+Rrid SP_Account: For the race conditions, we require assistant editors to kind of put their name on records that they are QCing.
+
+245
+00:31:47.010 --> 00:31:53.670
+Rrid SP_Account: And so, our thought process was, when a preprint is complete, we want to clear those columns, just so that
+
+246
+00:31:54.000 --> 00:31:59.779
+Rrid SP_Account: It's, cleaner going forward, and if they want to go back to that preprint, they don't have to…
+
+247
+00:32:00.450 --> 00:32:03.649
+Rrid SP_Account: Re or claim or have anything hidden.
+
+248
+00:32:06.560 --> 00:32:12.649
+Rrid SP_Account: Also, when a preprint is invited or complete, that means the same thing right now.
+
+249
+00:32:12.850 --> 00:32:17.059
+Rrid SP_Account: And… Their status is.
+
+250
+00:32:17.630 --> 00:32:20.640
+Rrid SP_Account: Invite will create a record.
+
+251
+00:32:24.050 --> 00:32:25.669
+Rrid SP_Account: Oh, wow, okay.
+
+252
+00:32:26.140 --> 00:32:37.110
+Rrid SP_Account: who they should be batched, for sure. We do it by each reviewer, but we could definitely make it so that it's, when the entire preprint
+
+253
+00:32:37.330 --> 00:32:45.069
+Rrid SP_Account: is complete, we just fetch all of their invited reviewers and update and populate them in our recent reviewer.
+
+254
+00:32:45.480 --> 00:32:46.600
+Rrid SP_Account: table?
+
+255
+00:32:47.980 --> 00:32:56.299
+Rrid SP_Account: So that's basically tracking the date that they were invited, and we don't want to invite them until 3 months after.
+
+256
+00:32:56.610 --> 00:33:04.120
+Rrid SP_Account: Those are people that have requested not to, so you can see the delete date, and there's an automation that deletes them. So we track their email and their name.
+
+257
+00:33:04.710 --> 00:33:08.660
+Rrid SP_Account: And… The preprint they're associated with.
+
+258
+00:33:11.360 --> 00:33:13.199
+Rrid SP_Account: But that could definitely be cleaner.
+
+259
+00:33:15.990 --> 00:33:19.910
+Rrid SP_Account: As mentioned, this is the… When the delete date is today.
+
+260
+00:33:20.510 --> 00:33:30.510
+Rrid SP_Account: delete them… It's also when a reviewer is added, and…
+
+261
+00:33:31.830 --> 00:33:44.169
+Rrid SP_Account: It's an assistant editor who proposed it, and they didn't mark it as incomplete, then we want to just set that reviewer to invite it immediately, because…
+
+262
+00:33:45.860 --> 00:33:50.990
+Rrid SP_Account: The assistant editor would only propose a reviewer if… It was inappropriate.
+
+263
+00:33:52.050 --> 00:33:53.100
+Rrid SP_Account: Options.
+
+264
+00:33:58.820 --> 00:34:06.920
+Rrid SP_Account: Okay, so there's also the concern if a reviewer is flagged as invite, We need to…
+
+265
+00:34:07.900 --> 00:34:15.630
+Rrid SP_Account: make sure that they haven't been proposed in any other preprints, so say I, like, proposed
+
+266
+00:34:15.630 --> 00:34:28.539
+Rrid SP_Account: Aaron for preprint A, and Aaron for preprint B. If I invite Aaron for preprint A, I should reject him for preprint B, because we don't want to invite him within, like, one week, for two different preprints.
+
+267
+00:34:29.360 --> 00:34:31.370
+Rrid SP_Account: So that's what that's doing.
+
+268
+00:34:33.840 --> 00:34:39.300
+Rrid SP_Account: It will also… go in, say, like, there's a berkeley.edu.
+
+269
+00:34:40.179 --> 00:34:52.879
+Rrid SP_Account: email associated with that invited reviewer. We don't want to invite multiple people from the same institution, so we'll go into our AI-suggested reviewer for that preprint and burn anybody, or like…
+
+270
+00:34:53.020 --> 00:34:58.569
+Rrid SP_Account: Cross them out, for being considered if they have the same domain as that invited reviewer.
+
+271
+00:34:59.050 --> 00:35:04.680
+Rrid SP_Account: Then there's the tracksuit in… Referee productivity, so…
+
+272
+00:35:06.300 --> 00:35:11.389
+Rrid SP_Account: if the status in the AI referee's AI Suggested Reviewer table
+
+273
+00:35:12.770 --> 00:35:17.789
+Rrid SP_Account: It's updated to reject or proposed, then that is now an important thing that we track.
+
+274
+00:35:18.110 --> 00:35:26.960
+Rrid SP_Account: And we input the student email, and associate it with their… User productivity.
+
+275
+00:35:31.440 --> 00:35:34.070
+Rrid SP_Account: Preprint editorial rejected, so…
+
+276
+00:35:35.660 --> 00:35:42.290
+Rrid SP_Account: We're checking if it's… is empty, but basically the reason for that is these are fields from selected, so when it's
+
+277
+00:35:43.010 --> 00:35:54.079
+Rrid SP_Account: editorial rejected, it's no longer going to be in the selected base, so it'll basically disappear. And so we will no longer have these linkings correctly showing.
+
+278
+00:35:54.240 --> 00:36:01.210
+Rrid SP_Account: So that shows to us that the status is no longer selected unless the preprint has been editorial rejected.
+
+279
+00:36:01.570 --> 00:36:07.979
+Rrid SP_Account: And it matters whether it's possible that maybe it was… people started proposing
+
+280
+00:36:08.270 --> 00:36:13.869
+Rrid SP_Account: Or didn't propose anything for that preprint, so, you know, no harm, no foul, we'll just delete that record.
+
+281
+00:36:14.560 --> 00:36:21.869
+Rrid SP_Account: On the other hand, if people have proposed it, we don't really want to, like, fully throw it out, so we'll just set the preprint status to discarded.
+
+282
+00:36:22.090 --> 00:36:26.420
+Rrid SP_Account: But the student can still receive credit for who… what they proposed.
+
+283
+00:36:27.640 --> 00:36:35.510
+Rrid SP_Account: This is for sending daily reject summaries. This was set up by… A different person?
+
+284
+00:36:42.220 --> 00:36:47.100
+Rrid SP_Account: I think we should include… Hold on a sec.
+
+285
+00:36:48.920 --> 00:36:57.720
+Rrid SP_Account: So include… Well, yeah, that's also… So this…
+
+286
+00:37:03.720 --> 00:37:07.669
+Rrid SP_Account: We'll send an invite through the Google Cloud function.
+
+287
+00:37:08.230 --> 00:37:15.569
+Rrid SP_Account: of the information… By status, and it'll include the quality check viewer comments.
+
+288
+00:37:16.070 --> 00:37:19.310
+Rrid SP_Account: Given that, I'm gonna include fixable.
+
+289
+00:37:21.420 --> 00:37:29.419
+Rrid SP_Account: So that will run… This email's the student of the fixable reviewer. I might…
+
+290
+00:37:30.290 --> 00:37:36.339
+Rrid SP_Account: test this out to see if I can delete that, and it can all just be within the daily reject summaries, because I think…
+
+291
+00:37:36.840 --> 00:37:40.520
+Rrid SP_Account: Summaries are better than… each email.
+
+292
+00:37:41.770 --> 00:37:47.400
+Rrid SP_Account: If there are any preprints that have
+
+293
+00:37:47.750 --> 00:37:50.279
+Rrid SP_Account: An unchecked count greater than 10.
+
+294
+00:37:50.440 --> 00:37:54.129
+Rrid SP_Account: Every day at, wow, 8 AM. It's a way to wake up.
+
+295
+00:37:54.460 --> 00:38:05.250
+Rrid SP_Account: We will email… A summary to people associated with that domain who are assistant editors.
+
+296
+00:38:05.810 --> 00:38:11.000
+Rrid SP_Account: And that they should go… Quality check.
+
+297
+00:38:13.520 --> 00:38:16.280
+Rrid SP_Account: In the other case where the unchecked count is
+
+298
+00:38:16.710 --> 00:38:20.999
+Rrid SP_Account: greater than 30, then we want Steph to also be flagged.
+
+299
+00:38:22.490 --> 00:38:25.640
+Rrid SP_Account: If…
+
+300
+00:38:25.990 --> 00:38:34.950
+Rrid SP_Account: The list of AI-suggested reviewers does not seem to be doing well. Either there's a really high reject rate.
+
+301
+00:38:35.060 --> 00:38:41.059
+Rrid SP_Account: or there's a very low number of AI-suggested reviewers remaining.
+
+302
+00:38:41.900 --> 00:38:43.360
+Rrid SP_Account: We will…
+
+303
+00:38:43.580 --> 00:38:49.619
+Rrid SP_Account: Send emails to people of, you know, there's a really high reject rate, maybe you should go…
+
+304
+00:38:49.980 --> 00:38:55.450
+Rrid SP_Account: Adjust the pro-fee information and repopulate that list.
+
+305
+00:38:56.900 --> 00:39:04.839
+Rrid SP_Account: Maybe if it hits zero, it's like, okay, it's… there's no more available AI reviewers, please go update that, and then…
+
+306
+00:39:05.200 --> 00:39:08.569
+Rrid SP_Account: If the unclaimed AI reviewers is.
+
+307
+00:39:09.170 --> 00:39:14.129
+Rrid SP_Account: Less than 15, that's also, you know, we're getting close. Go… go help out with that.
+
+308
+00:39:18.090 --> 00:39:24.869
+Rrid SP_Account: Okay, and then this is… Monday on 7 AM?
+
+309
+00:39:26.180 --> 00:39:27.639
+Rrid SP_Account: I don't think I set this one up.
+
+310
+00:39:35.550 --> 00:39:37.219
+Rrid SP_Account: I did not create this.
+
+311
+00:39:57.760 --> 00:40:00.299
+Rrid SP_Account: I have no idea what this is doing. I think Prashad.
+
+312
+00:40:00.840 --> 00:40:01.940
+Rrid SP_Account: Created this.
+
+313
+00:40:03.910 --> 00:40:07.480
+Rrid SP_Account: But it seems like weekly… They're sending,
+
+314
+00:40:08.000 --> 00:40:11.780
+Rrid SP_Account: General information about the preprints that they should be paying attention to.
+
+315
+00:40:18.910 --> 00:40:20.160
+Rrid SP_Account: And…
+
+316
+00:40:24.650 --> 00:40:25.620
+Rrid SP_Account: Oh, cool.
+
+317
+00:40:26.270 --> 00:40:28.120
+Rrid SP_Account: Inputs the email.
+
+318
+00:40:30.180 --> 00:40:31.209
+Rrid SP_Account: It's very interesting.
+
+319
+00:40:33.350 --> 00:40:37.530
+Rrid SP_Account: Can you take… Oh, wow, cool. Okay, so you get the outputs from this.
+
+320
+00:40:38.050 --> 00:40:49.629
+Rrid SP_Account: you'll get the list of emails, and then you'll input the email generated from this script. That's very cool, I didn't know that you could do that. Okay, so that is the automations for…
+
+321
+00:40:51.420 --> 00:40:53.430
+Rrid SP_Account: The reviewer selection base.
+

@@ -1,0 +1,825 @@
+[Rrid SP_Account] 12:19:56
+Okay, this is an attempt to explain… The automations, specifically within the reviewer selection process base.
+
+[Rrid SP_Account] 12:20:08
+Um… there will be a bit of exploration as we go about it.
+
+[Rrid SP_Account] 12:20:12
+Um, but just as a quick reminder. Within this base, the… Relevant tables are the preprint info only, and that's looking at, um… Preprint information.
+
+[Rrid SP_Account] 12:20:24
+that gets connected to our student reviewer inputs, and those are.
+
+[Rrid SP_Account] 12:20:28
+reviewers that are proposed for each preprint, and it's indexed by the preprint ID.
+
+[Rrid SP_Account] 12:20:33
+We also have referees, which is our old naming for AI-suggested reviewers, and those also get attached to.
+
+[Rrid SP_Account] 12:20:43
+preprint info, um, as well as whether they were proposed or not within student reviewer input, so we have linked fields for that.
+
+[Rrid SP_Account] 12:20:51
+There's also recent reviewers, so those are people who have been invited.
+
+[Rrid SP_Account] 12:20:57
+That will be relevant. There's all users, and that, as you can see by the lightning bolt, is connected to.
+
+[Rrid SP_Account] 12:21:04
+our RID app user… Base…
+
+[Rrid SP_Account] 12:21:17
+Um… Great, and then we have team performance, that's looking… across each… what RAD considers a team, so usually it's just by the country, but when it comes to Berkeley, there's… it also has to take into account the domain.
+
+[Rrid SP_Account] 12:21:34
+You'll see that in the automation. There's also domain performance, so that's just, um… actually based on the preprint that's been proposed, rather than the students who are contributing.
+
+[Rrid SP_Account] 12:21:47
+It's an annoying thing. Okay, I think the last important one is selected… And this gets pulled from the Rapid Reviews Infectious Disease.
+
+[Rrid SP_Account] 12:22:00
+base, which is basically just the preprints that are pulled and then selected, um… or, sorry, or two-pitch editorial.
+
+[Rrid SP_Account] 12:22:09
+So those are the two preprint statuses that are required for, um… these preprints to enter this reviewer selection process base.
+
+[Rrid SP_Account] 12:22:19
+Okay, so with that kind of contextualized, we're just going to walk through every single automation and kind of explain.
+
+[Rrid SP_Account] 12:22:25
+Uh, what it's achieving, um, and in so doing, try to.
+
+[Rrid SP_Account] 12:22:30
+just document the behind-the-scenes of this piece. And the things that… are needed. Okay, so to get started, the… First one is when a record is created in selected.
+
+[Rrid SP_Account] 12:22:42
+So once again, that's a preprint. Within the preprint scraping side of the process has been flagged as selected for.
+
+[Rrid SP_Account] 12:22:51
+Um, by the editorial team. we create a corresponding record within our main preprint info only base.
+
+[Rrid SP_Account] 12:23:00
+We link it to the selected. Uh, and we update the title and DOI, so… A lot of the, um, information we can then pull from selected, but just in case something happens on that side of the…
+
+[Rrid SP_Account] 12:23:17
+on the selected… Um, table. We also… I, like, also create a title and DOI backup.
+
+[Rrid SP_Account] 12:23:25
+information, just so we can… Investigate, um, and not have all of that data deleted.
+
+[Rrid SP_Account] 12:23:32
+Okay, so this script… is…
+
+[Rrid SP_Account] 12:23:41
+Open it up…
+
+[Rrid SP_Account] 12:23:46
+It's getting some important information, such as what the ranking has been.
+
+[Rrid SP_Account] 12:23:52
+Um… with the assigned team is… And it's getting the initial rank.
+
+[Rrid SP_Account] 12:23:59
+Um… And then, once it's pulled, it will kind of decide whether, on our end of the base it needs to… be updated to a ring, so sometimes it will come in and the rank.
+
+[Rrid SP_Account] 12:24:12
+That the editorial team gives. It can be 1, 2, 3, 4, like, at what point, or how high of a priority is this preprint? If it's.
+
+[Rrid SP_Account] 12:24:20
+and A, they haven't given it a ranking yet, so we're just going to set it to NA.
+
+[Rrid SP_Account] 12:24:24
+Um, if it's out of circulation, then it's already been within our base, we're not gonna touch it.
+
+[Rrid SP_Account] 12:24:29
+And then otherwise, we're gonna actually set that single select field.
+
+[Rrid SP_Account] 12:24:33
+To the number that it was, um, assigned. And then we'll kind of push that.
+
+[Rrid SP_Account] 12:24:43
+And yeah, if we notice any change… We'll have to change that.
+
+[Rrid SP_Account] 12:24:49
+Um, if the assigned team is updated… We do… let me update it.
+
+[Rrid SP_Account] 12:24:54
+So the assigned team, there's people that, um, are given priority to.
+
+[Rrid SP_Account] 12:24:58
+do that. Okay, and then… We also create a record.
+
+[Rrid SP_Account] 12:25:04
+Within the referees table. Um, and that is… This is specifically when somebody, um, pitches a preprint, they also pitch.
+
+[Rrid SP_Account] 12:25:16
+who they think, like, a ideal reviewer would be, so that there's two different models, and we're just pushing that into our suggested reviewer table for somebody to actually, you know.
+
+[Rrid SP_Account] 12:25:27
+propose those model reviewers. Alright, then there is tracking team performance, so… this kind of… this requires the preprint or, um… Sorry, not true. When a person proposes a reviewer to a certain preprint.
+
+[Rrid SP_Account] 12:25:45
+We want to see… Who the team is that that person is associated with, and what the domain of the preprint is.
+
+[Rrid SP_Account] 12:25:52
+And given that information, we will link. That proposed reviewer to the team. So, as mentioned.
+
+[Rrid SP_Account] 12:25:59
+Berkeley requires knowing not just that they're from Berkeley, but also what domain they are.
+
+[Rrid SP_Account] 12:26:05
+Um, and if that's not the case, if it's not Berkeley, um, then… We'll simply just link.
+
+[Rrid SP_Account] 12:26:13
+The proposed reviewer, um, to the team or domain… to the team that the student is associated with.
+
+[Rrid SP_Account] 12:26:20
+So that could be, like, Vietnam, um… Or FAMHSA, or somewhere else.
+
+[Rrid SP_Account] 12:26:27
+Okay, so when a record is created within our preprint info only.
+
+[Rrid SP_Account] 12:26:32
+We find within the domain performance, so the table tracking performance across domains, um… kind of that record that has the same domain as this associated preprint, and then link it.
+
+[Rrid SP_Account] 12:26:47
+This is hard to do within scripts, because it, uh… It's just tricky to do with code.
+
+[Rrid SP_Account] 12:26:54
+Um… In another way, and… Then we also go to team performance.
+
+[Rrid SP_Account] 12:27:03
+And update the preprint info. So, within the team performance, we're tracking… students' contributions to their team, but we're also tracking, like, a preprint when it's proposed, it's associated to a team.
+
+[Rrid SP_Account] 12:27:17
+Um, and so when… we also want to link that to the team.
+
+[Rrid SP_Account] 12:27:22
+To see how many of their preprints that they're, um… pitching and proposing.
+
+[Rrid SP_Account] 12:27:28
+come across and are successful. And then the last one is the mini-team email, so… There's, um… yeah, basically just, like, puts together the… the people that will have early access to that preprint.
+
+[Rrid SP_Account] 12:27:47
+Okay, um… Maybe it makes sense to… First, do record created. So SRI just stands for Student Reviewer Inputs, and that's the table.
+
+[Rrid SP_Account] 12:27:57
+Where reviewers are proposed to. So when a record is created in there, there's a number of things.
+
+[Rrid SP_Account] 12:28:06
+That need to be done. Uh, one is just finding within preprint info only the associated.
+
+[Rrid SP_Account] 12:28:12
+ID, and then we do a couple of updates. So we link the student who proposed it to the all users base, so we can track their productivity.
+
+[Rrid SP_Account] 12:28:21
+We have an auto-update, um, for the link to publication, so there's, like, a.
+
+[Rrid SP_Account] 12:28:26
+Formula field that puts together. Um, the subdiscipline and the… No, sorry, the reviewer's name.
+
+[Rrid SP_Account] 12:28:35
+And from that, it creates, like, an auto-link to the publications on PubMed.
+
+[Rrid SP_Account] 12:28:39
+But that actually needs to be put into the associated… field, and the formula doesn't allow for that.
+
+[Rrid SP_Account] 12:28:45
+And then we also create a linking to… Um… If there's…
+
+[Rrid SP_Account] 12:29:00
+Oh, that's not… that's out of place.
+
+[Rrid SP_Account] 12:29:08
+That wouldn't make sense, nobody… That's misplaced.
+
+[Rrid SP_Account] 12:29:19
+Ignore that one. Um, and then… Yes, also attaching the associated… Record that we found to their preprint info only, so that… that preprint is now associated with that proposed reviewer.
+
+[Rrid SP_Account] 12:29:34
+Okay, now there's also the potential for, within the quality checking process.
+
+[Rrid SP_Account] 12:29:41
+Um, for proposers… Or, sorry, for proposed reviewers' fields to be updated, and there's a few important ones that.
+
+[Rrid SP_Account] 12:29:48
+We need to track for that. Um, there's justification for invite.
+
+[Rrid SP_Account] 12:29:53
+Um, so that takes the sub-discipline and the preprint's title and pulls together a sentence that we email to the reviewers. Um, we use this as a formula, just because students were really.
+
+[Rrid SP_Account] 12:30:04
+Not, uh, understanding how to write it correctly. And then we also have the email of the quality checker and the email of the quality checker in training. And so if any of those, um.
+
+[Rrid SP_Account] 12:30:16
+get adjusted, we want to link. Um, the correct email… Um, of the quality checker and the quality checker in training, as well as update the justification for invite.
+
+[Rrid SP_Account] 12:30:29
+Alright, when a record is… Ooh, here's a way that we could make this more efficient.
+
+[Rrid SP_Account] 12:30:35
+Um… I'll do that later, actually.
+
+[Rrid SP_Account] 12:30:40
+But basically, this is the immediate reviewer COI checker, so we want to make sure that the author.
+
+[Rrid SP_Account] 12:30:48
+Or the reviewer isn't the author, they're not proposed yet, and they're not a recent reviewer.
+
+[Rrid SP_Account] 12:30:52
+And then we also want to check that. There's no duplicate domains, so if somebody from Berkeley.edu.
+
+[Rrid SP_Account] 12:31:00
+was proposed, but somebody already was, we kind of flagged that.
+
+[Rrid SP_Account] 12:31:05
+Um, and we also will burn… AI-suggested reviewers who have that same domain, because we already know that it'll have a COI flag.
+
+[Rrid SP_Account] 12:31:19
+This is tracking, um… For preprints, when they are… selected the final ranking, like, the field that decides.
+
+[Rrid SP_Account] 12:31:30
+What the final ranking of that preprint will be, whether it be 1, 2, 3, 4, 5, like, what's our priority is in Steph's ranking field, so… When that is updated, we'll change the rank, um… inputted by Steph.
+
+[Rrid SP_Account] 12:31:45
+I would suggest looking through the code, but it's a little bit… there's a little bit more nuance to it, um… Because we have to take into account.
+
+[Rrid SP_Account] 12:31:55
+Basically, whether there's other preprints that are on hold that have higher ranking, and we kind of want to adjust.
+
+[Rrid SP_Account] 12:32:00
+that ranking, but basically we want to keep it in relative order.
+
+[Rrid SP_Account] 12:32:04
+Based on this ranking. Then there is… Um, populating the… AI-suggested reviewers, so when a preprint.
+
+[Rrid SP_Account] 12:32:17
+Uh, referee's info is not empty. We… will parse through.
+
+[Rrid SP_Account] 12:32:28
+Um, I'll show… I could show what the list is. It's basically, it's a single… field, and it has a giant list of… the AI-suggested reviewer's details, so it will include things such as…
+
+[Rrid SP_Account] 12:32:43
+Um, their name, their age index. Uh, their affiliations, maybe their orchid ID, maybe their author URL, and maybe used emails, and… We use rejects to extract all of that, and then.
+
+[Rrid SP_Account] 12:32:54
+Um, for each, we build out a single record.
+
+[Rrid SP_Account] 12:32:57
+For all of those AI-suggested reviewers. Um, we do some checks to see if.
+
+[Rrid SP_Account] 12:33:04
+Um, that referee shouldn't actually… Be an option based on whether they're in the recent reviewers or… Um, already, like, a domain, common domain.
+
+[Rrid SP_Account] 12:33:14
+And then we'll, um, add a record for each within our referees table.
+
+[Rrid SP_Account] 12:34:26
+Oops, sorry, I thought that I paused that, but I did.
+
+[Rrid SP_Account] 12:34:30
+Um, update pro user reviewers… Yes, we did that. Okay, so… this whole block of… automations are going through… Um, our preprint ranking… And kind of the flow of making a preprint active, on hold, sending out invites, and things like that, so it's pretty messy.
+
+[Rrid SP_Account] 12:34:53
+Um, and it should be adjusted and fixed, but… Yeah, this whole thing is just kind of a mess.
+
+[Rrid SP_Account] 12:35:01
+So, first and foremost, um, when the rank is zero in the.
+
+[Rrid SP_Account] 12:35:06
+preprint status is active. Those are the two. necessary.
+
+[Rrid SP_Account] 12:35:12
+Um… features, or whatever, that a preprint needs in order to be active.
+
+[Rrid SP_Account] 12:35:20
+So, when one or the other… is true, will make it such that both are true. That's just because sometimes an assistant editor will go and make it active, but not know to adjust the rate.
+
+[Rrid SP_Account] 12:35:32
+Um… if it's the first time being… active, um, we'll need to set it to in process.
+
+[Rrid SP_Account] 12:35:40
+And then, when that happens, we'll update the date and process.
+
+[Rrid SP_Account] 12:35:47
+Oh, no.
+
+[Rrid SP_Account] 12:35:53
+Well, this will have to be looked into, but, um… What this is supposed to be doing, um… When the invite count is greater than or equal to 20.
+
+[Rrid SP_Account] 12:36:06
+And the preprint status is dormant. We… think that the.
+
+[Rrid SP_Account] 12:36:16
+Um…
+
+[Rrid SP_Account] 12:36:26
+I think that it is in process.
+
+[Rrid SP_Account] 12:36:42
+What this is supposed to be doing is, when the mini team is working on a preprint that's dormant.
+
+[Rrid SP_Account] 12:36:47
+And it hits the invite count 20. We want it to be made active immediately.
+
+[Rrid SP_Account] 12:36:53
+Um… so it's kind of a way of, like, getting them incentivized to do that.
+
+[Rrid SP_Account] 12:36:58
+And this is supposed to be readjusting the ranks, but that is failing.
+
+[Rrid SP_Account] 12:37:04
+Um… so I'll come back to that. But, yeah, it's a… it's a very complex.
+
+[Rrid SP_Account] 12:37:11
+Um… Logic behind adjusting the ranks.
+
+[Rrid SP_Account] 12:37:16
+Then there is setting the preprint status. to on hold. So, this is really critical, um, in the way that we're tracking. I think that it could be a lot better, but basically there's.
+
+[Rrid SP_Account] 12:37:29
+Multiple steps, um, that we've included in the operations of when a preprint is.
+
+[Rrid SP_Account] 12:37:35
+It gets its invites sent out, or when is it done?
+
+[Rrid SP_Account] 12:37:38
+Receiving invites, um, and that's captured with the more invites needed field.
+
+[Rrid SP_Account] 12:37:43
+I'm just gonna show that, it's in another video, but I think it's pretty critical to understand.
+
+[Rrid SP_Account] 12:37:48
+the role that it plays, um… So let's just look at… This formula field… It's taking into account multiple.
+
+[Rrid SP_Account] 12:38:01
+So you can see here, we have a round one, more invites needed, round two, round 3, round four.
+
+[Rrid SP_Account] 12:38:07
+Um… So, based on what the invite round is.
+
+[Rrid SP_Account] 12:38:13
+It will look at… the corresponding… Formula?
+
+[Rrid SP_Account] 12:38:20
+So let's say it's in its first invite round.
+
+[Rrid SP_Account] 12:38:24
+Uh, it only, we only accept and think that it needs more invites if either, um.
+
+[Rrid SP_Account] 12:38:31
+The total invite count plus the, like, 60% of the unchecked count is… less than our invites required, which is 30.
+
+[Rrid SP_Account] 12:38:40
+Um, or the unchecked count is. If it's more than 50 unchecked, then we think that it shouldn't, we should wait for those to get quality checked.
+
+[Rrid SP_Account] 12:38:51
+And that's basically what it is for round 2 and round 3.
+
+[Rrid SP_Account] 12:38:56
+So, when it's the case that we think that no additional invites are needed.
+
+[Rrid SP_Account] 12:39:00
+we're gonna set it to on hold and out of circulation, so it's not gonna accept.
+
+[Rrid SP_Account] 12:39:06
+Anymore. Um… proposed reviewers from students, we just want assistant editors to quality check it.
+
+[Rrid SP_Account] 12:39:16
+And this code… Basically, once a preprint gets put on hold, we need to make sure that there's another preprint within that domain that is active.
+
+[Rrid SP_Account] 12:39:29
+So, we, um… kind of find other preprints that have that.
+
+[Rrid SP_Account] 12:39:36
+domain… if there's already an active one, um, so sometimes, like, two are active.
+
+[Rrid SP_Account] 12:39:43
+Then… we're all good. Um…
+
+[Rrid SP_Account] 12:39:52
+Then we separate them… By ranking, we don't want to consider anything out of circulation.
+
+[Rrid SP_Account] 12:40:02
+Do some extra checks while we're at it, just cleaning up house.
+
+[Rrid SP_Account] 12:40:12
+We also need to take into account whether preprint is dormant, so it's not been worked on yet, or it's on hold. So it's been active, but now it's not being worked on.
+
+[Rrid SP_Account] 12:40:21
+the on-hold ones are higher priority, just because people have already started putting work into them.
+
+[Rrid SP_Account] 12:40:27
+Um, we also take into account the total invite.
+
+[Rrid SP_Account] 12:40:31
+Or greenlit, so a preprint that's on hold with a really high invite count, but it's not yet complete, is higher priority than one with lower invite count.
+
+[Rrid SP_Account] 12:40:39
+If one is older, so it, like, was in process two weeks ago versus the one that was in process 1 week ago, we want to prioritize the older ones to get them through.
+
+[Rrid SP_Account] 12:40:48
+And then we also, lastly, will take into account staff's ranking.
+
+[Rrid SP_Account] 12:40:53
+For the dormant ones. Assign… reassign rankings, um… Make sure that everything is up to date, and then push those changes. I would advise actually looking at the code to better, like, I think.
+
+[Rrid SP_Account] 12:41:07
+it's a pretty good source of truth for just how it should be working.
+
+[Rrid SP_Account] 12:41:13
+Okay…
+
+[Rrid SP_Account] 12:41:26
+So then there's the other, um… potential workflow where… The preprint is on hold, but then we had it in a non… we… like, the rank might have been.
+
+[Rrid SP_Account] 12:41:39
+like, 3, so it was, like, on hold, but still in line. But then, actually.
+
+[Rrid SP_Account] 12:41:45
+Um… people were quality checking, and it seems like it actually doesn't need more invites.
+
+[Rrid SP_Account] 12:41:50
+Then we'll set the rink to out of circulation.
+
+[Rrid SP_Account] 12:41:55
+Um… Yes.
+
+[Rrid SP_Account] 12:42:00
+Okay, and then what if it's in circulation, but then all of a sudden… We rejected all of the unchecked reviewers, and we realized we need a lot more reviewers to be proposed to get our.
+
+[Rrid SP_Account] 12:42:13
+Um, our goal of 30 invites, then we'll set more invites needed, or the formula will.
+
+[Rrid SP_Account] 12:42:19
+be set to more invites needed. Um, and that's… then we need to bring this preprint back alive, so… This is new. Steph wants it to just immediately be made active, and so that's what we do. We set it to active immediately.
+
+[Rrid SP_Account] 12:42:37
+Um, and in so doing… We're gonna, like, move it up, and then re-rank everything.
+
+[Rrid SP_Account] 12:42:45
+Um, accordingly. So that's kind of actually, like. Incrementing the ranks rather than decrementing.
+
+[Rrid SP_Account] 12:42:52
+Okay, and then we'll get into… A preprint has received.
+
+[Rrid SP_Account] 12:42:57
+invites and the process for that. So if preprint is any of, um, dormant, active on hold.
+
+[Rrid SP_Account] 12:43:05
+unsent invites is greater than or equal to 20.
+
+[Rrid SP_Account] 12:43:08
+It's selected, and it's the first invite round. Then we've hit our goal of the first 20.
+
+[Rrid SP_Account] 12:43:15
+So we're going to… Check that none of the proposed reviewers are authors or recent reviewers, or already proposed, and if that's the case.
+
+[Rrid SP_Account] 12:43:25
+We want to check, is it still… are the unsent invites still above 20? Um, just in the case that maybe we rejected too many.
+
+[Rrid SP_Account] 12:43:32
+And then, if that's true, we can say that we checked the field, we verified the verse 20, they are good to go.
+
+[Rrid SP_Account] 12:43:39
+That will trigger this automation. Um… Where you can see verified first 20. I had to split it up because there seemed to be… A delay, um… I can't completely remember why, but it did not work when I put them together.
+
+[Rrid SP_Account] 12:44:00
+I'm trying to remember why, but I can't. Um, so… yeah, a preprint is… ready to get its invite sent out, so we're gonna… re-rank… The preprints, um, we're putting that one on hold.
+
+[Rrid SP_Account] 12:44:17
+Because we want to wait to see if the 20 was sufficient or not.
+
+[Rrid SP_Account] 12:44:28
+I don't know if that's as it should be.
+
+[Rrid SP_Account] 12:44:31
+Um… this… It's just what pushes to the Google Cloud.
+
+[Rrid SP_Account] 12:44:36
+Server to send the CSVs… This update to the preprint status to on hold, but I am now… Hesitating, because I think that it should remain active.
+
+[Rrid SP_Account] 12:44:50
+Um, that's something to follow up with Angel about.
+
+[Rrid SP_Account] 12:44:53
+And then set invited to true for… Um, all of those reviewers, so that's kind of, um, our way.
+
+[Rrid SP_Account] 12:45:01
+There's the unsent invites, and then there's the invite.
+
+[Rrid SP_Account] 12:45:03
+total invite count, and we only want to trigger it when.
+
+[Rrid SP_Account] 12:45:07
+the unsent invites are above a certain number, so, um, this is a way of updating.
+
+[Rrid SP_Account] 12:45:12
+The reviewers who we know we've already sent it, or who's already been included in a CSV.
+
+[Rrid SP_Account] 12:45:22
+Okay, then there's the next step, so when the invite count.
+
+[Rrid SP_Account] 12:45:26
+is above 30. And the total incent is above 10, so that's after the first 20 are sent out, we now have gained 10 more.
+
+[Rrid SP_Account] 12:45:34
+Um, and there's zero unchecked, so this preprint. is cleaned up, it's got our total reviewers… We want to, again, check for no COI.
+
+[Rrid SP_Account] 12:45:47
+And then there's these kind of conditions, so if the invite count is… Above 50?
+
+[Rrid SP_Account] 12:45:56
+We… We'll update the invite round. Basically, what this is doing is just making our… making sure our invite round is, um… Accurate, where the info round is.
+
+[Rrid SP_Account] 12:46:09
+Um… determined by… The invite count, which… Maybe it doesn't make sense, but this would run off. This would… be triggered once 10 gets hit, so… Hopefully it works.
+
+[Rrid SP_Account] 12:46:25
+Okay, then there is… manually send… Sending invites, so… This was a way where, like, if Angel or somebody on the editorial team just wanted to, like, send out.
+
+[Rrid SP_Account] 12:46:40
+like, force the preprint to send out the CSVs.
+
+[Rrid SP_Account] 12:46:43
+Um, they can kind of just, like, click this check button called manual send invites.
+
+[Rrid SP_Account] 12:46:49
+Um, and it only makes sense to do so if… There's a non-zero amount of unsent invites.
+
+[Rrid SP_Account] 12:46:55
+Once again, it'll check for COI… Um… Update, clean it up… And then we'll check the… Verified, and that triggers this.
+
+[Rrid SP_Account] 12:47:12
+Which… It requires both send invites is checked and verified, so… Somebody's requested that the invites be sent out, and we've checked that there's no COI.
+
+[Rrid SP_Account] 12:47:23
+We'll talk to the Google Cloud function… Update it so that those are cleared again.
+
+[Rrid SP_Account] 12:47:34
+Find records… That have not been checked as invited. I think that that's being done in scripts another way, um… And then just flag those as invited.
+
+[Rrid SP_Account] 12:47:45
+In the sense of, like, the… Email invite has been sent out, that could be… Clarified. Okay…
+
+[Rrid SP_Account] 12:47:58
+Oh, is this one…
+
+[Rrid SP_Account] 12:48:02
+Oh, this is when the unchecked is non-zero. So this is when… Unchecked is 0, sorry about that.
+
+[Rrid SP_Account] 12:48:11
+Um, so once again, it's the case where invite count is.
+
+[Rrid SP_Account] 12:48:15
+greater than 30, and there's no more that are unchecked, so it's pretty clean.
+
+[Rrid SP_Account] 12:48:20
+We'll once again run the COI.
+
+[Rrid SP_Account] 12:48:26
+Um… What is the difference between those two?
+
+[Rrid SP_Account] 12:48:35
+Let's just running the COI. Does this change anything?
+
+[Rrid SP_Account] 12:49:08
+I think that that could be deleted. I think that's basically the same as that. The only difference is… Here with this automation… Um, it does matter… Whether the uncheck count is zero or not.
+
+[Rrid SP_Account] 12:49:21
+Because the preprint would be considered. complete, so we want to update.
+
+[Rrid SP_Account] 12:49:30
+Um… This is once again updating the preprint status.
+
+[Rrid SP_Account] 12:49:37
+Yeah, here we are updating it to complete and out of circulation. So that's the main difference of whether the unchecked count is zero or not.
+
+[Rrid SP_Account] 12:49:46
+Um… it's an entire CSV, this is a way… This will just push… All the reviewers, however, you kind of need to go in and change it so that they're invited field is not checked.
+
+[Rrid SP_Account] 12:50:02
+To get the full list. Okay, so that's that process.
+
+[Rrid SP_Account] 12:50:08
+Um, I think it needs… To be rethought out.
+
+[Rrid SP_Account] 12:50:13
+But it's working for the most part. Then there's the referee claimed limit, so… Um… for AI-suggested reviewers, students are allowed to claim.
+
+[Rrid SP_Account] 12:50:26
+a reviewer, um, that they want to look into, but we don't want them to just claim a bunch and then leave them stagnant, so we only allow them to.
+
+[Rrid SP_Account] 12:50:34
+playing, I believe, 3. So that's tracking the count, um, and then… If it's above 2.
+
+[Rrid SP_Account] 12:50:42
+So, we'll just let go the… One that they claimed, um, the farthest away.
+
+[Rrid SP_Account] 12:50:49
+And make it look like it is unable to evaluate.
+
+[Rrid SP_Account] 12:50:52
+Just so that there's, like, somebody else can claim it.
+
+[Rrid SP_Account] 12:50:56
+Then there is… Um… one of preprint status… is complete.
+
+[Rrid SP_Account] 12:51:07
+I don't know why that works.
+
+[Rrid SP_Account] 12:51:18
+Um… In the quality check portal.
+
+[Rrid SP_Account] 12:51:24
+Uh… For the race conditions, we require assistant editors to kind of put their name on records that they are QCing.
+
+[Rrid SP_Account] 12:51:32
+And so, our thought process was, when a preprint is complete, we want to clear those columns, just so that.
+
+[Rrid SP_Account] 12:51:40
+It's, um, cleaner. going forward, and if they want to go back to that preprint, they don't have to… Re… or claim, or have anything.
+
+[Rrid SP_Account] 12:51:49
+I didn't. also want to preprint… is invited or complete, that means the same thing right now.
+
+[Rrid SP_Account] 12:51:59
+Um, and… their status is… Invite will create a record.
+
+[Rrid SP_Account] 12:52:09
+Oh, wow, okay. This should be thatched, for sure. Um… We do it by each reviewer, but we could definitely make it so that it's… Um, when the entire preprint.
+
+[Rrid SP_Account] 12:52:23
+is complete, we just fetch all of their invited reviewers, and… update and populate them in our recent reviewer.
+
+[Rrid SP_Account] 12:52:31
+Table? So that's basically tracking the date that they were invited, and we don't want to invite them until.
+
+[Rrid SP_Account] 12:52:40
+3 months after. Those are people that have requested not to, so you can see the delete date, and there's an automation that deletes them. So we track their email and their name.
+
+[Rrid SP_Account] 12:52:51
+And… The pre-printer associated with.
+
+[Rrid SP_Account] 12:52:57
+But that could definitely be cleaner.
+
+[Rrid SP_Account] 12:53:01
+As mentioned, this is the… When they're doing this today… Doing them.
+
+[Rrid SP_Account] 12:53:10
+Uh, it's also when a reviewer is added, and… Um… It's an assistant editor who proposed it, and they didn't mark it as incomplete.
+
+[Rrid SP_Account] 12:53:23
+then we want to… just set that reviewer to… invited immediately, because.
+
+[Rrid SP_Account] 12:53:32
+I'm the assistant editor would only propose a reviewer if… It was inappropriate.
+
+[Rrid SP_Account] 12:53:38
+Option…
+
+[Rrid SP_Account] 12:53:44
+Okay, so there's also the concern if, uh… reviewers flagged as invite.
+
+[Rrid SP_Account] 12:53:51
+We need to… make sure that… they haven't been proposed in any other preprints, so say I, like, propose.
+
+[Rrid SP_Account] 12:54:01
+Aaron for Preprint A and Erin for preprint B. If I invite Erin for preprint A, I should reject him for preprint B, because we don't want to invite him within, like, one week.
+
+[Rrid SP_Account] 12:54:12
+Um, for two different preprints. So that's what that's doing.
+
+[Rrid SP_Account] 12:54:19
+It will also… go in, say, like, there's a Berkeley.edu… Email associated with that invited reviewer, we don't want to invite multiple people from the same institution, so we'll go into our AI-suggested reviewer for that preprint and burn anybody, or, like.
+
+[Rrid SP_Account] 12:54:39
+cross them out, um, for being considered if they have the same domain as that invited reviewer.
+
+[Rrid SP_Account] 12:54:44
+Then there's the track student… um… referee productivity, so… If the status in the referee's AI suggested reviewer table.
+
+[Rrid SP_Account] 12:54:58
+It's updated to reject or propose, then that is now an important thing that we track.
+
+[Rrid SP_Account] 12:55:04
+Um, and we input the student email. Um, and associate it with their… Use your productivity…
+
+[Rrid SP_Account] 12:55:17
+preprint editorial rejected, so… We're checking if it is empty, but basically the reason for that is these are fields from selected, so when it's.
+
+[Rrid SP_Account] 12:55:28
+editorial rejected, it's no longer going to be in the selected base, so it'll basically disappear.
+
+[Rrid SP_Account] 12:55:35
+Um, and so, we will no longer have these linkings.
+
+[Rrid SP_Account] 12:55:38
+correctly showing. Um, so that shows to us that the status is no longer selected unless the preprint has been editorial rejected.
+
+[Rrid SP_Account] 12:55:48
+And it matters whether it's possible that maybe it was.
+
+[Rrid SP_Account] 12:55:51
+People started proposing. Or didn't propose anything for that preprint, so, you know, no harm, no foul, we'll just delete that record.
+
+[Rrid SP_Account] 12:56:01
+Um, on the other hand, if people have proposed it, we don't really want to, like, fully throw it out, so we'll just set the preprint status to discarded.
+
+[Rrid SP_Account] 12:56:08
+But the student can still receive credit for who… what they proposed.
+
+[Rrid SP_Account] 12:56:13
+This is for sending daily reject summaries. This was set up by… a different person…
+
+[Rrid SP_Account] 12:56:28
+I think we should include…
+
+[Rrid SP_Account] 12:56:35
+to include… Well, yeah, let's just… Um, so this…
+
+[Rrid SP_Account] 12:56:50
+We'll send an invite through the Google Cloud function.
+
+[Rrid SP_Account] 12:56:54
+Of the information… by status, and it'll include the quality check viewer comments.
+
+[Rrid SP_Account] 12:57:01
+Given that, I'm gonna include… Fixable.
+
+[Rrid SP_Account] 12:57:07
+Um, so that will run… This email is the student of the fixable reviewer.
+
+[Rrid SP_Account] 12:57:14
+I might… test this out to see if I can delete that, and it can all just be within the daily reject summaries, because I think.
+
+[Rrid SP_Account] 12:57:23
+Summaries are better than… Each email… Um, if there are any preprints that have.
+
+[Rrid SP_Account] 12:57:34
+An uncheck count greater than 10. Every day at, wow, 8am. It's a way to wake up.
+
+[Rrid SP_Account] 12:57:40
+We will email… Um… A summary to people associated with that domain who are assistant editors.
+
+[Rrid SP_Account] 12:57:52
+Um, and that they should go… Quality check.
+
+[Rrid SP_Account] 12:58:00
+In the other case where the unchecked count is.
+
+[Rrid SP_Account] 12:58:03
+greater than 30, then we want Steph to also be flagged.
+
+[Rrid SP_Account] 12:58:09
+Um… If the list of AI-suggested reviewers does not seem to be doing well.
+
+[Rrid SP_Account] 12:58:18
+Either… there's a really high reject rate. Or there's a very low number of AI-suggested reviewers remaining.
+
+[Rrid SP_Account] 12:58:28
+We will, um, send emails to people of, you know.
+
+[Rrid SP_Account] 12:58:32
+There's a really high reject rate, maybe you should go… Um, adjust the pro fee… information and repopulate that list.
+
+[Rrid SP_Account] 12:58:43
+Um, maybe if it hits 0, it's like, okay, it's… there's no more available AI reviewers, please go update that, and then… If the unclaimed AI reviewers is.
+
+[Rrid SP_Account] 12:58:55
+less than 15, that's also, you know, we're getting close. Go, go help out with that.
+
+[Rrid SP_Account] 12:59:03
+Okay, and then this is… Monday on 7am?
+
+[Rrid SP_Account] 12:59:12
+I don't think I said this one up.
+
+[Rrid SP_Account] 12:59:21
+I did not create this.
+
+[Rrid SP_Account] 12:59:43
+I have no idea what this is doing. I think Rashad.
+
+[Rrid SP_Account] 12:59:47
+Created this. But it seems like weekly.
+
+[Rrid SP_Account] 12:59:51
+They're sending, um… General information about the preprints that they should be paying attention to.
+
+[Rrid SP_Account] 13:00:05
+And…
+
+[Rrid SP_Account] 13:00:10
+Oh, cool. It inputs the email. It's very interesting.
+
+[Rrid SP_Account] 13:00:19
+Can you take… oh, wow, cool. Okay, so you get the outputs from this.
+
+[Rrid SP_Account] 13:00:24
+You'll get the list of emails, and then you'll input the email generated from this script.
+
+[Rrid SP_Account] 13:00:30
+That's very cool, I didn't know that you could do that. Okay, so that is the automations for… the reviewer selection base.
+
