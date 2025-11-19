@@ -38,3 +38,6 @@ output/
 *.pyc
 __pycache__/
 .pytest_cache/
+input/
+*.m4a
+*.mp4
