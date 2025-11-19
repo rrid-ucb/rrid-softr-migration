@@ -95,6 +95,17 @@ This project was created to document an existing Softr application for migration
 3. Use the generated PRD for rebuilding in a new platform
 4. Reference personas/user stories for product planning
 
+### Airtable Backend Documentation
+
+In addition to documenting the Softr frontend, this project also processes videos about the Airtable backend architecture, automations, and integrations. These videos help understand:
+
+- **Airtable Architecture**: Table structures, relationships, and data models
+- **Automations**: Workflow automation logic and triggers
+- **Integration Points**: How Softr interfaces with Airtable
+- **Issues & Pain Points**: Problems, workarounds, and technical debt documented in `ISSUES.md`
+
+The pipeline automatically detects when a video includes backend/architecture content and generates an additional `issues.md` document cataloging problems, pain points, and technical concerns.
+
 ## What You Need
 
 ### System Requirements
@@ -190,6 +201,19 @@ source venv/bin/activate
 python3 llm_annotate.py out/annotated.json --models gemini openai
 ```
 
+### Process videos with existing transcripts (Zoom, etc.)
+The pipeline automatically detects and uses existing transcript files:
+- **VTT files**: `.transcript.vtt`, `.cc.vtt`, `.vtt` (WebVTT format)
+- **JSON files**: Already in Whisper format
+- **Text files**: Basic support (may fall back to Whisper)
+
+When a transcript is found in the same directory as the video, the pipeline:
+1. Converts VTT to Whisper JSON format (if needed)
+2. Skips Whisper transcription
+3. Proceeds with frame extraction and LLM processing
+
+Example: Zoom recordings typically include `.transcript.vtt` files that are automatically detected and used.
+
 ## Output Documents Explained
 
 ### 1. Linear Walkthrough
@@ -212,6 +236,15 @@ User-centric view with personas, stories, and acceptance criteria. Ideal for:
 - UX design decisions
 - Feature prioritization
 - Stakeholder communication
+
+### 4. Issues & Pain Points (ISSUES.md)
+For backend/architecture videos, catalogs:
+- Technical problems and bugs
+- Workflow inefficiencies
+- System limitations and technical debt
+- Integration and automation issues
+- User experience pain points
+- Suggested solutions and workarounds
 
 ## Cost
 
@@ -262,6 +295,9 @@ See [LLM_ANNOTATION_README.md](LLM_ANNOTATION_README.md) for detailed troublesho
 ✅ LLM-powered documentation generation  
 ✅ Multiple LLM provider support (Gemini, OpenAI)  
 ✅ Three document types (walkthrough, PRD, personas)  
+✅ Issues document generation for backend/architecture videos  
+✅ VTT transcript support (Zoom, WebVTT)  
+✅ Automatic transcript detection and conversion  
 ✅ Comparison mode for LLM outputs  
 
 ## Contributing
