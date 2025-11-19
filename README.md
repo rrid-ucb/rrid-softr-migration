@@ -9,6 +9,7 @@ Transform video walkthroughs into comprehensive product documentation using AI-p
     - [Softr Linear Walkthrough](#-softr-linear-walkthrough)
     - [Softr Personas, User Stories, and User Journeys](#-softr-personas-user-stories-and-user-journeys)
     - [Softr Product Requirements Document (PRD)](#-softr-product-requirements-document-prd)
+    - [Softr Issues & Pain Points](#-softr-issues--pain-points)
   - [Airtable Backend Walkthrough](#airtable-backend-walkthrough)
     - [Airtable Linear Walkthrough](#-airtable-linear-walkthrough)
     - [Airtable Personas, User Stories, and User Journeys](#-airtable-personas-user-stories-and-user-journeys)
@@ -73,6 +74,16 @@ A comprehensive PRD with page-by-page specifications, technical requirements, da
 - [Technical Requirements](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#3-technical-requirements) - Platform, database, authentication, APIs, and security requirements
 - [Data Models](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#4-data-models-inferred) - Inferred data structures for Preprints, Reviewers, Users, and Review Assignments
 - [User Workflows](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#5-user-workflows) - Step-by-step workflows for adding reviewers, evaluating reviewers, and claiming preprints
+
+#### ⚠️ [Softr Issues & Pain Points](output/softr/20251119_071215/llm_docs/issues_gemini.md)
+
+A comprehensive catalog of problems, pain points, and technical concerns identified in the Softr application. Documents bugs, workflow inefficiencies, system limitations, and suggested solutions.
+
+**Table of Contents:**
+- [Problems Identified](output/softr/20251119_071215/llm_docs/issues_gemini.md#1-problems-identified) - Data parsing failures, email mapping issues, and technical bugs
+- [Pain Points](output/softr/20251119_071215/llm_docs/issues_gemini.md#2-pain-points) - Learning curve, naming standards, outdated help, race conditions, custom code rendering, and tracking gaps
+- [Architecture Concerns](output/softr/20251119_071215/llm_docs/issues_gemini.md#3-architecture-concerns) - Hacky custom code, AirTable dependencies, hardcoded components, and automation gaps
+- [System/Component Categorization](output/softr/20251119_071215/llm_docs/issues_gemini.md#4-systemcomponent-categorization) - Summary table of issues by system component
 
 ### Airtable Backend Walkthrough
 
