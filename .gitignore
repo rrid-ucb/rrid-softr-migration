@@ -32,12 +32,9 @@ Thumbs.db
 
 # New structure
 # Note: output/ is gitignored, but you can track specific runs if needed
-output/
 # Runtime config (not source code)
 ~/.video_annotation/
 *.pyc
 __pycache__/
 .pytest_cache/
-input/
-*.m4a
-*.mp4
+.env

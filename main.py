@@ -10,8 +10,67 @@ Usage:
 """
 
 import argparse
+import os
+import subprocess
 import sys
 from pathlib import Path
+
+# Load environment variables from .env file if it exists
+try:
+    from dotenv import load_dotenv
+    # Load from project .env file
+    env_path = Path(__file__).parent / '.env'
+    if env_path.exists():
+        load_dotenv(env_path)
+        print(f"✓ Loaded environment variables from {env_path}")
+    
+    # Also try to load from $HOME/.envrc if it exists
+    # Use zsh since user mentioned zsh login shell
+    home_envrc = Path.home() / '.envrc'
+    if home_envrc.exists():
+        # Try to source .envrc and get exported variables
+        # Use zsh -l to simulate login shell
+        try:
+            # First try zsh login shell
+            result = subprocess.run(
+                ['zsh', '-l', '-c', f'source {home_envrc} 2>/dev/null; env'],
+                capture_output=True,
+                text=True,
+                timeout=5
+            )
+            if result.returncode == 0:
+                for line in result.stdout.split('\n'):
+                    if '=' in line and not line.startswith('_'):
+                        parts = line.split('=', 1)
+                        if len(parts) == 2:
+                            key, value = parts
+                            if key in ('GEMINI_API_KEY', 'OPENAI_API_KEY'):
+                                os.environ[key] = value
+                                print(f"✓ Loaded {key} from $HOME/.envrc")
+        except Exception as e:
+            # Fallback to bash if zsh fails
+            try:
+                result = subprocess.run(
+                    ['bash', '-c', f'source {home_envrc} 2>/dev/null; env'],
+                    capture_output=True,
+                    text=True,
+                    timeout=5
+                )
+                if result.returncode == 0:
+                    for line in result.stdout.split('\n'):
+                        if '=' in line and not line.startswith('_'):
+                            parts = line.split('=', 1)
+                            if len(parts) == 2:
+                                key, value = parts
+                                if key in ('GEMINI_API_KEY', 'OPENAI_API_KEY'):
+                                    os.environ[key] = value
+                                    print(f"✓ Loaded {key} from $HOME/.envrc (via bash)")
+            except Exception:
+                # Silently fail if we can't source .envrc
+                pass
+except ImportError:
+    # python-dotenv not installed, skip .env loading
+    pass
 
 from src.config.manager import ConfigManager
 from src.video_processor.pipeline import VideoProcessor

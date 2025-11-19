@@ -12,6 +12,7 @@ from typing import Dict, List, Optional
 from ..config.manager import ConfigManager
 from ..metadata.extractor import MetadataExtractor, VideoMetadata
 from ..frame_extraction.extractor import extract_frames_with_heuristics
+from ..transcription.vtt_parser import find_transcript_file, parse_vtt_to_whisper_json, detect_transcript_type
 
 
 class VideoProcessor:
@@ -65,19 +66,64 @@ class VideoProcessor:
             print(f"  ✗ Error extracting metadata: {e}")
             metadata = None
         
-        # Step 2: Transcribe
-        print("\n[2/5] Transcribing video...")
+        # Step 2: Transcribe or use existing transcript
+        print("\n[2/5] Processing transcript...")
         transcript_path = output_dir / f"{video_name}.json"
-        whisper_model = self.config.get_model('transcription')
-        if not whisper_model:
-            whisper_model = {'name': 'base'}  # Default
         
-        try:
-            self._transcribe_video(video_path, transcript_path, whisper_model['name'])
-            print(f"  ✓ Transcript saved: {transcript_path}")
-        except Exception as e:
-            print(f"  ✗ Transcription failed: {e}")
-            return output_dir
+        # Check for existing transcript files (VTT, etc.)
+        existing_transcript = find_transcript_file(video_path)
+        
+        if existing_transcript:
+            print(f"  ✓ Found existing transcript: {existing_transcript.name}")
+            transcript_type = detect_transcript_type(existing_transcript)
+            
+            try:
+                if transcript_type == 'vtt':
+                    print(f"  → Converting VTT to Whisper JSON format...")
+                    whisper_data = parse_vtt_to_whisper_json(existing_transcript)
+                    with open(transcript_path, 'w') as f:
+                        json.dump(whisper_data, f, indent=2)
+                    print(f"  ✓ Converted and saved: {transcript_path}")
+                elif transcript_type == 'json':
+                    # Already in correct format, just copy
+                    import shutil
+                    shutil.copy2(existing_transcript, transcript_path)
+                    print(f"  ✓ Copied transcript: {transcript_path}")
+                else:
+                    # Try to parse as text transcript (basic implementation)
+                    print(f"  → Parsing text transcript...")
+                    # For now, fall back to Whisper for text files
+                    print(f"  ⚠ Text transcripts not fully supported, using Whisper...")
+                    whisper_model = self.config.get_model('transcription')
+                    if not whisper_model:
+                        whisper_model = {'name': 'base'}
+                    self._transcribe_video(video_path, transcript_path, whisper_model['name'])
+                    print(f"  ✓ Transcript saved: {transcript_path}")
+            except Exception as e:
+                print(f"  ✗ Failed to process existing transcript: {e}")
+                print(f"  → Falling back to Whisper transcription...")
+                whisper_model = self.config.get_model('transcription')
+                if not whisper_model:
+                    whisper_model = {'name': 'base'}
+                try:
+                    self._transcribe_video(video_path, transcript_path, whisper_model['name'])
+                    print(f"  ✓ Transcript saved: {transcript_path}")
+                except Exception as e2:
+                    print(f"  ✗ Transcription failed: {e2}")
+                    return output_dir
+        else:
+            # No existing transcript, use Whisper
+            print(f"  → No existing transcript found, transcribing with Whisper...")
+            whisper_model = self.config.get_model('transcription')
+            if not whisper_model:
+                whisper_model = {'name': 'base'}  # Default
+            
+            try:
+                self._transcribe_video(video_path, transcript_path, whisper_model['name'])
+                print(f"  ✓ Transcript saved: {transcript_path}")
+            except Exception as e:
+                print(f"  ✗ Transcription failed: {e}")
+                return output_dir
         
         # Step 3: Extract frames
         print("\n[3/5] Extracting frames...")
