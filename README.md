@@ -39,6 +39,8 @@ This project has generated comprehensive documentation from two video walkthroug
 
 Documentation from the Softr application walkthrough providing detailed analysis of the RRID Reviewer Selection system frontend.
 
+> **Note:** These documents represent the best available versions based on comprehensive comparison. The Linear Walkthrough uses the enriched version for superior technical detail, while PRD, Personas, and Issues use the latest Gemini-generated versions for maximum comprehensiveness. See [COMPARISON_ANALYSIS.md](COMPARISON_ANALYSIS.md) for detailed comparison of all document versions.
+
 #### 📖 [Softr Linear Walkthrough](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md)
 
 A comprehensive, chapter-by-chapter walkthrough of the Softr application that goes beyond the speaker's narration to identify interface components, Airtable integrations, and UI details. Perfect for understanding the complete application flow and training new team members.
@@ -54,26 +56,29 @@ A comprehensive, chapter-by-chapter walkthrough of the Softr application that go
 - [Chapter 8: Central Team Dashboards: Productivity and Training](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-8-central-team-dashboards-productivity-and-training) - Productivity tracking and achievement/training dashboards
 - [Chapter 9: Tracking Progress and Configuring Header Navigation](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/linear_walkthrough_enriched.md#chapter-9-tracking-progress-and-configuring-header-navigation) - Student progress tracking and navigation configuration
 
-#### 👥 [Softr Personas, User Stories, and User Journeys](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md)
+#### 👥 [Softr Personas, User Stories, and User Journeys](output/softr/20251119_071215/llm_docs/personas_stories_gemini.md)
 
-User-centric documentation identifying three distinct personas (Administrator, AE Assignee, Reviewer), their goals, pain points, and how they interact with the system. Includes detailed user stories with acceptance criteria and complete user journeys.
-
-**Table of Contents:**
-- [User Personas](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#1-user-personas) - Three personas: Administrator, AE Assignee, and Reviewer with detailed backgrounds, goals, and technical skill levels
-- [User Stories](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#2-user-stories) - Feature-specific user stories with acceptance criteria and priority levels
-- [Feature Mapping](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#3-feature-mapping) - Mapping of features to personas and their access levels
-- [User Journeys](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/personas_stories_enriched.md#4-user-journeys) - Complete workflows for Administrator customization, AE reviewer assignment, and Reviewer preprint claiming
-
-#### 📋 [Softr Product Requirements Document (PRD)](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md)
-
-A comprehensive PRD with page-by-page specifications, technical requirements, data models, and user workflows. Essential for development planning, technical specifications, and migration projects.
+Comprehensive user-centric documentation identifying three distinct personas (Sarah - Student Reviewer, David - Assistant Editor, Angel - Central Team Member) with detailed backgrounds, goals, pain points, and how they interact with the system. Includes extensive user stories with acceptance criteria, feature mapping, and complete user journeys.
 
 **Table of Contents:**
-- [Executive Summary](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#1-executive-summary) - System overview and key features
-- [Page-by-Page Specifications](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#2-page-by-page-specifications) - Detailed specs for Landing Page, Preprints List, Reviewer Proposal, AI Suggestions, Quality Checks, and more
-- [Technical Requirements](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#3-technical-requirements) - Platform, database, authentication, APIs, and security requirements
-- [Data Models](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#4-data-models-inferred) - Inferred data structures for Preprints, Reviewers, Users, and Review Assignments
-- [User Workflows](https://github.com/rrid-ucb/rrid-softr-migration/blob/main/out/llm_docs_enriched/prd_document_enriched.md#5-user-workflows) - Step-by-step workflows for adding reviewers, evaluating reviewers, and claiming preprints
+- [User Personas](output/softr/20251119_071215/llm_docs/personas_stories_gemini.md#1-user-personas) - Three detailed personas: Sarah (Student Reviewer), David (Assistant Editor), and Angel (Central Team Member) with comprehensive backgrounds, goals, motivations, and technical skill levels
+- [User Stories](output/softr/20251119_071215/llm_docs/personas_stories_gemini.md#2-user-stories) - Feature-specific user stories organized by page/feature (Landing Page, Preprints List, Article Details, Quality Check Portal, etc.) with acceptance criteria and priority levels
+- [Feature Mapping](output/softr/20251119_071215/llm_docs/personas_stories_gemini.md#3-feature-mapping) - Mapping of features to personas and their access levels
+- [User Journeys](output/softr/20251119_071215/llm_docs/personas_stories_gemini.md#4-user-journeys) - Complete workflows: Sarah proposing a reviewer, David quality checking a proposed reviewer, and Angel updating preprint status
+- [Screenshots and Context](output/softr/20251119_071215/llm_docs/personas_stories_gemini.md#5-screenshots-and-context) - Visual anchors supporting user stories and journeys
+
+#### 📋 [Softr Product Requirements Document (PRD)](output/softr/20251119_071215/llm_docs/prd_document_gemini.md)
+
+A comprehensive PRD with detailed page-by-page specifications covering 20+ pages, technical requirements, complete data models, and user workflows. Essential for development planning, technical specifications, and migration projects. This is the most complete PRD available, covering all pages visible in the video walkthrough.
+
+**Table of Contents:**
+- [Executive Summary](output/softr/20251119_071215/llm_docs/prd_document_gemini.md#executive-summary) - System overview and key features
+- [Introduction, Goals, Target Audience, Scope](output/softr/20251119_071215/llm_docs/prd_document_gemini.md#1-introduction) - Project context and objectives
+- [Functional Requirements](output/softr/20251119_071215/llm_docs/prd_document_gemini.md#5-functional-requirements) - Detailed specs for 20+ pages including Landing Page, Preprints List, Article Details, Quality Check Portal (multiple variants), Training pages, Dashboards, and more
+- [Non-Functional Requirements](output/softr/20251119_071215/llm_docs/prd_document_gemini.md#6-non-functional-requirements) - Performance, scalability, and quality requirements
+- [Data Model](output/softr/20251119_071215/llm_docs/prd_document_gemini.md#7-data-model) - Complete data structures for all entities
+- [Technical Requirements](output/softr/20251119_071215/llm_docs/prd_document_gemini.md#8-technical-requirements) - Platform, database, authentication, APIs, and security requirements
+- [Future Considerations](output/softr/20251119_071215/llm_docs/prd_document_gemini.md#9-future-considerations) - Potential enhancements and improvements
 
 #### ⚠️ [Softr Issues & Pain Points](output/softr/20251119_071215/llm_docs/issues_gemini.md)
 
@@ -175,6 +180,7 @@ That's it! You'll get comprehensive documentation in `output/{video_name}/{run_t
 ## Documentation
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Quick start guide (start here!)
+- **[COMPARISON_ANALYSIS.md](COMPARISON_ANALYSIS.md)** - Detailed comparison of all document versions (enriched vs latest Gemini vs OpenAI)
 - **[docs/](docs/)** - Comprehensive documentation
   - `LLM_ANNOTATION_README.md` - Complete LLM documentation guide
   - `VIDEO_ANNOTATION_README.md` - Basic transcription workflow
