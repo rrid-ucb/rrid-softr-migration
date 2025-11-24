@@ -19,6 +19,7 @@
 *   **Agent Framework**: LangChain or custom agent loops using Vercel AI SDK.
 
 ## Dev Tools
+*   **IDE**: Google Antigravity (AI-first Editor)
 *   **Package Manager**: npm / pnpm
 *   **Linting**: ESLint, Prettier
 *   **Version Control**: Git

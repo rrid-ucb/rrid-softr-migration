@@ -24,9 +24,11 @@ src/
 │   │   │   └── [id]/       # Detail View
 │   │   ├── reviewers/
 │   │   │   ├── new/        # Propose Reviewer Form
-│   │   │   └── [id]/       # Reviewer Details
-│   │   └── quality/        # QC Portal
-│   ├── api/                # Internal API Routes (if needed)
+│       │   │   └── [id]/       # Reviewer Details
+    │   │   ├── quality/        # QC Portal
+    │   │   ├── training/       # Training Modules
+    │   │   └── achievements/   # Gamification Dashboard
+    │   ├── api/                # Internal API Routes (if needed)
 │   └── global.css          # Tailwind 4 Imports
 ├── components/
 │   ├── ui/                 # Shadcn Primitives (Button, Card, etc.)
@@ -99,6 +101,13 @@ export const PreprintSchema = z.object({
 
 ### 4.3 Propose Reviewer Form
 - **Library**: `react-hook-form` + `zod` resolver.
+- **COI Check Integration**:
+    - "Check COI" button triggers server action `checkCOI(name, email)`.
+    - **Logic**: 
+        - Queries Airtable `Preprint Info ONLY` (Authors column) to check for Author conflicts.
+        - Queries Airtable `Student Reviewer Inputs` & `Referees` to check for Recent/Duplicate reviewers.
+    - Returns warnings (e.g., "Potential Author Match", "Recent Reviewer").
+    - Does *not* block submission but requires acknowledgment/justification.
 - **Validation**:
     - **Institutional Email**: Regex check. If fails, show "Justification" field.
     - **Backup Reviewer**: If "Yes" selected, "Backup Name" field becomes required.

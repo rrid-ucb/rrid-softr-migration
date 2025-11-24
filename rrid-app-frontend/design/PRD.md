@@ -61,6 +61,33 @@ The RRID Reviewer Selection System is a critical tool for managing the peer revi
     - Team performance metrics.
 - **FR-15**: Data must be aggregated from `Team Performance` and `Student Performance` tables.
 
+### 3.7 Gamification & Training
+- **FR-16**: **Achievement Dashboard**:
+    - Display "Badges" for milestones (e.g., "First Review", "10 Greenlit Reviews").
+    - Track metrics: "Total Greenlit", "Total Rejected", "Greenlit Rate".
+- **FR-17**: **Training Modules**:
+    - Dedicated section for onboarding materials (RRID Essentials, Peer Reviewer Selection).
+    - Track completion status of training steps.
+
+### 3.8 Central Team Control Panel
+- **FR-18**: **Bulk Management**:
+    - Interface for Central Team to update status/ranking of multiple preprints.
+    - "Override" functionality for blocked reviewers.
+- **FR-19**: **User Database Management**:
+    - Admin view to update user roles, teams, and active status (syncs to Firebase Claims).
+
+### 3.9 External Integrations (Prophy)
+- **FR-20**: **Prophy Dashboard**:
+    - Embedded view or API integration with Prophy.science (or similar) to track reviewer metrics.
+    - Displays "AE Productivity", "Team Pitching", and "Domain Performance".
+- **FR-21**: **Invited Preprints**:
+    - Operational view tracking the status of sent invitations (Automated finding -> Receiving reviews).
+
+### 3.10 Support & Help
+- **FR-22**: **Help Section**:
+    - Static content page with "RRID Essentials" and FAQs.
+    - Links to training modules.
+
 ## 4. Non-Functional Requirements
 
 ### 4.1 Performance
