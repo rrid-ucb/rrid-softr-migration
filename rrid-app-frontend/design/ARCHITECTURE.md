@@ -10,7 +10,7 @@ The new architecture decouples the frontend from the Airtable backend using a mo
 
 ```mermaid
 graph TD
-    User[User (Admin/Student/AE)] -->|HTTPS| CDN[Vercel/Firebase Edge]
+    User[User Admin/Student/AE] -->|HTTPS| CDN[Vercel/Firebase Edge]
     CDN --> NextJS[Next.js 16 App]
     
     subgraph Frontend_Layer
