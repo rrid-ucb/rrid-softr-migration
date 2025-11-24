@@ -15,6 +15,7 @@ Transform video walkthroughs into comprehensive product documentation using AI-p
     - [Airtable Personas, User Stories, and User Journeys](#-airtable-personas-user-stories-and-user-journeys)
     - [Airtable Product Requirements Document (PRD)](#-airtable-product-requirements-document-prd)
     - [Airtable Issues & Pain Points](#-airtable-issues--pain-points)
+  - [Airtable Backend Schema](#airtable-backend-schema)
 - [What This Does](#what-this-does)
 - [Quick Start](#quick-start)
 - [Documentation](#documentation)
@@ -142,6 +143,23 @@ A comprehensive catalog of problems, pain points, and technical concerns identif
 - [Pain Points](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md#iii-pain-points) - Workflow inefficiencies, UX issues, and manual workarounds
 - [Architecture Concerns](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md#iv-architecture-concerns) - System limitations, technical debt, and maintenance challenges
 - [Additional Notes](output/GMT20251116-201850_Recording_1440x900/20251118_234057/llm_docs/issues_gemini.md#v-additional-notes) - Knowledge gaps and documentation concerns
+
+### Airtable Backend Schema
+
+For a deep dive into the data structure powering the application, we have extracted and categorized the complete Airtable schema. This information is critical for connecting the frontend to the backend during migration.
+
+#### 🗄️ [Airtable Schema Report](design/schema/airtable_schema_report.md)
+
+A detailed report summarizing **39 total bases** (12 Active, 18 Legacy, 9 Test), including table counts, field structures, and recent activity status.
+
+**Key Active Bases:**
+- **RRID Reviewer Selection Process** (`appAYosfmfSuHWiBT`) - 10 Tables
+- **RRID_App_User** (`app6NFX8jCkg5kKxi`) - 6 Tables
+- **Training Modules** (`appeZtQsUoiYY9ZsX`) - 21 Tables
+
+**Underlying Data:**
+- [airtable_complete_schema.json](design/schema/airtable_complete_schema.json) - Raw JSON schema of all bases
+- [airtable_schema_categorized.json](design/schema/airtable_schema_categorized.json) - Schema organized by category (Active, Legacy, Test)
 
 ## What This Does
 
