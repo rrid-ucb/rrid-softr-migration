@@ -1,6 +1,5 @@
 Okay, let's craft a detailed personas and user stories document based on the provided video transcript.
 
-```markdown
 # User Personas and User Stories: RID Reviewer Selection Software
 
 This document outlines the user personas, user stories, and user journeys for the RID Reviewer Selection Software, as described in the provided video walkthrough.
@@ -244,8 +243,6 @@ This document outlines the user personas, user stories, and user journeys for th
 
 ![Screenshot at 19:43](../frames/frame_00153_19-43.jpg)
 
-
-```
 
 This provides a solid starting point. To make it even better, you could:
 
